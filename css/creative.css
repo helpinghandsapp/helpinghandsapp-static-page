@@ -474,3 +474,21 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+
+
+#mc_embed_signup {
+ }
+
+
+ .form-control {
+    border-color: #fff;
+    color: #222;
+    background-color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+input, select, textarea{
+    color: #000000;
+}
