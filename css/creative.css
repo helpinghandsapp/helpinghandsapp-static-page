@@ -491,4 +491,8 @@ body {
 
 input, select, textarea{
     color: #000000;
+	-moz-border-radius: 30px;
+     border-radius: 30px;
+    border:solid 1px black; 
+    padding:5px;
 }
