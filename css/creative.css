@@ -33,7 +33,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #eb3812;
+    color: #6C9A00;
 }
 
 h1,
@@ -94,7 +94,7 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #6C9A00;
 }
 
 .navbar-default .nav > li>a,
@@ -158,7 +158,7 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #eb3812;
+        color: #6C9A00;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -399,9 +399,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #ed431f;
+    border-color: #6C9A00;
     color: #fff;
-    background-color: #ee4b28;
+    background-color: #6C9A00;
 }
 
 .btn-primary:active,
