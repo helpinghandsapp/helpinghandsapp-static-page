@@ -50,13 +50,16 @@ h1.withbackground {
     opacity:0.5;
 }
 
-
 p {
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.5;
 }
 
+p.withbackground {
+    background-color:black;
+    opacity:0.5;
+}
 .bg-primary {
     background-color: #006b8e;
 }
@@ -218,7 +221,7 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 500;
-    color: rgba(0,0,0,1);
+    color: rgba(255,255,255,1);
 }
 
 @media(min-width:768px) {
