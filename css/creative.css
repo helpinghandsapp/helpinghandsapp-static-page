@@ -55,6 +55,10 @@ p {
     background-color: #006b8e;
 }
 
+.bg-secondary {
+    background-color: #F07013;
+}
+
 .bg-dark {
     color: #fff;
     background-color: #222;
@@ -325,6 +329,11 @@ header .header-content .header-content-inner p {
 .text-primary {
     color: #F07013;
 }
+
+.text-secondary {
+    color: #fff;
+}
+
 
 .no-gutter > [class*=col-] {
     padding-right: 0;
