@@ -55,8 +55,8 @@ p {
     background-color: #006b8e;
 }
 
-.bg-secondary {
-    background-color: #F07013;
+.bg-light {
+    background-color: #fff;
 }
 
 .bg-dark {
@@ -181,7 +181,7 @@ header {
     width: 100%;
     min-height: auto;
     text-align: center;
-    color: rgba(0,107,142,1);
+    color: rgba(0,0,0,1);
     background-image: url(../img/header.jpg);
     background-position: center;
     -webkit-background-size: cover;
@@ -212,7 +212,7 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 500;
-    color: rgba(0,107,142,1);
+    color: rgba(0,0,0,1);
 }
 
 @media(min-width:768px) {
@@ -330,8 +330,12 @@ header .header-content .header-content-inner p {
     color: #F07013;
 }
 
-.text-secondary {
+.text-light {
     color: #fff;
+}
+
+.text-dark {
+    color: #000;
 }
 
 
@@ -502,6 +506,6 @@ input, select, textarea{
     color: #000000;
 	-moz-border-radius: 10px;
      border-radius: 10px;
-    border:solid 0px black; 
+    border:solid 2px #006b8e; 
     padding:5px;
 }
