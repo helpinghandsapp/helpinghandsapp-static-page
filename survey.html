@@ -8,15 +8,20 @@ mixpanel.init("df883a7042534c5c54bebb05c9673f84");</script><!-- end Mixpanel -->
 
 <div style="margin: 0in 0in 0pt 0.5in; text-indent: -0.25in;">&nbsp;</div>
 
+<div class="btn-group" id="Group1" data-toggle="buttons">
+
+
 <div style="margin: 0in 0in 0pt 0.5in; text-indent: -0.25in;"><strong><span>1.<span style="font: 7pt/normal &quot;Times New Roman&quot;; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>In a working situation, which would you most likely do?</strong></div>
 
-<div style="margin: 0in 0in 0pt 1in; text-indent: -0.25in;"><input type="radio" name="group1" value="A"> a. Work outdoors or with animals<br><span style="font: 7pt/normal &quot;Times New Roman&quot;; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></div>
+<div style="margin: 0in 0in 0pt 1in; text-indent: -0.25in;"><input type="radio" name="group1" value="A"> a. Work outdoors or with animals<br><span style="font: 7pt/normal &quot;Times New Roman&quot;; font-size-adjust: none; font-stretch: normal;"> </span></div>
 
 <div style="margin: 0in 0in 0pt 1in; text-indent: -0.25in;"><input type="radio" name="group1" value="B">b. Teach and mentor others<span style="font: 7pt/normal &quot;Times New Roman&quot;; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></div>
 
 <div style="margin: 0in 0in 0pt 1in; text-indent: -0.25in;"><input type="radio" name="group1" value="C">c.<span style="font: 7pt/normal &quot;Times New Roman&quot;; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Work as a team, or collaborate with others</div>
 
 <div style="margin: 0in 0in 0pt 1in; text-indent: -0.25in;"><input type="radio" name="group1" value="D">d.<span style="font: 7pt/normal &quot;Times New Roman&quot;; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Work by yourself with numbers and data</div>
+
+</div>
 
 <div style="margin: 0in 0in 0pt 1in; text-indent: -0.25in;">&nbsp;</div>
 
@@ -139,6 +144,31 @@ mixpanel.init("df883a7042534c5c54bebb05c9673f84");</script><!-- end Mixpanel -->
 <div style="margin: 0in 0in 10pt 1in; text-indent: -0.25in;"><span><input type="radio" name="group11" value="D">d.<span style="font: 7pt/normal &quot;Times New Roman&quot;; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Executive position at Microsoft</div>
 
 <h3>&nbsp;</h3>
+
+<p id="demo">here</p>
+
+
+<script>
+function myFunction(a, b) {
+
+	//step 1: get all values 
+	//step 2: save all to mixpanel 
+	mixpanel.track("answer for #1 is");
+//step 3: add it all up and display to user
+
+
+/// some random test code below
+	//var ques1 = $('#Group1 input:radio:checked').val();
+	var ques1a = $('#Group1 label.active input').val();
+		console.log(ques1a);
+
+	var tester=a*b;
+    return tester;
+}
+
+
+document.getElementById("demo").innerHTML = myFunction(4, 3);
+</script>
 
 
 </body>
