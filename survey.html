@@ -56,9 +56,8 @@ mixpanel.init("df883a7042534c5c54bebb05c9673f84");</script><!-- end Mixpanel -->
 <div style="margin: 0in 0in 0pt 0.5in; text-indent: -0.25in;">&nbsp;</div>
 <form id="hhsurvey">
 
-<div class="btn-group" id="Group1" data-toggle="buttons">
 
-
+<!-- Question 1-->
 <div style="margin: 0in 0in 0pt 0.5in; text-indent: -0.25in;"><strong><span>1.<span style="font: 7pt/normal &quot;Times New Roman&quot;; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>In a working situation, which would you most likely do?</strong></div>
 
 <div style="margin: 0in 0in 0pt 1in; text-indent: -0.25in;"><input type="radio" name="group1" value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Work outdoors or with animals </div>
@@ -68,19 +67,20 @@ mixpanel.init("df883a7042534c5c54bebb05c9673f84");</script><!-- end Mixpanel -->
 <div style="margin: 0in 0in 0pt 1in; text-indent: -0.25in;"><input type="radio" name="group1" value="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Work as a team, or collaborate with others</div>
 <div style="margin: 0in 0in 0pt 1in; text-indent: -0.25in;"><input type="radio" name="group1" value="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Work by yourself with numbers and data</div>
 
-</div>
+<!-- Question 2-->
 
 <div style="margin: 0in 0in 0pt 1in; text-indent: -0.25in;">&nbsp;</div>
 
+
 <div style="margin: 0in 0in 0pt 0.5in; text-indent: -0.25in;"><strong><span>2.<span style="font: 7pt/normal &quot;Times New Roman&quot;; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Which word best describes you?</strong></div>
 
-<div style="margin: 0in 0in 0pt 1in; text-indent: -0.25in;"><span><input type="radio" name="group2" value="1">a.<span style="font: 7pt/normal &quot;Times New Roman&quot;; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Active</div>
+<div style="margin: 0in 0in 0pt 1in; text-indent: -0.25in;"><input type="radio" name="group2" value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Active</div>
 
-<div style="margin: 0in 0in 0pt 1in; text-indent: -0.25in;"><span><input type="radio" name="group2" value="2">b.<span style="font: 7pt/normal &quot;Times New Roman&quot;; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Enthusiastic</div>
+<div style="margin: 0in 0in 0pt 1in; text-indent: -0.25in;"><input type="radio" name="group2" value="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enthusiastic</div>
 
-<div style="margin: 0in 0in 0pt 1in; text-indent: -0.25in;"><span><input type="radio" name="group2" value="3">c.<span style="font: 7pt/normal &quot;Times New Roman&quot;; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Creative</div>
+<div style="margin: 0in 0in 0pt 1in; text-indent: -0.25in;"><input type="radio" name="group2" value="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative</div>
 
-<div style="margin: 0in 0in 0pt 1in; text-indent: -0.25in;"><span><input type="radio" name="group2" value="4">d.<span style="font: 7pt/normal &quot;Times New Roman&quot;; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Organized</div>
+<div style="margin: 0in 0in 0pt 1in; text-indent: -0.25in;"><input type="radio" name="group2" value="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Organized</div>
 
 <div style="margin: 0in 0in 0pt 1in; text-indent: -0.25in;">&nbsp;</div>
 
@@ -202,103 +202,145 @@ mixpanel.init("df883a7042534c5c54bebb05c9673f84");</script><!-- end Mixpanel -->
 
 <script>
 function findStyle() {
-	var a = 0, b = 0, c = 0, d = 0, i = 1;
+   console.log("Start function");
+   var a = 0, b = 0, c = 0, d = 0, i = 1;
+
+
    var radiobutton = $('input[name="group1"]:checked', '#hhsurvey').val();
    if (radiobutton == 1){
-   
-   a++;
-   }
-   if (radiobutton == 2){
-   b++
-   }
-   if (radiobutton == 3){
+      a++;
+      console.log("a");
+   } else if (radiobutton == 2){
+   b++;
+      console.log("b");
+
+   }else if (radiobutton == 3){
    c++;
+      console.log("c");
+
+   }else if (radiobutton == 4){
+   d++;
+      console.log("d");
    }
-   if (radiobutton == 4){
-   d++
-   }
+      mixpanel.track("answer for #1 is"+radiobutton);
+
+
    radiobutton = $('input[name="group2"]:checked', '#hhsurvey').val();
-   if (radiobutton == 1){
-   
-   a++;
-   }
-   if (radiobutton == 2){
-   b++
-   }
-   if (radiobutton == 3){
+    if (radiobutton == 1){
+      a++;
+      console.log("a");
+   } else if (radiobutton == 2){
+   b++;
+      console.log("b");
+
+   }else if (radiobutton == 3){
    c++;
+      console.log("c");
+
+   }else if (radiobutton == 4){
+   d++;
+      console.log("d");
    }
-   if (radiobutton == 4){
-   d++
-   }
+      mixpanel.track("answer for #1 is"+radiobutton);
+
+
+
    radiobutton = $('input[name="group3"]:checked', '#hhsurvey').val();
-   if (radiobutton == 1){
-   a++;
-   }
-   if (radiobutton == 2){
-   b++
-   }
-   if (radiobutton == 3){
+      if (radiobutton == 1){
+      a++;
+      console.log("a");
+   } else if (radiobutton == 2){
+   b++;
+      console.log("b");
+
+   }else if (radiobutton == 3){
    c++;
+      console.log("c");
+
+   }else if (radiobutton == 4){
+   d++;
+      console.log("d");
    }
-   if (radiobutton == 4){
-   d++
-   }
+      mixpanel.track("answer for #1 is"+radiobutton);
+
+
    radiobutton = $('input[name="group4"]:checked', '#hhsurvey').val();
-   if (radiobutton == 1){
-   
-   a++;
-   }
-   if (radiobutton == 2){
-   b++
-   }
-   if (radiobutton == 3){
+    if (radiobutton == 1){
+      a++;
+      console.log("a");
+   } else if (radiobutton == 2){
+   b++;
+      console.log("b");
+
+   }else if (radiobutton == 3){
    c++;
+      console.log("c");
+
+   }else if (radiobutton == 4){
+   d++;
+      console.log("d");
    }
-   if (radiobutton == 4){
-   d++
-   }
+      mixpanel.track("answer for #1 is"+radiobutton);
+
+
+
    radiobutton = $('input[name="group5"]:checked', '#hhsurvey').val();
-   if (radiobutton == 1){
-   
-   a++;
-   }
-   if (radiobutton == 2){
-   b++
-   }
-   if (radiobutton == 3){
+      if (radiobutton == 1){
+      a++;
+      console.log("a");
+   } else if (radiobutton == 2){
+   b++;
+      console.log("b");
+
+   }else if (radiobutton == 3){
    c++;
+      console.log("c");
+
+   }else if (radiobutton == 4){
+   d++;
+      console.log("d");
    }
-   if (radiobutton == 4){
-   d++
-   }
+      mixpanel.track("answer for #1 is"+radiobutton);
+
+
    radiobutton = $('input[name="group6"]:checked', '#hhsurvey').val();
-   if (radiobutton == 1){
-   
-   a++;
-   }
-   if (radiobutton == 2){
-   b++
-   }
-   if (radiobutton == 3){
+    if (radiobutton == 1){
+      a++;
+      console.log("a");
+   } else if (radiobutton == 2){
+   b++;
+      console.log("b");
+
+   }else if (radiobutton == 3){
    c++;
+      console.log("c");
+
+   }else if (radiobutton == 4){
+   d++;
+      console.log("d");
    }
-   if (radiobutton == 4){
-   d++
+      mixpanel.track("answer for #1 is"+radiobutton);
+
+
    }radiobutton = $('input[name="group7"]:checked', '#hhsurvey').val();
-   if (radiobutton == 1){
-   
-   a++;
-   }
-   if (radiobutton == 2){
-   b++
-   }
-   if (radiobutton == 3){
+     if (radiobutton == 1){
+      a++;
+      console.log("a");
+   } else if (radiobutton == 2){
+   b++;
+      console.log("b");
+
+   }else if (radiobutton == 3){
    c++;
+      console.log("c");
+
+   }else if (radiobutton == 4){
+   d++;
+      console.log("d");
    }
-   if (radiobutton == 4){
-   d++
-   }
+      mixpanel.track("answer for #1 is"+radiobutton);
+
+
    radiobutton = $('input[name="group8"]:checked', '#hhsurvey').val();
    if (radiobutton == 1){
    
@@ -354,6 +396,8 @@ function findStyle() {
    if (radiobutton == 4){
    d++
    }
+
+   //Now for calculations
    if(a > b && a > c && a > d){
    alert("A is greater");
    }
@@ -363,12 +407,11 @@ function findStyle() {
    else if(c > a && c > b && c > d){
    alert("C is greater");
    }
-	else if(d > a && d > b && d > c){
+   else if(d > a && d > b && d > c){
    alert("D is greater");
    }
   
    }
-});
 </script>
 
 
@@ -393,6 +436,18 @@ function myFunction(a, b) {
 
 document.getElementById("demo").innerHTML = myFunction(4, 3);
 </script>
+
+
+ <!-- jQuery -->
+      <script src="js/jquery.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Plugin JavaScript -->
+      <script src="js/jquery.easing.min.js"></script>
+      <script src="js/jquery.fittext.js"></script>
+      <script src="js/wow.min.js"></script>
+      <!-- Custom Theme JavaScript -->
+      <script src="js/creative.js"></script>
 
 
 </body>
