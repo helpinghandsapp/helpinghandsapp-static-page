@@ -28,6 +28,24 @@ mixpanel.init("df883a7042534c5c54bebb05c9673f84");</script><!-- end Mixpanel -->
 
 </head>
    <body class="bg-primary">
+      <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+         <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+               <a class="navbar-brand page-scroll" href="#page-top">Helping Hands</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+               </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container-fluid -->
+      </nav>
+<p style= "margin:70px;"></p>
+
+
    <h1 style="    text-align: center; margin-bottom: 30px;">Volunteer Personality Quiz</h1>
  
 
@@ -357,18 +375,18 @@ function findStyle() {
 <script>
 function myFunction(a, b) {
 
-	//step 1: get all values 
-	//step 2: save all to mixpanel 
-	mixpanel.track("answer for #1 is");
+   //step 1: get all values 
+   //step 2: save all to mixpanel 
+   mixpanel.track("answer for #1 is");
 //step 3: add it all up and display to user
 
 
 /// some random test code below
-	//var ques1 = $('#Group1 input:radio:checked').val();
-	var ques1a = $('#Group1 label.active input').val();
-		console.log(ques1a);
+   //var ques1 = $('#Group1 input:radio:checked').val();
+   var ques1a = $('#Group1 label.active input').val();
+      console.log(ques1a);
 
-	var tester=a*b;
+   var tester=a*b;
     return tester;
 }
 
