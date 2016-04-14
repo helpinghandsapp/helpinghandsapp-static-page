@@ -36,6 +36,7 @@ mixpanel.init("df883a7042534c5c54bebb05c9673f84");</script><!-- end Mixpanel -->
    <p style="margin: 30px;">With so many worthy causes out there, choosing&nbsp;the right&nbsp;volunteer opportunity can be overwhelming. This short Volunteer Personality Quiz&nbsp;will help you&nbsp;identify the kind of volunteer activity that best suits you.</p>
 
 <div style="margin: 0in 0in 0pt 0.5in; text-indent: -0.25in;">&nbsp;</div>
+<form id="hhsurvey">
 
 <div class="btn-group" id="Group1" data-toggle="buttons">
 
@@ -171,11 +172,186 @@ mixpanel.init("df883a7042534c5c54bebb05c9673f84");</script><!-- end Mixpanel -->
 
 <div style="margin: 0in 0in 10pt 1in; text-indent: -0.25in;"><span><input type="radio" name="group11" value="D">d.<span style="font: 7pt/normal &quot;Times New Roman&quot;; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Executive position at Microsoft</div>
 
+<input type='button' onclick="findStyle()" />
+
+</form>
+
 <h3>&nbsp;</h3>
 
 <p id="demo">here</p>
 
 <a href="index.html" class="btn btn-default btn-xl" style="margin:5px">Back to Main Page</a>
+
+<script>
+function findStyle() {
+	var a = 0, b = 0, c = 0, d = 0, i = 1;
+   var radiobutton = $('input[name="group1"]:checked', '#hhsurvey').val();
+   if (radiobutton == 1){
+   
+   a++;
+   }
+   if (radiobutton == 2){
+   b++
+   }
+   if (radiobutton == 3){
+   c++;
+   }
+   if (radiobutton == 4){
+   d++
+   }
+   radiobutton = $('input[name="group2"]:checked', '#hhsurvey').val();
+   if (radiobutton == 1){
+   
+   a++;
+   }
+   if (radiobutton == 2){
+   b++
+   }
+   if (radiobutton == 3){
+   c++;
+   }
+   if (radiobutton == 4){
+   d++
+   }
+   radiobutton = $('input[name="group3"]:checked', '#hhsurvey').val();
+   if (radiobutton == 1){
+   a++;
+   }
+   if (radiobutton == 2){
+   b++
+   }
+   if (radiobutton == 3){
+   c++;
+   }
+   if (radiobutton == 4){
+   d++
+   }
+   radiobutton = $('input[name="group4"]:checked', '#hhsurvey').val();
+   if (radiobutton == 1){
+   
+   a++;
+   }
+   if (radiobutton == 2){
+   b++
+   }
+   if (radiobutton == 3){
+   c++;
+   }
+   if (radiobutton == 4){
+   d++
+   }
+   radiobutton = $('input[name="group5"]:checked', '#hhsurvey').val();
+   if (radiobutton == 1){
+   
+   a++;
+   }
+   if (radiobutton == 2){
+   b++
+   }
+   if (radiobutton == 3){
+   c++;
+   }
+   if (radiobutton == 4){
+   d++
+   }
+   radiobutton = $('input[name="group6"]:checked', '#hhsurvey').val();
+   if (radiobutton == 1){
+   
+   a++;
+   }
+   if (radiobutton == 2){
+   b++
+   }
+   if (radiobutton == 3){
+   c++;
+   }
+   if (radiobutton == 4){
+   d++
+   }radiobutton = $('input[name="group7"]:checked', '#hhsurvey').val();
+   if (radiobutton == 1){
+   
+   a++;
+   }
+   if (radiobutton == 2){
+   b++
+   }
+   if (radiobutton == 3){
+   c++;
+   }
+   if (radiobutton == 4){
+   d++
+   }
+   radiobutton = $('input[name="group8"]:checked', '#hhsurvey').val();
+   if (radiobutton == 1){
+   
+   a++;
+   }
+   if (radiobutton == 2){
+   b++
+   }
+   if (radiobutton == 3){
+   c++;
+   }
+   if (radiobutton == 4){
+   d++
+   }
+   radiobutton = $('input[name="group9"]:checked', '#hhsurvey').val();
+   if (radiobutton == 1){
+   
+   a++;
+   }
+   if (radiobutton == 2){
+   b++
+   }
+   if (radiobutton == 3){
+   c++;
+   }
+   if (radiobutton == 4){
+   d++
+   }
+   radiobutton = $('input[name="group10"]:checked', '#hhsurvey').val();
+   if (radiobutton == 1){
+   
+   a++;
+   }
+   if (radiobutton == 2){
+   b++
+   }
+   if (radiobutton == 3){
+   c++;
+   }
+   if (radiobutton == 4){
+   d++
+   }
+   radiobutton = $('input[name="group11"]:checked', '#hhsurvey').val();
+   if (radiobutton == 1){
+   a++;
+   }
+   if (radiobutton == 2){
+   b++
+   }
+   if (radiobutton == 3){
+   c++;
+   }
+   if (radiobutton == 4){
+   d++
+   }
+   if(a > b && a > c && a > d){
+   alert("A is greater");
+   }
+   else if(b > a && b > c && b > d){
+   alert("B is greater");
+   }
+   else if(c > a && c > b && c > d){
+   alert("C is greater");
+   }
+	else if(d > a && d > b && d > c){
+   alert("D is greater");
+   }
+  
+   }
+});
+</script>
 
 
 <script>
