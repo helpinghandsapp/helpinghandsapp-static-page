@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
 hr {400
@@ -61,7 +61,7 @@ p.withbackground {
     opacity:0.5;
 }
 .bg-primary {
-    background-color: #006b8e;
+    background-color: #006B8E;
 }
 
 .bg-light {
