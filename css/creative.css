@@ -16,7 +16,7 @@ body {
 
 hr {400
     max-width: 50px;
-    border-color: #006b8e;
+    border-color: #1B4B7A;
     border-width: 3px;
 }
 
@@ -61,7 +61,7 @@ p.withbackground {
     opacity:0.5;
 }
 .bg-primary {
-    background-color: #006B8E;
+    background-color: #1B4B7A;
 }
 
 .bg-light {
