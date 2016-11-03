@@ -15,7 +15,7 @@ body {
 }
 
 hr {
-    max-width: 50px;
+    max-width: 500px;
     border-width: 3px;
 }
 
@@ -61,6 +61,11 @@ p.withbackground {
 }
 .bg-primary {
     background-color: #1B4B7A;
+}
+
+.bg-secondary {
+    background-color: white;
+    color: #1B4B7A;
 }
 
 .bg-light {
