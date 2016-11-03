@@ -16,11 +16,7 @@ body {
 
 hr {400
     max-width: 50px;
-<<<<<<< HEAD
-    border-color: #516F91;
-=======
     border-color: #1B4B7A;
->>>>>>> origin/master
     border-width: 3px;
 }
 
@@ -65,11 +61,7 @@ p.withbackground {
     opacity:0.5;
 }
 .bg-primary {
-<<<<<<< HEAD
-    background-color: #516F91;
-=======
     background-color: #1B4B7A;
->>>>>>> origin/master
 }
 
 .bg-light {
