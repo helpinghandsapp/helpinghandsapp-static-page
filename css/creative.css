@@ -14,9 +14,8 @@ body {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
-hr {400
+hr {
     max-width: 50px;
-    border-color: #1B4B7A;
     border-width: 3px;
 }
 
@@ -520,3 +519,10 @@ input, select, textarea{
     padding:5px;
 }
 
+.primary{
+    border-color: #1B4B7A;
+}
+
+.secondary{
+    border-color: white;
+}
