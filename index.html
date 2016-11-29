@@ -164,22 +164,6 @@ src="https://www.facebook.com/tr?id=469056013291786&ev=PageView&noscript=1"
                      <div class="clear">
                         <input type="submit" value="Signup for Beta App" name="subscribe" id="open-popup" class="btn btn-defaultx btn-xl">
 
-
-
-
-                        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-
-                        <script type="text/javascript">
-
-                        function showMailingPopUp() {
-
-                            require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"bb1a6c0f75e6f04a1ef2e8ca5","lid":"d9576472f9"}) })
-                        }
-
-                        document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
-
-                        </script>
-
                      </div>
 
                   </div>
@@ -376,6 +360,19 @@ src="https://www.facebook.com/tr?id=469056013291786&ev=PageView&noscript=1"
         <script src="js/wow.min.js"></script>
         <!-- Custom Theme JavaScript -->
         <script src="js/creative.js"></script>
+
+        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+        <script type="text/javascript">
+
+        function showMailingPopUp() {
+
+            require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"bb1a6c0f75e6f04a1ef2e8ca5","lid":"d9576472f9"}) })
+        }
+
+        document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+
+        </script>
 
     </body>
 </html>
