@@ -556,7 +556,7 @@ section.survey .overlay {
 .open > .dropdown-toggle.btn-default {
     border-color: #ededed;
     color: #222;
-    background-color: #f2f2f2;
+    background-color: #d56f24;
 }
 
 .btn-default:active,
