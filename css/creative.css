@@ -299,7 +299,7 @@ header {
     background-size: 50%;
     -o-background-size: 50%;
     background-repeat: no-repeat;
-    background-color: #214A7B;
+    background-color: #1F4A7E;
 }
 
 header .header-content {
@@ -701,7 +701,7 @@ input, select, textarea{
     color: #000000;
 	-moz-border-radius: 10px;
      border-radius: 10px;
-    border:solid 2px #ffffff; 
+    border:solid 2px #ffffff;
     padding:5px;
 }
 
