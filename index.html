@@ -135,7 +135,7 @@ mixpanel.init("df883a7042534c5c54bebb05c9673f84");</script>
       </header>
 
 <!--============================================================================================-->
-      <section class="bg-primary" id="actioncall" style="background: linear-gradient(to bottom, #344c7c, #4577b4);">
+      <section class="bg-primary" style="background: linear-gradient(to bottom, #344c7c, #4577b4);">
          <div class="container">
          <!-- Begin MailChimp Signup Form -->
 
@@ -150,7 +150,7 @@ mixpanel.init("df883a7042534c5c54bebb05c9673f84");</script>
                        <input type="text" name="b_bb1a6c0f75e6f04a1ef2e8ca5_d9576472f9" tabindex="-1" value="">
                     </div>
                     <div class="clear">
-                       <input type="submit" value="Signup for Beta App" name="subscribe" id="open-popup" class="btn btn-defaultx btn-xl">
+                       <button value="Signup for Beta App" name="subscribe" id="open-popup" class="btn btn-defaultx btn-xl">
                     </div>
 <!--
                    <form action="//github.us11.list-manage.com/subscribe/post?u=bb1a6c0f75e6f04a1ef2e8ca5&amp;id=d9576472f9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -375,14 +375,18 @@ mixpanel.init("df883a7042534c5c54bebb05c9673f84");</script>
 
 
 
-        <script type="text/javascript">
+        <script>
 
-        function showMailingPopUp() {
+            function showMailingPopUp() {
+                require(
+                    ["mojo/signup-forms/Loader"], function(L)
+                    {
+                         L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"bb1a6c0f75e6f04a1ef2e8ca5","lid":"d9576472f9"})
+                     }
+                )
+            }
 
-            require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"bb1a6c0f75e6f04a1ef2e8ca5","lid":"d9576472f9"}) })
-        }
-
-        document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+            document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
 
         </script>
 
