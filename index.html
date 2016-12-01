@@ -36,8 +36,6 @@ mixpanel.init("df883a7042534c5c54bebb05c9673f84");</script>
 
       <![endif]-->
 
-      <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-
         <!-- Google Analytics Tracking Code for http://helpinghandsapp.com -->
 
         <script>
@@ -77,6 +75,10 @@ mixpanel.init("df883a7042534c5c54bebb05c9673f84");</script>
         src="https://www.facebook.com/tr?id=469056013291786&ev=PageView&noscript=1"
         /></noscript>
         <!-- End Facebook Pixel Code -->
+
+        <!-- mailchimp pop up code  -->
+        <!-- <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"bb1a6c0f75e6f04a1ef2e8ca5","lid":"d9576472f9"}) })</script> -->
+
 <!--============================================================================================-->
 
    </head>
@@ -135,56 +137,24 @@ mixpanel.init("df883a7042534c5c54bebb05c9673f84");</script>
       </header>
 
 <!--============================================================================================-->
-      <section class="bg-primary" style="background: linear-gradient(to bottom, #344c7c, #4577b4);">
-         <div class="container">
-         <!-- Begin MailChimp Signup Form -->
+<section class="bg-primary" style="background: linear-gradient(to bottom, #344c7c, #4577b4);">
+  <div class="container">
 
-             <div class="row">
+    <div class="row">
 
-                <div class="col-lg-12 col-md-8 text-center">
+      <div class="col-lg-12 col-md-8 text-center">
 
-                    <h2 style="font-size:50px" class="section-heading">Participate in our beta!</h2>
-                    <p>We are currently in the final stage of launching our beta app,<br><u>would you like to participate in it</u>? Leave your email below to signup</p>
+        <h2 style="font-size:50px" class="section-heading">Participate in our beta!</h2>
+        <p>We are currently in the final stage of launching our beta app,<br><u>would you like to participate in it</u>? Leave your email below to signup</p>
 
-                    <!-- <div style="position: absolute; left: -5000px;">
-                       <input type="text" name="b_bb1a6c0f75e6f04a1ef2e8ca5_d9576472f9" tabindex="-1" value="">
-                    </div> -->
+        <div class="row">
+          <a href="http://eepurl.com/buE2qz" class="btn btn-seconday btn-xl" style="margin:5px">Signup for Beta App</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-                    <div class="clear">
-                       <button type="button" id="open-popup" class="btn btn-defaultx btn-xl" style="background-color: #d67025">Sign Up for our Beta!</button>
-                    </div>
-<!--
-                   <form action="//github.us11.list-manage.com/subscribe/post?u=bb1a6c0f75e6f04a1ef2e8ca5&amp;id=d9576472f9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-
-                      <div id="mc_embed_signup_scroll">
-
-                         <div class="mc-field-group">
-                            <label for="mce-EMAIL">Email Address</label>
-                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" style="margin:20px; width: 40%;">
-                         </div>
-
-                         <div id="mce-responses" class="clear">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
-                         </div>
-
-                         real people should not fill this in and expect good things - do not remove this or risk form bot signups
-
-                         <div style="position: absolute; left: -5000px;">
-                            <input type="text" name="b_bb1a6c0f75e6f04a1ef2e8ca5_d9576472f9" tabindex="-1" value="">
-                         </div>
-                         <div class="clear">
-                            <input type="submit" value="Signup for Beta App" name="subscribe" id="open-popup" class="btn btn-defaultx btn-xl">
-                         </div>
-
-                      </div>
-                   </form> -->
-                </div>
-                <!-- End MailChimp Signup Form -->
-
-             </div>
-         </div>
-      </section>
+</section>
 
 <!--============================================================================================-->
 <section id="features" class="features">
@@ -334,13 +304,6 @@ mixpanel.init("df883a7042534c5c54bebb05c9673f84");</script>
             </ul>
         </div>
 
-         <script>
-            a = 5;
-            b = 6;
-            c = a + b;
-            console.log(c);
-         </script>
-
     </section>
 
 <!--============================================================================================-->
@@ -375,21 +338,5 @@ mixpanel.init("df883a7042534c5c54bebb05c9673f84");</script>
         <script src="js/wow.min.js"></script>
         <!-- Custom Theme JavaScript -->
         <script src="js/creative.js"></script>
-
-        <script>
-
-            function showMailingPopUp() {
-                require(
-                    ["mojo/signup-forms/Loader"], function(L)
-                    {
-                         L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"bb1a6c0f75e6f04a1ef2e8ca5","lid":"d9576472f9"})
-                     }
-                )
-            }
-
-            document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
-
-        </script>
-
     </body>
 </html>
