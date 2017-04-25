@@ -293,11 +293,11 @@ header {
     min-height: auto;
     text-align: center;
     color: rgba(255,255,255,1);
-    background-image: url(../img/header.jpg);
+    background-image: url(../img/hhtitlepic.png);
     background-position: center;
     -webkit-background-size: 50%;
     -moz-background-size: 50%;
-    background-size: 50%;
+    background-size: 75%;
     -o-background-size: 50%;
     background-repeat: no-repeat;
     background-color: #1F4A7E;
