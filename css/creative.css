@@ -680,8 +680,8 @@ fieldset[disabled] .btn-primary.active {
     padding: 15px 20px;
 }
 @media(max-width:768px) {
-  .btn-xl {
-    padding: 15px 0px;
+  .survey-content .btn-xl {
+    padding: 15px 5px;
   }
 }
 
