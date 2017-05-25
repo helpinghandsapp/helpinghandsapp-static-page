@@ -64,8 +64,8 @@ p.withbackground {
     opacity:0.5;
 }
 .bg-primary {
-
-    background-color: #527090;
+    /*background-color: #527090;*/
+    background-color: #1F4A7E;
 }
 
 .bg-secondary {
@@ -88,6 +88,12 @@ p.withbackground {
 
 section {
     padding: 5% 0;
+}
+
+@media(max-width:768px) {
+  section {
+      padding: 20% 0;
+  }
 }
 
 aside {
@@ -292,7 +298,7 @@ header {
     min-height: auto;
     text-align: center;
     color: rgba(255,255,255,1);
-    background-image: url(../img/header.jpg);
+    background-image: url(../img/header.png);
     background-position: center;
     -webkit-background-size: 50%;
     -moz-background-size: 50%;
@@ -300,6 +306,12 @@ header {
     -o-background-size: 50%;
     background-repeat: no-repeat;
     background-color: #1F4A7E;
+}
+
+@media(max-width:768px) {
+  header {
+    background-size: 75%;
+  }
 }
 
 header .header-content {
@@ -661,10 +673,16 @@ fieldset[disabled] .btn-primary.active {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
+    font-size: x-small;
 }
 
 .btn-xl {
-    padding: 15px 30px;
+    padding: 15px 20px;
+}
+@media(max-width:768px) {
+  .btn-xl {
+    padding: 15px 0px;
+  }
 }
 
 ::-moz-selection {
@@ -789,4 +807,18 @@ footer ul li a.active {
 
 .secondary{
     border-color: white;
+}
+
+.row{
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#support img{
+  height:100px;
+}
+@media(max-width:768px) {
+  #support img{
+    height: 50px;
+  }
 }
