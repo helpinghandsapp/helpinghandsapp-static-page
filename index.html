@@ -329,7 +329,22 @@
 
           </div>
           <div class="col-lg-5 text-right">
-            <div class="service-box">
+            <style>
+			  .videoWrapper {
+				  position: relative;
+				  padding-bottom: 56.25%; /* 16:9 */
+				  padding-top: 25px;
+				  height: 0;
+			  }
+			  .videoWrapper iframe {
+				  position: absolute;
+				  top: 0;
+				  left: 0;
+				  width: 100%;
+				  height: 100%;
+			  }
+            </style>
+            <div class="service-box videoWrapper">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/E8VzHZb_zIE?start=104" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
