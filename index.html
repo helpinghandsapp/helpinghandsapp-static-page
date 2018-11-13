@@ -83,6 +83,16 @@
 
           <!-- mailchimp pop up code  -->
           <!-- <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"bb1a6c0f75e6f04a1ef2e8ca5","lid":"d9576472f9"}) })</script> -->
+          <script type="text/javascript" src="js/instafeed.min.js"></script>
+          <script type="text/javascript">
+            var feed = new Instafeed({
+                get: 'tagged',
+                tagName: 'awesome',
+                accessToken: 'cd004927e09d4b0e916066599e1e2c76'
+            });
+            feed.run();
+        </script>
+
 
         </head>
 
@@ -226,6 +236,17 @@
             </div>
           </div>
         </div>
+
+     <script type="text/javascript">
+      var feed = new Instafeed({
+          get: 'tagged',
+          tagName: 'awesome',
+          clientId: 'YOUR_CLIENT_ID'
+      });
+      feed.run();
+      </script>
+    <div id="instafeed">
+    </div>
 
       </section>
 
