@@ -84,16 +84,6 @@
           <!-- mailchimp pop up code  -->
           <!-- <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"bb1a6c0f75e6f04a1ef2e8ca5","lid":"d9576472f9"}) })</script> -->
           <script type="text/javascript" src="js/instafeed.min.js"></script>
-          <script type="text/javascript">
-            var feed = new Instafeed({
-                get: 'tagged',
-                tagName: 'awesome',
-                accessToken: 'cd004927e09d4b0e916066599e1e2c76'
-            });
-            feed.run();
-        </script>
-
-
         </head>
 
         <!--============================================================================================-->
@@ -237,17 +227,38 @@
           </div>
         </div>
 
-     <script type="text/javascript">
-      var feed = new Instafeed({
-          get: 'tagged',
-          tagName: 'awesome',
-          clientId: 'YOUR_CLIENT_ID'
+      <script type="text/javascript">
+      var userFeed = new Instafeed({
+        get: 'user',
+        userId: '4071952930',
+        clientId: 'cd004927e09d4b0e916066599e1e2c76',
+        accessToken: '4071952930.1677ed0.0dab71088053413d80891c9098111883',
+        resolution: 'standard_resolution',
+        template: '<a href="{{link}}" title="{{caption}}" target="_blank" id="{{id}}"><img src="{{image}}"/></a>',
+        sortBy: 'most-recent',
+        limit: 10,
+        links: false
       });
-      feed.run();
+      userFeed.run();
       </script>
-    <div id="instafeed">
-    </div>
-
+      <style>
+        /*! CSS Used from: http://vinthomas.com/assets/dist/styles/master.css?v2 */
+        div,a,img{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+        a{outline:none;}
+        a img{border:none;}
+        img{-ms-interpolation-mode:bicubic;}
+        *{box-sizing:border-box;}
+        .instagram_list{height:280px;overflow:hidden;white-space:nowrap;text-align:left;position:relative;}
+        .instagram_list a{margin-right:30px;vertical-align:top;display:block;width:170px;height:210px;float:left;}
+        .instagram_list a:hover img{box-shadow:0 0 20px rgba(0,0,0,0.4);-webkit-transform:scale(1.1);transform:scale(1.1);}
+        .instagram_list img{width:170px;height:170px;display:block;margin-top:20px;border-radius:4px;transition:all 220ms ease-in-out;object-fit:cover;}
+        @media screen and (max-width:420px){
+        .instagram_list{height:210px;}
+        .instagram_list a{width:130px;height:170px;}
+        .instagram_list img{width:130px;height:130px;}
+        }
+      </style>
+        <div id="instafeed" class="instagram_list"></div>
       </section>
 
       <!--============================================================================================-->
