@@ -545,6 +545,25 @@ section.survey .overlay {
 }
 
 /*---------------------------------------------------------*/
+.brooks {
+  position: relative;
+  font-family: 'Sanchez', serif;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-style: italic;
+  &:before {
+      content: '\201C';
+      position: absolute;
+      top: 0.25em;
+      left: -0.15em;
+      color: darken($white, 7%);
+      font-size: 6em;
+      z-index: -1;
+   }
+}
+
+
+/*---------------------------------------------------------*/
 .call-to-action h2 {
     margin: 0 auto 20px;
 }
