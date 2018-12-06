@@ -187,6 +187,10 @@ td,
 th {
   padding: 0;
 }
+
+workshop{
+  background-image: #000 url(img/workshop.jpg);
+}
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *,
