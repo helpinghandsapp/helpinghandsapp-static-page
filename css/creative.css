@@ -791,7 +791,7 @@ section.contact ul.list-social li a {
   border-radius: 100%;
   color: white;
 }
-section.contact ul.list-social li.social-twitter a {
+/*section.contact ul.list-social li.social-twitter a {
   background-color: #1da1f2;
 }
 section.contact ul.list-social li.social-twitter a:hover {
@@ -808,7 +808,7 @@ section.contact ul.list-social li.email a {
 }
 section.contact ul.list-social li.email a:hover {
   background-color: #d73925;
-}
+}*/
 
 /*Footer--------------------------------------------*/
 footer {
