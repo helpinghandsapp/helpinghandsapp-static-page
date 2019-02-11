@@ -492,6 +492,55 @@ section.features .feature-item i {
     }
 }
 /*---------------------------------------------------------*/
+.workshop-panel{
+  background: transparent url(../img/workshop.jpg) no-repeat center center /cover;;
+}
+
+.fair-panel{
+  background: transparent url(../img/volunteerfair.png) no-repeat center center /cover;;
+}
+
+.mentor-panel{
+  background: transparent url(../img/mentor.png) no-repeat center center /cover;;
+}
+
+.council-panel{
+  background: transparent url(../img/council.jpg) no-repeat center center /cover;;
+}
+
+.story-panel{
+  background: transparent url(../img/sharingstory.png) no-repeat center center /cover;;
+}
+
+.entrepreneur-panel{
+  background: transparent url(../img/entrepreneur.png) no-repeat center center /cover;;
+}
+
+.tint {
+box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+color: white;
+}
+
+.tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,107,142, 0.5);
+  transition: all .3s linear;
+}
+
+.tint:hover:before { background: none; }
+
+.t2:before { background: rgba(69,178,158, 0.5); }
+.t3:before { background: rgba(214,209,142, 0.5); }
+.t4:before { background: rgba(242,186,85, 0.5); }
+.t5:before { background: rgba(242,162,36, 0.5); }
+.t6:before { background: rgba(240,112,19, 0.6); }
+/*---------------------------------------------------------*/
 
 section.survey {
   position: relative;
