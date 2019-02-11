@@ -518,6 +518,7 @@ section.features .feature-item i {
 
 .tint {
 box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+color: white;
 }
 
 .tint:before {
@@ -528,17 +529,17 @@ box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(239,164,117, 0.5);
+  background: rgba(0,107,142, 0.5);
   transition: all .3s linear;
 }
 
 .tint:hover:before { background: none; }
 
-.t2:before { background: rgba(170,93,46, 0.5); }
-.t3:before { background: rgba(244,201,173, 0.5); }
-.t4:before { background: rgba(126,67,31, 0.5); }
-.t5:before { background: rgba(247,140,74, 0.5); }
-.t6:before { background: rgba(186,112,67, 0.6); }
+.t2:before { background: rgba(69,178,158, 0.5); }
+.t3:before { background: rgba(214,209,142, 0.5); }
+.t4:before { background: rgba(242,186,85, 0.5); }
+.t5:before { background: rgba(242,162,36, 0.5); }
+.t6:before { background: rgba(240,112,19, 0.6); }
 /*---------------------------------------------------------*/
 
 section.survey {
