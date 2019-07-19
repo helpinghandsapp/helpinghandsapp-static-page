@@ -906,3 +906,17 @@ footer ul li a.active {
     height: 50px;
   }
 }
+
+.embed-container {
+position: relative; 
+padding-top: 20px;
+padding-bottom: 500px; 
+} 
+
+.embed-container iframe{ 
+position: absolute; 
+max-width: 600px; 
+height: 500px;
+width: 100%;
+transform: translate(-50%);
+}
