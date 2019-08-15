@@ -967,4 +967,7 @@ transform: translate(-50%);
   #links-button{
    width:100%;
   }
+  .links-buttons-div{
+    padding: 0px;
+  }
 }
