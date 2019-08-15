@@ -920,3 +920,56 @@ height: 500px;
 width: 100%;
 transform: translate(-50%);
 }
+
+/*Links--------------------------------*/
+
+.links{
+  margin-top:15%;
+}
+
+@media (max-width:768px){
+.links{
+  margin-top:-10%;
+ }
+}
+
+#links{
+  height: 100%;
+}
+
+@media (max-width:992px){
+#links-title{
+  text-align: center;
+ }
+}
+
+@media (max-height:736px){
+  #links{
+    height: auto;
+  }
+}
+
+#links-button-content{
+  margin:5px 5px 5px 0px; 
+  font-size: 22px; 
+  border-radius: 20px;
+  font-family: "Nunito Sans", "Serif Sans";
+}
+
+@media (min-width:992px){
+  #links-img{
+    margin-top:-60px;
+  }
+  #links-button{
+    max-width: 300px; 
+  }
+}
+
+@media (max-width:767px){
+  #links-img{
+    margin-top:60px;
+  }
+  #links-button{
+   width:100%;
+  }
+}
