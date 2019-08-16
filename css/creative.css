@@ -979,6 +979,17 @@ transform: translate(-50%);
   margin-top:15%;
 }
 
+@media (max-height:1080px){
+  .links{
+    margin-top:10%;
+   }
+  }
+
+@media (max-height:800px){
+  .links{
+    margin-top:6.5%;
+    }
+  }
 @media (max-width:768px){
 .links{
   margin-top:-10%;
@@ -1001,6 +1012,12 @@ transform: translate(-50%);
   }
 }
 
+@media (max-width:992px){
+  #links{
+    height: auto;
+  }
+}
+
 #links-button-content{
   margin:5px 5px 5px 0px; 
   font-size: 22px; 
@@ -1008,12 +1025,24 @@ transform: translate(-50%);
   font-family: "Nunito Sans", "Serif Sans";
 }
 
+@media (max-width:386px){
+  #links-button-content{
+    font-size: 18px;
+  }
+}
+
+@media (max-width:356px){
+  #links-button-content{
+    font-size: 15px;
+  }
+}
+
 @media (min-width:992px){
   #links-img{
     margin-top:-60px;
   }
   #links-button{
-    max-width: 300px; 
+    max-width: 320px; 
   }
 }
 
