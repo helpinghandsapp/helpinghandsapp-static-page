@@ -677,25 +677,24 @@ section.survey .overlay {
 }
 
 .btn-default {
-    border-color: #fff;
-    color: #222;
-    background-color: #fff;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
+  border-color: #fff;
+  color: #222;
+  background-color: #fff;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
 }
 
 
 form .btn:hover,
 .open > .dropdown-toggle.btn-default {
-    color: rgb(0,0,0);
-   
+  color: rgb(0,0,0);
 }
 
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-    background-image: none;
+  background-image: none;
 }
 
 .btn-default.disabled,
@@ -716,32 +715,33 @@ fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
-    border-color: #fff;
-    background-color: #fff;
+  border-color: #fff;
+  background-color: #fff;
 }
 
 .btn-default .badge {
-    color: #fff;
-    background-color: #222;
+  color: #fff;
+  background-color: #222;
 }
 
 .btn-primary {
-    border-color: #ffffff;
-    color: #fff;
-    background-color: #ffffff;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
+  border-color: #ffffff;
+  color: #fff;
+  background-color: #ffffff;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
 }
 
 
 .btn-seconday {
-    border-color: #F07013;
-    color: #ffffff;
-    background: linear-gradient(to bottom right, #F17014, #FFC400);
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
+
+  border-color: #F07013;
+  color: #ffffff;
+  background: linear-gradient(to bottom right, #F17014, #FFC400);
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
 }
 
 .btn-primary:hover,
@@ -750,15 +750,15 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #F07013;
-    color: #fff;
-    background-color: #F07013;
+  border-color: #F07013;
+  color: #fff;
+  background-color: #F07013;
 }
 
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    background-image: none;
+  background-image: none;
 }
 
 .btn-primary.disabled,
@@ -779,33 +779,32 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #ffffff;
-    background-color: #ffffff;
+  border-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .btn-primary .badge {
-    color: #ffffff;
-    background-color: #fff;
+  color: #ffffff;
+  background-color: #fff;
 }
 
 .btn {
-    border: 0;
-    border-radius: 300px;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 700;
-    filter: drop-shadow(1px 2px 2px rgba(0,0,0,0.16));
-    transition: 0.35s;
+  border: 0;
+  border-radius: 300px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  filter: drop-shadow(1px 2px 2px rgba(0,0,0,0.16));
+  transition: 0.35s;
 }
 
 .btn-xl {
-    padding: 15px 20px;
+  padding: 15px 20px;
 }
 @media(max-width:768px) {
-  .survey-content .btn-xl {
-    padding: 15px 5px;
-  }
+.survey-content .btn-xl {
+  padding: 15px 5px;
 }
-
+}
 ::-moz-selection {
     text-shadow: none;
     color: #fff;
@@ -971,6 +970,63 @@ max-width: 600px;
 height: 500px;
 width: 100%;
 transform: translate(-50%);
+}
+
+
+/*Links--------------------------------*/
+
+.links{
+  margin-top:15%;
+}
+
+@media (max-width:768px){
+.links{
+  margin-top:-10%;
+ }
+}
+
+#links{
+  height: 100%;
+}
+
+@media (max-width:992px){
+#links-title{
+  text-align: center;
+ }
+}
+
+@media (max-height:736px){
+  #links{
+    height: auto;
+  }
+}
+
+#links-button-content{
+  margin:5px 5px 5px 0px; 
+  font-size: 22px; 
+  border-radius: 20px;
+  font-family: "Nunito Sans", "Serif Sans";
+}
+
+@media (min-width:992px){
+  #links-img{
+    margin-top:-60px;
+  }
+  #links-button{
+    max-width: 300px; 
+  }
+}
+
+@media (max-width:767px){
+  #links-img{
+    margin-top:60px;
+  }
+  #links-button{
+   width:100%;
+  }
+  .links-buttons-div{
+    padding: 0px;
+  }
 }
 
 .workshop-flex-container{
