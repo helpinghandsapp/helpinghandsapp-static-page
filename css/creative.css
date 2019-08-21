@@ -949,11 +949,13 @@ footer ul li a.active {
 }
 
 #support img{
-  height:100px;
+  height:auto;
+  max-width: 450px
 }
 @media(max-width:768px) {
   #support img{
-    height: 50px;
+    max-width: 300px;
+    max-height: 150px
   }
 }
 
@@ -1587,4 +1589,15 @@ transform: translate(-50%);
 
 .instagram-handle:hover{
 color: #0A5F93
+}
+
+#home-partners{
+  padding-bottom: 200px
+}
+
+@media (max-width:992px){
+  #home-partners{
+    padding-bottom: 50px
+  }
+  
 }
