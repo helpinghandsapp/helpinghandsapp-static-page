@@ -90,7 +90,7 @@ p.withbackground {
 }
 
 .bg-secondary {
-    background-color: white;
+    background: rgb(237, 243, 250);
     color: #1B4B7A;
 }
 
