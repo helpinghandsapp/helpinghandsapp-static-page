@@ -90,7 +90,7 @@ p.withbackground {
 }
 
 .bg-secondary {
-    background-color: white;
+    background: rgb(237, 243, 250);
     color: #1B4B7A;
 }
 
@@ -439,7 +439,7 @@ section.features .feature-item {
 }
 
 .device-container{
-  max-width:300px;
+  max-width:310px;
 }
 
 section.features .feature-item {
@@ -949,11 +949,13 @@ footer ul li a.active {
 }
 
 #support img{
-  height:100px;
+  height:auto;
+  max-width: 450px
 }
 @media(max-width:768px) {
   #support img{
-    height: 50px;
+    max-width: 300px;
+    max-height: 150px
   }
 }
 
@@ -1616,4 +1618,15 @@ transform: translate(-50%);
 
 .instagram-handle:hover{
 color: #0A5F93
+}
+
+#home-partners{
+  padding-bottom: 200px
+}
+
+@media (max-width:992px){
+  #home-partners{
+    padding-bottom: 50px
+  }
+  
 }
