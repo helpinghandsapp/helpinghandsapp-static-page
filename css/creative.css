@@ -1538,23 +1538,37 @@ transform: translate(-50%);
   .more-than-an-app-mobile{
     display: none
   }
+  #app-img{
+    margin-top: 20px;
+    max-height: 400px;
+    width: auto;
+  }
 }
 
+@media (max-width:1356px){
+  #app-img{
+    margin-top: 0px;
+    max-height: 300px;
+  }
+}
 @media (max-width:992px){
   .overlay-app{
     height: 470px;
     margin-top:-471px;
   }
+  #app-img{
+    margin-top: 20px;
+    max-height: 400px;
+    width: auto;
+  }
   .more-than-an-app-desktop{
     display: none
   }
-
 }
 @media (max-width:768px){
   #app-img{
     margin-top: 20px;
-    height: 130px;
-    width: auto;
+    width: 100%;
   }
 }
 @media (max-width:580px){
@@ -1568,10 +1582,11 @@ transform: translate(-50%);
     margin-top: -725px;
     height: 720px;
     margin-left:-2px; margin-right:-2px;
-
+    padding-top: 77px;
   }
   #app-img{
-    height: 250px;
+    width: 100%;
+    height: auto;
   }
 }
 
