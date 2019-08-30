@@ -329,7 +329,7 @@
                 </div>
   
                   <textarea placeholder="Message" name="Message" onkeyup="adjust_textarea(this)"></textarea>
-                  <input id="button" type="submit" value="Send" class="btn btn-seconday btn-xl" style="text-align: center"/>
+                  <input id="button" type="submit" value="Send" class="btn btn-seconday btn-xl" style="text-align: center"  onclick='mixpanel.track("Workshop Page Submit");'/>
                 </form>
               </div>
             </div>
