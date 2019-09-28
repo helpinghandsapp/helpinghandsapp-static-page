@@ -1213,6 +1213,82 @@ transform: translate(-50%);
 }
 
 
+.volunteer-card{
+  max-width: 460px;
+  background: #ffffff;
+  border-radius: 20px;
+  margin:auto;
+  margin-bottom: 15px;
+}
+
+/*Volunteer Page*************************************************/
+.volunteer-card{
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 20px;
+  margin:auto;
+  margin-bottom: 15px;
+}
+
+
+#volunteer-icon{
+  margin-top:-20px
+}
+
+@media (max-width:768px){
+  #volunteer-icon{
+    margin-top:0px
+  }
+}
+#volunteer-img{
+  transition: 0.3s;
+  height: 310px;
+  width:310px;
+  margin-top: -5px;
+}
+
+.volunteer-img-containter{
+  padding: 30px;
+}
+
+@media (max-width:400px){
+  #volunteer-img{
+    height: 250px;
+    width:250px;
+  }
+  .volunteer-img-containter{
+    padding: 10px;
+  }
+}
+
+@media (max-width:360px){
+.volunteer-img-containter{
+  padding: 15px;
+ }
+}
+
+#volunteer-img:hover{
+  transform: scale(0.98)
+}
+
+#volunteer-title{
+  font-size:30px;
+  font-weight: 800;
+  color: #000000; 
+  margin-left:25px; 
+  margin-top: 0px;
+}
+
+@media (max-width:992px){
+  #volunteer-title{
+    margin:auto;
+    text-align: center;
+    font-size:35px;
+    margin-bottom: 20px;
+  }
+}
+
+
 @media (min-width:992px){
   .help-containter{
     margin-top: -20px;
