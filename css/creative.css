@@ -1199,6 +1199,15 @@ transform: translate(-50%);
   max-width: 500px;
 }
 
+.recently-flex-item-forbes{
+  margin-top: 30px;
+  background-color: white;
+  padding: 25px ;
+  border-radius: 40px;
+  box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16) ;
+  max-width: 1200px;
+}
+
 @media (max-width:360px){
   .recently-flex-container{
     max-width: none;
@@ -1274,8 +1283,8 @@ transform: translate(-50%);
 #volunteer-title{
   font-size:30px;
   font-weight: 800;
-  color: #000000; 
-  margin-left:25px; 
+  color: #000000;
+  margin-left:25px;
   margin-top: 0px;
 }
 
