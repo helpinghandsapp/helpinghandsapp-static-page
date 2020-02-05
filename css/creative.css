@@ -473,6 +473,79 @@ section.features .feature-item i {
     margin-bottom: 0;
 }
 /*-------------------------------------------------*/
+/*-------------------------------------------------*/
+
+.team-item {
+  width: 225px;
+  height: 340px;
+  border-radius: 28px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2) ;
+  background: white;
+  margin-left: 20px;
+  padding-right: 15px;
+  margin: 35px;
+}
+
+.img-square{
+  height:225px;
+  width:225px;
+  border-radius: 25px; 
+  box-shadow: 0px 2px 6px  rgba(0, 0, 0, 0.16); 
+}
+
+
+#team-name{
+  color:black;
+  padding-left: 14px; 
+  font-size: 21px; 
+  margin-top:10px;
+}
+
+#position-title{
+  color:black;
+  margin-top: -8px;
+  padding-left: 14px; 
+  font-size:15px;
+  font-weight: 500;
+}
+
+.about-us{
+  font-family: 'Roboto', sans-serif;
+  color:black; 
+  font-size: 12px;
+  font-weight: 100;
+  padding-left: 14px;
+  line-height: 1.225;
+}
+
+@media (max-width:992px){
+  #team2{
+  margin-top: 70px;
+  }
+}
+
+@media (max-width:600px){
+  #team2{
+  margin-top: inherit
+  }
+}
+
+.job-item {
+  width: 180px;
+  height: 35px;
+  border-radius: 35px;
+  box-shadow: 3px 3px 9px #D5D5D5 ;
+  background: linear-gradient(to bottom right, #F17014, #FFC400);
+  padding-top: 5px;
+  margin: 15px;
+  color: white;
+  font-weight: 650;
+    
+}
+.job-text {
+    color: white;
+    text-align: center;
+}
 
 .portfolio-box {
     display: block;
@@ -1199,6 +1272,15 @@ transform: translate(-50%);
   max-width: 500px;
 }
 
+.recently-flex-item-forbes{
+  margin-top: 30px;
+  background-color: white;
+  padding: 25px ;
+  border-radius: 40px;
+  box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16) ;
+  max-width: 1200px;
+}
+
 @media (max-width:360px){
   .recently-flex-container{
     max-width: none;
@@ -1274,8 +1356,8 @@ transform: translate(-50%);
 #volunteer-title{
   font-size:30px;
   font-weight: 800;
-  color: #000000; 
-  margin-left:25px; 
+  color: #000000;
+  margin-left:25px;
   margin-top: 0px;
 }
 
