@@ -624,6 +624,7 @@ section.features .feature-item i {
 /* sponsors section */
 .sponsor-div {
   width: 100%;
+  padding: 5rem;
 }
 .sponsors {
   width: 90%;
@@ -632,7 +633,7 @@ section.features .feature-item i {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0 9rem 0;
+  padding: 2rem 0 4rem 0;
 
 }
 
@@ -1075,12 +1076,6 @@ textarea {
 }
 
 /*contact-------------------------------------------*/
-
-@media (max-width:768px) {
-  #scoial-media-embed {
-    padding-top: 0%;
-  }
-}
 
 .social-media-icon {
   transition: 0.3s;
