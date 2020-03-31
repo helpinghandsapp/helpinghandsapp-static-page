@@ -480,6 +480,12 @@ section.features .feature-item i {
   border-radius: 28px 28px 0 0; 
 }
 
+.team-h3 {
+  color: black;
+  font-weight: bold;
+  border-bottom: 2px black solid;
+}
+
 .head-team {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
