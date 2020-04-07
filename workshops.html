@@ -297,30 +297,30 @@ mixpanel.init("df883a7042534c5c54bebb05c9673f84");</script><!-- end Mixpanel -->
 
                   <div lass="row">
                   <div class="col-sm-4 col-xs-6 checkbox-options" >
-                <input type="checkbox" id="option-1" name="Interests" value="Animal">
+                <input type="checkbox" id="option-1" name="Interests" value="Animal" onclick='mixpanel.track("Checkbox Animal");'>
                    <label for="option-1" id= "checkbox-text">Animal</label>
                   </div>
                   <div class="col-sm-4 col-xs-6 checkbox-options">
-                   <input type="checkbox" id="option-2" name="Interests" value="Arts & Culture">
+                   <input type="checkbox" id="option-2" name="Interests" value="Arts & Culture" onclick='mixpanel.track("Checkbox Arts");'>
                    <label for="option-2" id= "checkbox-text">Arts & Culture</label>
                   </div>
                   <div class="col-sm-4 col-xs-6 checkbox-options">
-                    <input type="checkbox" id="option-3" name="Interests" value="Advocacy">
+                    <input type="checkbox" id="option-3" name="Interests" value="Advocacy" onclick='mixpanel.track("Checkbox Advocacy");'>
                     <label for="option-3" id= "checkbox-text">Advocacy</label>
                   </div>
                 </div>
 
                   <div lass="row">
                   <div class="col-sm-4 col-xs-6 checkbox-options" >
-                <input type="checkbox" id="option-4" name="Interests" value="Crisis Support">
+                <input type="checkbox" id="option-4" name="Interests" value="Crisis Support" onclick='mixpanel.track("Checkbox Crisis");'>
                    <label for="option-4" id= "checkbox-text">Crisis Support</label>
                   </div>
                   <div class="col-sm-4 col-xs-6 checkbox-options">
-                   <input type="checkbox" id="option-5" name="Interests" value="Community">
+                   <input type="checkbox" id="option-5" name="Interests" value="Community" onclick='mixpanel.track("Checkbox Community");'>
                    <label for="option-5" id= "checkbox-text">Community</label>
                   </div>
                   <div class="col-sm-4 col-xs-6 checkbox-options">
-                    <input type="checkbox" id="option-9" name="Interests" value="Other">
+                    <input type="checkbox" id="option-9" name="Interests" value="Other" onclick='mixpanel.track("Checkbox Other");'>
                     <label for="option-6" id= "checkbox-text">Other</label>
                   </div>
                 </div>
