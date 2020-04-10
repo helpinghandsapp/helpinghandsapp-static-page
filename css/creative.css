@@ -1018,6 +1018,9 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-xl {
   padding: 15px 20px;
+  width: calc(40% + 22vw);
+  margin: 0 auto;
+  max-width: 400px;
 }
 
 @media(max-width:768px) {
@@ -1437,16 +1440,15 @@ footer ul li a.active {
 
 .recently-flex-container {
   background: transparent;
-  justify-content: space-evenly;
-  flex-direction: row;
   margin: auto;
   max-width: 1200px;
   margin-bottom: 100px;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
   padding: 15px;
-  border:2px red solid;
 }
 
 .recently-flex-item {
@@ -1455,9 +1457,9 @@ footer ul li a.active {
   padding: 25px;
   border-radius: 40px;
   box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
-  /* max-width: 500px; */
+  max-width: 500px;
+  min-width: 250px;
   width: calc(100% / 2 - 2rem);
-  border: 2rem green solid;
 }
 
 .recently-flex-item-forbes {
@@ -1466,21 +1468,40 @@ footer ul li a.active {
   padding: 25px;
   border-radius: 40px;
   box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
-  /* max-width: 1200px; */
+  max-width: 1200px;
+  min-width: 250px;
   width: calc(100% / 2 - 2rem);
-  border: 2rem black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-container {
-  width: 100%;
+  width: 90%;
   display: block;
-  border: 2px solid black;
   margin: 0 auto;
+  
 }
 
 .exciting-img {
   width: 100%;
   display: block;
+}
+
+.exciting-img2 {
+  width: calc(100% + 25vw); 
+  max-width: 700px;
+  margin: 2rem 0 2rem 0;
+  display: block;
+  position: relative;
+  transform: scale(1.5);
+  transform: translate(-4%, 0%);
+}
+
+.cannexusP {
+  font-style: italic;
+  font-weight: 700;
 }
 
 @media (max-width:360px) {
