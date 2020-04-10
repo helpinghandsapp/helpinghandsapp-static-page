@@ -516,7 +516,7 @@ section.features .feature-item i {
   font-weight: bold;
   font-size: 4rem;
   text-align: center;
-  /* border-bottom: 2px black solid; */
+  padding-top: 3rem;
 }
 
 .head-team {
@@ -1443,9 +1443,10 @@ footer ul li a.active {
   max-width: 1200px;
   margin-bottom: 100px;
   text-align: center;
-  flex-wrap: wrap;
   display: flex;
+  flex-wrap: wrap;
   padding: 15px;
+  border:2px red solid;
 }
 
 .recently-flex-item {
@@ -1454,7 +1455,9 @@ footer ul li a.active {
   padding: 25px;
   border-radius: 40px;
   box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
-  max-width: 500px;
+  /* max-width: 500px; */
+  width: calc(100% / 2 - 2rem);
+  border: 2rem green solid;
 }
 
 .recently-flex-item-forbes {
@@ -1463,7 +1466,21 @@ footer ul li a.active {
   padding: 25px;
   border-radius: 40px;
   box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  width: calc(100% / 2 - 2rem);
+  border: 2rem black solid;
+}
+
+.img-container {
+  width: 100%;
+  display: block;
+  border: 2px solid black;
+  margin: 0 auto;
+}
+
+.exciting-img {
+  width: 100%;
+  display: block;
 }
 
 @media (max-width:360px) {
