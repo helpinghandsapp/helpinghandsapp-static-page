@@ -1618,12 +1618,34 @@ footer ul li a.active {
   }
 }
 
-
-@media (min-width:992px) {
-  .help-containter {
-    margin-top: -20px;
-  }
+/* HELP SECTION */
+.help-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.help-section-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.help-content {
+  width: 100%;
+}
+
+#help-button a {
+  /* margin:5px 5px 5px 0px; */
+  font-size: 22px;
+  border-radius: 20px;
+  margin: 0.5rem auto
+}
+
+.help-img {
+  max-height: 500px;
+}
+
 
 @media (max-width:1392px) {
   .help-containter {
@@ -1632,12 +1654,13 @@ footer ul li a.active {
 }
 
 @media (max-width:1200px) {
-  .help-containter {
-    margin-top: 0px;
+  #help {
+    margin-bottom: 90px;
   }
 
-  .help-img {
-    display: none;
+  .help-content {
+    margin-right: 20%;
+    margin-left: auto;
   }
 }
 
@@ -1645,9 +1668,42 @@ footer ul li a.active {
   .help-containter {
     margin-top: 100px;
   }
+
+  .helpH2 {
+    text-align: center;
+  }
+
+  .app-info-card-description {
+    text-align: center;
+  }
+
+  .help-content {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .center-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    margin: 0 auto;
+  }
 }
 
+@media (min-width:992px) {
+  .help-containter {
+    margin-top: -20px;
+  }
 
+  #help-img {
+    margin-top: -90px;
+  }
+  
+  #help-button {
+    max-width: 250px;
+  }
+}
 
 @media (max-width:767px) {
   .help-containter {
@@ -1660,6 +1716,7 @@ footer ul li a.active {
 
   #help-button {
     width: 100%;
+    min-width: 250px;
   }
 }
 
@@ -1669,16 +1726,26 @@ footer ul li a.active {
   }
 }
 
-
-@media (min-width:992px) {
-  #help-img {
-    margin-top: -90px;
-  }
-
-  #help-button {
-    max-width: 250px;
+@media (max-width: 370px) {
+  .help-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
+
+
+/* @media (max-width:1200px) {
+  .help-containter {
+    margin-top: 0px;
+  }
+
+  .help-img {
+    display: none;
+  }
+} */
+
 
 .help-cont-logo {
   max-height: 75px;
@@ -1686,19 +1753,7 @@ footer ul li a.active {
   padding-right: 10px;
 }
 
-@media (min-width:1200px) {
-  #help {
-    margin-bottom: 70px;
-  }
-}
-
-@media (max-width:1200px) {
-  #help {
-    margin-bottom: 90px;
-  }
-}
-
-
+/* workshop section */
 .workshop-card{
   max-width: 600px;
   min-height: 125px; 
