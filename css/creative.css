@@ -129,7 +129,7 @@ aside {
 
 
 .navbar-default {
-  /* padding: 7.5px; */
+  padding: 7.5px;
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);
   -webkit-transition: all 0.35s;
@@ -346,12 +346,10 @@ header .header-content .header-content-inner p {
     margin-top: 0px;
   }
 }
-
 @media (max-width:700px) {
   header #landing-header {
     margin-top: 0px;
   }
-
   header .landing-pg-flex-container {
     padding-top: 27%;
   }
@@ -373,6 +371,28 @@ header .header-content .header-content-inner p {
     padding-top: 50%;
   }
 }
+
+
+
+/* COVID19 RESPONSE SECTION STYLING */
+
+.covid-img {
+  display: block;
+  width: 100%;
+}
+
+.img-padding {
+  margin: 1rem auto;
+}
+
+.covid-button {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+/* END COVID19 RESPONSE SECTION STYLING */
 
 /**/
 section.features .section-heading {
@@ -527,7 +547,7 @@ section.features .feature-item i {
   font-weight: bold;
   font-size: 4rem;
   text-align: center;
-  /* border-bottom: 2px black solid; */
+  padding-top: 3rem;
 }
 
 .head-team {
@@ -1030,6 +1050,9 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-xl {
   padding: 15px 20px;
+  width: calc(40% + 20vw);
+  margin: 0 auto;
+  max-width: 400px;
 }
 
 @media(max-width:768px) {
@@ -1447,16 +1470,24 @@ footer ul li a.active {
 
 }
 
+#forbes {
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .recently-flex-container {
   background: transparent;
-  justify-content: space-evenly;
-  flex-direction: row;
   margin: auto;
   max-width: 1200px;
   margin-bottom: 100px;
   text-align: center;
-  flex-wrap: wrap;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
   padding: 15px;
 }
 
@@ -1467,6 +1498,13 @@ footer ul li a.active {
   border-radius: 40px;
   box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
   max-width: 500px;
+  min-width: 280px;
+  width: calc(100% / 2);
+}
+
+.single-flex-item {
+  width: 90%;
+  margin: 2rem auto;
 }
 
 .recently-flex-item-forbes {
@@ -1476,6 +1514,38 @@ footer ul li a.active {
   border-radius: 40px;
   box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
   max-width: 1200px;
+  min-width: 280px;
+  width: calc(100% / 2 - 2rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.exciting-img {
+  width: 100%;
+  display: block;
+}
+
+.exciting-img2 {
+  width: calc(100% + 24vw);
+  max-width: 700px;
+  margin: 2rem 0 2rem 0;
+  display: block;
+  position: relative;
+  transform: scale(1.5);
+  transform: translate(-4%, 0%);
+}
+
+.cannexusP {
+  font-style: italic;
+  font-weight: 700;
 }
 
 @media (max-width:360px) {
@@ -1569,12 +1639,34 @@ footer ul li a.active {
   }
 }
 
-
-@media (min-width:992px) {
-  .help-containter {
-    margin-top: -20px;
-  }
+/* HELP SECTION */
+.help-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.help-section-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.help-content {
+  width: 100%;
+}
+
+#help-button a {
+  /* margin:5px 5px 5px 0px; */
+  font-size: 22px;
+  border-radius: 20px;
+  margin: 0.5rem auto
+}
+
+.help-img {
+  max-height: 500px;
+}
+
 
 @media (max-width:1392px) {
   .help-containter {
@@ -1583,12 +1675,13 @@ footer ul li a.active {
 }
 
 @media (max-width:1200px) {
-  .help-containter {
-    margin-top: 0px;
+  #help {
+    margin-bottom: 90px;
   }
 
-  .help-img {
-    display: none;
+  .help-content {
+    margin-right: 20%;
+    margin-left: auto;
   }
 }
 
@@ -1596,9 +1689,42 @@ footer ul li a.active {
   .help-containter {
     margin-top: 100px;
   }
+
+  .helpH2 {
+    text-align: center;
+  }
+
+  .app-info-card-description {
+    text-align: center;
+  }
+
+  .help-content {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .center-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    margin: 0 auto;
+  }
 }
 
+@media (min-width:992px) {
+  .help-containter {
+    margin-top: -20px;
+  }
 
+  #help-img {
+    margin-top: -90px;
+  }
+
+  #help-button {
+    max-width: 250px;
+  }
+}
 
 @media (max-width:767px) {
   .help-containter {
@@ -1611,6 +1737,7 @@ footer ul li a.active {
 
   #help-button {
     width: 100%;
+    min-width: 250px;
   }
 }
 
@@ -1620,16 +1747,25 @@ footer ul li a.active {
   }
 }
 
-
-@media (min-width:992px) {
-  #help-img {
-    margin-top: -90px;
-  }
-
-  #help-button {
-    max-width: 250px;
+@media (max-width: 370px) {
+  .help-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
+
+
+/* @media (max-width:1200px) {
+  .help-containter {
+    margin-top: 0px;
+  }
+  .help-img {
+    display: none;
+  }
+} */
+
 
 .help-cont-logo {
   max-height: 75px;
@@ -1637,19 +1773,7 @@ footer ul li a.active {
   padding-right: 10px;
 }
 
-@media (min-width:1200px) {
-  #help {
-    margin-bottom: 70px;
-  }
-}
-
-@media (max-width:1200px) {
-  #help {
-    margin-bottom: 90px;
-  }
-}
-
-
+/* workshop section */
 .workshop-card {
   max-width: 600px;
   min-height: 125px;
@@ -2181,6 +2305,7 @@ img {
 }
 
 .instagram-handle:hover {
+
   color: #0A5F93
 }
 
@@ -2194,3 +2319,6 @@ img {
   }
 
 }
+
+© 2020 GitHub,
+Inc. Terms Privacy Security Status Help
