@@ -1486,6 +1486,11 @@ footer ul li a.active {
   width: calc(100% / 2 - 2rem);
 }
 
+.single-flex-item {
+  width: 90%;
+  margin: 2rem auto;
+}
+
 .recently-flex-item-forbes {
   margin-top: 30px;
   background-color: white;
