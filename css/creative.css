@@ -1619,13 +1619,18 @@ footer ul li a.active {
   font-weight: 700;
 }
 
-@media (max-width:360px) {
+@media (max-width:386px) {
   .recently-flex-container {
     max-width: none;
+    width: 100%;
   }
 }
 
 @media (max-width:360px) {
+  .recently-flex-container {
+    max-width: none;
+  }
+
   .workshop-flex-container {
     min-width: auto;
     max-height: none;
