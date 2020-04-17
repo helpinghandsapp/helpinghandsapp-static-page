@@ -266,6 +266,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5rem 0;
 }
 
 .display-flex-flexwrap {
@@ -277,6 +278,7 @@ header {
 
 .landing-header {
   margin-top: 17%;
+
 }
 
 @media (max-width: 1319px) {
@@ -516,7 +518,6 @@ section.features .section-heading p {
 
   #main-title {
     font-size: 45px;
-    margin-top: 60px;
     margin-bottom: 5px;
   }
 }
@@ -524,7 +525,6 @@ section.features .section-heading p {
 @media (max-width:991px) {
   #main-title {
     font-size: 40px;
-    margin-top: 30px;
   }
 }
 
@@ -1604,14 +1604,11 @@ footer ul li a.active {
 }
 
 .exciting-img2 {
-  width: calc(100% + 24vw);
+  width: 100%;
   max-width: 700px;
   margin: 2rem 0 2rem 0;
   display: block;
   position: relative;
-  object-fit: cover;
-  transform: scale(1.5);
-  transform: translate(-4%, 0%);
 }
 
 .cannexusP {
@@ -1727,22 +1724,36 @@ footer ul li a.active {
   margin-top: -10px;
   font-weight: 300;
   font-size: 17px;
-  text-align: center;
 }
 
 .help-section {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 95%;
 }
 
 .help-section-content {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .help-content {
+  width: 900%;
+}
+
+#help-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  margin: 1rem;
+  height: 75%;
+}
+
+#help-button {
   width: 100%;
 }
 
@@ -1770,7 +1781,6 @@ footer ul li a.active {
   }
 
   .help-content {
-    margin-right: 20%;
     margin-left: auto;
   }
 }
@@ -1873,22 +1883,16 @@ footer ul li a.active {
   }
 }
 
-
-/* @media (max-width:1200px) {
-  .help-containter {
-    margin-top: 0px;
-  }
-  .help-img {
-    display: none;
-  }
-} */
-
-
 .help-cont-logo {
   max-height: 75px;
   padding-left: 10px;
   padding-right: 10px;
 }
+
+/* mission statement section */
+.missionStyle {
+padding: 2rem 0;
+} 
 
 /* workshop section */
 .workshop-card {
