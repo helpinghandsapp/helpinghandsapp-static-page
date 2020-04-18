@@ -1764,7 +1764,7 @@ footer ul li a.active {
   margin: 0.5rem auto
 }
 
-.help-img {
+.help-img2 {
   max-height: 500px;
 }
 
@@ -1785,7 +1785,22 @@ footer ul li a.active {
   }
 }
 
+@media (max-width: 1093px) {
+  .help-img2 {
+    margin-left: -7rem;
+  }
+}
+
 @media (max-width:991px) {
+  .help-img2 {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .helpP {
+    text-align: center;
+  }
+
   .help-containter {
     margin-top: 100px;
   }
@@ -1891,8 +1906,8 @@ footer ul li a.active {
 
 /* mission statement section */
 .missionStyle {
-padding: 4rem 0;
-} 
+  padding: 4rem 0;
+}
 
 /* workshop section */
 .workshop-card {
