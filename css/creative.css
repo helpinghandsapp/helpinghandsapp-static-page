@@ -461,6 +461,20 @@ header .header-content .header-content-inner p {
 
 /* COVID INFO FEATURE STYLING */
 
+.covid-feature-section {
+  margin: 8rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.covid-feater-mobile-instr {
+  text-align: center;
+  margin-bottom: -12rem;
+  opacity: 0;
+}
+
 .single-item {
   margin: 12rem auto;
   width: 50vw;
@@ -471,24 +485,25 @@ header .header-content .header-content-inner p {
 
 @media (max-width:899px) {
   .single-item {
-    width: 80vw;
+    width: 85vw;
   }
 }
 
-@media (max-width:600px) {
+@media (max-width: 425px) {
+  .covid-feater-mobile-instr {
+    opacity: 1;
+  }
+
   .single-item {
-    width: 98vw;
+    width: 95vw;
   }
 }
 
-@media (max-width:400px) {
-  .single-item {
-    width: 100vw;
-  }
-}
 
 .covid-feature-slides {
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
+  padding: 2%;
   display: block;
 }
 
