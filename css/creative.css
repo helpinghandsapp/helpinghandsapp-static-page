@@ -526,6 +526,10 @@ header .header-content .header-content-inner p {
   margin-bottom: 3rem;
 }
 
+.covid-link2:hover {
+  color: black;
+}
+
 .covid-feature-section {
   margin: 5rem auto 1rem auto;
   display: flex;
