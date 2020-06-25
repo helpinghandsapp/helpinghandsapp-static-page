@@ -462,7 +462,7 @@ header .header-content .header-content-inner p {
 /* COVID INFO FEATURE STYLING */
 
 .covid-feature-section {
-  margin: 8rem auto;
+  margin: 8rem auto 1rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -471,12 +471,12 @@ header .header-content .header-content-inner p {
 
 .covid-feater-mobile-instr {
   text-align: center;
-  margin-bottom: -12rem;
+  margin-bottom: -11rem;
   opacity: 0;
 }
 
 .single-item {
-  margin: 12rem auto;
+  margin: 10rem auto;
   width: 50vw;
   display: flex;
   align-items: center;
