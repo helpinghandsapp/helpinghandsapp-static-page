@@ -461,8 +461,33 @@ header .header-content .header-content-inner p {
 
 /* COVID INFO FEATURE STYLING */
 
+.covid-section {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.covid-resource-info {
+  text-align: center;
+  margin: 0.25em auto;
+}
+
+.covid-intro,
+.covid-info {
+  margin: 2rem 2rem;
+}
+
+.covid-intro {
+  color: white;
+}
+
+.covid-link {
+  margin-bottom: 3rem;
+}
+
 .covid-feature-section {
-  margin: 8rem auto 1rem auto;
+  margin: 5rem auto 1rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -476,7 +501,7 @@ header .header-content .header-content-inner p {
 }
 
 .single-item {
-  margin: 10rem auto;
+  margin: 5rem auto;
   width: 50vw;
   display: flex;
   align-items: center;
