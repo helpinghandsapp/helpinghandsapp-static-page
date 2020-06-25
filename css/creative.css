@@ -458,6 +458,43 @@ header .header-content .header-content-inner p {
 
 /* END COVID19 RESPONSE SECTION STYLING */
 
+
+/* COVID INFO FEATURE STYLING */
+
+.single-item {
+  margin: 12rem auto;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width:899px) {
+  .single-item {
+    width: 80vw;
+  }
+}
+
+@media (max-width:600px) {
+  .single-item {
+    width: 98vw;
+  }
+}
+
+@media (max-width:400px) {
+  .single-item {
+    width: 100vw;
+  }
+}
+
+.covid-feature-slides {
+  width: 100%;
+  display: block;
+}
+
+
+/* END COVID INFO FEATURE STYLING */
+
 /**/
 section.features .section-heading {
   margin-bottom: 0px;
