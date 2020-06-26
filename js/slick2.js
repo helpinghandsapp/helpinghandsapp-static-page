@@ -1,6 +1,10 @@
 
 
+// slick.css library
+
 $(document).ready(function(){
+  $('.single-item').slick();
+  
   $('.responsive').slick({
     dots: true,
     infinite: false,
@@ -37,3 +41,4 @@ $(document).ready(function(){
     ]
   });
 });
+

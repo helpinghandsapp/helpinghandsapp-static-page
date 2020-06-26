@@ -504,6 +504,17 @@ header .header-content .header-content-inner p {
   align-items: center;
 }
 
+#the-canvas {
+  border: 1px solid black;
+  direction: ltr;
+}
+
+.pdfViewer {
+  width: 70vw;
+  height: 60vh;
+}
+
+
 .covid-resource-info {
   text-align: center;
   margin: 0.25em auto;
@@ -537,6 +548,31 @@ header .header-content .header-content-inner p {
   justify-content: center;
   align-items: center;
 }
+
+.single-item {
+  margin: 5rem auto;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width:899px) {
+  .single-item {
+    width: 85vw;
+  }
+}
+
+@media (max-width: 425px) {
+  .covid-feater-mobile-instr {
+    opacity: 1;
+  }
+
+  .single-item {
+    width: 95vw;
+  }
+}
+
 
 .responsive {
   margin: 5rem auto;
