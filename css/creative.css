@@ -378,6 +378,42 @@ header .header-content .header-content-inner p {
 
 /* COVID19 RESPONSE SECTION STYLING */
 
+.covid-bar {
+  padding: 0.05rem;
+  width: 100vw;
+  text-align: center;
+  color: white;
+  background: red;
+  position: absolute;
+  top: 6rem;
+}
+
+.covid-bar a {
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.covid-bar a:hover {
+  color: black;
+}
+
+@media (max-width: 992px) {
+  .covid-bar {
+    top: 10rem;
+    left: 0;
+    width: 150px;
+    padding: 1rem;
+    opacity: 0.5;
+    z-index: 1500;
+    font-size: x-small;
+  }
+
+  .covid-bar:hover {
+    opacity: 1;
+  }
+}
+
 #covid {
   padding: 5rem 0 8rem 0;
 }
@@ -457,6 +493,135 @@ header .header-content .header-content-inner p {
 }
 
 /* END COVID19 RESPONSE SECTION STYLING */
+
+
+/* COVID INFO FEATURE STYLING */
+
+.covid-section {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#the-canvas {
+  border: 1px solid black;
+  direction: ltr;
+}
+
+.pdfViewer {
+  width: 70vw;
+  height: 60vh;
+}
+
+
+.covid-resource-info {
+  text-align: center;
+  margin: 0.25em auto;
+}
+
+.covid-intro,
+.covid-info {
+  margin: 2rem 2rem;
+}
+
+.covid-intro {
+  color: white;
+}
+
+.covid-link1 {
+  color: white;
+}
+
+.covid-link {
+  margin-bottom: 3rem;
+}
+
+.covid-link2:hover {
+  color: black;
+}
+
+.covid-feature-section {
+  margin: 1rem auto 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-item {
+  margin: 5rem auto;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width:899px) {
+  .single-item {
+    width: 85vw;
+  }
+}
+
+@media (max-width: 425px) {
+  .covid-feater-mobile-instr {
+    opacity: 1;
+  }
+
+  .single-item {
+    width: 95vw;
+  }
+}
+
+
+.responsive {
+  margin: 5rem auto;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width:899px) {
+  .responsive {
+    width: 85vw;
+  }
+}
+
+@media (max-width:595px) {
+  .responsive {
+    height:255px;
+  }
+}
+
+@media (max-width: 475px) {
+  .responsive {
+    height: 420px;
+  }
+}
+
+@media (max-width: 410px) {
+  .responsive {
+    height: 400px;
+  }
+}
+
+@media (max-width: 398px) {
+  .responsive {
+    height: 380px;
+  }
+}
+
+
+.covid-feature-slides {
+  width: 95%;
+  margin: 0 auto;
+  padding: 2%;
+  display: block;
+}
+
+
+/* END COVID INFO FEATURE STYLING */
 
 /**/
 section.features .section-heading {

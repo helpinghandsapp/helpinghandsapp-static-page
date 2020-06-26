@@ -20,6 +20,7 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700,800,900&display=swap" rel="stylesheet" type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" type='text/css'>
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 
   <!-- Plugin CSS -->
   <link rel="stylesheet" href="css/animate.min.css" type="text/css">
@@ -32,6 +33,11 @@
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
+
+  <!-- add slick.css -->
+  <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css"/>
+
+  <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css"/>
 
   <!-- start Mixpanel -->
   <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
@@ -114,6 +120,9 @@
                     <a class="page-scroll" href="#whats-new">What's new</a>
                   </li> -->
                   <li>
+                    <a href="covid19.html">Covid Response</a>
+                  </li>
+                  <li>
                     <a href="team.html">Team</a>
                   </li>
                   <li>
@@ -139,7 +148,12 @@
           </nav>
 
         <!--============================================================================================-->
+        
         <header>
+          <div class="covid-bar">
+            <h4><a href="./covid19.html">Click Here</a> For Our Response to Covid and Black Lives Matter</h4>
+          </div>
+
             <div class="landing-pg-flex-container display-flex-flexwrap">
 
               <div class= "image-container">
@@ -171,36 +185,97 @@
         </header>
       -->
 
-      <!--============================================================================================-->
-      <div id="covid" style="background:linear-gradient(to bottom left, #2BAAED, #0A5F93);">
-        <div class="text-center" style=" margin-top: -20px; ">
-          <div class="text-center">
-            <h2 class="covid-H2" id="main-title" style="font-size:45px; color: white;">Our COVID-19 Response</h2>
-          </div>
+      <!--============================================================================================-->        
 
-          <div class="text-center covid-grid wrapper">
-            <div class="covid-grid-item">
-              <h3>Supporting Organizations and Those in Need of Support</h3>
-              <div class= "img-container img-padding">
-                <img class= "covid-img" src="./img/COVIDorg-compressed.gif">
-              </div>
-              <p>We can assist you in finding young people and others who are ready to help. </p>
-              <p> <a href="https://snip.ly/xr6s3p" class="btn btn-seconday btn-xl covid-button"
-                target="_blank">Fill In</a></p>
+        <div id="covid" style="background:linear-gradient(to bottom left, #2BAAED, #0A5F93);">
+          <div class="text-center" style=" margin-top: -20px; ">
+            <div class="text-center">
+              <h2 class="covid-H2" id="main-title" style="font-size:45px; color: white;">Our COVID-19 Response</h2>
             </div>
 
-            <div class="covid-grid-item">
-              <h3>Looking to Support Others and Grow your Skills?</h3>
-              <div class="img-container img-padding">
-                <img class="covid-img" src="./img/COVIDyouth - optimize.gif" alt=”animated”>
+            <div class="covid-resource-info covid-intro">
+              <a href= "covid19.html" class="covid-link1">Click Here For More Information</a>
+            </div>
+  
+            <div class="text-center covid-grid wrapper">
+              <div class="covid-grid-item">
+                <h3>Supporting Organizations and Those in Need of Support</h3>
+                <div class= "img-container img-padding">
+                  <img class= "covid-img" src="./img/COVIDorg-compressed.gif">
+                </div>
+                <p>We can assist you in finding young people and others who are ready to help. </p>
+                <p> <a href="https://snip.ly/xr6s3p" class="btn btn-seconday btn-xl covid-button"
+                  target="_blank">Fill In</a></p>
               </div>
-              <p>We can assist you find organization or individuals who need help locally or remotely. </p>
-              <p> <a href="https://snip.ly/yk08iz" class="btn btn-seconday btn-xl covid-button"
-                target="blank_">Sign Up</a></p>
+  
+              <div class="covid-grid-item">
+                <h3>Looking to Support Others and Grow your Skills?</h3>
+                <div class="img-container img-padding">
+                  <img class="covid-img" src="./img/COVIDyouth - optimize.gif" alt=”animated”>
+                </div>
+                <p>We can assist you find organization or individuals who need help locally or remotely. </p>
+                <p> <a href="https://snip.ly/yk08iz" class="btn btn-seconday btn-xl covid-button"
+                  target="blank_">Sign Up</a></p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+    
+      
+
+      <!--Covid Feature Swipe via slick.css ===================================================================================-->
+      <section id="covid-info-feature-section" class="covid-section">
+        <div class="covid-resource-info covid-intro">
+          <a href= "covid19.html" >Click Here For More Information</a>
+        </div>
+
+        <div class="covid-feature-section ">
+          <div class="responsive">
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/1.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/2.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/3.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/4.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/5.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/6.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/7.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/8.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/9.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/10.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/11.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/12.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/13.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/14.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/15.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/16.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/17.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/18.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/19.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/20.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/21.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/22.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/23.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/24.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/25.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/26.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/27.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/28.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/29.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/30.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/31.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/32.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/33.jpg"></div>
+            <div><img class="covid-feature-slides" src= "./img/CovidInfoFeature/Mental Health & Anti Racism Resource Guide Full Draft/34.jpg"></div>
+          </div>
+        </div>
+
+        <div class="covid-resource-info">
+          <a href="mailto:community@helpinghandsapp.com" class= "covid-link2">
+            <p> Click here to let us know if you want to add a resource! Or if you want to be notified of updated versions! </p>
+          </a>
+        </div>
+      </section>
+      
+
 
       <!--App============================================================================================-->
       <section id="features" class="features bg-primary">
@@ -1542,5 +1617,12 @@
     <script src="js/wow.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+    <!-- slick.css -->
+    <script src="slick-1.8.1/slick/slick.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/slick2.js"></script>
+
   </body>
   </html>
