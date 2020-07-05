@@ -264,6 +264,7 @@ header {
   background-repeat: no-repeat;
   background: linear-gradient(to bottom left, #2BAAED, #0A5F93);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 5rem 0;
@@ -380,11 +381,13 @@ header .header-content .header-content-inner p {
 
 .covid-bar {
   padding: 0.05rem;
+  margin-top: 10%;
+  margin-bottom: 1%;
   width: 100vw;
   text-align: center;
   color: white;
   background: red;
-  position: absolute;
+  /* position: absolute; */
   top: 6rem;
 }
 
@@ -394,10 +397,11 @@ header .header-content .header-content-inner p {
   font-weight: bold;
 }
 
-.covid-bar a:hover {
-  color: black;
+.covid-bar:hover {
+  color: red;
+  background: black;
 }
-
+/* 
 @media (max-width: 992px) {
   .covid-bar {
     top: 10rem;
@@ -412,7 +416,7 @@ header .header-content .header-content-inner p {
   .covid-bar:hover {
     opacity: 1;
   }
-}
+} */
 
 #covid {
   padding: 5rem 0 8rem 0;
