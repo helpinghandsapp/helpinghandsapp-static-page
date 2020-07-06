@@ -653,6 +653,40 @@ header .header-content .header-content-inner p {
 
 /* END COVID INFO FEATURE STYLING */
 
+/* EVENTBRITE SECTION ON COVID19.HTML */
+
+  #covid-eventbrite {
+    background: #1F8FCC;
+  }
+
+  .eventbrite-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .eventbrite-button {
+    width: 129px;
+  }
+
+  .eventbrite-button img {
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .eventbrite-iframe {
+    margin: 0 auto;
+    width: 80vw;
+    height: 500px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 25px;
+  }
+
+/* END OF EVENTBRITE SECTION ON COVID19.HTML */
+
 /**/
 section.features .section-heading {
   margin-bottom: 0px;
