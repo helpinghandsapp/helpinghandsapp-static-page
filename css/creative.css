@@ -1491,9 +1491,15 @@ footer ul li a.active {
 
 #links-button-content {
   margin: 5px 5px 5px 0px;
-  font-size: calc(5vw / 3.8s);
+  font-size: 21px;
   border-radius: 20px;
   font-family: "Nunito Sans", "Serif Sans";
+}
+
+@media (max-width: 1106px) {
+  #links-button-content {
+    font-size: 18px;
+  }
 }
 
 .links-button {
@@ -1527,19 +1533,24 @@ footer ul li a.active {
   }
 }
 
-@media (max-width: 518px) {
-  #links-img {
-    margin-left: 9%;
+@media (max-width: 657px) {
+  #links-button-content {
+    font-size: 15px
   }
-}
 
-@media (max-width: 495px) {
   .links-button {
     padding-left: 9%;
   }
 
   #links-button {
     width: 150%;
+  } 
+  
+}
+
+@media (max-width: 518px) {
+  #links-img {
+    margin-left: 9%;
   }
 }
 
@@ -1555,7 +1566,7 @@ footer ul li a.active {
 
 @media (max-width: 386px) {
   #links-button-content {
-    font-size: calc(5vw / 1.5);
+    font-size: calc(5vw / 1.4git s5);
   }
 }
 
