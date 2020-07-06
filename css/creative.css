@@ -673,7 +673,7 @@ header .header-content .header-content-inner p {
 /* EVENTBRITE SECTION ON COVID19.HTML */
 
   #covid-eventbrite {
-    background: #1F8FCC;
+    background: linear-gradient(to bottom left, #2BAAED, #0A5F93);
     padding-top: 5rem;
     padding-bottom: 10rem;
   }
