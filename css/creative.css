@@ -657,6 +657,8 @@ header .header-content .header-content-inner p {
 
   #covid-eventbrite {
     background: #1F8FCC;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
   }
 
   .eventbrite-container {
@@ -664,6 +666,11 @@ header .header-content .header-content-inner p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .eventbrite-text {
+    text-align: center;
+    color: white;
   }
 
   .eventbrite-button {
@@ -678,13 +685,19 @@ header .header-content .header-content-inner p {
 
   .eventbrite-iframe {
     margin: 0 auto;
-    width: 80vw;
+    width: 75vw;
     height: 500px;
     border: none;
     margin-top: 20px;
     border-radius: 25px;
+    box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16)
   }
 
+  @media (max-width: 556px) {
+    .eventbrite-iframe {
+      width: 90%;
+    }
+  }
 /* END OF EVENTBRITE SECTION ON COVID19.HTML */
 
 /**/
