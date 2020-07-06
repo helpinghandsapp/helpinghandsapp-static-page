@@ -264,6 +264,7 @@ header {
   background-repeat: no-repeat;
   background: linear-gradient(to bottom left, #2BAAED, #0A5F93);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 5rem 0;
@@ -380,11 +381,13 @@ header .header-content .header-content-inner p {
 
 .covid-bar {
   padding: 0.05rem;
+  margin-top: -8%;
+  margin-bottom: 1%;
   width: 100vw;
   text-align: center;
   color: white;
   background: red;
-  position: absolute;
+  /* position: absolute; */
   top: 6rem;
 }
 
@@ -394,25 +397,52 @@ header .header-content .header-content-inner p {
   font-weight: bold;
 }
 
-.covid-bar a:hover {
-  color: black;
+.covid-bar:hover {
+  color: red;
+  background: black;
 }
 
-@media (max-width: 992px) {
-  .covid-bar {
-    top: 10rem;
-    left: 0;
-    width: 150px;
-    padding: 1rem;
-    opacity: 0.5;
-    z-index: 1500;
-    font-size: x-small;
+  @media (max-width: 1417px) {
+    .covid-bar {
+      margin-top: -8%;
+    }
   }
 
-  .covid-bar:hover {
-    opacity: 1;
+  @media (max-width: 1414px) {
+    .covid-bar {
+      margin-top: 0%;
+    }
   }
-}
+
+  @media (max-width: 988px) {
+    .covid-bar {
+      margin-top: 8%;
+    }
+  }
+
+  @media (max-width: 728px) {
+    .covid-bar {
+      position: absolute;
+      top: 2%;
+      left: 0;
+    }
+  }
+
+  @media (max-width: 728px) {
+    .covid-bar {
+      position: absolute;
+      top: 3%;
+      left: 0;
+    }
+  }
+
+  @media (max-width: 441px) {
+    .covid-bar {
+      position: absolute;
+      top: 4%;
+      left: 0;
+    }
+  }
 
 #covid {
   padding: 5rem 0 8rem 0;
@@ -612,7 +642,6 @@ header .header-content .header-content-inner p {
   }
 }
 
-
 .covid-feature-slides {
   width: 95%;
   margin: 0 auto;
@@ -620,8 +649,73 @@ header .header-content .header-content-inner p {
   display: block;
 }
 
+.covid-blm-iframe {
+  width: 70%;
+  height: 500px;
+  border-radius: 25px;
+}
+
+@media (max-width: 612px) {
+  .covid-blm-iframe {
+    width: 85%;
+    height: 30vh;
+  }
+}
+
+@media (max-width: 586px) {
+  .covid-blm-iframe {
+    width: 90%;
+  }
+}
 
 /* END COVID INFO FEATURE STYLING */
+
+/* EVENTBRITE SECTION ON COVID19.HTML */
+
+  #covid-eventbrite {
+    background: linear-gradient(to bottom left, #2BAAED, #0A5F93);
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+  }
+
+  .eventbrite-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .eventbrite-text {
+    text-align: center;
+    color: white;
+  }
+
+  .eventbrite-button {
+    width: 129px;
+  }
+
+  .eventbrite-button img {
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .eventbrite-iframe {
+    margin: 0 auto;
+    width: 75vw;
+    height: 500px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 25px;
+    box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16)
+  }
+
+  @media (max-width: 556px) {
+    .eventbrite-iframe {
+      width: 90%;
+    }
+  }
+/* END OF EVENTBRITE SECTION ON COVID19.HTML */
 
 /**/
 section.features .section-heading {
@@ -1487,44 +1581,82 @@ footer ul li a.active {
 
 #links-button-content {
   margin: 5px 5px 5px 0px;
-  font-size: 22px;
+  font-size: 21px;
   border-radius: 20px;
   font-family: "Nunito Sans", "Serif Sans";
 }
 
-@media (max-width:386px) {
+@media (max-width: 1106px) {
   #links-button-content {
     font-size: 18px;
   }
 }
 
-@media (max-width:356px) {
-  #links-button-content {
-    font-size: 16px;
-  }
+.links-button {
+  min-width: 320px;
+  padding-left: 0px;
 }
 
-@media (min-width:992px) {
+@media (min-width:991px) {
   #links-img {
     margin-top: -60px;
   }
+}
 
-  #links-button {
-    max-width: 320px;
+@media (max-width: 991px) {
+  .links-button {
+    padding-left: 111px;
   }
 }
 
 @media (max-width:767px) {
-  #links-img {
-    margin-top: 60px;
+  #links-button {
+    width: 117%;
   }
 
-  #links-button {
-    width: 100%;
+  .links-button {
+    padding-left: 18%;
   }
 
   .links-buttons-div {
     padding: 0px;
+  }
+}
+
+@media (max-width: 657px) {
+  #links-button-content {
+    font-size: 15px
+  }
+
+  .links-button {
+    padding-left: 9%;
+  }
+
+  #links-button {
+    width: 150%;
+  } 
+  
+}
+
+@media (max-width: 518px) {
+  #links-img {
+    margin-left: 9%;
+  }
+}
+
+@media (max-width: 450px) {
+  .links-button {
+    padding-left: 1%;
+  }
+
+  #links-button {
+    width: 180%;
+  }
+}
+
+@media (max-width: 386px) {
+  #links-button-content {
+    font-size: calc(5vw / 1.45);
   }
 }
 
