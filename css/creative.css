@@ -1496,39 +1496,66 @@ footer ul li a.active {
   font-family: "Nunito Sans", "Serif Sans";
 }
 
-@media (max-width:386px) {
-  #links-button-content {
-    /* font-size: 18px; */
-  }
+.links-button {
+  min-width: 320px;
+  padding-left: 0px;
 }
 
-@media (max-width:356px) {
-  #links-button-content {
-    /* font-size: 16px; */
-  }
-}
-
-@media (min-width:992px) {
+@media (min-width:991px) {
   #links-img {
     margin-top: -60px;
   }
+}
 
-  #links-button {
-    max-width: 320px;
+@media (max-width: 991px) {
+  .links-button {
+    padding-left: 111px;
   }
 }
 
 @media (max-width:767px) {
-  #links-img {
-    margin-top: 60px;
+  #links-button {
+    width: 117%;
   }
 
-  #links-button {
-    width: 100%;
+  .links-button {
+    padding-left: 18%;
   }
 
   .links-buttons-div {
     padding: 0px;
+  }
+}
+
+@media (max-width: 518px) {
+  #links-img {
+    margin-left: 9%;
+  }
+}
+
+@media (max-width: 495px) {
+  .links-button {
+    padding-left: 9%;
+  }
+
+  #links-button {
+    width: 150%;
+  }
+}
+
+@media (max-width: 450px) {
+  .links-button {
+    padding-left: 1%;
+  }
+
+  #links-button {
+    width: 180%;
+  }
+}
+
+@media (max-width: 386px) {
+  #links-button-content {
+    font-size: calc(5vw / 1.5);
   }
 }
 
