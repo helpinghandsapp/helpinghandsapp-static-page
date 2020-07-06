@@ -642,7 +642,6 @@ header .header-content .header-content-inner p {
   }
 }
 
-
 .covid-feature-slides {
   width: 95%;
   margin: 0 auto;
@@ -650,6 +649,24 @@ header .header-content .header-content-inner p {
   display: block;
 }
 
+.covid-blm-iframe {
+  width: 70%;
+  height: 500px;
+  border-radius: 25px;
+}
+
+@media (max-width: 612px) {
+  .covid-blm-iframe {
+    width: 85%;
+    height: 30vh;
+  }
+}
+
+@media (max-width: 586px) {
+  .covid-blm-iframe {
+    width: 90%;
+  }
+}
 
 /* END COVID INFO FEATURE STYLING */
 
