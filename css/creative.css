@@ -381,7 +381,7 @@ header .header-content .header-content-inner p {
 
 .covid-bar {
   padding: 0.05rem;
-  margin-top: 10%;
+  margin-top: -8%;
   margin-bottom: 1%;
   width: 100vw;
   text-align: center;
@@ -401,22 +401,48 @@ header .header-content .header-content-inner p {
   color: red;
   background: black;
 }
-/* 
-@media (max-width: 992px) {
-  .covid-bar {
-    top: 10rem;
-    left: 0;
-    width: 150px;
-    padding: 1rem;
-    opacity: 0.5;
-    z-index: 1500;
-    font-size: x-small;
+
+  @media (max-width: 1417px) {
+    .covid-bar {
+      margin-top: -8%;
+    }
   }
 
-  .covid-bar:hover {
-    opacity: 1;
+  @media (max-width: 1414px) {
+    .covid-bar {
+      margin-top: 0%;
+    }
   }
-} */
+
+  @media (max-width: 988px) {
+    .covid-bar {
+      margin-top: 8%;
+    }
+  }
+
+  @media (max-width: 728px) {
+    .covid-bar {
+      position: absolute;
+      top: 2%;
+      left: 0;
+    }
+  }
+
+  @media (max-width: 728px) {
+    .covid-bar {
+      position: absolute;
+      top: 3%;
+      left: 0;
+    }
+  }
+
+  @media (max-width: 441px) {
+    .covid-bar {
+      position: absolute;
+      top: 4%;
+      left: 0;
+    }
+  }
 
 #covid {
   padding: 5rem 0 8rem 0;
@@ -1566,7 +1592,7 @@ footer ul li a.active {
 
 @media (max-width: 386px) {
   #links-button-content {
-    font-size: calc(5vw / 1.4git s5);
+    font-size: calc(5vw / 1.45);
   }
 }
 
