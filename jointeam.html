@@ -244,6 +244,177 @@
 </section>
 </section>
 
+<section>
+  <style>
+
+    /**************************************************
+
+      accordion styels
+
+    **************************************************/
+
+
+    /* T
+      ab width is full-screen on small devices
+      then will center itself above 640px
+    */
+
+    .tab-group {
+      margin: 0 auto;
+      max-width: 40em;
+      width: 100%;
+    }
+
+    /*
+      Individual tabs are 100% of wrapper and position 
+      themselves relative to previous tab
+
+    */
+
+    .tab {
+      position: relative;
+      width: 100%;
+    }
+
+    /*
+      Radion elements are hidden so they
+      will be positioned absolutely, set to top 
+      left corner and positioned out of way
+    */
+
+    .tab input {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -999;
+    }
+
+    /*
+      Input label will toggle radio buttons 
+      when label is clicked it will reveal its
+      adjacent accordion content
+
+    */
+
+
+    .tab label {
+      background: #72d2c6;
+      color: #fff;
+      display: block; /* makes Label span full width */
+      font-weight: bold;
+      line-height: 3; /* increases clicking area */
+      padding-left: .5em;
+      margin-bottom: .5em;
+      /* Adds transiton to letter spacing on hover*/
+      transition: letter-spacing .55s;
+    }
+
+    /* 
+      Focus and Hover styles
+    */
+
+    .tab input:focus + label,
+    .tab label:hover {
+      background: linear-gradient(to bottom left, rgb(0,152,238),rgb(0,76,143));
+      letter-spacing: 1px;
+    }
+
+    .tab-content {
+      /* hides the content of the divs */
+      max-height: 0px;
+      overflow: hidden;
+      /* slide transition for when tab is opened 
+        prevents jerky content */
+      transition: all .5s;
+    }
+
+    .tab-content p {
+      margin: 1em;
+    }
+
+
+    .tab input:checked ~ .tab-content {
+      /*uses general sibling combinator to 
+          open tabs when radio inputs are selected */
+      max-height: 100%;
+      /* sets height to largest accordion tab */
+    }
+  </style>
+
+  <div class="tab-group">
+    <div class="tab">
+      <!-- tab radio group -->
+      <input id="tab-one" type="radio" name="tabs">
+      <label for="tab-one">Label One</label>
+
+      <!-- content container -->
+      <div class="tab-content">
+        <iframe class="covid-blm-iframe" src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=tulgi597t9" seamless="seamless" scrolling="no" allowfullscreen="" frameborder="0"></iframe>
+        <p>apply</p>
+      </div>
+
+
+    </div>
+
+    <div class="tab">
+      <!-- tab radio group -->
+      <input id="tab-two" type="radio" name="tabs">
+      <label for="tab-two">Label Two</label>
+
+      <!-- content container -->
+      <div class="tab-content">
+        <iframe class="covid-blm-iframe" src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=tulgi597t9" seamless="seamless" scrolling="no" allowfullscreen="" frameborder="0"></iframe>
+        <p>apply</p>
+      </div>
+
+
+    </div>
+
+    <div class="tab">
+      <!-- tab radio group -->
+      <input id="tab-three" type="radio" name="tabs">
+      <label for="tab-three">Label Three</label>
+
+      <!-- content container -->
+      <div class="tab-content">
+        <iframe class="covid-blm-iframe" src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=tulgi597t9" seamless="seamless" scrolling="no" allowfullscreen="" frameborder="0"></iframe>
+        <p>apply</p>
+      </div>
+
+
+    </div>
+
+    <div class="tab">
+      <!-- tab radio group -->
+      <input id="tab-four" type="radio" name="tabs">
+      <label for="tab-four">Label Four</label>
+
+      <!-- content container -->
+      <div class="tab-content">
+        <iframe class="covid-blm-iframe" src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=tulgi597t9" seamless="seamless" scrolling="no" allowfullscreen="" frameborder="0"></iframe>
+        <p>apply</p>
+      </div>
+
+
+    </div>
+
+    <div class="tab">
+      <!-- tab radio group -->
+      <input id="tab-five" type="radio" name="tabs">
+      <label for="tab-five">Label Five</label>
+
+      <!-- content container -->
+      <div class="tab-content">
+        <iframe class="covid-blm-iframe" src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=tulgi597t9" seamless="seamless" scrolling="no" allowfullscreen="" frameborder="0"></iframe>
+        <p>apply</p>
+      </div>
+
+
+    </div>
+ 
+
+</section>
+
 <!-- Sponsors Section -->
 <section class="bg-light sponsor-div" id="support">
   <div class="sponsor-header">
