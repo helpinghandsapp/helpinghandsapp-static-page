@@ -839,6 +839,24 @@ section.features .feature-item i {
   -webkit-text-fill-color: transparent;
 }
 
+/* ------------------- GOFUNDME SECTION STYLES -------------------- */
+
+.goFundMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.goFundMe-heading {
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 800;
+  color: #000000;
+  font-size: 40px;
+  margin: 0 0 25px;
+}
+
 /*----------------------------------------------*/
 .service-box {
   margin: 50px auto 0;
