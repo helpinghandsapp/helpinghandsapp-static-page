@@ -169,21 +169,14 @@ aside {
   color: #222222;
 }
 
-.navbar-default .nav>li>a:hover,
-.navbar-default .nav>li>a:focus:hover {
-  color: rgb(255, 255, 255);
-}
-
 .navbar-default .nav>li.active>a,
 .navbar-default .nav>li.active>a:focus {
   color: #F17014 !important;
-  background-color: transparent;
 }
 
-.navbar-default .nav>li.active>a:hover,
-.navbar-default .nav>li.active>button:hover,
-.navbar-default .nav>li.active>a:focus:hover {
-  background-color: transparent;
+.navbar-default .subnav>subnav-link>a,
+.navbar-default .subnav>subnav-link>a:focus {
+  color: #000;
 }
 
 .navbar-nav .subnav-menu {
@@ -201,7 +194,7 @@ aside {
 }
 
 .navbar-nav .subnav-menu .subnav {
-  background: #F17014;
+  background: #fff;
   display: none;
   position: absolute;
   width: 100%;
@@ -210,15 +203,39 @@ aside {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+.navbar-nav .subnav-menu:hover {
+  background-color: #fff;
+  color: #F17014;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
 .navbar-nav .subnav-menu:hover .subnav {
   display: block;
 }
 .navbar-nav .subnav-menu:hover button {
   display: block;
+  color: #F17014;
+  border-radius: 0;
 }
-.navbar-nav .subnav .subnav-link>a,
-.navbar-nav .subnav .subnav-link:hover>a {
+.navbar-nav .subnav .subnav-link>a {
   color: #000;
+}
+.navbar-nav .subnav-menu:hover>a {
+  color: #F17014;
+  border-radius: 0;
+}
+.navbar-nav .subnav .subnav-link:hover>a {
+  color: #F17014;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav .subnav-menu .subnav {
+    position: initial;
+    display: block;
+  }
+  .navbar-default .nav>li:hover>a{
+    color: #F17014;
+  }
 }
 
 @media (min-width: 768px) {
@@ -233,18 +250,18 @@ aside {
 
   .navbar-default .navbar-header .navbar-brand:hover,
   .navbar-default .navbar-header .navbar-brand:focus {
-    color: rgba(255, 255, 255, 0.6);
+    color: #F17014;
   }
 
   .navbar-default .nav>li>a,
-  .navbar-default .nav>li>button,
-  .navbar-default .nav>li>a:focus {
+  .navbar-default .nav>li>button {
     color: rgba(255, 255, 255);
   }
 
-  .navbar-default .nav>li>a:hover,
-  .navbar-default .nav>li>a:focus:hover {
-    color: rgba(255, 255, 255, 0.6);
+  .navbar-default .nav>li>a:hover {
+    color: #F17014;
+    background-color: #fff;
+    border-radius: 5px;
   }
 
   .navbar-default.affix {
@@ -270,10 +287,6 @@ aside {
   .navbar-default.affix .nav>li>a:hover,
   .navbar-default.affix .nav>li>a:focus:hover {
     color: #F17014;
-  }
-  
-  .navbar-default.affix .subnav>.subnav-links>a:focus {
-    color: white;
   }
 }
 
@@ -386,22 +399,6 @@ header .header-content .header-content-inner p {
   font-size: 18px;
 }
 
-
-/* @media (max-width:1403px) {
-  header #landing-header {
-    margin-top: 0px;
-  }
-}
-@media (max-width:700px) {
-  header #landing-header {
-    margin-top: 0px;
-  }
-  header .landing-pg-flex-container {
-    padding-top: 27%;
-  }
-} */
-
-
 @media (min-width:1403px) {
   header #landing-img {
     margin-top: 15%;
@@ -418,14 +415,11 @@ header .header-content .header-content-inner p {
   }
 }
 
-
-
 /* COVID19 RESPONSE SECTION STYLING */
 
 .covid-bar {
-  padding: 0.05rem;
-  margin-top: -8%;
-  margin-bottom: 1%;
+  padding: 5px 0;
+  margin: 20px 0;
   width: 100vw;
   text-align: center;
   color: white;
@@ -438,6 +432,8 @@ header .header-content .header-content-inner p {
   color: white;
   font-style: italic;
   font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
 }
 
 .covid-bar:hover {
@@ -445,47 +441,17 @@ header .header-content .header-content-inner p {
   background: black;
 }
 
-  @media (max-width: 1417px) {
-    .covid-bar {
-      margin-top: -8%;
-    }
+@media (max-width: 992px) {
+  .covid-bar {
+    margin-top: 10%;
   }
+} 
 
-  @media (max-width: 1414px) {
-    .covid-bar {
-      margin-top: 0%;
-    }
+@media (max-width: 768px) {
+  .covid-bar {
+    margin-top: 5%;
   }
-
-  @media (max-width: 988px) {
-    .covid-bar {
-      margin-top: 8%;
-    }
-  }
-
-  @media (max-width: 728px) {
-    .covid-bar {
-      position: absolute;
-      top: 2%;
-      left: 0;
-    }
-  }
-
-  @media (max-width: 728px) {
-    .covid-bar {
-      position: absolute;
-      top: 3%;
-      left: 0;
-    }
-  }
-
-  @media (max-width: 441px) {
-    .covid-bar {
-      position: absolute;
-      top: 4%;
-      left: 0;
-    }
-  }
+}
 
 #covid {
   padding: 5rem 0 8rem 0;
@@ -1433,7 +1399,7 @@ fieldset[disabled] .btn-primary.active {
 
 ::selection {
   text-shadow: none;
-  color: #fff;
+  /* color: #fff; */
   background: #222;
 }
 
