@@ -424,8 +424,6 @@ header .header-content .header-content-inner p {
   text-align: center;
   color: white;
   background: red;
-  /* position: absolute; */
-  top: 6rem;
 }
 
 .covid-bar a {
