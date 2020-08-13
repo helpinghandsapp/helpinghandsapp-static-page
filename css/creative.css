@@ -839,6 +839,24 @@ section.features .feature-item i {
   -webkit-text-fill-color: transparent;
 }
 
+/* ------------------- GOFUNDME SECTION STYLES -------------------- */
+
+.goFundMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.goFundMe-heading {
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 800;
+  color: #000000;
+  font-size: 40px;
+  margin: 0 0 25px;
+}
+
 /*----------------------------------------------*/
 .service-box {
   margin: 50px auto 0;
@@ -868,7 +886,7 @@ section.features .feature-item i {
   font-weight: bold;
   font-size: 4rem;
   text-align: center;
-  padding-top: 3rem;
+  margin: 0 0 40px;
 }
 
 .head-team {
@@ -980,18 +998,61 @@ section.features .feature-item i {
 }
 
 .sponsors {
-  width: 90%;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 0 4rem 0;
-
+  justify-content: space-around;
+  padding-left: 0;
 }
-
-.sponsors img {
-  margin: 0 1rem;
+.sponsors-item {
+  list-style-type: none;
+  flex: 0 0 32%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all ease-in 0.3s;
+}
+.sponsors-item:hover {
+  transform: scale(0.95);
+}
+.sponsors-item:nth-child(4),
+.sponsors-item:nth-child(5),
+.sponsors-item:nth-child(6) {
+  margin-bottom: 0;
+  flex: 0 0 15%;
+}
+.sponsors-link {
+  width: 100%;
+  height: 100%;
+}
+.sponsors-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+@media (max-width:1000px) {
+  .sponsors-item {
+    flex: initial;
+    width: 40%;
+  }
+  .sponsors-item:nth-child(4),
+  .sponsors-item:nth-child(5),
+  .sponsors-item:nth-child(6) {
+    margin-bottom: 20px;
+    height: 145px;
+    flex: 0 0 35%;
+  }
+}
+@media (max-width: 770px) {
+  .sponsors-item {
+    width: 100%;
+    height: 150px;
+    /* flex: 0 0 100%; */
+  }
+  .sponsors-item:nth-child(4),
+  .sponsors-item:nth-child(5),
+  .sponsors-item:nth-child(6) {
+    flex: 0 0 55%;
+  }
 }
 
 /* end sponsors section */
@@ -1657,16 +1718,6 @@ footer ul li a.active {
 @media (max-width: 386px) {
   #links-button-content {
     font-size: calc(5vw / 1.45);
-  }
-}
-
-#support img {
-  height: 100px;
-}
-
-@media(max-width:768px) {
-  #support img {
-    height: 50px;
   }
 }
 
