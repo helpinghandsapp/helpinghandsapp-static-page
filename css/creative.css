@@ -1038,6 +1038,16 @@ section.features .feature-item i {
   height: 100%;
   display: block;
 }
+.sponsors-image-slye {
+  height: 200%;
+  padding-bottom: 50%;
+  padding-right: 50%;
+  display: block;
+}
+.sponsors-image-laidlaw {
+  height: 100%;
+  display: block;
+}
 .image-vertical {
   display: none;
 }
@@ -1733,8 +1743,8 @@ footer ul li a.active {
 
   #links-button {
     width: 150%;
-  } 
-  
+  }
+
 }
 
 @media (max-width: 518px) {
