@@ -881,14 +881,6 @@ section.features .feature-item i {
   border-radius: 28px 28px 0 0;
 }
 
-.team-h3 {
-  color: black;
-  font-weight: bold;
-  font-size: 4rem;
-  text-align: center;
-  margin: 0 0 40px;
-}
-
 .head-team {
   display: grid;
   -ms-display: grid;
@@ -915,10 +907,6 @@ section.features .feature-item i {
   .team2 {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     padding: 0;
-  }
-
-  .team-h3 {
-    font-size: 3rem;
   }
 
   .head-team {
@@ -996,8 +984,12 @@ section.features .feature-item i {
   width: 100%;
   padding: 5rem;
 }
-.sponsor-header {
-  margin-bottom: 50px;
+.sponsors-header {
+  color: black;
+  font-weight: bold;
+  font-size: 4rem;
+  text-align: center;
+  margin: 0 0 70px;
 }
 
 .sponsors {
@@ -1008,24 +1000,28 @@ section.features .feature-item i {
 }
 .sponsors-item {
   list-style-type: none;
-  margin-bottom: 50px;
-  border-radius: 5px;
-  overflow: hidden;
   transition: all ease-in 0.3s;
 }
-.sponsors-item:nth-child(1),
-.sponsors-item:nth-child(2),
-.sponsors-item:nth-child(3),
-.sponsors-item:nth-child(4) {
+.sponsors-funders .sponsors-item,
+.sponsors-trustees .sponsors-item,
+.sponsors-supporters .sponsors-item:nth-child(1),
+.sponsors-supporters .sponsors-item:nth-child(2) {
   width: 550px;
   height: 200px;
+}
+.sponsors-funders .sponsors-item {
+  margin-bottom: 100px;
+}
+.sponsors-trustees .sponsors-item,
+.sponsors-supporters .sponsors-item {
+  margin-bottom: 60px;
 }
 .sponsors-item:hover {
   transform: scale(0.95);
 }
-.sponsors-item:nth-child(5),
-.sponsors-item:nth-child(6),
-.sponsors-item:nth-child(7) {
+.sponsors-supporters .sponsors-item:nth-child(3),
+.sponsors-supporters .sponsors-item:nth-child(4),
+.sponsors-supporters .sponsors-item:nth-child(5) {
   margin-bottom: 0;
   height: 200px;
 }
@@ -1038,33 +1034,25 @@ section.features .feature-item i {
   height: 100%;
   display: block;
 }
-.sponsors-image-slye {
-  height: 200%;
-  padding-bottom: 50%;
-  padding-right: 50%;
-  display: block;
-}
-.sponsors-image-laidlaw {
-  height: 100%;
-  display: block;
-}
 .image-vertical {
   display: none;
 }
 @media (max-width: 1220px) {
-  .sponsors-item:nth-child(5),
-  .sponsors-item:nth-child(6),
-  .sponsors-item:nth-child(7) {
-    margin: 0 200px;
+  .sponsors-supporters .sponsors-item:nth-child(3),
+  .sponsors-supporters .sponsors-item:nth-child(4) {
+    height: 300px;
+    height: 250px;
+  }
+  .sponsors-supporters .sponsors-item:nth-child(3),
+  .sponsors-supporters .sponsors-item:nth-child(4),
+  .sponsors-supporters .sponsors-item:nth-child(5) {
+    margin: 0 200px 100px;
   }
 }
 @media (max-width:1000px) {
-  .sponsors-item {
-    flex: initial;
-  }
-  .sponsors-item:nth-child(5),
-  .sponsors-item:nth-child(6),
-  .sponsors-item:nth-child(7) {
+  .sponsors-supporters .sponsors-item:nth-child(3),
+  .sponsors-supporters .sponsors-item:nth-child(4),
+  .sponsors-supporters .sponsors-item:nth-child(5) {
     margin-bottom: 50px;
   }
 }
@@ -1072,16 +1060,19 @@ section.features .feature-item i {
   .sponsors-item {
     width: 100%;
   }
-  .sponsors-item:nth-child(1),
-  .sponsors-item:nth-child(2) {
-    flex: initial;
-  }
-  .sponsors-item:nth-child(5),
-  .sponsors-item:nth-child(6),
-  .sponsors-item:nth-child(7) {
+
+  .sponsors-supporters .sponsors-item:nth-child(3),
+  .sponsors-supporters .sponsors-item:nth-child(4),
+  .sponsors-supporters .sponsors-item:nth-child(5) {
     flex: 0 0 51%;
     width: 200px;
     margin: 0 0 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .sponsors-header {
+    font-size: 3rem;
   }
 }
 
@@ -1092,13 +1083,16 @@ section.features .feature-item i {
   .image-vertical {
     display: block;
   }
-  .sponsor-div {
-    padding: 5rem 3rem;
+  .sponsors-funders .sponsor-item:nth-child(3) {
+    height: 225px;
   }
-  .sponsors-item:nth-child(1),
-  .sponsors-item:nth-child(2),
-  .sponsors-item:nth-child(3),
-  .sponsors-item:nth-child(4) {
+  .sponsor-div {
+    padding: 5rem;
+  }
+  .sponsors-funders .sponsors-item,
+  .sponsors-trustees .sponsors-item,
+  .sponsors-supporters .sponsors-item:nth-child(1),
+  .sponsors-supporters .sponsors-item:nth-child(2) {
     width: 350px;
   }
 }
