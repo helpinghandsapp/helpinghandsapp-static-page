@@ -192,6 +192,9 @@ aside {
   font-size: 17px;
   cursor: default;
 }
+.navbar-nav .subnav-menu:nth-child(1)>button {
+  margin-right: 15px;
+}
 
 .navbar-nav .subnav-menu .subnav {
   background: #fff;
