@@ -1025,6 +1025,7 @@ section.features .feature-item i {
 .sponsors-supporters .sponsors-item:nth-child(4),
 .sponsors-supporters .sponsors-item:nth-child(5) {
   height: 200px;
+  width: 200px;
 }
 .sponsors-link {
   width: 100%;
@@ -1037,14 +1038,6 @@ section.features .feature-item i {
 }
 .image-vertical {
   display: none;
-}
-.sponsors-image-slye {
-  height: 150%;
-  display: block;
-}
-.sponsors-image-laidlaw {
-  height: 150%;
-  display: block;
 }
 @media (max-width: 1296px) {
   .sponsors-supporters .sponsors-item:nth-child(3),
