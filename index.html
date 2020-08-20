@@ -113,14 +113,36 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                  <li>
-                    <a class="page-scroll" href="#features">About</a>
+                  <li class="subnav-menu">
+                    <button>Home <span>&#9660;</span></button>
+                    <ul class="nav subnav">
+                      <li class="subnav-link">
+                        <a href="index.html">Homepage</a>
+                      </li>
+                      <li class="subnav-link">
+                        <a class="page-scroll" href="#features">About</a>
+                      </li>
+                      <li class="subnav-link">
+                        <a class="page-scroll" href="#help">Help</a>
+                      </li>
+                      <li class="subnav-link">
+                        <a class="page-scroll" href="#contact">Contact</a>
+                      </li>
+                    </ul>
                   </li>
                   <!--    <li>
                     <a class="page-scroll" href="#whats-new">What's new</a>
                   </li> -->
-                  <li>
-                    <a href="covid19.html">Covid Response</a>
+                  <li class="subnav-menu">
+                    <button>Covid/Anti-Black Racism <span>&#9660;</span></button>
+                    <ul class="nav subnav">
+                      <li class="subnav-link">
+                        <a href="covid19.html">Covid Response</a>
+                      </li>
+                      <li class="subnav-link">
+                        <a class="page-scroll" href="covid19.html#anti-black_racism_guidebook">Anti-Black Racism Guidebook</a>
+                      </li>
+                    </ul>
                   </li>
                   <li>
                     <a href="team.html">Team</a>
@@ -134,13 +156,6 @@
                   <li>
                     <a href="/blog">Blog</a>
                   </li>
-                  <li>
-                    <a class="page-scroll" href="#help">Help</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                  </li>
-
               </div>
               <!-- /.navbar-collapse -->
             </div>
@@ -151,21 +166,23 @@
         <!--============================================================================================-->
         
         <header>
-          <a href="./covid19.html"><div class="covid-bar">
-            <h4>Click Here For Our Response to Covid and Black Lives Matter</h4>
-          </div></a>
+          <div class="covid-bar">
+            <a href="./covid19.html">
+              Click Here For Our Response to Covid and Black Lives Matter
+            </a>
+          </div>
           
           <div class="landing-pg-flex-container display-flex-flexwrap">
             
             <div class= "image-container">
               <img class="landing-header" src="img/LandingHeader.png" style= " max-width:600px; width: 90%;"/>
-              </div>
-
-              <div class= "image-container">
-                <img class="landing-img" src="img/LandingImage.png" style= "max-width:800px; width: 100%;" />
-              </div>
-
             </div>
+
+            <div class= "image-container">
+              <img class="landing-img" src="img/LandingImage.png" style= "max-width:800px; width: 100%;" />
+            </div>
+
+          </div>
         </header>
 
 <!--
