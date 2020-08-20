@@ -856,6 +856,25 @@ section.features .feature-item i {
   font-size: 40px;
   margin: 0 0 25px;
 }
+.goFundMe-content {
+
+}
+.goFundMe-image {
+
+}
+.goFundMe-subheading {
+
+}
+.goFundMe-progress {
+
+}
+.goFundMe-text {
+
+}
+.goFundMe-logo {
+  width: 300px;
+  height: 100px;
+}
 
 /*----------------------------------------------*/
 .service-box {

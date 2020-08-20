@@ -6428,7 +6428,7 @@ a.thumbnail:hover {
 }
 
 .progress-bar-warning {
-    background-color: #f0ad4e
+    background: linear-gradient(to bottom right, #F17014, #FFC400);
 }
 
 .progress-striped .progress-bar-warning {
