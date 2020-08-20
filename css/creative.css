@@ -975,6 +975,14 @@ section.features .feature-item i {
   padding: 14px;
   line-height: 1.225;
 }
+.about-us .team-mailto-link {
+  text-decoration: none;
+
+}
+.about-us .team-mailto-link:hover,
+.about-us .team-mailto-link:focus {
+  color: #0A5F93;
+}
 
 @media (max-width:992px) {
   #team2 {
