@@ -858,6 +858,10 @@ section.features .feature-item i {
   align-items: center;
 }
 
+.goFundMe .container {
+  padding: 0 150px;
+}
+
 .goFundMe-heading {
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
@@ -865,6 +869,78 @@ section.features .feature-item i {
   color: #000000;
   font-size: 40px;
   margin: 0 0 25px;
+}
+.goFundMe-content {
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+.goFundMe-image {
+  display: block;
+  width: 100%;
+}
+.goFundMe-textContainer {
+  border-top: 1px solid #bbb;
+  padding: 20px;
+}
+.goFundMe-subheading {
+  margin: 0 0 15px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+}
+.goFundMe-text strong{
+  font-size: 24px;
+}
+.goFundMe-text {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.goFundMe-buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+.goFundMe-logo {
+  padding: 5px 0;
+  width: 150px;
+  height: 55px;
+}
+@media (max-width: 990px) {
+  .goFundMe-subheading {
+    margin: 0 0 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+  }
+  .goFundMe-text strong{
+    font-size: 20px;
+  }
+  .goFundMe-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .goFundMe .container {
+    padding: 0 100px;
+  }
+  .goFundMe-buttonContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .goFundMe-buttonContainer .goFundMe-logo {
+    margin-top: 30px;
+    align-self: flex-end;
+  }
+}
+@media (max-width: 500px) {
+  .goFundMe .container {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 380px) {
+  .goFundMe .container {
+    padding: 0 15px;
+  }
 }
 
 /*----------------------------------------------*/
