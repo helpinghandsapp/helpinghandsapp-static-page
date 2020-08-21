@@ -930,8 +930,7 @@ section.features .feature-item i {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   background: white;
   margin: 2rem auto;
-
-
+  word-wrap: break-word;
 }
 
 .img-square {
@@ -939,9 +938,7 @@ section.features .feature-item i {
   width: 225px;
   border-radius: 25px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
-
   object-fit: cover;
-
 }
 
 .rotateimg270 {
@@ -975,6 +972,14 @@ section.features .feature-item i {
   font-weight: 100;
   padding: 14px;
   line-height: 1.225;
+}
+.about-us .team-mailto-link {
+  text-decoration: none;
+
+}
+.about-us .team-mailto-link:hover,
+.about-us .team-mailto-link:focus {
+  color: #0A5F93;
 }
 
 @media (max-width:992px) {
