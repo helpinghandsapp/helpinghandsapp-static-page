@@ -425,8 +425,7 @@ header .header-content .header-content-inner p {
   margin: 20px 0;
   width: 100vw;
   text-align: center;
-  color: white;
-  background: red;
+  background: black;
 }
 
 .covid-bar a {
@@ -435,11 +434,6 @@ header .header-content .header-content-inner p {
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-}
-
-.covid-bar:hover {
-  color: red;
-  background: black;
 }
 
 @media (max-width: 992px) {
@@ -569,16 +563,22 @@ header .header-content .header-content-inner p {
   color: white;
 }
 
-.covid-link1 {
-  color: white;
-}
-
 .covid-link {
   margin-bottom: 3rem;
 }
 
-.covid-link2:hover {
-  color: black;
+.covid-link1 {
+  color: #fff;
+}
+
+.covid-link2,
+.covid-link3 {
+  color: #0A5F93;
+}
+
+.covid-link2:hover,
+.covid-link3:hover {
+  color: #F17014;
 }
 
 .covid-feature-section {
@@ -1436,6 +1436,15 @@ section.survey .overlay {
   left: 0;
 }
 
+/* ------------------------------------------------------- */
+
+.civix-link {
+  color: #0A5F93;
+}
+
+.civix-link:hover {
+  color: #F17014;
+}
 
 /*---------------------------------------------------------*/
 .videoWrapper {
@@ -2977,9 +2986,12 @@ img {
   color: #F17014;
 }
 
-.instagram-handle:hover {
+.instagram-handle {
+  color: #0A5F93;
+}
 
-  color: #0A5F93
+.instagram-handle:hover {
+  color: #F17014;
 }
 
 #home-partners {
