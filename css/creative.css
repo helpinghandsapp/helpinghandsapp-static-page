@@ -867,6 +867,7 @@ section.features .feature-item i {
   font-size: 16px;
   background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
   background: linear-gradient(to left, #7b4397, #dc2430);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1445,12 +1446,6 @@ section.survey .survey-content h2 {
   /*font-size: 50px;*/
 }
 
-@media (min-width: 768px) {
-  section.survey .survey-content h2 {
-    /*font-size: 80px;*/
-  }
-}
-
 section.survey .overlay {
   height: 100%;
   width: 100%;
@@ -1488,7 +1483,7 @@ section.survey .overlay {
 }
 
 /*---------------------------------------------------------*/
-.brooks {
+/* .brooks {
   position: relative;
   font-family: 'Sanchez', serif;
   font-size: $base-font-size;
@@ -1504,7 +1499,7 @@ section.survey .overlay {
     font-size: 6em;
     z-index: -1;
   }
-}
+} */
 
 
 /*---------------------------------------------------------*/
@@ -1687,7 +1682,6 @@ img::-moz-selection {
 }
 
 body {
-  webkit-tap-highlight-color: #222;
   overflow-x: hidden;
 }
 
@@ -2993,6 +2987,3 @@ img {
   }
 
 }
-
-© 2020 GitHub,
-Inc. Terms Privacy Security Status Help
