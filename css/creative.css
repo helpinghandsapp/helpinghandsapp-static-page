@@ -1965,8 +1965,8 @@ footer ul li a.active {
 
 @media (max-width:1356px) {
   .workshop-feature-item {
-    width: 100px;
-    height: 150px;
+    width: 125px;
+    height: 175px;
     border-radius: 25px;
   }
 
@@ -1992,7 +1992,7 @@ footer ul li a.active {
   }
 
   #mta-popup-img {
-    height: 400px;
+    
   }
 
 }
@@ -2041,8 +2041,8 @@ footer ul li a.active {
 
 @media (max-width:360px) {
   .workshop-feature-item {
-    width: 120px;
-    height: 250px;
+    width: 155px;
+    height: 225px;
     border-radius: 30px;
   }
 
@@ -2146,14 +2146,18 @@ footer ul li a.active {
   }
 }
 
-@media (max-width:360px) {
+@media (max-width:359px) {
   .recently-flex-container {
     max-width: none;
   }
 
   .workshop-flex-container {
+    padding-bottom: 104px;
     min-width: auto;
     max-height: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -2856,7 +2860,7 @@ img {
 }
 
 #mta-popup-img {
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 @media (min-width:992px) {
