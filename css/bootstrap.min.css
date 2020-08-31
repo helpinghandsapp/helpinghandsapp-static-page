@@ -4570,7 +4570,7 @@ tbody.collapse.in {
     margin-bottom: 2px
 }
 
-@media (min-width:768px) {
+@media (min-width:995px) {
     .navbar-right .dropdown-menu {
         right: 0;
         left: auto
@@ -5224,7 +5224,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:995px) {
     .navbar-header {
         float: left
     }
@@ -5244,7 +5244,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     overflow-y: auto
 }
 
-@media (min-width:768px) {
+@media (min-width:995px) {
     .navbar-collapse {
         width: auto;
         border-top: 0;
@@ -5371,7 +5371,6 @@ textarea.input-group-sm>.input-group-btn>.btn {
     float: right;
     padding: 9px 10px;
     margin-top: 8px;
-    margin-right: 15px;
     margin-bottom: 8px;
     background-color: transparent;
     background-image: none;
@@ -5394,7 +5393,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     margin-top: 4px
 }
 
-@media (min-width:768px) {
+@media (min-width:995px) {
     .navbar-toggle {
         display: none
     }
@@ -5437,7 +5436,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:995px) {
     .navbar-nav {
         float: left;
         margin: 0
@@ -5583,7 +5582,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     margin-bottom: 15px
 }
 
-@media (min-width:768px) {
+@media (min-width:995px) {
     .navbar-text {
         float: left;
         margin-right: 15px;
@@ -5591,7 +5590,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:995px) {
     .navbar-left {
         float: left !important
     }

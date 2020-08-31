@@ -231,7 +231,7 @@ aside {
   color: #F17014;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 994px) {
   .navbar-nav .subnav-menu .subnav {
     position: initial;
     display: block;
@@ -241,7 +241,7 @@ aside {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 995px) {
   .navbar-default {
     background-color: transparent;
     border-color: transparent;
@@ -441,14 +441,13 @@ header .header-content .header-content-inner p {
   color: red;
   background: black;
 }
-
 @media (max-width: 992px) {
   .covid-bar {
     margin-top: 10%;
   }
 } 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .covid-bar {
     margin-top: 5%;
   }
