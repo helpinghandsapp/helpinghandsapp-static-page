@@ -3,7 +3,9 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+/* * {
+  border: 1px solid tomato;
+} */
 html,
 body {
   width: 100%;
@@ -2145,7 +2147,7 @@ footer ul li a.active {
   justify-content: center;
 }
 .volunteer-positions .volunteer-item {
-  margin: 10px;
+  margin: 10px 16px;
 }
 .volunteer-positions .volunteer-link {
   display: inline-block;
