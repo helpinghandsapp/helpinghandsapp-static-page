@@ -3,9 +3,6 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-* {
-  border: 1px solid tomato;
-}
 html,
 body {
   width: 100%;
@@ -415,7 +412,7 @@ header .header-content .header-content-inner p {
 
 .covid-bar {
   padding: 5px 0;
-  margin: 20px 0;
+  margin: 0 0 20px;
   width: 100vw;
   text-align: center;
   background: black;
@@ -526,22 +523,22 @@ header .header-content .header-content-inner p {
   height: 60vh;
 }
 
-.covid-section {
-  padding: 20% 25px;
-}
-
 .covid-resource-info {
   text-align: center;
   margin: 0.25em auto;
 }
 
-.covid-intro,
-.covid-info {
-  margin: 2rem 2rem;
+.covid-feature-section .responsive {
+  margin-top: 30px;
 }
 
 .covid-intro {
+  margin: 2rem 2rem;
   color: white;
+}
+
+.covid-info {
+  margin: 2rem 0;
 }
 
 .covid-link {
@@ -562,8 +559,12 @@ header .header-content .header-content-inner p {
   color: #F17014;
 }
 
+.covid-link2 {
+  word-wrap: break-word;
+}
+
 .covid-feature-section {
-  margin: 1rem auto 5rem auto;
+  margin: 1rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -579,6 +580,9 @@ header .header-content .header-content-inner p {
 }
 
 @media (max-width:899px) {
+  .covid-section {
+    padding: 0 25px;
+  }
   .single-item {
     width: 85vw;
   }
@@ -647,16 +651,16 @@ header .header-content .header-content-inner p {
 
 @media (max-width: 612px) {
   .covid-blm-iframe {
-    width: 85%;
+    /* width: 85%; */
     height: 30vh;
   }
 }
 
-@media (max-width: 586px) {
+/* @media (max-width: 586px) {
   .covid-blm-iframe {
     width: 90%;
   }
-}
+} */
 
 /* END COVID INFO FEATURE STYLING */
 
@@ -686,9 +690,11 @@ header .header-content .header-content-inner p {
   .eventbrite-button {
     width: 129px;
   }
+  .eventbrite-button a {
+    display: block;
+  }
 
   .eventbrite-button img {
-    margin: 0 auto;
     width: 100%;
     border-radius: 25px;
   }
@@ -703,9 +709,9 @@ header .header-content .header-content-inner p {
     box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16)
   }
 
-  @media (max-width: 556px) {
-    .eventbrite-iframe {
-      width: 90%;
+  @media (max-width: 899px) {
+    #covid-eventbrite {
+      padding: 80px 25px;
     }
   }
 /* END OF EVENTBRITE SECTION ON COVID19.HTML */
