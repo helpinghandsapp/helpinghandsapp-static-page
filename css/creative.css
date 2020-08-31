@@ -244,7 +244,11 @@ aside {
   color: #F17014;
 }
 
+<<<<<<< HEAD
 @media (max-width: 964px) {
+=======
+@media (max-width: 994px) {
+>>>>>>> master
   .navbar-nav .subnav-menu .subnav {
     position: initial;
     display: block;
@@ -254,7 +258,11 @@ aside {
   }
 }
 
+<<<<<<< HEAD
 @media (min-width: 965px) {
+=======
+@media (min-width: 995px) {
+>>>>>>> master
   .navbar-default {
     background-color: transparent;
     border-color: transparent;
@@ -426,8 +434,26 @@ header .header-content .header-content-inner p {
   font-size: 18px;
   padding: 0 10px;
 }
+<<<<<<< HEAD
 .covid-bar .wrapper {
   padding: 0 60px;
+=======
+
+.covid-bar:hover {
+  color: red;
+  background: black;
+}
+@media (max-width: 992px) {
+  .covid-bar {
+    margin-top: 10%;
+  }
+} 
+
+@media (max-width: 767px) {
+  .covid-bar {
+    margin-top: 5%;
+  }
+>>>>>>> master
 }
 
 #covid {
@@ -1905,9 +1931,14 @@ footer ul li a.active {
 
 @media (max-width:1356px) {
   .workshop-feature-item {
+<<<<<<< HEAD
     padding: 10px 0;
     width: 115px;
     height: 170px;
+=======
+    width: 125px;
+    height: 175px;
+>>>>>>> master
     border-radius: 25px;
   }
 
@@ -1947,7 +1978,7 @@ footer ul li a.active {
   }
 
   #mta-popup-img {
-    height: 400px;
+    
   }
 
 }
@@ -2003,8 +2034,13 @@ footer ul li a.active {
 
 @media (max-width:360px) {
   .workshop-feature-item {
+<<<<<<< HEAD
     width: 150px;
     height: 220px;
+=======
+    width: 155px;
+    height: 225px;
+>>>>>>> master
     border-radius: 30px;
   }
 
@@ -2089,14 +2125,18 @@ footer ul li a.active {
   }
 }
 
-@media (max-width:360px) {
+@media (max-width:359px) {
   .recently-flex-container {
     max-width: none;
   }
 
   .workshop-flex-container {
+    padding-bottom: 104px;
     min-width: auto;
     max-height: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -2877,6 +2917,7 @@ img {
   opacity: 1;
 }
 
+<<<<<<< HEAD
 @media (min-width: 1356px) {
   #mta-popup-img {
     margin-top: 222px;
@@ -2895,6 +2936,10 @@ img {
 
 .more-than-an-app-desktop .col-md-6 {
   padding-right: 0;
+=======
+#mta-popup-img {
+  margin-top: 200px;
+>>>>>>> master
 }
 
 @media (min-width:992px) {
