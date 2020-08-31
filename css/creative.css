@@ -966,6 +966,14 @@ section.features .feature-item i {
   border-radius: 28px 28px 0 0;
 }
 
+.team-h3 {
+  color: black;
+  font-weight: bold;
+  font-size: 4rem;
+  text-align: center;
+  margin: 0 0 40px;
+}
+
 .head-team {
   display: grid;
   -ms-display: grid;
@@ -992,6 +1000,10 @@ section.features .feature-item i {
   .team2 {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     padding: 0;
+  }
+
+  .team-h3 {
+    font-size: 3rem;
   }
 
   .head-team {
