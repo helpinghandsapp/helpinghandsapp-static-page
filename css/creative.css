@@ -3,6 +3,7 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+
 html,
 body {
   width: 100%;
@@ -415,11 +416,11 @@ header .header-content .header-content-inner p {
   margin: 0 0 20px;
   width: 100vw;
   text-align: center;
-  background: black;
+  background: linear-gradient(to bottom right, #F17014, #FFC400);
 }
 
 .covid-bar a {
-  color: white;
+  color: #000;
   font-style: italic;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
@@ -973,13 +974,16 @@ section.features .feature-item i {
   padding-bottom: 0;
   border-radius: 28px 28px 0 0;
 }
+.team2 .team-h3:nth-child(1) {
+  margin-top: 0;
+}
 
 .team-h3 {
   color: black;
   font-weight: bold;
   font-size: 2.5rem;
   text-align: center;
-  margin: 0 0 40px;
+  margin: 40px 0;
 }
 
 .head-team {
@@ -1092,48 +1096,53 @@ section.features .feature-item i {
 .sponsors {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-left: 0;
+  margin-bottom: 0;
 }
 .sponsors-item {
   list-style-type: none;
-  margin-left: 20px;
-  margin-right: 20px;
   transition: all ease-in 0.3s;
 }
 .sponsors-funders .sponsors-item,
 .sponsors-supporters .sponsors-item:nth-child(1),
 .sponsors-supporters .sponsors-item:nth-child(2) {
-  width: 550px;
-  height: 200px;
+  width: 500px;
+  height: 180px;
+}
+
+.sponsors-funders .sponsors-item:nth-child(3) {
+  margin: 0 auto 100px;
 }
 .sponsors-trustees .sponsors-item {
-  width: 650px;
+  width: 500px;
   height: 200px;
 }
 
-.sponsors-funders .sponsors-item {
+.sponsors-funders .sponsors-item,
+.sponsors-trustees .sponsors-item {
   margin-bottom: 100px;
 }
-.sponsors-trustees .sponsors-item,
+
 .sponsors-supporters .sponsors-item {
   margin-bottom: 60px;
 }
+
 .sponsors-item:hover {
   transform: scale(0.95);
 }
+
 .sponsors-supporters .sponsors-item:nth-child(3),
+.sponsors-supporters .sponsors-item:nth-child(4),
 .sponsors-supporters .sponsors-item:nth-child(5) {
   height: 250px;
   width: 250px;
 }
-.sponsors-supporters .sponsors-item:nth-child(4) {
-  height: 275px;
-  width: 275px;
-}
+
 .sponsors-link {
   width: 100%;
   height: 100%;
+  display: inline-block;
 }
 .sponsors-image {
   width: 100%;
@@ -1143,65 +1152,27 @@ section.features .feature-item i {
 .image-vertical {
   display: none;
 }
-@media (min-width: 1900px) {
-  .sponsors-supporters .sponsors-item:nth-child(4) {
-    margin-left: 50px;
-    margin-right: 50px;
+
+@media (max-width: 1240px) {
+  .sponsors {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sponsors-funders .sponsors-item:nth-child(3) {
+    margin: 0 0 100px;
   }
 }
-@media (min-width: 1885px) {
-  .sponsors-funders .sponsors-item{
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-}
-@media (max-width: 1550px) {
-  .sponsors-trustees .sponsors-item {
-    width: 550px;
-  }
-}
-@media (max-width: 1296px) {
-  .sponsors-supporters .sponsors-item:nth-child(3),
-  .sponsors-supporters .sponsors-item:nth-child(4){
-    height: 300px;
-    width: 300px;
-  }
-  .sponsors-supporters .sponsors-item:nth-child(5) {
-    width: 200px;
-    height: 200px;
-  }
-  .sponsors-supporters .sponsors-item:nth-child(3),
-  .sponsors-supporters .sponsors-item:nth-child(4),
-  .sponsors-supporters .sponsors-item:nth-child(5) {
-    margin: 0 200px 50px;
-  }
-}
-@media (max-width: 770px) {
-  .sponsors-item {
+@media (max-width: 690px) {
+  .sponsors-funders .sponsors-item,
+  .sponsors-trustees .sponsors-item,
+  .sponsors-supporters .sponsors-item:nth-child(1),
+  .sponsors-supporters .sponsors-item:nth-child(2) {
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
   }
-  .sponsors-supporters .sponsors-item:nth-child(3),
-  .sponsors-supporters .sponsors-item:nth-child(4) {
-    width: 300px;
-  }
-}
-
-@media (max-width: 716px) {
-  .sponsors-supporters .sponsors-item:nth-child(3),
-  .sponsors-supporters .sponsors-item:nth-child(4),
-  .sponsors-supporters .sponsors-item:nth-child(5) {
-    margin: 0 0 50px;
-  }
-  .sponsors-supporters .sponsors-item:nth-child(5) {
-    width: 300px;
-  }
-}
-
-@media (max-width: 616px) {
-  .sponsors-supporters .sponsors-item:nth-child(5) {
-    width: 200px;
+  .sponsor-div {
+    width: 100%;
+    padding: 5rem 2rem;
   }
 }
 
@@ -1218,22 +1189,13 @@ section.features .feature-item i {
   .image-vertical {
     display: block;
   }
-  .sponsors-funders .sponsor-item:nth-child(3) {
-    height: 225px;
+  .sponsors-funders .sponsors-item:nth-child(3) {
+    height: 280px;
   }
+}
+@media (max-width: 400px) {
   .sponsor-div {
-    padding: 5rem;
-  }
-  .sponsors-funders .sponsors-item,
-  .sponsors-trustees .sponsors-item,
-  .sponsors-supporters .sponsors-item:nth-child(1),
-  .sponsors-supporters .sponsors-item:nth-child(2) {
-    width: 350px;
-  }
-  .sponsors-supporters .sponsors-item:nth-child(3),
-  .sponsors-supporters .sponsors-item:nth-child(4) {
-    width: 250px;
-    height: 250px;
+    padding: 5rem 1rem;
   }
 }
 
@@ -1653,10 +1615,6 @@ img::-moz-selection {
 body {
   overflow-x: hidden;
 }
-
-
-
-
 
 .form-control {
   border-color: #fff;
@@ -2153,6 +2111,10 @@ footer ul li a.active {
 }
 
 /*Volunteer Page*************************************************/
+.volunteer-section {
+  padding-bottom: 0;
+}
+
 .volunteer-card {
   max-width: 600px;
   background: #ffffff;
@@ -2160,7 +2122,6 @@ footer ul li a.active {
   margin: auto;
   margin-bottom: 15px;
 }
-
 
 #volunteer-icon {
   margin-top: -20px
@@ -2175,28 +2136,42 @@ footer ul li a.active {
 #volunteer-img {
   transition: 0.3s;
   height: 310px;
-  width: 310px;
-  margin-top: -5px;
 }
 
-.volunteer-img-container {
+.volunteer-positions {
   padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.volunteer-positions .volunteer-item {
+  margin: 10px;
+}
+.volunteer-positions .volunteer-link {
+  display: inline-block;
 }
 
-@media (max-width:400px) {
+@media (max-width: 455px) {
   #volunteer-img {
     height: 250px;
     width: 250px;
   }
 
-  .volunteer-img-container {
+  .volunteer-positions {
     padding: 10px;
   }
 }
 
-@media (max-width:360px) {
-  .volunteer-img-container {
+@media (max-width: 360px) {
+  .volunteer-positions {
     padding: 15px;
+  }
+}
+
+@media (max-width: 350px) {
+  #volunteer-img {
+    height: 200px;
+    width: 200px;
   }
 }
 
