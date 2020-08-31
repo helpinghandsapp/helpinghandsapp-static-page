@@ -3,7 +3,9 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+* {
+  border: 1px solid tomato;
+}
 html,
 body {
   width: 100%;
@@ -971,7 +973,6 @@ section.features .feature-item i {
 /*-------------------------------------------------*/
 .team2 {
   width: 100%;
-  padding: 5rem;
   padding-bottom: 0;
   border-radius: 28px 28px 0 0;
 }
@@ -1009,7 +1010,6 @@ section.features .feature-item i {
 @media (max-width: 500px) {
   .team2 {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    padding: 0;
   }
 
   .team-h3 {
@@ -1022,17 +1022,16 @@ section.features .feature-item i {
 }
 
 .team-item {
-  width: 225px;
+  width: 255px;
   border-radius: 28px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   background: white;
   margin: 2rem auto;
-  word-wrap: break-word;
 }
 
 .img-square {
   height: 225px;
-  width: 225px;
+  width: 100%;
   border-radius: 25px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
   object-fit: cover;
@@ -1073,23 +1072,11 @@ section.features .feature-item i {
 }
 .about-us .team-mailto-link {
   text-decoration: none;
-
+  word-wrap: break-word;
 }
 .about-us .team-mailto-link:hover,
 .about-us .team-mailto-link:focus {
   color: #0A5F93;
-}
-
-@media (max-width:992px) {
-  #team2 {
-    margin-top: 70px;
-  }
-}
-
-@media (max-width:600px) {
-  #team2 {
-    margin-top: inherit
-  }
 }
 
 /* sponsors section */
@@ -1714,7 +1701,7 @@ section.contact h5 {
 }
 
 section.contact h6 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 section.contact h6 i {
