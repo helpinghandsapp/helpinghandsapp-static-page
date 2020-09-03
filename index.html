@@ -113,14 +113,36 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                  <li>
-                    <a class="page-scroll" href="#features">About</a>
+                  <li class="subnav-menu">
+                    <button>Home <span>&#9660;</span></button>
+                    <ul class="nav subnav">
+                      <li class="subnav-link">
+                        <a href="index.html">Homepage</a>
+                      </li>
+                      <li class="subnav-link">
+                        <a class="page-scroll" href="#features">About</a>
+                      </li>
+                      <li class="subnav-link">
+                        <a class="page-scroll" href="#help">Help</a>
+                      </li>
+                      <li class="subnav-link">
+                        <a class="page-scroll" href="#contact">Contact</a>
+                      </li>
+                    </ul>
                   </li>
                   <!--    <li>
                     <a class="page-scroll" href="#whats-new">What's new</a>
                   </li> -->
-                  <li>
-                    <a href="covid19.html">Covid Response</a>
+                  <li class="subnav-menu">
+                    <button>Covid/Anti-Black Racism <span>&#9660;</span></button>
+                    <ul class="nav subnav">
+                      <li class="subnav-link">
+                        <a href="covid19.html">Covid Response</a>
+                      </li>
+                      <li class="subnav-link">
+                        <a class="page-scroll" href="covid19.html#anti-black_racism_guidebook">Anti-Black Racism Guidebook</a>
+                      </li>
+                    </ul>
                   </li>
                   <li>
                     <a href="team.html">Team</a>
@@ -134,13 +156,6 @@
                   <li>
                     <a href="/blog">Blog</a>
                   </li>
-                  <li>
-                    <a class="page-scroll" href="#help">Help</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                  </li>
-
               </div>
               <!-- /.navbar-collapse -->
             </div>
@@ -151,21 +166,23 @@
         <!--============================================================================================-->
         
         <header>
-          <a href="./covid19.html"><div class="covid-bar">
-            <h4>Click Here For Our Response to Covid and Black Lives Matter</h4>
-          </div></a>
+          <div class="covid-bar">
+            <a href="./covid19.html">
+              Click Here For Our Response to Covid and Black Lives Matter
+            </a>
+          </div>
           
           <div class="landing-pg-flex-container display-flex-flexwrap">
             
             <div class= "image-container">
               <img class="landing-header" src="img/LandingHeader.png" style= " max-width:600px; width: 90%;"/>
-              </div>
-
-              <div class= "image-container">
-                <img class="landing-img" src="img/LandingImage.png" style= "max-width:800px; width: 100%;" />
-              </div>
-
             </div>
+
+            <div class= "image-container">
+              <img class="landing-img" src="img/LandingImage.png" style= "max-width:800px; width: 100%;" />
+            </div>
+
+          </div>
         </header>
 
 <!--
@@ -348,8 +365,35 @@
               </div>
             </section>
 
+      <!--GOFUNDME ============================================================================================-->
+      <section id="goFundMe" class="goFundMe bg-secondary">
+        <div class="container">
+          <h3 class="goFundMe-heading">Support Us On GoFundMe</h3>
+          <div class="goFundMe-content">
+            <div class="goFundMe-imageContainer">
+              <img class="goFundMe-image" src="img/gofundme_img.jpg" alt="helping hands team meeting">
+            </div>
+            <div class="goFundMe-textContainer">
+              <h3 class="goFundMe-subheading">Lend a Helping Hand to Youth</h3>
+              <div class="goFundMe-progress progress">
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                </div>
+              </div>
+              <p class="goFundMe-text"><strong>$1,050</strong> of $5,000 goal</p>
+              <p class="goFundMe-text">(Last Updated on 08-20-2020)</p>
+              <div class="goFundMe-buttonContainer">
+                <a id='gfm-charity-donate-link' class="btn btn-seconday goFundMe-button"
+                  style='background-color:#006b8e; color: white; border-radius: 4px; padding: 15px 50px; display: inline-block; text-decoration: none; vertical-align: middle; font-size: 16px; font-family: Open Sans,sans-serif; line-height: 24px'
+                  role='button' href='https://charity.gofundme.com/donate/project/lend-a-helping-hand-to-youth/helping-hands-app' target="_blank">Donate now</a>
+                <img class="goFundMe-logo" src="img/gofundme_logo.png" alt="gofundme charity logo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!--MOBILE VIEW FOR MORE THAN AN APP ============================================================================================-->
-      <section id="mta" class="bg-secondary">
+      <section id="mta" class="bg-primary">
      <div  class="more-than-an-app-mobile" style="margin-bottom:-200px;">
       <h2 id="main-title" class="container text-center" style="margin-top:0px; ">
           We Are More Than Just An App!
@@ -924,7 +968,7 @@
 
               <div id ="help-img-cont" class="col-md-6">
                 <div class="center-block display-flex-center helpImgContainer">
-                  <img class="help-img2" src="img/illustration_help.png" class="img-responsive center-block display-flex-center"
+                  <img class="help-img2" src="img/illustration_help-img.png" class="img-responsive center-block display-flex-center"
                     alt="">
                 </div>
               </div>
@@ -957,7 +1001,7 @@
             <div class="help-img" style="text-align: center;  border-radius: 20px; margin-top: 10px; padding: 10px;">
                 <img class="help-cont-logo" src="img/org_DixieBloor.png"
                   class="img-responsive center-block display-flex-center" alt="">
-                <img class="help-cont-logo" src="img/org_nexus-logo.png" style="max-height: 50px"
+                <img class="help-cont-logo" src="img/org_nexus.png" style="max-height: 50px"
                   class="img-responsive center-block display-flex-center" alt="">
               </div>
             </div>
@@ -1553,16 +1597,6 @@
           </div>
           </ul>
         </div>
-
-        <section id="home-partners" style=" padding-top:50px; ">
-          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-              <h3 text-align="center" style="color:black">Funded by</h3>
-              <br>
-              <div class="row text-center">
-                <a href="http://www.otf.ca/"><img src="img/org_OTF.jpg" style="max-width:300px; max-height: 170px; border-radius: 25px">
-            </div>
-          </div>
-      </section>
 
     </section>
 
