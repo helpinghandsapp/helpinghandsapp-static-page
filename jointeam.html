@@ -260,174 +260,175 @@
 </section>
 </section>
 
+<!-- Job Posting Section -->
 <section>
   <style>
-
-    /**************************************************
-
-      accordion styels
-
-    **************************************************/
-
-
-    /* T
-      ab width is full-screen on small devices
-      then will center itself above 640px
-    */
-
-    .tab-group {
-      margin: 0 auto;
-      max-width: 40em;
+  /* move these to creative.css once complete */
+    .jobPostings {
+      height: 45vh;
       width: 100%;
+      background: #F5F7FA;
     }
 
-    /*
-      Individual tabs are 100% of wrapper and position 
-      themselves relative to previous tab
+    .container {
+      width: 100%;
+      display: flex;
+    }
 
-    */
+    .column {
+      position: relative;
+      display: flex;
+      overflow: hidden;
+      width: 25px;
+      transition: width 0.5s ease-in-out;
+      background-color: black;
+      height: 45vh;
+    }
+
+    .column.show {
+      width: 100%;
+    }
 
     .tab {
+      position:absolute;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+      width: 25px;
+      z-index: 1;
+      height: 100vh;
+    }
+
+    .content {
+      position:absolute;
+      color: white;
+      width: 90%;
+      overflow: hidden;
+      background-color: black;
+      margin: 0 55px;
+    }
+
+    /* vertical accordian styles */
+
+    /* this fits accordian to full width // can be switched to any column using :nth-child selector */
+    .column:first-child .content {
+      width: 100%;
+      margin: 0 0 0 25px;
+    }
+
+    .container-vertical {
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+    }
+
+    .slide {
       position: relative;
+      overflow: hidden;
+      height: 25px;
+      transition: height 0.5s ease-in-out;
+      background-color: white;
       width: 100%;
     }
 
-    /*
-      Radion elements are hidden so they
-      will be positioned absolutely, set to top 
-      left corner and positioned out of way
-    */
-
-    .tab input {
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: -999;
+    .slide.show {
+      height: calc(100vh - 50px);
     }
 
-    /*
-      Input label will toggle radio buttons 
-      when label is clicked it will reveal its
-      adjacent accordion content
-
-    */
-
-
-    .tab label {
-      background: #72d2c6;
-      color: #fff;
-      display: block; /* makes Label span full width */
-      font-weight: bold;
-      line-height: 3; /* increases clicking area */
-      padding-left: .5em;
-      margin-bottom: .5em;
-      /* Adds transiton to letter spacing on hover*/
-      transition: letter-spacing .55s;
+    .tab-vertical {
+      position:absolute;
+      /* color: white; */
+      cursor: pointer;
+      width: 100%;
+      z-index: 1;
+      height: 25px;
     }
 
-    /* 
-      Focus and Hover styles
-    */
-
-    .tab input:focus + label,
-    .tab label:hover {
-      background: linear-gradient(to bottom left, rgb(0,152,238),rgb(0,76,143));
-      letter-spacing: 1px;
-    }
-
-    .tab-content {
-      /* hides the content of the divs */
-      max-height: 0px;
+    .content-vertical {
+      position:absolute;
+      color: black;
+      width: 100%;
+      height:100%;
       overflow: hidden;
-      /* slide transition for when tab is opened 
-        prevents jerky content */
-      transition: all .5s;
+      background-color: whitesmoke;
+      margin: 25px 0 0;
+      
     }
 
-    .tab-content p {
-      margin: 1em;
-    }
-
-
-    .tab input:checked ~ .tab-content {
-      /*uses general sibling combinator to 
-          open tabs when radio inputs are selected */
-      max-height: 100%;
-      /* sets height to largest accordion tab */
-    }
+  /* tab colors. Add with more tabs. */
+    .column:first-child .tab, .row:nth-child(6) .tab-vertical { background-color: #e5c5c3; }
+    .column:nth-child(2) .tab, .row:nth-child(5) .tab-vertical  { background-color: #f9c1bc; }
+    .column:nth-child(3) .tab, .row:nth-child(4) .tab-vertical { background-color: #dcd2ce; }
+    .column:nth-child(4) .tab, .row:nth-child(3) .tab-vertical { background-color: #a4e6e8; }
+    .column:nth-child(5) .tab, .row:nth-child(2) .tab-vertical { background-color: #52dee4; }
+    .column:nth-child(6) .tab, .row:first-child .tab-vertical { background-color: #0088DB; }
+    .column:nth-child(7) .tab, .row:first-child .tab-vertical { background-color: #e5c5c3; }
+    .column:nth-child(8) .tab, .row:first-child .tab-vertical { background-color: #f9c1bc; }
+    .column:nth-child(9) .tab, .row:first-child .tab-vertical { background-color: #dcd2ce; }
   </style>
-
-  <div class="tab-group">
-    <div class="tab">
-      <!-- tab radio group -->
-      <input id="tab-one" type="radio" name="tabs">
-      <label for="tab-one">Label One</label>
-
-      <!-- content container -->
-      <div class="tab-content">
-        <iframe class="covid-blm-iframe" src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=tulgi597t9" seamless="seamless" scrolling="no" allowfullscreen="" frameborder="0"></iframe>
-        <p>apply</p>
+<!-- column tabs and content containers, when adding more of these, you'll need to add more colors above. -->
+<div class="jobPostings">
+  <div class="container">
+    <div class="column">
+      <div class="tab"></div>
+      <div class="content">
+        <!-- not currently working, but these are nested vertical slides for the accordian. -->
+        <!-- <div class="container-vertical">
+          <div class="slide">
+            <div class="tab-vertical"></div>
+            <div class="content-vertical">Nested Accordion!</div>
+          </div>
+          <div class="slide">
+            <div class="tab-vertical"></div>
+            <div class="content-vertical">Nested Accordion!</div>
+          </div>
+          <div class="slide">
+            <div class="tab-vertical"></div>
+            <div class="content-vertical">Nested Accordion!</div>
+          </div>
+        </div> -->
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue mauris augue neque gravida in fermentum et sollicitudin. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Ornare suspendisse sed nisi lacus sed viverra. Praesent tristique magna sit amet purus gravida quis blandit turpis. Ultrices sagittis orci a scelerisque purus semper eget duis. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Id neque aliquam vestibulum morbi blandit cursus risus at. Augue ut lectus arcu bibendum. Id consectetur purus ut faucibus pulvinar. Nec tincidunt praesent semper feugiat nibh sed. Eget dolor morbi non arcu. Vulputate sapien nec sagittis aliquam. Enim neque volutpat ac tincidunt vitae semper. Consectetur libero id faucibus nisl tincidunt. Elementum nibh tellus molestie nunc non blandit massa enim. Tortor dignissim convallis aenean et tortor at risus viverra.
       </div>
-
-
     </div>
-
-    <div class="tab">
-      <!-- tab radio group -->
-      <input id="tab-two" type="radio" name="tabs">
-      <label for="tab-two">Label Two</label>
-
-      <!-- content container -->
-      <div class="tab-content">
-        <iframe class="covid-blm-iframe" src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=tulgi597t9" seamless="seamless" scrolling="no" allowfullscreen="" frameborder="0"></iframe>
-        <p>apply</p>
+    <div class="column">
+      <div class="tab"></div>
+      <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue mauris augue neque gravida in fermentum et sollicitudin. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Ornare suspendisse sed nisi lacus sed viverra. Praesent tristique magna sit amet purus gravida quis blandit turpis. Ultrices sagittis orci a scelerisque purus semper eget duis. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Id neque aliquam vestibulum morbi blandit cursus risus at. Augue ut lectus arcu bibendum. Id consectetur purus ut faucibus pulvinar. Nec tincidunt praesent semper feugiat nibh sed. Eget dolor morbi non arcu. Vulputate sapien nec sagittis aliquam. Enim neque volutpat ac tincidunt vitae semper. Consectetur libero id faucibus nisl tincidunt. Elementum nibh tellus molestie nunc non blandit massa enim. Tortor dignissim convallis aenean et tortor at risus viverra.</div>
+    </div>
+    <div class="column">
+      <div class="tab"></div>
+      <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue mauris augue neque gravida in fermentum et sollicitudin. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Ornare suspendisse sed nisi lacus sed viverra. Praesent tristique magna sit amet purus gravida quis blandit turpis. Ultrices sagittis orci a scelerisque purus semper eget duis. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Id neque aliquam vestibulum morbi blandit cursus risus at. Augue ut lectus arcu bibendum. Id consectetur purus ut faucibus pulvinar. Nec tincidunt praesent semper feugiat nibh sed. Eget dolor morbi non arcu. Vulputate sapien nec sagittis aliquam. Enim neque volutpat ac tincidunt vitae semper. Consectetur libero id faucibus nisl tincidunt. Elementum nibh tellus molestie nunc non blandit massa enim. Tortor dignissim convallis aenean et tortor at risus viverra.</div>
+    </div>
+    <div class="column">
+      <div class="tab"></div>
+      <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue mauris augue neque gravida in fermentum et sollicitudin. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Ornare suspendisse sed nisi lacus sed viverra. Praesent tristique magna sit amet purus gravida quis blandit turpis. Ultrices sagittis orci a scelerisque purus semper eget duis. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Id neque aliquam vestibulum morbi blandit cursus risus at. Augue ut lectus arcu bibendum. Id consectetur purus ut faucibus pulvinar. Nec tincidunt praesent semper feugiat nibh sed. Eget dolor morbi non arcu. Vulputate sapien nec sagittis aliquam. Enim neque volutpat ac tincidunt vitae semper. Consectetur libero id faucibus nisl tincidunt. Elementum nibh tellus molestie nunc non blandit massa enim. Tortor dignissim convallis aenean et tortor at risus viverra.</div>
+    </div>
+    <div class="column">
+      <div class="tab"></div>
+      <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue mauris augue neque gravida in fermentum et sollicitudin. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Ornare suspendisse sed nisi lacus sed viverra. Praesent tristique magna sit amet purus gravida quis blandit turpis. Ultrices sagittis orci a scelerisque purus semper eget duis. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Id neque aliquam vestibulum morbi blandit cursus risus at. Augue ut lectus arcu bibendum. Id consectetur purus ut faucibus pulvinar. Nec tincidunt praesent semper feugiat nibh sed. Eget dolor morbi non arcu. Vulputate sapien nec sagittis aliquam. Enim neque volutpat ac tincidunt vitae semper. Consectetur libero id faucibus nisl tincidunt. Elementum nibh tellus molestie nunc non blandit massa enim. Tortor dignissim convallis aenean et tortor at risus viverra.</div>
+    </div>
+    <div class="column">
+      <div class="tab"></div>
+      <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue mauris augue neque gravida in fermentum et sollicitudin. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Ornare suspendisse sed nisi lacus sed viverra. Praesent tristique magna sit amet purus gravida quis blandit turpis. Ultrices sagittis orci a scelerisque purus semper eget duis. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Id neque aliquam vestibulum morbi blandit cursus risus at. Augue ut lectus arcu bibendum. Id consectetur purus ut faucibus pulvinar. Nec tincidunt praesent semper feugiat nibh sed. Eget dolor morbi non arcu. Vulputate sapien nec sagittis aliquam. Enim neque volutpat ac tincidunt vitae semper. Consectetur libero id faucibus nisl tincidunt. Elementum nibh tellus molestie nunc non blandit massa enim. Tortor dignissim convallis aenean et tortor at risus viverra.</div>
+    </div>
+    <div class="column">
+      <div class="tab"></div>
+      <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue mauris augue neque gravida in fermentum et sollicitudin. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Ornare suspendisse sed nisi lacus sed viverra. Praesent tristique magna sit amet purus gravida quis blandit turpis. Ultrices sagittis orci a scelerisque purus semper eget duis. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Id neque aliquam vestibulum morbi blandit cursus risus at. Augue ut lectus arcu bibendum. Id consectetur purus ut faucibus pulvinar. Nec tincidunt praesent semper feugiat nibh sed. Eget dolor morbi non arcu. Vulputate sapien nec sagittis aliquam. Enim neque volutpat ac tincidunt vitae semper. Consectetur libero id faucibus nisl tincidunt. Elementum nibh tellus molestie nunc non blandit massa enim. Tortor dignissim convallis aenean et tortor at risus viverra.</div>
+    </div>
+    <div class="column">
+      <div class="tab"></div>
+      <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue mauris augue neque gravida in fermentum et sollicitudin. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Ornare suspendisse sed nisi lacus sed viverra. Praesent tristique magna sit amet purus gravida quis blandit turpis. Ultrices sagittis orci a scelerisque purus semper eget duis. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Id neque aliquam vestibulum morbi blandit cursus risus at. Augue ut lectus arcu bibendum. Id consectetur purus ut faucibus pulvinar. Nec tincidunt praesent semper feugiat nibh sed. Eget dolor morbi non arcu. Vulputate sapien nec sagittis aliquam. Enim neque volutpat ac tincidunt vitae semper. Consectetur libero id faucibus nisl tincidunt. Elementum nibh tellus molestie nunc non blandit massa enim. Tortor dignissim convallis aenean et tortor at risus viverra.</div>
+    </div>
+    <!-- Expanded last accordian with instructions on this section -->
+    <div class="column show">
+      <div class="tab"></div>
+      <div class="content">
+          <h2>Current Job/Volunteer Postings</h2>
+          <p>Click the tabs on the left to view and apply to currently available postings!</p>
       </div>
-
-
     </div>
+  </div>
+</div>
 
-    <div class="tab">
-      <!-- tab radio group -->
-      <input id="tab-three" type="radio" name="tabs">
-      <label for="tab-three">Label Three</label>
-
-      <!-- content container -->
-      <div class="tab-content">
-        <iframe class="covid-blm-iframe" src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=tulgi597t9" seamless="seamless" scrolling="no" allowfullscreen="" frameborder="0"></iframe>
-        <p>apply</p>
-      </div>
-
-
-    </div>
-
-    <div class="tab">
-      <!-- tab radio group -->
-      <input id="tab-four" type="radio" name="tabs">
-      <label for="tab-four">Label Four</label>
-
-      <!-- content container -->
-      <div class="tab-content">
-        <iframe class="covid-blm-iframe" src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=tulgi597t9" seamless="seamless" scrolling="no" allowfullscreen="" frameborder="0"></iframe>
-        <p>apply</p>
-      </div>
-
-
-    </div>
-
-    <div class="tab">
-      <!-- tab radio group -->
-      <input id="tab-five" type="radio" name="tabs">
-      <label for="tab-five">Label Five</label>
-
-      <!-- content container -->
-      <div class="tab-content">
-        <iframe class="covid-blm-iframe" src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=tulgi597t9" seamless="seamless" scrolling="no" allowfullscreen="" frameborder="0"></iframe>
-        <p>apply</p>
-      </div>
-
-
-    </div>
- 
 
 </section>
 
@@ -562,5 +563,7 @@
     <script src="js/wow.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+    <!-- accordian -->
+    <script src= "js/accordian.js"></script>
   </body>
   </html>
