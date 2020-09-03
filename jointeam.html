@@ -226,210 +226,83 @@
           <img id="volunteer-img" src="img/volunteer-img3-compressor.png" style="padding:10px; border-radius: 35px" ></i>
         </a>
 
-                <a href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank" onclick='mixpanel.track("Volunteer Post 1");'>
-                  <img id="volunteer-img" src="img/volunteer-img5-compressor.png" style="padding:10px; border-radius: 35px" ></i>
-                </a>
+        <a href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank" onclick='mixpanel.track("Volunteer Post 1");'>
+          <img id="volunteer-img" src="img/volunteer-img5-compressor.png" style="padding:10px; border-radius: 35px" ></i>
+        </a>
 
-                        <a href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank" onclick='mixpanel.track("Volunteer Post 1");'>
-                          <img id="volunteer-img" src="img/volunteer-img7-compressor.png" style="padding:10px; border-radius: 35px" ></i>
-                        </a>
-
-
-                                <a href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank" onclick='mixpanel.track("Volunteer Post 1");'>
-                                  <img id="volunteer-img" src="img/volunteer-img9-compressor.png" style="padding:10px; border-radius: 35px" ></i>
-                                </a>
+        <a href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank" onclick='mixpanel.track("Volunteer Post 1");'>
+          <img id="volunteer-img" src="img/volunteer-img7-compressor.png" style="padding:10px; border-radius: 35px" ></i>
+        </a>
 
 
-                                        <a href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank" onclick='mixpanel.track("Volunteer Post 1");'>
-                                          <img id="volunteer-img" src="img/volunteer-img11-compressor.png" style="padding:10px; border-radius: 35px" ></i>
-                                        </a>
+        <a href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank" onclick='mixpanel.track("Volunteer Post 1");'>
+          <img id="volunteer-img" src="img/volunteer-img9-compressor.png" style="padding:10px; border-radius: 35px" ></i>
+        </a>
 
 
-                                                                                <a href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank" onclick='mixpanel.track("Volunteer Post 1");'>
-                                                                                  <img id="volunteer-img" src="img/volunteer-img13-compressor.png" style="padding:10px; border-radius: 35px" ></i>
-                                                                                </a>
+        <a href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank" onclick='mixpanel.track("Volunteer Post 1");'>
+          <img id="volunteer-img" src="img/volunteer-img11-compressor.png" style="padding:10px; border-radius: 35px" ></i>
+        </a>
 
 
-                                                                                                                        <a href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank" onclick='mixpanel.track("Volunteer Post 1");'>
-                                                                                                                          <img id="volunteer-img" src="img/volunteer-img15-compressor.png" style="padding:10px; border-radius: 35px" ></i>
-                                                                                                                        </a>
+        <a href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank" onclick='mixpanel.track("Volunteer Post 1");'>
+          <img id="volunteer-img" src="img/volunteer-img13-compressor.png" style="padding:10px; border-radius: 35px" ></i>
+        </a>
+
+
+        <a href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank" onclick='mixpanel.track("Volunteer Post 1");'>
+          <img id="volunteer-img" src="img/volunteer-img15-compressor.png" style="padding:10px; border-radius: 35px" ></i>
+        </a>
         </div>
       </div>
 
   </section> -->
+  </section>
 </section>
-</section>
 
-<!-- Job Posting Section -->
-<section>
-  <style>
-  /* move these to creative.css once complete */
-    .jobPostings {
-      height: 45vh;
-      width: 100%;
-      background: #F5F7FA;
-    }
-
-    .container {
-      width: 100%;
-      display: flex;
-    }
-
-    .column {
-      position: relative;
-      display: flex;
-      overflow: hidden;
-      width: 25px;
-      transition: width 0.5s ease-in-out;
-      background-color: black;
-      height: 45vh;
-    }
-
-    .column.show {
-      width: 100%;
-    }
-
-    .tab {
-      position:absolute;
-      color: white;
-      text-align: center;
-      cursor: pointer;
-      width: 25px;
-      z-index: 1;
-      height: 100vh;
-    }
-
-    .content {
-      position:absolute;
-      color: white;
-      width: 90%;
-      overflow: hidden;
-      background-color: black;
-      margin: 0 55px;
-    }
-
-    /* vertical accordian styles */
-
-    /* this fits accordian to full width // can be switched to any column using :nth-child selector */
-    .column:first-child .content {
-      width: 100%;
-      margin: 0 0 0 25px;
-    }
-
-    .container-vertical {
-      width: 100%;
-      display: flex;
-      flex-flow: column;
-    }
-
-    .slide {
-      position: relative;
-      overflow: hidden;
-      height: 25px;
-      transition: height 0.5s ease-in-out;
-      background-color: white;
-      width: 100%;
-    }
-
-    .slide.show {
-      height: calc(100vh - 50px);
-    }
-
-    .tab-vertical {
-      position:absolute;
-      /* color: white; */
-      cursor: pointer;
-      width: 100%;
-      z-index: 1;
-      height: 25px;
-    }
-
-    .content-vertical {
-      position:absolute;
-      color: black;
-      width: 100%;
-      height:100%;
-      overflow: hidden;
-      background-color: whitesmoke;
-      margin: 25px 0 0;
-      
-    }
-
-  /* tab colors. Add with more tabs. */
-    .column:first-child .tab, .row:nth-child(6) .tab-vertical { background-color: #e5c5c3; }
-    .column:nth-child(2) .tab, .row:nth-child(5) .tab-vertical  { background-color: #f9c1bc; }
-    .column:nth-child(3) .tab, .row:nth-child(4) .tab-vertical { background-color: #dcd2ce; }
-    .column:nth-child(4) .tab, .row:nth-child(3) .tab-vertical { background-color: #a4e6e8; }
-    .column:nth-child(5) .tab, .row:nth-child(2) .tab-vertical { background-color: #52dee4; }
-    .column:nth-child(6) .tab, .row:first-child .tab-vertical { background-color: #0088DB; }
-    .column:nth-child(7) .tab, .row:first-child .tab-vertical { background-color: #e5c5c3; }
-    .column:nth-child(8) .tab, .row:first-child .tab-vertical { background-color: #f9c1bc; }
-    .column:nth-child(9) .tab, .row:first-child .tab-vertical { background-color: #dcd2ce; }
-  </style>
-<!-- column tabs and content containers, when adding more of these, you'll need to add more colors above. -->
-<div class="jobPostings">
-  <div class="container">
-    <div class="column">
-      <div class="tab"></div>
-      <div class="content">
-        <!-- not currently working, but these are nested vertical slides for the accordian. -->
-        <!-- <div class="container-vertical">
-          <div class="slide">
-            <div class="tab-vertical"></div>
-            <div class="content-vertical">Nested Accordion!</div>
+<!-- Volunteer Posting Section -->
+<section class="volunteer-postings-section">
+  <div class="wrapper">
+    <h2 class="volunteer-postings-heading">Current Job/Volunteer Postings</h2>
+    <p class="volunteer-postings-text">Click the tabs below to view current positions and click the apply now!</p>
+    <div class="jobPostings">
+      <div class="column">
+        <div class="container-vertical">
+          <div class="slide show">
+            <div class="tab-vertical">Administrative Assistant</div>
+            <div class="content-vertical">
+              <embed src="img/volunteerPositionPDFs/Administrative Assistant.pdf" type="application/pdf" width="100%" height="100%">
+            </div>
           </div>
           <div class="slide">
-            <div class="tab-vertical"></div>
-            <div class="content-vertical">Nested Accordion!</div>
+            <div class="tab-vertical">Fundraising and Donor Relation Associate</div>
+            <div class="content-vertical">
+              <embed src="img/volunteerPositionPDFs/Fundraising and Donor Relation Associate.pdf" type="application/pdf" width="100%" height="100%">
+            </div>
           </div>
           <div class="slide">
-            <div class="tab-vertical"></div>
-            <div class="content-vertical">Nested Accordion!</div>
+            <div class="tab-vertical">Social Media Associate</div>
+            <div class="content-vertical">
+              <embed src="img/volunteerPositionPDFs/Social Media Associate.pdf" type="application/pdf" width="100%" height="100%">
+            </div>
           </div>
-        </div> -->
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue mauris augue neque gravida in fermentum et sollicitudin. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Ornare suspendisse sed nisi lacus sed viverra. Praesent tristique magna sit amet purus gravida quis blandit turpis. Ultrices sagittis orci a scelerisque purus semper eget duis. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Id neque aliquam vestibulum morbi blandit cursus risus at. Augue ut lectus arcu bibendum. Id consectetur purus ut faucibus pulvinar. Nec tincidunt praesent semper feugiat nibh sed. Eget dolor morbi non arcu. Vulputate sapien nec sagittis aliquam. Enim neque volutpat ac tincidunt vitae semper. Consectetur libero id faucibus nisl tincidunt. Elementum nibh tellus molestie nunc non blandit massa enim. Tortor dignissim convallis aenean et tortor at risus viverra.
+          <div class="slide">
+            <div class="tab-vertical">Software Developer</div>
+            <div class="content-vertical">
+              <embed src="img/volunteerPositionPDFs/Software Developer.pdf" type="application/pdf" width="100%" height="100%">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="tab-vertical">Youth Outreach Coordinator</div>
+            <div class="content-vertical">
+              <embed src="img/volunteerPositionPDFs/Youth Outreach Coordinator.pdf" type="application/pdf" width="100%" height="100%">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="column">
-      <div class="tab"></div>
-      <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue mauris augue neque gravida in fermentum et sollicitudin. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Ornare suspendisse sed nisi lacus sed viverra. Praesent tristique magna sit amet purus gravida quis blandit turpis. Ultrices sagittis orci a scelerisque purus semper eget duis. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Id neque aliquam vestibulum morbi blandit cursus risus at. Augue ut lectus arcu bibendum. Id consectetur purus ut faucibus pulvinar. Nec tincidunt praesent semper feugiat nibh sed. Eget dolor morbi non arcu. Vulputate sapien nec sagittis aliquam. Enim neque volutpat ac tincidunt vitae semper. Consectetur libero id faucibus nisl tincidunt. Elementum nibh tellus molestie nunc non blandit massa enim. Tortor dignissim convallis aenean et tortor at risus viverra.</div>
-    </div>
-    <div class="column">
-      <div class="tab"></div>
-      <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue mauris augue neque gravida in fermentum et sollicitudin. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Ornare suspendisse sed nisi lacus sed viverra. Praesent tristique magna sit amet purus gravida quis blandit turpis. Ultrices sagittis orci a scelerisque purus semper eget duis. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Id neque aliquam vestibulum morbi blandit cursus risus at. Augue ut lectus arcu bibendum. Id consectetur purus ut faucibus pulvinar. Nec tincidunt praesent semper feugiat nibh sed. Eget dolor morbi non arcu. Vulputate sapien nec sagittis aliquam. Enim neque volutpat ac tincidunt vitae semper. Consectetur libero id faucibus nisl tincidunt. Elementum nibh tellus molestie nunc non blandit massa enim. Tortor dignissim convallis aenean et tortor at risus viverra.</div>
-    </div>
-    <div class="column">
-      <div class="tab"></div>
-      <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue mauris augue neque gravida in fermentum et sollicitudin. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Ornare suspendisse sed nisi lacus sed viverra. Praesent tristique magna sit amet purus gravida quis blandit turpis. Ultrices sagittis orci a scelerisque purus semper eget duis. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Id neque aliquam vestibulum morbi blandit cursus risus at. Augue ut lectus arcu bibendum. Id consectetur purus ut faucibus pulvinar. Nec tincidunt praesent semper feugiat nibh sed. Eget dolor morbi non arcu. Vulputate sapien nec sagittis aliquam. Enim neque volutpat ac tincidunt vitae semper. Consectetur libero id faucibus nisl tincidunt. Elementum nibh tellus molestie nunc non blandit massa enim. Tortor dignissim convallis aenean et tortor at risus viverra.</div>
-    </div>
-    <div class="column">
-      <div class="tab"></div>
-      <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue mauris augue neque gravida in fermentum et sollicitudin. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Ornare suspendisse sed nisi lacus sed viverra. Praesent tristique magna sit amet purus gravida quis blandit turpis. Ultrices sagittis orci a scelerisque purus semper eget duis. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Id neque aliquam vestibulum morbi blandit cursus risus at. Augue ut lectus arcu bibendum. Id consectetur purus ut faucibus pulvinar. Nec tincidunt praesent semper feugiat nibh sed. Eget dolor morbi non arcu. Vulputate sapien nec sagittis aliquam. Enim neque volutpat ac tincidunt vitae semper. Consectetur libero id faucibus nisl tincidunt. Elementum nibh tellus molestie nunc non blandit massa enim. Tortor dignissim convallis aenean et tortor at risus viverra.</div>
-    </div>
-    <div class="column">
-      <div class="tab"></div>
-      <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue mauris augue neque gravida in fermentum et sollicitudin. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Ornare suspendisse sed nisi lacus sed viverra. Praesent tristique magna sit amet purus gravida quis blandit turpis. Ultrices sagittis orci a scelerisque purus semper eget duis. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Id neque aliquam vestibulum morbi blandit cursus risus at. Augue ut lectus arcu bibendum. Id consectetur purus ut faucibus pulvinar. Nec tincidunt praesent semper feugiat nibh sed. Eget dolor morbi non arcu. Vulputate sapien nec sagittis aliquam. Enim neque volutpat ac tincidunt vitae semper. Consectetur libero id faucibus nisl tincidunt. Elementum nibh tellus molestie nunc non blandit massa enim. Tortor dignissim convallis aenean et tortor at risus viverra.</div>
-    </div>
-    <div class="column">
-      <div class="tab"></div>
-      <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue mauris augue neque gravida in fermentum et sollicitudin. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Ornare suspendisse sed nisi lacus sed viverra. Praesent tristique magna sit amet purus gravida quis blandit turpis. Ultrices sagittis orci a scelerisque purus semper eget duis. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Id neque aliquam vestibulum morbi blandit cursus risus at. Augue ut lectus arcu bibendum. Id consectetur purus ut faucibus pulvinar. Nec tincidunt praesent semper feugiat nibh sed. Eget dolor morbi non arcu. Vulputate sapien nec sagittis aliquam. Enim neque volutpat ac tincidunt vitae semper. Consectetur libero id faucibus nisl tincidunt. Elementum nibh tellus molestie nunc non blandit massa enim. Tortor dignissim convallis aenean et tortor at risus viverra.</div>
-    </div>
-    <div class="column">
-      <div class="tab"></div>
-      <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue mauris augue neque gravida in fermentum et sollicitudin. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Ornare suspendisse sed nisi lacus sed viverra. Praesent tristique magna sit amet purus gravida quis blandit turpis. Ultrices sagittis orci a scelerisque purus semper eget duis. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Id neque aliquam vestibulum morbi blandit cursus risus at. Augue ut lectus arcu bibendum. Id consectetur purus ut faucibus pulvinar. Nec tincidunt praesent semper feugiat nibh sed. Eget dolor morbi non arcu. Vulputate sapien nec sagittis aliquam. Enim neque volutpat ac tincidunt vitae semper. Consectetur libero id faucibus nisl tincidunt. Elementum nibh tellus molestie nunc non blandit massa enim. Tortor dignissim convallis aenean et tortor at risus viverra.</div>
-    </div>
-    <!-- Expanded last accordian with instructions on this section -->
-    <div class="column show">
-      <div class="tab"></div>
-      <div class="content">
-          <h2>Current Job/Volunteer Postings</h2>
-          <p>Click the tabs on the left to view and apply to currently available postings!</p>
-      </div>
-    </div>
+    <a class="volunteer-postings-link btn btn-seconday btn-l" href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank">Apply Now</a>
   </div>
-</div>
-
-
 </section>
 
 <!-- Sponsors Section -->

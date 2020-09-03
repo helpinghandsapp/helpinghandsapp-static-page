@@ -7,6 +7,6 @@ $tabs.click(function() {
 });
 
 $verticalTabs.click(function() {
-  $(this).parent(".row").toggleClass("show");
+  $(this).parent(".slide").toggleClass("show");
   $verticalTabs.not(this).parent().removeClass("show");
 });
