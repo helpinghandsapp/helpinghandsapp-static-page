@@ -1398,13 +1398,13 @@ th {
 }
 
 html {
-    font-size: 10px;
+    font-size: 16px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.42857143;
     color: #333;
     background-color: #fff
@@ -3850,7 +3850,7 @@ textarea.input-lg {
     display: inline-block;
     padding: 6px 12px;
     margin-bottom: 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.42857143;
     text-align: center;
@@ -7868,7 +7868,6 @@ button.close {
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #000\9;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
     border-radius: 10px

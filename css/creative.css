@@ -19,6 +19,22 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.visuallyHidden:not(:focus):not(:active) { 
+  position: absolute; 
+  width: 1px; 
+  height: 1px; 
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(00 0 0);
+  overflow: hidden;
+}
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+}
 hr {
   max-width: 100px;
   margin: 25px auto 0;
@@ -66,6 +82,10 @@ h1,
 h2,
 h3 {
   font-family: 'Nunito Sans', sans-serif;
+}
+
+h1 {
+  margin: 0;
 }
 
 h4,
@@ -428,8 +448,7 @@ header .header-content .header-content-inner p {
   margin: 20px 0;
   width: 100vw;
   text-align: center;
-  color: white;
-  background: red;
+  background: black;
 }
 
 .covid-bar a {
@@ -440,10 +459,13 @@ header .header-content .header-content-inner p {
   font-size: 18px;
 }
 
+<<<<<<< HEAD
+=======
 .covid-bar:hover {
   color: red;
   background: black;
 }
+>>>>>>> master
 @media (max-width: 992px) {
   .covid-bar {
     margin-top: 10%;
@@ -457,7 +479,7 @@ header .header-content .header-content-inner p {
 }
 
 #covid {
-  padding: 5rem 0 8rem 0;
+  padding: 5rem 0 1rem 0;
 }
 
 .covid-grid {
@@ -571,16 +593,22 @@ header .header-content .header-content-inner p {
   color: white;
 }
 
-.covid-link1 {
-  color: white;
-}
-
 .covid-link {
   margin-bottom: 3rem;
 }
 
-.covid-link2:hover {
-  color: black;
+.covid-link1 {
+  color: #fff;
+}
+
+.covid-link2,
+.covid-link3 {
+  color: #0A5F93;
+}
+
+.covid-link2:hover,
+.covid-link3:hover {
+  color: #F17014;
 }
 
 .covid-feature-section {
@@ -614,7 +642,6 @@ header .header-content .header-content-inner p {
     width: 95vw;
   }
 }
-
 
 .responsive {
   margin: 5rem auto;
@@ -662,7 +689,7 @@ header .header-content .header-content-inner p {
 }
 
 .covid-blm-iframe {
-  width: 70%;
+  width: 100%;
   height: 500px;
   border-radius: 25px;
 }
@@ -689,6 +716,9 @@ header .header-content .header-content-inner p {
     padding-top: 5rem;
     padding-bottom: 10rem;
   }
+  .covid-eventbrite-h3 {
+    font-size: 45px;
+  }
 
   .eventbrite-container {
     display: flex;
@@ -714,7 +744,7 @@ header .header-content .header-content-inner p {
 
   .eventbrite-iframe {
     margin: 0 auto;
-    width: 75vw;
+    width: 100%;
     height: 500px;
     border: none;
     margin-top: 20px;
@@ -823,6 +853,7 @@ section.features .section-heading p {
 
 #app-info-card-description {
   font-family: 'Roboto', sans-serif;
+  line-height: 1.1;
   font-weight: 400;
   font-size: 16px;
 }
@@ -847,6 +878,7 @@ section.features .feature-item i {
   font-size: 16px;
   background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
   background: linear-gradient(to left, #7b4397, #dc2430);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -966,13 +998,14 @@ section.features .feature-item i {
 .team2 {
   width: 100%;
   padding: 5rem;
+  padding-bottom: 0;
   border-radius: 28px 28px 0 0;
 }
 
 .team-h3 {
   color: black;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 2.5rem;
   text-align: center;
   margin: 0 0 40px;
 }
@@ -1006,7 +1039,7 @@ section.features .feature-item i {
   }
 
   .team-h3 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .head-team {
@@ -1053,6 +1086,7 @@ section.features .feature-item i {
   padding: 0 14px 0 14px;
   font-size: 16px;
   font-weight: 500;
+  line-height: 1.1;
 }
 
 .about-us {
@@ -1092,7 +1126,7 @@ section.features .feature-item i {
 .sponsors-header {
   color: black;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 40px;
   text-align: center;
   margin: 0 0 70px;
 }
@@ -1423,12 +1457,6 @@ section.survey .survey-content h2 {
   /*font-size: 50px;*/
 }
 
-@media (min-width: 768px) {
-  section.survey .survey-content h2 {
-    /*font-size: 80px;*/
-  }
-}
-
 section.survey .overlay {
   height: 100%;
   width: 100%;
@@ -1438,6 +1466,15 @@ section.survey .overlay {
   left: 0;
 }
 
+/* ------------------------------------------------------- */
+
+.civix-link {
+  color: #0A5F93;
+}
+
+.civix-link:hover {
+  color: #F17014;
+}
 
 /*---------------------------------------------------------*/
 .videoWrapper {
@@ -1457,7 +1494,7 @@ section.survey .overlay {
 }
 
 /*---------------------------------------------------------*/
-.brooks {
+/* .brooks {
   position: relative;
   font-family: 'Sanchez', serif;
   font-size: $base-font-size;
@@ -1473,7 +1510,7 @@ section.survey .overlay {
     font-size: 6em;
     z-index: -1;
   }
-}
+} */
 
 
 /*---------------------------------------------------------*/
@@ -1662,7 +1699,6 @@ img::-moz-selection {
 }
 
 body {
-  webkit-tap-highlight-color: #222;
   overflow-x: hidden;
 }
 
@@ -1704,12 +1740,16 @@ section.contact {
   text-align: center;
 }
 
-section.contact h2 {
-  margin-top: 0;
+section.contact h5 {
+  margin-top: 18px;
   margin-bottom: 25px;
 }
 
-section.contact h2 i {
+section.contact h6 {
+  font-size: 30px;
+}
+
+section.contact h6 i {
   color: #dd4b39;
 }
 
@@ -1725,25 +1765,6 @@ section.contact ul.list-social li a {
   border-radius: 100%;
   color: white;
 }
-
-/*section.contact ul.list-social li.social-twitter a {
-  background-color: #1da1f2;
-}
-section.contact ul.list-social li.social-twitter a:hover {
-  background-color: #0d95e8;
-}
-section.contact ul.list-social li.social-facebook a {
-  background-color: #3b5998;
-}
-section.contact ul.list-social li.social-facebook a:hover {
-  background-color: #344e86;
-}
-section.contact ul.list-social li.email a {
-  background-color: #dd4b39;
-}
-section.contact ul.list-social li.email a:hover {
-  background-color: #d73925;
-}*/
 
 /*Footer--------------------------------------------*/
 footer {
@@ -1954,7 +1975,6 @@ footer ul li a.active {
   }
 }
 
-
 .workshop-feature-item {
   width: 150px;
   height: 225px;
@@ -1973,15 +1993,6 @@ footer ul li a.active {
 
 .overlay-desktop-app {
   height: 653px
-}
-
-#Workshops,
-#Volunteer_Fairs,
-#Mentors,
-#Councils,
-#Sharing_Stories,
-#Entrepreneur {
-  padding-top: 140px;
 }
 
 @media (max-width:1356px) {
@@ -2019,16 +2030,6 @@ footer ul li a.active {
 }
 
 @media (max-width:1200px) {
-
-  #Workshops,
-  #Volunteer_Fairs,
-  #Mentors,
-  #Councils,
-  #Sharing_Stories,
-  #Entrepreneur {
-    padding-top: 85px;
-  }
-
   .overlay-desktop-app {
     height: 562px;
     margin-left: 0px;
@@ -2208,7 +2209,7 @@ footer ul li a.active {
   margin-top: -5px;
 }
 
-.volunteer-img-containter {
+.volunteer-img-container {
   padding: 30px;
 }
 
@@ -2218,13 +2219,13 @@ footer ul li a.active {
     width: 250px;
   }
 
-  .volunteer-img-containter {
+  .volunteer-img-container {
     padding: 10px;
   }
 }
 
 @media (max-width:360px) {
-  .volunteer-img-containter {
+  .volunteer-img-container {
     padding: 15px;
   }
 }
@@ -2602,7 +2603,7 @@ footer ul li a.active {
 .help-form {
   font-family: 'Roboto', sans-serif;
   max-width: 500px;
-  padding: 30px;
+  padding: 25px;
   background: #FFFFFF;
   margin: 50px auto;
   border-radius: 30px;
@@ -3105,9 +3106,12 @@ img {
   color: #F17014;
 }
 
-.instagram-handle:hover {
+.instagram-handle {
+  color: #0A5F93;
+}
 
-  color: #0A5F93
+.instagram-handle:hover {
+  color: #F17014;
 }
 
 #home-partners {
@@ -3120,6 +3124,3 @@ img {
   }
 
 }
-
-© 2020 GitHub,
-Inc. Terms Privacy Security Status Help
