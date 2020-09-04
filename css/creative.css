@@ -4,6 +4,10 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+}
 html,
 body {
   width: 100%;
@@ -1653,6 +1657,12 @@ fieldset[disabled] .btn-primary.active {
   transition: 0.35s;
 }
 
+.btn-l {
+  padding: 15px 20px;
+  width: calc(40% + 20vw);
+  margin: 0 auto;
+  max-width: 200px;
+}
 .btn-xl {
   padding: 15px 20px;
   width: calc(40% + 20vw);
@@ -2173,15 +2183,6 @@ footer ul li a.active {
   }
 }
 
-
-.volunteer-card {
-  max-width: 460px;
-  background: #ffffff;
-  border-radius: 20px;
-  margin: auto;
-  margin-bottom: 15px;
-}
-
 /*Volunteer Page*************************************************/
 .volunteer-card {
   max-width: 600px;
@@ -2190,7 +2191,6 @@ footer ul li a.active {
   margin: auto;
   margin-bottom: 15px;
 }
-
 
 #volunteer-icon {
   margin-top: -20px
@@ -2249,6 +2249,132 @@ footer ul li a.active {
     font-size: 35px;
     margin-bottom: 20px;
   }
+}
+
+.volunteer-postings-section {
+  padding: 100px 0;
+}
+
+.volunteer-postings-section .volunteer-postings-heading,
+.volunteer-postings-section .volunteer-postings-text {
+  text-align: center;
+}
+.volunteer-postings-section .volunteer-postings-heading {
+  font-size: 40px;
+  font-weight: 800;
+}
+.volunteer-postings-section .volunteer-postings-text {
+  margin-bottom: 25px;
+}
+
+.jobPostings {
+  width: 100%;
+  display: flex;
+  background: #F5F7FA;
+  margin-bottom: 30px;
+}
+
+.column {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+  height: 100%;
+}
+
+.column.show {
+  width: 100%;
+}
+
+.tab {
+  position:absolute;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 25px;
+  z-index: 1;
+  height: 100vh;
+}
+
+.content {
+  position:absolute;
+  color: white;
+  width: 90%;
+  overflow: hidden;
+  margin: 0 55px;
+}
+
+/* vertical accordian styles */
+
+/* this fits accordian to full width // can be switched to any column using :nth-child selector */
+.column:first-child .content {
+  width: 100%;
+  margin: 0 0 0 25px;
+}
+
+.container-vertical {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.slide {
+  position: relative;
+  overflow: hidden;
+  height: 45px;
+  transition: height 0.5s ease-in-out;
+  background-color: white;
+  width: 100%;
+}
+
+.slide.show {
+  height: calc(100vh - 50px);
+}
+
+.tab-vertical {
+  position:absolute;
+  cursor: pointer;
+  width: 100%;
+  z-index: 1;
+  height: 45px;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px;
+  padding-top: 10px;
+  font-style: italic;
+}
+@media (max-width: 410px) {
+  .tab-vertical {
+    font-size: 16px;
+  }
+}
+@media (max-width: 327px) {
+  .slide:nth-child(2) .tab-vertical {
+    padding-top: 0;
+  }
+}
+
+.content-vertical {
+  position:absolute;
+  color: black;
+  width: 100%;
+  height:100%;
+  overflow: hidden;
+  background-color: whitesmoke;
+  padding-top: 45px;
+}
+
+/* tab colors. Add with more tabs. */
+.column:first-child .tab, .slide:nth-child(odd) .tab-vertical {
+  background: linear-gradient(to bottom right, #F17013, #FFC400);
+}
+.column:first-child .tab, .slide:nth-child(even) .tab-vertical { 
+  background: linear-gradient(to bottom right, #0098ee,#0075db);
+}
+
+.volunteer-postings-section .volunteer-postings-link {
+  display: block;
 }
 
 /* HELP SECTION */
