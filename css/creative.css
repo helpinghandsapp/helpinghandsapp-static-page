@@ -2227,6 +2227,7 @@ footer ul li a.active {
   text-align: center;
 }
 .volunteer-postings-section .volunteer-postings-heading {
+  margin-top: 0;
   font-size: 40px;
   font-weight: 800;
 }
