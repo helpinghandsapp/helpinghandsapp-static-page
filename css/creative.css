@@ -3,6 +3,11 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+}
 html,
 body {
   width: 100%;
@@ -244,11 +249,7 @@ aside {
   color: #F17014;
 }
 
-<<<<<<< HEAD
-@media (max-width: 964px) {
-=======
 @media (max-width: 994px) {
->>>>>>> master
   .navbar-nav .subnav-menu .subnav {
     position: initial;
     display: block;
@@ -258,11 +259,7 @@ aside {
   }
 }
 
-<<<<<<< HEAD
-@media (min-width: 965px) {
-=======
 @media (min-width: 995px) {
->>>>>>> master
   .navbar-default {
     background-color: transparent;
     border-color: transparent;
@@ -434,26 +431,26 @@ header .header-content .header-content-inner p {
   font-size: 18px;
   padding: 0 10px;
 }
-<<<<<<< HEAD
+
 .covid-bar .wrapper {
   padding: 0 60px;
-=======
+}
 
 .covid-bar:hover {
   color: red;
   background: black;
 }
+
 @media (max-width: 992px) {
   .covid-bar {
     margin-top: 10%;
   }
-} 
+}
 
 @media (max-width: 767px) {
   .covid-bar {
     margin-top: 5%;
   }
->>>>>>> master
 }
 
 #covid {
@@ -1602,6 +1599,12 @@ fieldset[disabled] .btn-primary.active {
   transition: 0.35s;
 }
 
+.btn-l {
+  padding: 15px 20px;
+  width: calc(40% + 20vw);
+  margin: 0 auto;
+  max-width: 200px;
+}
 .btn-xl {
   padding: 15px 20px;
   width: calc(40% + 20vw);
@@ -1926,19 +1929,13 @@ footer ul li a.active {
 }
 
 .overlay-desktop-app {
-  height: 696px;
+  height: 678px;
 }
 
 @media (max-width:1356px) {
   .workshop-feature-item {
-<<<<<<< HEAD
-    padding: 10px 0;
-    width: 115px;
-    height: 170px;
-=======
     width: 125px;
     height: 175px;
->>>>>>> master
     border-radius: 25px;
   }
 
@@ -1965,22 +1962,20 @@ footer ul li a.active {
   }
 
   #Mentors.overlay-desktop-app {
-    padding-top: 90px;
+    padding-top: 103px;
   }
 
-  #Councils.overlay-desktop-app,
+  #Councils.overlay-desktop-app {
+    padding-top: 127px;
+  }
+  
   #Entrepreneur.overlay-desktop-app {
-    padding-top: 114px;
+    padding-top: 132px;
   }
 
   #Sharing_Stories.overlay-desktop-app {
-    padding-top: 160px;
+    padding-top: 153px;
   }
-
-  #mta-popup-img {
-    
-  }
-
 }
 
 @media (max-width:1201px) {
@@ -1997,13 +1992,14 @@ footer ul li a.active {
 
 @media (max-width: 1030px) {
   #Mentors.overlay-desktop-app {
-    padding-top: 67px;
+    padding-top: 104px;
+  }
+  #Councils.overlay-desktop-app,
+  #Entrepreneur.overlay-desktop-app {
+    padding-top: 152px;
   }
   #Sharing_Stories.overlay-desktop-app {
     padding-top: 202px;
-  }
-  #Entrepreneur.overlay-desktop-app {
-    padding-top: 91px;
   }
 }
 
@@ -2016,9 +2012,10 @@ footer ul li a.active {
   }
 
   .icon {
-    margin-left: 100px;
+    margin-left: 90px;
     margin-top: 7.5px;
-    transform: scale(1)
+    padding-top: 5px;
+    transform: scale(1);
   }
 
   .workshop-feature-content {
@@ -2034,13 +2031,8 @@ footer ul li a.active {
 
 @media (max-width:360px) {
   .workshop-feature-item {
-<<<<<<< HEAD
-    width: 150px;
-    height: 220px;
-=======
     width: 155px;
     height: 225px;
->>>>>>> master
     border-radius: 30px;
   }
 
@@ -2140,15 +2132,6 @@ footer ul li a.active {
   }
 }
 
-
-.volunteer-card {
-  max-width: 460px;
-  background: #ffffff;
-  border-radius: 20px;
-  margin: auto;
-  margin-bottom: 15px;
-}
-
 /*Volunteer Page*************************************************/
 .volunteer-section {
   padding-bottom: 0;
@@ -2233,6 +2216,124 @@ footer ul li a.active {
     font-size: 35px;
     margin-bottom: 20px;
   }
+}
+
+.volunteer-postings-section {
+  padding: 100px 0;
+}
+
+.volunteer-postings-section .volunteer-postings-heading,
+.volunteer-postings-section .volunteer-postings-text {
+  text-align: center;
+}
+.volunteer-postings-section .volunteer-postings-heading {
+  font-size: 40px;
+  font-weight: 800;
+}
+.volunteer-postings-section .volunteer-postings-text {
+  margin-bottom: 25px;
+}
+
+.jobPostings {
+  width: 100%;
+  display: flex;
+  background: #F5F7FA;
+  margin-bottom: 30px;
+}
+
+.column {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+  height: 100%;
+}
+
+.column.show {
+  width: 100%;
+}
+
+.tab {
+  position:absolute;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 25px;
+  z-index: 1;
+  height: 100vh;
+}
+
+/* vertical accordian styles */
+
+/* this fits accordian to full width // can be switched to any column using :nth-child selector */
+.column:first-child .content {
+  width: 100%;
+  margin: 0 0 0 25px;
+}
+
+.container-vertical {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.slide {
+  position: relative;
+  overflow: hidden;
+  height: 45px;
+  transition: height 0.5s ease-in-out;
+  background-color: white;
+  width: 100%;
+}
+
+.slide.show {
+  height: calc(100vh - 50px);
+}
+
+.tab-vertical {
+  position:absolute;
+  cursor: pointer;
+  width: 100%;
+  z-index: 1;
+  height: 45px;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px;
+  padding-top: 10px;
+  font-style: italic;
+}
+@media (max-width: 410px) {
+  .tab-vertical {
+    font-size: 16px;
+  }
+}
+@media (max-width: 327px) {
+  .slide:nth-child(2) .tab-vertical {
+    padding-top: 0;
+  }
+}
+
+.content-vertical {
+  position:absolute;
+  color: black;
+  width: 100%;
+  height:100%;
+  overflow: hidden;
+  background-color: whitesmoke;
+  padding-top: 45px;
+}
+
+/* tab colors. Add with more tabs. */
+.column:first-child .tab, .slide:nth-child(odd) .tab-vertical {
+  background: linear-gradient(to bottom right, #F17013, #FFC400);
+}
+.column:first-child .tab, .slide:nth-child(even) .tab-vertical { 
+  background: linear-gradient(to bottom right, #0098ee,#0075db);
+}
+
+.volunteer-postings-section .volunteer-postings-link {
+  display: block;
 }
 
 /* HELP SECTION */
@@ -2796,11 +2897,6 @@ img {
   opacity: 1;
 }
 
-.popup .content {
-  max-height: 100%;
-  overflow: auto;
-}
-
 @media (max-width:768px) {
   .jumbotron {
     padding-bottom: 30px;
@@ -2917,29 +3013,15 @@ img {
   opacity: 1;
 }
 
-<<<<<<< HEAD
-@media (min-width: 1356px) {
+@media (min-width: 1357px) {
   #mta-popup-img {
-    margin-top: 222px;
+    margin-top: 200px;
   }
 }
 @media (max-width: 1356px) {
   #mta-popup-img {
-    margin-top: 183px;
+    margin-top: 136px;
   }
-}
-@media (max-width: 1101px) {
-  #mta-popup-img {
-    margin-top: 207px;
-  }
-}
-
-.more-than-an-app-desktop .col-md-6 {
-  padding-right: 0;
-=======
-#mta-popup-img {
-  margin-top: 200px;
->>>>>>> master
 }
 
 @media (min-width:992px) {
