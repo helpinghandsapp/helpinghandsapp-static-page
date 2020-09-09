@@ -436,11 +436,6 @@ header .header-content .header-content-inner p {
   padding: 0 60px;
 }
 
-.covid-bar:hover {
-  color: red;
-  background: black;
-}
-
 @media (max-width: 992px) {
   .covid-bar {
     margin-top: 10%;
