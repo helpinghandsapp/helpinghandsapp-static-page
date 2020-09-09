@@ -416,7 +416,6 @@ header .header-content .header-content-inner p {
 /* COVID19 RESPONSE SECTION STYLING */
 
 .covid-bar {
-  padding: 5px 0;
   margin: 0 0 20px;
   width: 100vw;
   text-align: center;
@@ -432,8 +431,9 @@ header .header-content .header-content-inner p {
   padding: 0 10px;
 }
 
-.covid-bar .wrapper {
-  padding: 0 60px;
+.covid-bar .covid-bar-link {
+  padding: 5px 60px;
+  display: block;
 }
 
 @media (max-width: 992px) {
