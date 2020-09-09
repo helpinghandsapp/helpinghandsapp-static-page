@@ -1426,7 +1426,6 @@ a {
 
 a:focus,
 a:hover {
-    color: #23527c;
     text-decoration: underline
 }
 
@@ -1815,8 +1814,7 @@ ul ul {
 
 .list-inline {
     padding-left: 0;
-    margin-left: -5px;
-    list-style: none
+    list-style: none;
 }
 
 .list-inline>li {
@@ -4570,7 +4568,7 @@ tbody.collapse.in {
     margin-bottom: 2px
 }
 
-@media (min-width:995px) {
+@media (min-width: 965px) {
     .navbar-right .dropdown-menu {
         right: 0;
         left: auto
@@ -5292,7 +5290,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     margin-left: -15px
 }
 
-@media (min-width:768px) {
+@media (min-width: 965px) {
 
     .container-fluid>.navbar-collapse,
     .container-fluid>.navbar-header,
@@ -5597,7 +5595,6 @@ textarea.input-group-sm>.input-group-btn>.btn {
 
     .navbar-right {
         float: right !important;
-        margin-right: -15px
     }
 
     .navbar-right~.navbar-right {

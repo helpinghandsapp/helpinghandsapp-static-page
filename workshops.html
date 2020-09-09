@@ -89,7 +89,7 @@
   <body id="page-top">
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
       <!--<div class="container-fluid">-->
-      <div class="container">
+      <div class="wrapper">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -151,8 +151,8 @@
 
     <!--============================================================================================-->
 
-    <section id="contact" style="background: linear-gradient(to bottom left, rgb(0,152,238),rgb(0,76,143))">
-      <div class="container">
+    <section id="contact" class="workshop-section" style="background: linear-gradient(to bottom left, rgb(0,152,238),rgb(0,76,143))">
+      <div class="wrapper">
         <div class="row text-center">
           <h2 text-align="center" style="font-size: 55px; font-weight:600; color: white;text-align: center; margin-bottom: 50px;margin-top: 50px;">
             Book A Workshop
@@ -164,8 +164,8 @@
       </div>
       <!-- /.container -->
 
-      <section class="bg-primary center-block" style="border-radius: 55px;padding-top: 70px; padding-bottom: 150px; display: grid;margin-bottom: -130px">
-        <div class="row" style="margin: auto;">
+      <section class="bg-primary center-block" style="border-radius: 55px; padding-top: 70px; padding-bottom: 150px; margin-bottom: -130px">
+        <div class="row wrapper" style="margin: auto;">
           <div class="col-lg-12 col-lg-offset-">
             <div class="col-md-6 justify-content-center" style="justify-content: center;padding-left: 0px;padding-right: 0px; ">
               <div class="workshop-card" style="padding:5px 20px 10px 20px; ">
@@ -193,15 +193,12 @@
                 <div class="slideshow-container" style="max-width: 400px;">
                   <div class="mySlides fade">
                     <img src="img/img_workshop1.JPG" style="width:100%; border-radius: 30px;box-shadow: 0px 4px 6px #D5D5D5 ;" alt="Giselle Hinds presenting at a workshop"/>
-                    <div class="text"></div>
                   </div>
                   <div class="mySlides fade">
                     <img src="img/img_workshop2.jpg" style="width:100%; border-radius: 30px;box-shadow: 0px 4px 6px #D5D5D5 ;" alt="Janelle Hinds presenting at a workshop"/>
-                    <div class="text"></div>
                   </div>
                   <div class="mySlides fade">
                     <img src="img/img_workshop3.jpg" style="width:100%; border-radius: 30px;box-shadow: 0px 4px 6px #D5D5D5 ;" alt="Janelle Hinds presenting at a workshop"/>
-                    <div class="text"></div>
                   </div>
                 </div>
                 <br>
@@ -238,85 +235,83 @@
         </div>
       </section>
 
-      <section class="bg-primary center-block"  style="border-radius: 55px;padding-top: 30px; display: grid; justify-content: center;margin-bottom: -130px">
-        <div class="row" style="margin: auto;">
-          <div class="col-lg-10 col-lg-offset-1 ">
-            <div class="col-md-6">
-              <div class=" center-block">
-                <img id="workshop-contact-img" src="img/illustration_book-workshop.png" style= "max-height: 450px; "class="img-responsive center-block" alt="Drawing of a woman thinking at a desk"/>
-              </div>
+      <section class="bg-primary center-block"  style="padding-top: 30px;">
+        <div class="row wrapper" style="margin: auto;">
+          <div class="col-md-6">
+            <div class=" center-block">
+              <img id="workshop-contact-img" src="img/illustration_book-workshop.png" style= "max-height: 450px; "class="img-responsive center-block" alt="Drawing of a woman thinking at a desk"/>
             </div>
+          </div>
 
-            <div class="col-md-6 form-workshops">
-              <h2 class="main-title" style="font-size: 51px; text-align: center; color: #000000">Book A Workshop</h2>
-              <p class="app-info-card-description" style="font-weight:200; text-align: center; margin-top: -10px;color: #000000">
-                Contact us to get a workshop for your school or organization
-              </p>
-              <div class="help-form" style="margin-top: -5px; text-align: center">
-                <!--Formspree-->
-                <form action="https://formspree.io/info@helpinghandsapp.com" method="POST">
-                  <script type="text/javascript">
-                    //Script for adjusting height
-                    function adjust_textarea(h) {
-                      h.style.height = "20px";
-                      h.style.height = (h.scrollHeight)+"px"; 
-                    }
-                  </script>
+          <div class="col-md-6 form-workshops">
+            <h2 class="main-title" style="font-size: 51px; text-align: center; color: #000000">Book A Workshop</h2>
+            <p class="app-info-card-description" style="font-weight:200; text-align: center; margin-top: -10px;color: #000000">
+              Contact us to get a workshop for your school or organization
+            </p>
+            <div class="help-form" style="margin-top: -5px; text-align: center">
+              <!--Formspree-->
+              <form action="https://formspree.io/info@helpinghandsapp.com" method="POST">
+                <script type="text/javascript">
+                  //Script for adjusting height
+                  function adjust_textarea(h) {
+                    h.style.height = "20px";
+                    h.style.height = (h.scrollHeight)+"px"; 
+                  }
+                </script>
 
-                  <label class="visuallyHidden" for="nameInput">Name</label>
-                  <input id="nameInput" type="text" name="Name" placeholder="Name" />
+                <label class="visuallyHidden" for="nameInput">Name</label>
+                <input id="nameInput" type="text" name="Name" placeholder="Name" />
 
-                  <label class="visuallyHidden" for="emailInput">Email</label>
-                  <input id="emailInput" type="email" name="Email" placeholder="Email" />
+                <label class="visuallyHidden" for="emailInput">Email</label>
+                <input id="emailInput" type="email" name="Email" placeholder="Email" />
 
-                  <label class="visuallyHidden" for="phoneNumberInput">Phone Number</label>
-                  <input id="phoneNumberInput" type="text" name="Phone Number" placeholder="Phone Number" />
+                <label class="visuallyHidden" for="phoneNumberInput">Phone Number</label>
+                <input id="phoneNumberInput" type="text" name="Phone Number" placeholder="Phone Number" />
 
-                  <label class="visuallyHidden" for="schoolOrgInput">School or Organization</label>
-                  <input id="schoolOrgInput" type="text" name="School or Organization" placeholder="School or Organization" />
+                <label class="visuallyHidden" for="schoolOrgInput">School or Organization</label>
+                <input id="schoolOrgInput" type="text" name="School or Organization" placeholder="School or Organization" />
 
-                  <!--Checkboxes-->
+                <!--Checkboxes-->
 
-                  <div class="workshop-checkboxes"style="text-align: left; margin-bottom:70px;">
-                    <h3 id="checkbox-text" style="font-weight: 300; font-size:16px; margin-left: 10px;">Interests</h3>
+                <div class="workshop-checkboxes"style="text-align: left; margin-bottom:70px;">
+                  <h3 id="checkbox-text" style="font-weight: 300; font-size:16px; margin-left: 10px;">Interests</h3>
 
-                    <div lass="row">
-                      <div class="col-sm-4 col-xs-6 checkbox-options" >
-                        <input type="checkbox" id="option-1" name="Interests" value="Animal">
-                        <label for="option-1" id="checkbox-text">Animal</label>
-                      </div>
-                      <div class="col-sm-4 col-xs-6 checkbox-options">
-                        <input type="checkbox" id="option-2" name="Interests" value="Arts & Culture">
-                        <label for="option-2" id= "checkbox-text">Arts & Culture</label>
-                      </div>
-                      <div class="col-sm-4 col-xs-6 checkbox-options">
-                        <input type="checkbox" id="option-3" name="Interests" value="Advocacy">
-                        <label for="option-3" id= "checkbox-text">Advocacy</label>
-                      </div>
+                  <div lass="row">
+                    <div class="col-sm-4 col-xs-6 checkbox-options" >
+                      <input type="checkbox" id="option-1" name="Interests" value="Animal">
+                      <label for="option-1" id="checkbox-text">Animal</label>
                     </div>
-
-                    <div lass="row">
-                      <div class="col-sm-4 col-xs-6 checkbox-options" >
-                        <input type="checkbox" id="option-4" name="Interests" value="Crisis Support">
-                        <label for="option-4" id= "checkbox-text">Crisis Support</label>
-                      </div>
-                      <div class="col-sm-4 col-xs-6 checkbox-options">
-                        <input type="checkbox" id="option-5" name="Interests" value="Community">
-                        <label for="option-5" id= "checkbox-text">Community</label>
-                      </div>
-                      <div class="col-sm-4 col-xs-6 checkbox-options">
-                        <input type="checkbox" id="option-6" name="Interests" value="Other">
-                        <label for="option-6" id= "checkbox-text">Other</label>
-                      </div>
+                    <div class="col-sm-4 col-xs-6 checkbox-options">
+                      <input type="checkbox" id="option-2" name="Interests" value="Arts & Culture">
+                      <label for="option-2" id= "checkbox-text">Arts & Culture</label>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 checkbox-options">
+                      <input type="checkbox" id="option-3" name="Interests" value="Advocacy">
+                      <label for="option-3" id= "checkbox-text">Advocacy</label>
                     </div>
                   </div>
 
-                  <label class="visuallyHidden" for="messageInput">Message</label>
-                  <textarea id="messageInput" placeholder="Message" name="Message" onkeyup="adjust_textarea(this)"></textarea>
+                  <div lass="row">
+                    <div class="col-sm-4 col-xs-6 checkbox-options" >
+                      <input type="checkbox" id="option-4" name="Interests" value="Crisis Support">
+                      <label for="option-4" id= "checkbox-text">Crisis Support</label>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 checkbox-options">
+                      <input type="checkbox" id="option-5" name="Interests" value="Community">
+                      <label for="option-5" id= "checkbox-text">Community</label>
+                    </div>
+                    <div class="col-sm-4 col-xs-6 checkbox-options">
+                      <input type="checkbox" id="option-6" name="Interests" value="Other">
+                      <label for="option-6" id= "checkbox-text">Other</label>
+                    </div>
+                  </div>
+                </div>
 
-                  <input id="button" type="submit" value="Send" class="btn btn-seconday btn-xl" style="text-align: center"  onclick='mixpanel.track("Workshop Page Submit");'/>
-                </form>
-              </div>
+                <label class="visuallyHidden" for="messageInput">Message</label>
+                <textarea id="messageInput" placeholder="Message" name="Message" onkeyup="adjust_textarea(this)"></textarea>
+
+                <input id="button" type="submit" value="Send" class="btn btn-seconday btn-xl" style="text-align: center"  onclick='mixpanel.track("Workshop Page Submit");'/>
+              </form>
             </div>
           </div>
         </div>
@@ -326,8 +321,8 @@
     <!--============================================================================================-->
 
     <section id="scoial-media-embed" class="contact bg-primary">
-      <div class="container">
-        <h6 id="main-title" style="color: #000000">We <i class="fa fa-heart"></i> New Friends!</h6>
+      <div class="wrapper">
+        <h6 id="contact" style="color: #000000">We <i class="fa fa-heart"></i> New Friends!</h6>
         <p id="app-info-card-description" style="color: #000000; font-weight:300;">
           Want to collaborate, join the team or just have general feedback? Give us a shout!
         </p>
@@ -364,7 +359,7 @@
     <!--============================================================================================-->
 
     <footer>
-      <div class="container">
+      <div class="wrapper">
         <p style="font-weight: 300;">&copy; 2019 Helping Hands. All Rights Reserved.</p>
       </div>
     </footer>

@@ -42,6 +42,23 @@
         }
     })
 
+    // Change Airtable link to prefill when a selected position is clicked 
+    $('#administrative-assistant-option').click(function() {
+        $('#volunteer-postings-link').attr('href', 'https://airtable.com/shre7vhoh5QXOswYx?prefill_Position+you+are+applying+for=Administrative+Assistant');
+    });
+    $('#fund-donor-option').click(function() {
+        $('#volunteer-postings-link').attr('href', 'https://airtable.com/shre7vhoh5QXOswYx?prefill_Position+you+are+applying+for=Fundraising+and+Donor+Relation+Associate');
+    });
+    $('#social-media-option').click(function() {
+        $('#volunteer-postings-link').attr('href', 'https://airtable.com/shre7vhoh5QXOswYx?prefill_Position+you+are+applying+for=Social+Media+Associate');
+    });
+    $('#software-developer-option').click(function() {
+        $('#volunteer-postings-link').attr('href', 'https://airtable.com/shre7vhoh5QXOswYx?prefill_Position+you+are+applying+for=Software+Developer');
+    });
+    $('#youth-outreach-option').click(function() {
+        $('#volunteer-postings-link').attr('href', 'https://airtable.com/shre7vhoh5QXOswYx?prefill_Position+you+are+applying+for=Youth+Outreach+Coordinator');
+    });
+
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 

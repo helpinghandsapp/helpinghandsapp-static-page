@@ -89,7 +89,7 @@
   <body id="page-top">
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
       <!--<div class="container-fluid">-->
-      <div class="container">
+      <div class="wrapper">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -151,10 +151,10 @@
 
     <!--============================================================================================-->
 
-    <section id="contact" style="background: linear-gradient(to bottom left, rgb(0,152,238),rgb(0,76,143))">
-      <div class="container">
-          <div class="row text-center">
-            <h2 text-align="center" style="font-size: 55px; font-weight:600; color: white;text-align: center; margin-bottom: 50px;margin-top: 50px;">
+    <section id="contact" class="volunteer-section" style="background: linear-gradient(to bottom left, rgb(0,152,238),rgb(0,76,143))">
+      <div class="wrapper">
+          <div class="row">
+            <h2 style="font-size: 55px; font-weight:600; color: white; text-align: center; margin: 50px 0;">
               Volunteer With Us
               <img id="volunteer-icon" src="img/illustration_animal.png" style="vertical-align: middle;max-width:120px;" alt="Drawing of a cartoon character">
             </h2>
@@ -164,10 +164,10 @@
       </div>
       <!-- /.container -->
 
-      <section class="bg-primary center-block" style="border-radius: 55px; padding-top: 70px; padding-bottom: 150px; display: grid; justify-content: center;margin-bottom: -130px">
-        <div class="row" style="margin: auto;">
+      <section class="bg-primary center-block" style="border-top-left-radius: 55px; border-top-right-radius: 55px; padding-top: 70px; padding-bottom: 150px; display: grid; justify-content: center;">
+        <div class="row wrapper" style="margin: auto;">
           <div class="col-lg-12">
-            <div class="col-md-6 justify-content-center" style="justify-content: center; margin-top:-10px; padding: 0px;">
+            <div class="col-md-6" style="justify-content: center; padding: 0px;">
               <h2 id="volunteer-title" style="color: rgba(0,0,0,0.85);">What Our Volunteers Do!</h2>
 
               <div class="volunteer-card" style="padding:5px 20px 10px 20px; ">
@@ -199,165 +199,143 @@
               </div>
             </div>
 
-            <div class="col-md-6 justify-content-center">
-              <div class="justify-content-center" style="justify-content:center;margin:auto; max-width: 600px;">
+            <div class="col-md-6">
+              <div style="margin:auto; max-width: 600px;">
                 <img src="img/volunteer-img.png" class="img-responsive" alt="Drawing of a group of people having coffee and chatting">
               </div>
             </div>
           </div>
         </div>
       </section>
-      
-      
-      <section class="bg-primary" style="padding-bottom: 150px; margin-bottom: -70px">
-        <div class="row text-center" style="display:grid; margin-top: 35px; padding: 15px;">
-          <h2 id="main-title" style="margin-top: 0px; margin-bottom: 15px; font-size:33px;">Check Out Volunteer Positions!</h2>
+    </section>
 
-          <div class="volunteer-img-container" style="margin:auto;background: #ffffff; border-radius: 45px; max-width: 1000px; box-shadow: 0px 4px 6px #D5D5D5; padding-top:30px; padding-bottom:30px;">
-            <a href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank" onclick='mixpanel.track("Volunteer Post 1");'>
-              <img id="volunteer-img" src="img/volunteer-img3-compressor.png" style="padding:10px; border-radius: 35px" alt="Volunteer Advertisement for Social Media Associate"/>
-            </a>
-            <a href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank" onclick='mixpanel.track("Volunteer Post 1");'>
-              <img id="volunteer-img" src="img/volunteer-img5-compressor.png" style="padding:10px; border-radius: 35px" alt="Volunteer Advertisement for Administrative Associate"/>
-            </a>
-            <a href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank" onclick='mixpanel.track("Volunteer Post 1");'>
-              <img id="volunteer-img" src="img/volunteer-img7-compressor.png" style="padding:10px; border-radius: 35px" alt="Volunteer Advertisement for Youth Outreach Associate"/>
-            </a>
-            <a href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank" onclick='mixpanel.track("Volunteer Post 1");'>
-              <img id="volunteer-img" src="img/volunteer-img9-compressor.png" style="padding:10px; border-radius: 35px" alt="Volunteer Advertisement for Community Outreach Associate"/>
-            </a>
-            <a href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank" onclick='mixpanel.track("Volunteer Post 1");'>
-              <img id="volunteer-img" src="img/volunteer-img11-compressor.png" style="padding:10px; border-radius: 35px" alt="Volunteer Advertisement for UI/UX Designer"/>
-            </a>
-            <a href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank" onclick='mixpanel.track("Volunteer Post 1");'>
-              <img id="volunteer-img" src="img/volunteer-img13-compressor.png" style="padding:10px; border-radius: 35px" alt="Volunteer Advertisement for Software Developer"/>
-            </a>
-            <a href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank" onclick='mixpanel.track("Volunteer Post 1");'>
-              <img id="volunteer-img" src="img/volunteer-img15-compressor.png" style="padding:10px; border-radius: 35px" alt="Volunteer Advertisement for Fundraiser and Donor Relations Associate"/>
-            </a>
+    <!-- Volunteer Posting Section -->
+    <section class="volunteer-postings-section">
+      <div class="wrapper">
+        <h2 class="volunteer-postings-heading">Current Volunteer Postings</h2>
+        <p class="volunteer-postings-text">Click to Apply to Volunteer/Trainee Positions!</p>
+        <div class="jobPostings">
+          <div class="column">
+            <div class="container-vertical">
+              <div class="slide show">
+                <div id="administrative-assistant-option" class="tab-vertical">Administrative Assistant</div>
+                <div class="content-vertical">
+                  <embed src="img/volunteerPositionPDFs/Administrative Assistant.pdf" type="application/pdf" width="100%"
+                    height="100%">
+                </div>
+              </div>
+              <div class="slide">
+                <div id="fund-donor-option" class="tab-vertical">Fundraising and Donor Relation Associate</div>
+                <div class="content-vertical">
+                  <embed src="img/volunteerPositionPDFs/Fundraising and Donor Relation Associate.pdf" type="application/pdf"
+                    width="100%" height="100%">
+                </div>
+              </div>
+              <div class="slide">
+                <div id="social-media-option" class="tab-vertical">Social Media Associate</div>
+                <div class="content-vertical">
+                  <embed src="img/volunteerPositionPDFs/Social Media Associate.pdf" type="application/pdf" width="100%"
+                    height="100%">
+                </div>
+              </div>
+              <div class="slide">
+                <div id="software-developer-option" class="tab-vertical">Software Developer</div>
+                <div class="content-vertical">
+                  <embed src="img/volunteerPositionPDFs/Software Developer.pdf" type="application/pdf" width="100%"
+                    height="100%">
+                </div>
+              </div>
+              <div class="slide">
+                <div id="youth-outreach-option" class="tab-vertical">Youth Outreach Coordinator</div>
+                <div class="content-vertical">
+                  <embed src="img/volunteerPositionPDFs/Youth Outreach Coordinator.pdf" type="application/pdf" width="100%"
+                    height="100%">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-  </section>
-</section>
+        <a id="volunteer-postings-link" class="volunteer-postings-link btn btn-seconday btn-l" href="https://airtable.com/shre7vhoh5QXOswYx?prefill_Position+you+are+applying+for=Administrative+Assistant"
+          target="_blank">Apply Now</a>
+      </div>
+    </section>
 
-<!-- Volunteer Posting Section -->
-<section class="volunteer-postings-section">
-  <div class="wrapper">
-    <h2 class="volunteer-postings-heading">Current Volunteer Postings</h2>
-    <p class="volunteer-postings-text">Click the tabs below to view current positions and click the apply now!</p>
-    <div class="jobPostings">
-      <div class="column">
-        <div class="container-vertical">
-          <div class="slide show">
-            <div class="tab-vertical">Administrative Assistant</div>
-            <div class="content-vertical">
-              <embed src="img/volunteerPositionPDFs/Administrative Assistant.pdf" type="application/pdf" width="100%" height="100%">
-            </div>
-          </div>
-          <div class="slide">
-            <div class="tab-vertical">Fundraising and Donor Relation Associate</div>
-            <div class="content-vertical">
-              <embed src="img/volunteerPositionPDFs/Fundraising and Donor Relation Associate.pdf" type="application/pdf" width="100%" height="100%">
-            </div>
-          </div>
-          <div class="slide">
-            <div class="tab-vertical">Social Media Associate</div>
-            <div class="content-vertical">
-              <embed src="img/volunteerPositionPDFs/Social Media Associate.pdf" type="application/pdf" width="100%" height="100%">
-            </div>
-          </div>
-          <div class="slide">
-            <div class="tab-vertical">Software Developer</div>
-            <div class="content-vertical">
-              <embed src="img/volunteerPositionPDFs/Software Developer.pdf" type="application/pdf" width="100%" height="100%">
-            </div>
-          </div>
-          <div class="slide">
-            <div class="tab-vertical">Youth Outreach Coordinator</div>
-            <div class="content-vertical">
-              <embed src="img/volunteerPositionPDFs/Youth Outreach Coordinator.pdf" type="application/pdf" width="100%" height="100%">
-            </div>
-          </div>
+    <!-- Sponsors Section -->
+    <section class="bg-light sponsor-div" id="support">
+      <div class="wrapper">
+        <div class="sponsors-funders">
+          <h3 class="sponsors-header">Our Major Funders</h3>
+          <ul class="sponsors">
+            <li class="sponsors-item">
+              <a href="http://www.otf.ca/" class="sponsors-link" target="_blank">
+                <img class="pull-centre sponsors-image" src="img/org_OTF.jpg" alt="Ontario Trillium Foundation Logo"/>
+              </a>
+            </li>
+            <li class="sponsors-item">
+              <a href="https://www.canada.ca/en.html" class="sponsors-link" target="_blank">
+                <img class="pull-centre sponsors-image" src="img/org_GOC.jpg" alt="Government of Canada Logo"/>
+              </a>
+            </li>
+            <li class="sponsors-item">
+              <a href="https://www.unitedwaygt.org/" class="sponsors-link" target="_blank">
+                <img class="pull-centre sponsors-image image-horizontal" src="img/org_unitedway_horizontal.jpg" alt="United Way Greater Toronto Logo"/>
+                <img class="pull-centre sponsors-image image-vertical" src="img/org_unitedway_vertical.jpg" alt="United Way Greater Toronto Logo"/>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="sponsors-trustees">
+          <h3 class="sponsors-header">Our Trustees</h3>
+          <ul class="sponsors">
+            <li class="sponsors-item">
+              <a href="https://livedifferent.com/" class="sponsors-link" target="_blank">
+                <img class="pull-centre sponsors-image" src="img/LD_logo.png" alt="Live Different Logo"/>
+              </a>
+            </li>
+            <li class="sponsors-item">
+              <a href="http://frontlines.to/" class="sponsors-link" target="_blank">
+                <img class="pull-centre sponsors-image" src="img/frontlines.jpeg" alt="Frontlines Logo"/>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="sponsors-supporters">
+          <h3 class="sponsors-header">Our Supporters</h3>
+          <ul class="sponsors">
+            <li class="sponsors-item">
+              <a href="http://www.venturelab.ca/communitybuild/" class="sponsors-link" target="_blank">
+                <img class="pull-centre sponsors-image" src="img/org_communitybuild.png" alt="Community Build Logo"/>
+              </a>
+            </li>
+            <li class="sponsors-item">
+              <a href="https://launchyu.ca/" class="sponsors-link" target="_blank">
+                <img class="pull-centre sponsors-image" src="img/org_launchyu.png" alt="LaunchYU Logo"/>
+              </a>
+            </li>
+            <li class="sponsors-item">
+              <a href="https://www.slyenetwork.com/" class="sponsors-link" target="_blank">
+                <img class="pull-centre sponsors-image" src="img/org_steeles.jpg" alt="Slye Logo"/>
+              </a>
+            </li>
+            <li class="sponsors-item">
+              <a href="https://laidlawfdn.org/" class="sponsors-link" target="_blank">
+                <img class="pull-centre sponsors-image" src="img/org_laidlaw.png" alt="Laidlaw Logo"/>
+              </a>
+            </li>
+            <li class="sponsors-item">
+              <a href="http://www.venturelab.ca/" class="sponsors-link" target="_blank">
+                <img class="pull-centre sponsors-image" src="img/org_venturelab.png" alt="Venture Lab Logo">
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-    <a class="volunteer-postings-link btn btn-seconday btn-l" href="https://airtable.com/shre7vhoh5QXOswYx" target="_blank">Apply Now</a>
-  </div>
-</section>
+    </section>
+    <!-- end sponsors section -->
+    <!--============================================================================================-->
 
-<!-- Sponsors Section -->
-<section class="bg-light sponsor-div" id="support">
-  <div class="sponsors-funders">
-    <h3 class="sponsors-header">Our Major Funders</h3>
-    <ul class="sponsors">
-      <li class="sponsors-item">
-        <a href="http://www.otf.ca/" class="sponsors-link" target="_blank">
-          <img class="pull-centre sponsors-image" src="img/org_OTF.jpg">
-        </a>
-      </li>
-      <li class="sponsors-item">
-        <a href="https://www.canada.ca/en.html" class="sponsors-link" target="_blank">
-          <img class="pull-centre sponsors-image" src="img/org_GOC.jpg">
-        </a>
-      </li>
-      <li class="sponsors-item">
-        <a href="https://www.unitedwaygt.org/" class="sponsors-link" target="_blank">
-          <img class="pull-centre sponsors-image image-horizontal" src="img/org_unitedway_horizontal.jpg">
-          <img class="pull-centre sponsors-image image-vertical" src="img/org_unitedway_vertical.jpg">
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="sponsors-trustees">
-    <h3 class="sponsors-header">Our Trustees</h3>
-    <ul class="sponsors">
-      <li class="sponsors-item">
-        <a href="https://livedifferent.com/" class="sponsors-link" target="_blank">
-          <img class="pull-centre sponsors-image" src="img/LD_logo.png">
-        </a>
-      </li>
-      <li class="sponsors-item">
-        <a href="http://frontlines.to/" class="sponsors-link" target="_blank">
-          <img class="pull-centre sponsors-image" src="img/frontlines.jpeg">
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="sponsors-supporters">
-    <h3 class="sponsors-header">Our Supporters</h3>
-    <ul class="sponsors">
-      <li class="sponsors-item">
-        <a href="http://www.venturelab.ca/communitybuild/" class="sponsors-link" target="_blank">
-          <img class="pull-centre sponsors-image" src="img/org_communitybuild.png">
-        </a>
-      </li>
-      <li class="sponsors-item">
-        <a href="https://launchyu.ca/" class="sponsors-link" target="_blank">
-          <img class="pull-centre sponsors-image" src="img/org_launchyu.png">
-        </a>
-      </li>
-      <li class="sponsors-item">
-        <a href="https://www.slyenetwork.com/" class="sponsors-link" target="_blank">
-          <img class="pull-centre sponsors-image" src="img/org_steeles.jpg">
-        </a>
-      </li>
-      <li class="sponsors-item">
-        <a href="https://laidlawfdn.org/" class="sponsors-link" target="_blank">
-          <img class="pull-centre sponsors-image" src="img/org_laidlaw.png">
-        </a>
-      </li>
-      <li class="sponsors-item">
-        <a href="http://www.venturelab.ca/" class="sponsors-link" target="_blank">
-          <img class="pull-centre sponsors-image" src="img/org_venturelab.png">
-        </a>
-      </li>
-    </ul>
-  </div>
-</section>
-  <!-- end sponsors section -->
-
-    <section id="social-media-embed" class="contact bg-primary">
-      <div class="container">
+    <section id="scoial-media-embed" class="contact bg-primary">
+      <div class="wrapper">
         <h6 style="color: #000000">We <i class="fa fa-heart"></i> New Friends!</h6>
         <p style="color: #000000; ">Want to collaborate, join the team or just have general feedback? Give us a shout!</p>
         <ul class="list-inline list-social">
@@ -393,7 +371,7 @@
     <!--============================================================================================-->
 
     <footer>
-      <div class="container">
+      <div class="wrapper">
         <p style="font-weight: 300;">&copy; 2020 Helping Hands. All Rights Reserved.</p>
       </div>
     </footer>
