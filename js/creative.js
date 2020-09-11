@@ -46,8 +46,17 @@
     $('#administrative-assistant-option').click(function() {
         $('#volunteer-postings-link').attr('href', 'https://airtable.com/shre7vhoh5QXOswYx?prefill_Position+you+are+applying+for=Administrative+Assistant');
     });
+    $('#community-outreach-option').click(function() {
+        $('#volunteer-postings-link').attr('href', 'https://airtable.com/shre7vhoh5QXOswYx?prefill_Position+you+are+applying+for=Community+Outreach+Coordinator');
+    });
     $('#fund-donor-option').click(function() {
         $('#volunteer-postings-link').attr('href', 'https://airtable.com/shre7vhoh5QXOswYx?prefill_Position+you+are+applying+for=Fundraising+and+Donor+Relation+Associate');
+    });
+    $('#google-ads-option').click(function() {
+        $('#volunteer-postings-link').attr('href', 'https://airtable.com/shre7vhoh5QXOswYx?prefill_Position+you+are+applying+for=Google+Ads+Manager');
+    });
+    $('#online-ads-option').click(function() {
+        $('#volunteer-postings-link').attr('href', 'https://airtable.com/shre7vhoh5QXOswYx?prefill_Position+you+are+applying+for=Online+Ads+Manager');
     });
     $('#social-media-option').click(function() {
         $('#volunteer-postings-link').attr('href', 'https://airtable.com/shre7vhoh5QXOswYx?prefill_Position+you+are+applying+for=Social+Media+Associate');
