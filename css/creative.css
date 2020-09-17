@@ -2217,16 +2217,17 @@ footer ul li a.active {
   padding: 100px 0;
 }
 
-.volunteer-postings-section .volunteer-postings-heading,
-.volunteer-postings-section .volunteer-postings-text {
+.volunteer-postings-heading,
+.volunteer-postings-text {
   text-align: center;
 }
-.volunteer-postings-section .volunteer-postings-heading {
-  margin-top: 0;
+.volunteer-postings-heading {
+  margin: 0 0 15px;
+  color: #000;
   font-size: 40px;
   font-weight: 800;
 }
-.volunteer-postings-section .volunteer-postings-text {
+.volunteer-postings-text {
   margin-bottom: 25px;
 }
 
