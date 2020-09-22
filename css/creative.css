@@ -145,6 +145,30 @@ aside {
   padding: 0;
 }
 
+  /* !important is needed sometimes */
+ ::-webkit-scrollbar {
+   -webkit-overflow-scrolling: auto;
+    width: 12px !important;
+ }
+
+ /* Track */
+::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) !important;
+   -webkit-border-radius: 10px !important;
+   border-radius: 10px !important;
+ }
+
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   -webkit-border-radius: 10px !important;
+   border-radius: 10px !important;
+   background: #717171 !important; 
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5) !important; 
+
+ }
+ ::-webkit-scrollbar-thumb:window-inactive {
+   background: #717171 !important; 
+ }
 
 .navbar-default {
   padding: 7.5px;
@@ -253,6 +277,7 @@ aside {
   .navbar-nav .subnav-menu .subnav {
     position: initial;
     display: block;
+    padding-left: 15px;
   }
   .navbar-default .nav>li:hover>a{
     color: #F17014;
