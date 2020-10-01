@@ -1114,12 +1114,13 @@ section.features .feature-item i {
   line-height: 1.225;
 }
 .about-us .team-mailto-link {
+  color: #0A5F93;
   text-decoration: none;
   word-wrap: break-word;
 }
 .about-us .team-mailto-link:hover,
 .about-us .team-mailto-link:focus {
-  color: #0A5F93;
+  color: #F07013;
 }
 
 /* sponsors section */
