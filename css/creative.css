@@ -50,6 +50,13 @@ a {
   -moz-transition: all .35s;
   transition: all .35s;
 }
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
 
 #button {
   -webkit-transition: all .35s;
