@@ -1073,6 +1073,23 @@ section.features .feature-item i {
 
 /*-------------------------------------------------*/
 /*-------------------------------------------------*/
+.team-section {
+  background: linear-gradient(to bottom left , rgb(0,152,238),rgb(0,76,143)); 
+  padding-bottom: 0px;
+}
+
+.team-section .team-heading {
+  font-weight:600; 
+  font-size: 55px; 
+  color: white;
+  margin: 70px;
+}
+
+.team-section .team-image {
+  width:100px;
+  height:100px;
+}
+
 .team2 {
   width: 100%;
   padding-bottom: 0;
