@@ -92,7 +92,7 @@
       <div class="wrapper">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -103,7 +103,7 @@
           </h1>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="subnav-menu">
               <button>Home <span>&#9660;</span></button>
@@ -151,12 +151,12 @@
 
     <!--============================================================================================-->
 
-    <section id="contact" class="workshop-section" style="background: linear-gradient(to bottom left, rgb(0,152,238),rgb(0,76,143))">
+    <section id="contact" class="workshop-section">
       <div class="wrapper">
         <div class="row text-center">
-          <h2 text-align="center" style="font-size: 55px; font-weight:600; color: white;text-align: center; margin-bottom: 50px;margin-top: 50px;">
+          <h2 class="workshop-heading">
             Book A Workshop
-            <img id="volunteer-icon" src="img/illustration_beaver.png" style="vertical-align: middle;max-width:120px;" alt="Drawing of a cartoon beaver"/>
+            <img id="volunteer-icon" src="img/illustration_beaver.png" alt="Drawing of a cartoon beaver"/>
           </h2>
           <!-- /.col-lg-10 -->
         </div>
@@ -164,91 +164,74 @@
       </div>
       <!-- /.container -->
 
-      <section class="bg-primary center-block" style="border-radius: 55px; padding-top: 70px; padding-bottom: 150px; margin-bottom: -130px">
-        <div class="row wrapper" style="margin: auto;">
-          <div class="col-lg-12 col-lg-offset-">
-            <div class="col-md-6 justify-content-center" style="justify-content: center;padding-left: 0px;padding-right: 0px; ">
-              <div class="workshop-card" style="padding:5px 20px 10px 20px; ">
-                <h3 class="main-title"style="font-size:27px; margin-top:10px;">Tailor them to the Audience </h3>
-                <p id="app-info-card-description"style="font-weight:300; font-size:16px;color: rgba(0,0,0,0.85); line-height: 1.5;">
+      <div class="workshop-featured bg-primary center-block">
+        <div class="row wrapper">
+          <div class="col-lg-12">
+            <ul class="workshop-main-features col-md-6 justify-content-center">
+              <li class="workshop-card">
+                <h3 class="main-title">Tailor them to the Audience </h3>
+                <p id="app-info-card-description">
                   Depending on your school, organization or the campaign you’re undertaking, we’ll customize our workshop as well as the presenters to cater to the theme and topic. This way we are able to fulfill your requirement and educate students about that particular topic, as well as showcase to them methods of involvement, possible solutions, as well as a framework for how they can operate to resolve key issues.
                 </p>
-              </div>
-              <div class="workshop-card" style="padding:5px 20px 10px 20px;">
-                <h3 class="main-title"style="font-size:27px; margin-top:10px">Focus on the Larger Picture of Volunteering</h3>
-                <p id="app-info-card-description"style="font-weight:300; font-size:16px; color: rgba(0,0,0,0.85); line-height: 1.5;">
+              </li>
+              <li class="workshop-card">
+                <h3 class="main-title">Focus on the Larger Picture of Volunteering</h3>
+                <p id="app-info-card-description">
                   Instead of the status-quo where students struggle and hate doing their volunteer hours, we work to educate students on the larger picture of volunteering, which includes volunteering for their interests, skills they’d like to develop as well as the issues they’d like to tackle in their communities. 
                 </p>
-              </div>
-              <div class="workshop-card" style="padding:5px 20px 10px 20px;">
-                <h3 class="main-title"style="font-size:27px; margin-top:10px">Target All-Round Student Development </h3>
-                <p id="app-info-card-description" style="font-weight:300; font-size:16px;color: rgba(0,0,0,0.85); line-height: 1.5;">
+              </li>
+              <li class="workshop-card">
+                <h3 class="main-title">Target All-Round Student Development </h3>
+                <p id="app-info-card-description">
                   As well as volunteering, our workshops deploy a holistic approach to student development where we focus on academics, community engagement, youth councils, youth entrepreneurship etc. Our goal is to focus on building a robust student community that is engaged in all dimensions of interactive education.
                 </p>
-              </div>
-            </div>
+              </li>
+            </ul>
 
             <div class="col-md-6">
               <div class=" justify-content-center">
-                <div class="slideshow-container" style="max-width: 400px;">
-                  <div class="mySlides fade">
-                    <img src="img/img_workshop1.JPG" style="width:100%; border-radius: 30px;box-shadow: 0px 4px 6px #D5D5D5 ;" alt="Giselle Hinds presenting at a workshop"/>
-                  </div>
-                  <div class="mySlides fade">
-                    <img src="img/img_workshop2.jpg" style="width:100%; border-radius: 30px;box-shadow: 0px 4px 6px #D5D5D5 ;" alt="Janelle Hinds presenting at a workshop"/>
-                  </div>
-                  <div class="mySlides fade">
-                    <img src="img/img_workshop3.jpg" style="width:100%; border-radius: 30px;box-shadow: 0px 4px 6px #D5D5D5 ;" alt="Janelle Hinds presenting at a workshop"/>
-                  </div>
-                </div>
-                <br>
-                <div style="text-align:center; margin-top: -10px;">
-                  <span class="dot" onclick="currentSlide(1)"></span>
-                  <span class="dot" onclick="currentSlide(2)"></span>
-                  <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
-
-                <script>
-                  var slideIndex = 0;
-                  showSlides();
-
-                  function showSlides() {
-                    var i;
-                    var slides = document.getElementsByClassName("mySlides");
-                    var dots = document.getElementsByClassName("dot");
-                    for (i = 0; i < slides.length; i++) {
-                      slides[i].style.display = "none";
-                    }
-                    slideIndex++;
-                    if (slideIndex > slides.length) {slideIndex = 1}
-                    for (i = 0; i < dots.length; i++) {
-                      dots[i].className = dots[i].className.replace(" active", "");
-                    }
-                    slides[slideIndex-1].style.display = "block";
-                    dots[slideIndex-1].className += " active";
-                    setTimeout(showSlides, 2000); // Change image every 2 seconds
-                  }
-                </script>
+                <ul class="slideshow-container">
+                  <li class="slideshow-items fade">
+                    <img class="slideshow-images" src="img/img_workshop1.JPG" alt="Giselle Hinds presenting at a workshop"/>
+                  </li>
+                  <li class="slideshow-items fade">
+                    <img class="slideshow-images" src="img/img_workshop2.jpg" alt="Janelle Hinds presenting at a workshop"/>
+                  </li>
+                  <li class="slideshow-items fade">
+                    <img class="slideshow-images" src="img/img_workshop3.jpg" alt="Janelle Hinds presenting at a workshop"/>
+                  </li>
+                </ul>
+                <ul class="dots-container">
+                  <li class="dots-item">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                  </li>
+                  <li class="dots-item">
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                  </li>
+                  <li class="dots-item">
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="bg-primary center-block"  style="padding-top: 30px;">
-        <div class="row wrapper" style="margin: auto;">
+      <div class="workshop-contact bg-primary center-block">
+        <div class="row wrapper">
           <div class="col-md-6">
-            <div class=" center-block">
-              <img id="workshop-contact-img" src="img/illustration_book-workshop.png" style= "max-height: 450px; "class="img-responsive center-block" alt="Drawing of a woman thinking at a desk"/>
+            <div class="center-block">
+              <img id="workshop-contact-img" class="img-responsive center-block" src="img/illustration_book-workshop.png" alt="Drawing of a woman thinking at a desk"/>
             </div>
           </div>
 
           <div class="col-md-6 form-workshops">
-            <h2 class="main-title" style="font-size: 51px; text-align: center; color: #000000">Book A Workshop</h2>
-            <p class="app-info-card-description" style="font-weight:200; text-align: center; margin-top: -10px;color: #000000">
+            <h2 class="main-title">Book A Workshop</h2>
+            <p class="app-info-card-description">
               Contact us to get a workshop for your school or organization
             </p>
-            <div class="help-form" style="margin-top: -5px; text-align: center">
+            <div class="help-form">
               <!--Formspree-->
               <form action="https://formspree.io/info@helpinghandsapp.com" method="POST">
                 <script type="text/javascript">
@@ -272,37 +255,36 @@
                 <input id="schoolOrgInput" type="text" name="School or Organization" placeholder="School or Organization" />
 
                 <!--Checkboxes-->
+                <div class="workshop-checkboxes">
+                  <h3 id="checkbox-text" class="workshop-checkboxes-heading">Interests</h3>
 
-                <div class="workshop-checkboxes"style="text-align: left; margin-bottom:70px;">
-                  <h3 id="checkbox-text" style="font-weight: 300; font-size:16px; margin-left: 10px;">Interests</h3>
-
-                  <div lass="row">
-                    <div class="col-sm-4 col-xs-6 checkbox-options" >
-                      <input type="checkbox" id="option-1" name="Interests" value="Animal">
-                      <label for="option-1" id="checkbox-text">Animal</label>
+                  <div class="row">
+                    <div class="col-sm-4 col-xs-6 checkbox-options">
+                      <input id="option-1" type="checkbox" name="Interests" value="Animal">
+                      <label id="checkbox-text" for="option-1">Animal</label>
                     </div>
                     <div class="col-sm-4 col-xs-6 checkbox-options">
-                      <input type="checkbox" id="option-2" name="Interests" value="Arts & Culture">
-                      <label for="option-2" id= "checkbox-text">Arts & Culture</label>
+                      <input id="option-2" type="checkbox" name="Interests" value="Arts & Culture">
+                      <label id="checkbox-text" for="option-2">Arts & Culture</label>
                     </div>
                     <div class="col-sm-4 col-xs-6 checkbox-options">
-                      <input type="checkbox" id="option-3" name="Interests" value="Advocacy">
-                      <label for="option-3" id= "checkbox-text">Advocacy</label>
+                      <input id="option-3" type="checkbox" name="Interests" value="Advocacy">
+                      <label id="checkbox-text" for="option-3">Advocacy</label>
                     </div>
                   </div>
 
                   <div lass="row">
-                    <div class="col-sm-4 col-xs-6 checkbox-options" >
-                      <input type="checkbox" id="option-4" name="Interests" value="Crisis Support">
-                      <label for="option-4" id= "checkbox-text">Crisis Support</label>
+                    <div class="col-sm-4 col-xs-6 checkbox-options">
+                      <input id="option-4" type="checkbox" name="Interests" value="Crisis Support">
+                      <label id="checkbox-text" for="option-4">Crisis Support</label>
                     </div>
                     <div class="col-sm-4 col-xs-6 checkbox-options">
-                      <input type="checkbox" id="option-5" name="Interests" value="Community">
-                      <label for="option-5" id= "checkbox-text">Community</label>
+                      <input id="option-5" type="checkbox" name="Interests" value="Community">
+                      <label id="checkbox-text" for="option-5">Community</label>
                     </div>
                     <div class="col-sm-4 col-xs-6 checkbox-options">
-                      <input type="checkbox" id="option-6" name="Interests" value="Other">
-                      <label for="option-6" id= "checkbox-text">Other</label>
+                      <input id="option-6" type="checkbox" name="Interests" value="Other">
+                      <label id="checkbox-text" for="option-6">Other</label>
                     </div>
                   </div>
                 </div>
@@ -310,46 +292,47 @@
                 <label class="visuallyHidden" for="messageInput">Message</label>
                 <textarea id="messageInput" placeholder="Message" name="Message" onkeyup="adjust_textarea(this)"></textarea>
 
-                <input id="button" type="submit" value="Send" class="btn btn-seconday btn-xl" style="text-align: center"  onclick='mixpanel.track("Workshop Page Submit");'/>
+                <label class="visuallyHidden" for="submitInput">Send</label>
+                <input id="submitInput" class="btn btn-seconday btn-xl" type="submit" value="Send" onclick='mixpanel.track("Workshop Page Submit");'/>
               </form>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </section>
 
     <!--============================================================================================-->
 
-    <section id="social-media-embed" class="contact bg-primary">
+    <section id="social-media-embed" class="social-media-section contact bg-primary">
       <div class="wrapper">
-        <h6 id="contact" style="color: #000000">We <i class="fa fa-heart"></i> New Friends!</h6>
-        <p id="app-info-card-description" style="color: #000000; font-weight:300;">
+        <h6 id="contact" class="social-media-heading">We <i class="fa fa-heart"></i> New Friends!</h6>
+        <p id="app-info-card-description" class="social-media-text">
           Want to collaborate, join the team or just have general feedback? Give us a shout!
         </p>
         <ul class="list-inline list-social">
           <li class="social-media-icon">
-            <a href="https://www.instagram.com/helpinghandsapp" target="_blank">
-              <img src="img/IGIcon.png" style="width:65px; height:65px; border-radius: 14px; margin: 5px;" alt="Instagram Icon Logo"/>
+            <a class="social-media-link" href="https://www.instagram.com/helpinghandsapp" target="_blank">
+              <img class="social-media-image" src="img/IGIcon.png" alt="Instagram Icon Logo"/>
             </a>
           </li>
           <li class="social-media-icon">
-            <a href="https://twitter.com/helpinghands" target="_blank">
-              <img src="img/TwitterIcon.png" style="width:65px; height:65px; border-radius: 14px; margin: 5px;" alt="Twitter Icon Logo"/>
+            <a class="social-media-link" href="https://twitter.com/helpinghands" target="_blank">
+              <img class="social-media-image" src="img/TwitterIcon.png" alt="Twitter Icon Logo"/>
             </a>
           </li>
           <li class="social-media-icon">
-            <a href="https://www.facebook.com/helphandsapp" target="_blank">
-              <img src="img/FBIcon.png" style="width:65px; height:65px; border-radius: 14px; margin: 5px;" alt="Facebook Icon Logo"/>
+            <a class="social-media-link" href="https://www.facebook.com/helphandsapp" target="_blank">
+              <img class="social-media-image" src="img/FBIcon.png" alt="Facebook Icon Logo"/>
             </a>
           </li>
           <li class="social-media-icon">
-            <a href="https://www.linkedin.com/company/helpinghandsapp/" target="_blank">
-              <img src="img/LinkedInIcon.png" style="width:65px; height:65px; border-radius: 14px; margin: 5px;" alt="LinkedIn Icon Logo"/>
+            <a class="social-media-link" href="https://www.linkedin.com/company/helpinghandsapp/" target="_blank">
+              <img class="social-media-image" src="img/LinkedInIcon.png" alt="LinkedIn Icon Logo"/>
             </a>
           </li>
           <li class="social-media-icon">
-            <a href="#mailgo" data-address="info" data-domain="helpinghandsapp.com">
-              <img src="img/EmailIcon.png" style="width:65px; height:65px; border-radius: 14px; margin: 5px;" alt="Email Icon Logo"/>
+            <a class="social-media-link" href="#mailgo" data-address="info" data-domain="helpinghandsapp.com">
+              <img class="social-media-image" src="img/EmailIcon.png" alt="Email Icon Logo"/>
             </a>
           </li>
         </ul>
@@ -360,12 +343,33 @@
 
     <footer>
       <div class="wrapper">
-        <p style="font-weight: 300;">&copy; 2019 Helping Hands. All Rights Reserved.</p>
+        <p class="footer-text">&copy; 2019 Helping Hands. All Rights Reserved.</p>
       </div>
     </footer>
 
     <!--============================================================================================-->
+    <!-- Slideshow script -->
+    <script>
+      var slideIndex = 0;
+      showSlides();
 
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("slideshow-items");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
