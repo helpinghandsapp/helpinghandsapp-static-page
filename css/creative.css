@@ -2331,14 +2331,64 @@ footer ul li a.active {
 /*Volunteer Page*************************************************/
 .volunteer-section {
   padding-bottom: 0;
+  background: linear-gradient(to bottom left, rgb(0,152,238),rgb(0,76,143));
 }
 
-.volunteer-card {
+.volunteer-section .volunteer-heading {
+  font-size: 55px; 
+  color: #fff; 
+  text-align: center; 
+  margin: 50px 0;
+}
+
+.volunteer-section .volunteer-highlights {
+  border-top-left-radius: 55px; 
+  border-top-right-radius: 55px; 
+  padding-top: 70px; 
+  display: grid; 
+  justify-content: center;
+}
+
+.volunteer-section .volunteer-highlights .wrapper {
+  margin: 0 auto;
+}
+
+.volunteer-section .volunteer-highlights .col-md-6:nth-child(1) {
+  padding: 0px;
+}
+
+.volunteer-section .volunteer-highlights .volunteer-highlights-image-container {
+  margin: auto;
+  max-width: 600px;
+}
+
+.volunteer-section .volunteer-highlights .volunteer-card {
   max-width: 600px;
   background: #ffffff;
   border-radius: 20px;
   margin: auto;
   margin-bottom: 15px;
+  padding:5px 20px 10px 20px;
+}
+
+.volunteer-section .volunteer-card .main-title {
+  font-size:23px;
+  margin-top:10px;
+  font-weight:700;
+}
+
+.volunteer-section .volunteer-card #app-info-card-description {
+  font-weight: 300; 
+  color: #000; 
+  line-height: 1.12;
+}
+
+.volunteer-section .volunteer-positions-section {
+  padding: 0 0 100px;
+}
+
+.volunteer-section .volunteer-positions-section .wrapper {
+  padding: 0 20px;
 }
 
 #volunteer-icon {
@@ -2355,6 +2405,7 @@ footer ul li a.active {
 #volunteer-img {
   transition: 0.3s;
   height: 310px;
+  border-radius: 35px;
 }
 
 .volunteer-positions {
@@ -2362,6 +2413,11 @@ footer ul li a.active {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 20px auto 0; 
+  background: #ffffff; 
+  border-radius: 45px; 
+  max-width: 1000px; 
+  box-shadow: 0px 4px 6px #D5D5D5; 
 }
 .volunteer-positions .volunteer-item {
   margin: 10px 16px;
