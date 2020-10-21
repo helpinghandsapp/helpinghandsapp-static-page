@@ -756,6 +756,11 @@ header .header-content .header-content-inner p {
     background: linear-gradient(to bottom left, #2BAAED, #0A5F93);
     padding: 5rem 0;
   }
+
+  .home-eventbrite-section .covid-eventbite-h3 {
+    font-weight: 800;
+  }
+
   .covid-eventbrite-h3 {
     font-size: 45px;
   }
