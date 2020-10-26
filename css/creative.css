@@ -756,6 +756,11 @@ header .header-content .header-content-inner p {
     background: linear-gradient(to bottom left, #2BAAED, #0A5F93);
     padding: 5rem 0;
   }
+
+  .home-eventbrite-section .covid-eventbite-h3 {
+    font-weight: 800;
+  }
+
   .covid-eventbrite-h3 {
     font-size: 45px;
   }
@@ -1859,131 +1864,68 @@ footer ul li a.active {
   margin-left: 0;
 }
 
-
 /*Links--------------------------------*/
-
-.links {
-  margin-top: 15%;
-}
-
-@media (max-height:1080px) {
-  .links {
-    margin-top: 10%;
-  }
-}
-
-@media (max-height:800px) {
-  .links {
-    margin-top: 6.5%;
-  }
-}
-
-@media (max-width:768px) {
-  .links {
-    margin-top: -10%;
-  }
-}
 
 #links {
   height: 100%;
+  background: #F5F7FA;
 }
 
-@media (max-width:992px) {
+@media (min-width: 992px) {
+  #links-title {
+    padding-left: 48px;
+  }
+}
+
+@media (max-width: 992px) {
+  #links-section {
+    padding: 10% 0;
+  }
+
   #links-title {
     text-align: center;
   }
 }
 
-@media (max-height:736px) {
-  #links {
-    height: auto;
-  }
-}
-
-@media (max-width:992px) {
-  #links {
-    height: auto;
-  }
+#links-title {
+  font-size: 44px;
 }
 
 #links-button-content {
   margin: 5px 5px 5px 0px;
-  font-size: 21px;
+  font-size: 18px;
   border-radius: 20px;
   font-family: "Nunito Sans", "Serif Sans";
+  width: 100%;
+  white-space: normal;
 }
 
 @media (max-width: 1106px) {
   #links-button-content {
-    font-size: 18px;
+    font-size: 16px;
   }
+}
+
+#links-img {
+  background: #F5F7FA; 
+  max-height: 450px;
+}
+
+.links-buttons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 .links-button {
-  min-width: 320px;
-  padding-left: 0px;
-}
-
-@media (min-width:991px) {
-  #links-img {
-    margin-top: -60px;
-  }
-}
-
-@media (max-width: 991px) {
-  .links-button {
-    padding-left: 111px;
-  }
+  text-align: center;
 }
 
 @media (max-width:767px) {
-  #links-button {
-    width: 117%;
-  }
-
-  .links-button {
-    padding-left: 18%;
-  }
-
   .links-buttons-div {
     padding: 0px;
-  }
-}
-
-@media (max-width: 657px) {
-  #links-button-content {
-    font-size: 15px
-  }
-
-  .links-button {
-    padding-left: 9%;
-  }
-
-  #links-button {
-    width: 150%;
-  }
-
-}
-
-@media (max-width: 518px) {
-  #links-img {
-    margin-left: 9%;
-  }
-}
-
-@media (max-width: 450px) {
-  .links-button {
-    padding-left: 1%;
-  }
-
-  #links-button {
-    width: 180%;
-  }
-}
-
-@media (max-width: 386px) {
-  #links-button-content {
-    font-size: calc(5vw / 1.45);
   }
 }
 
