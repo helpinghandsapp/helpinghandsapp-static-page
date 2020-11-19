@@ -1073,9 +1073,14 @@ section.features .feature-item i {
 
 /*-------------------------------------------------*/
 /*-------------------------------------------------*/
+.covid-page {
+  
+}
+
 .team-section {
   background: linear-gradient(to bottom left , rgb(0,152,238),rgb(0,76,143)); 
-  padding-bottom: 0px;
+  padding: 5% 0 0;
+  min-height: 0;
 }
 
 .team-section .team-heading {
@@ -1091,14 +1096,18 @@ section.features .feature-item i {
 }
 
 .team2 {
+  background: linear-gradient(to top left , rgb(0,152,238),rgb(0,76,143));
   width: 100%;
   padding-bottom: 0;
-  border-radius: 28px 28px 0 0;
 }
 .team2 .team-h3:nth-child(1) {
   margin-top: 0;
 }
 
+#team2 {
+  border-radius: 28px 28px 0 0;
+  padding-bottom: 0;
+}
 .team-h3 {
   color: black;
   font-weight: bold;
@@ -1168,14 +1177,14 @@ section.features .feature-item i {
 }
 
 
-#team-name {
+.team-name {
   color: black;
   padding: 0 14px 0 14px;
   font-size: 21px;
   margin-top: 10px;
 }
 
-#position-title {
+.position-title {
   color: black;
   margin-top: -8px;
   padding: 0 14px 0 14px;
