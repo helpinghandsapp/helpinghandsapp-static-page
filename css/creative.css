@@ -915,7 +915,7 @@ section.features .features-text {
   }
 }
 
-#app-info-card-title {
+.app-info-card-title {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -923,7 +923,7 @@ section.features .features-text {
   text-decoration: none
 }
 
-#app-info-card-description {
+.app-info-card-description {
   font-family: 'Roboto', sans-serif;
   line-height: 1.1;
   font-weight: 400;
@@ -940,10 +940,6 @@ section.features .device- section.features .feature-item {
 
 section.features .feature-item {
   text-align: center;
-}
-
-section.features .feature-item h3 {
-  font-size: 30px;
 }
 
 section.features .feature-item i {
@@ -2604,11 +2600,11 @@ footer ul li a.active {
   height: 75%;
 }
 
-#help-button {
+.help-button {
   width: 100%;
 }
 
-#help-button a {
+.help-button a {
   /* margin:5px 5px 5px 0px; */
   font-size: 22px;
   border-radius: 20px;
@@ -2658,7 +2654,7 @@ footer ul li a.active {
     margin-top: -90px;
   }
 
-  #help-button {
+  .help-button {
     max-width: 405px;
   }
 }
@@ -2729,7 +2725,7 @@ footer ul li a.active {
     margin-top: 40px;
   }
 
-  #help-button {
+  .help-button {
     width: 100%;
     min-width: 250px;
   }
@@ -2833,7 +2829,7 @@ footer ul li a.active {
   margin-top: 10px;
 }
 
-.workshop-section .workshop-main-features #app-info-card-description {
+.workshop-section .workshop-main-features .app-info-card-description {
   font-weight:300; 
   color: #000; 
   line-height: 1.5;
@@ -3234,7 +3230,7 @@ img {
   padding-top: 66px;
 }
 
-#help-popup-img,
+.help-popup-img,
 .educator-img {
   max-height: 370px;
   margin-bottom: 20px;
@@ -3242,7 +3238,7 @@ img {
 
 @media (max-width:992px) {
 
-  #help-popup-img,
+  .help-popup-img,
   .educator-img {
     margin-top: 60px;
   }
@@ -3250,7 +3246,7 @@ img {
 
 @media (max-width:768px) {
 
-  #help-popup-img,
+  .help-popup-img,
   .educator-img {
     margin-top: 0px;
   }
@@ -3416,13 +3412,13 @@ img {
     display: none
   }
 
-  #app-img {
+  .app-img {
     margin-top: 20px;
   }
 }
 
 @media (max-width:1356px) {
-  #app-img {
+  .app-img {
     margin-top: 0px;
     max-height: 300px;
   }
@@ -3433,7 +3429,7 @@ img {
     height: 472px;
   }
 
-  #app-img {
+  .app-img {
     margin-top: 20px;
     max-height: 400px;
     width: auto;
@@ -3445,7 +3441,7 @@ img {
 }
 
 @media (max-width:768px) {
-  #app-img {
+  .app-img {
     margin-top: 20px;
     width: 100%;
   }
@@ -3472,7 +3468,7 @@ img {
     padding-top: 77px;
   }
 
-  #app-img {
+  .app-img {
     width: 100%;
     height: auto;
   }
@@ -3500,7 +3496,7 @@ img {
   }
 }
 
-#app-button {
+.app-button {
   background: #ffffff;
   margin-top: 13px;
   padding-top: 8px;
@@ -3511,7 +3507,7 @@ img {
   color: rgb(73, 73, 73)
 }
 
-#app-button:hover {
+.app-button:hover {
   color: #000;
 }
 
