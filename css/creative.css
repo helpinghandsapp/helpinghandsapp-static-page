@@ -1896,7 +1896,7 @@ footer ul li a.active {
   font-size: 44px;
 }
 
-#links-button-content {
+.links-button-content {
   margin: 5px 5px 5px 0px;
   font-size: 18px;
   border-radius: 20px;
@@ -1906,7 +1906,7 @@ footer ul li a.active {
 }
 
 @media (max-width: 1106px) {
-  #links-button-content {
+  .links-button-content {
     font-size: 16px;
   }
 }
