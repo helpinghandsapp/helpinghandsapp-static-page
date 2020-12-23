@@ -308,7 +308,7 @@ aside {
   }
 }
 
-@media (min-width: 995px) {
+@media (min-width: 1030px) {
   .navbar-default {
     background-color: transparent;
     border-color: transparent;
@@ -2922,10 +2922,16 @@ footer ul li a.active {
   min-height: 0;
 }
 
+@media (max-width: 970px) {
+  .donate-section {
+    padding: 10% 0 3%;
+  }
+}
+
 .donate-heading {
   font-size: 55px; 
   color: #fff;
-  margin: 50px 0;
+  margin: 50px 0 25px;
 }
 
 #donate {
