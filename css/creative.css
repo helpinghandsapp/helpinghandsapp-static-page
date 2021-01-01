@@ -404,7 +404,7 @@ header {
 }
 
 .landing-header {
-  margin-top: 17%;
+  margin: 17% 0 10px;
   max-width:600px; 
   width: 90%;
 }
