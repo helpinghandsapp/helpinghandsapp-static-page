@@ -2362,6 +2362,7 @@ footer ul li a.active {
 }
 .volunteer-positions .volunteer-item {
   margin: 10px 16px;
+  list-style-type: none;
 }
 .volunteer-positions .volunteer-link {
   display: inline-block;
@@ -2413,7 +2414,7 @@ footer ul li a.active {
 }
 
 .volunteer-postings-section {
-  padding: 100px 0;
+  padding: 0 0 100px;
 }
 
 .volunteer-postings-heading,
@@ -2428,6 +2429,11 @@ footer ul li a.active {
 }
 .volunteer-postings-text {
   margin-bottom: 25px;
+  color: #000;
+}
+
+.tab-vertical {
+  color: #000;
 }
 
 .jobPostings {
