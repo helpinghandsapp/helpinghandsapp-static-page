@@ -308,7 +308,7 @@ aside {
   }
 }
 
-@media (min-width: 995px) {
+@media (min-width: 1030px) {
   .navbar-default {
     background-color: transparent;
     border-color: transparent;
@@ -404,7 +404,7 @@ header {
 }
 
 .landing-header {
-  margin-top: 17%;
+  margin: 17% 0 10px;
   max-width:600px; 
   width: 90%;
 }
@@ -1002,7 +1002,7 @@ section.features .feature-item i {
   margin-bottom: 0;
 }
 .goFundMe .progress-bar {
-  width: 20%;
+  width: 21%;
 }
 .goFundMe-buttonContainer {
   display: flex;
@@ -2915,6 +2915,34 @@ footer ul li a.active {
   }
 }
 
+/* donate section */
+.donate-section {
+  padding: 5% 0 3%;
+  background: linear-gradient(to bottom left, rgb(0,152,238),rgb(0,76,143));
+  min-height: 0;
+}
+
+@media (max-width: 970px) {
+  .donate-section {
+    padding: 10% 0 3%;
+  }
+}
+
+.donate-heading {
+  font-size: 55px; 
+  color: #fff;
+  margin: 50px 0 25px;
+}
+
+#donate {
+  background: linear-gradient(to top left, rgb(0,152,238),rgb(0,76,143));
+}
+
+#donate #goFundMe {
+  border-top-right-radius: 55px;
+  border-top-left-radius: 55px; 
+  padding: 70px 0; 
+}
 
 /*help-------------------------------------------*/
 
