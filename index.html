@@ -46,6 +46,14 @@
 
     <!--[endif]-->
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N283VZD');</script>
+    <!-- End Google Tag Manager -->
+
     <!-- Google Analytics Tracking Code for http://helpinghandsapp.com -->
 
     <script>
@@ -92,6 +100,10 @@
   <!--============================================================================================-->
 
   <body id="page-top">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N283VZD"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
       <!--<div class="container-fluid">-->
       <div class="wrapper">
@@ -432,7 +444,7 @@
             <p class="goFundMe-text">(Last Updated on 12-23-2020)</p>
             <div class="goFundMe-buttonContainer">
               <a id="gfm-charity-donate-link" class="btn btn-seconday goFundMe-button"
-                role="button" href="https://charity.gofundme.com/o/en/campaign/lend-a-helping-hand-to-youth" target="_blank">Donate now</a>
+                role="button" href="https://charity.gofundme.com/o/en/campaign/lend-a-helping-hand-to-youth" target="_blank" onclick='mixpanel.track("GoFundMe");'>Donate now</a>
               <img class="goFundMe-logo" src="img/gofundme_logo.png" alt="Gofundme charity logo"/>
             </div>
           </div>
