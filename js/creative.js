@@ -104,3 +104,13 @@ var collapseElementList = [].slice.call(document.querySelectorAll(".collapse"));
 var collapseList = collapseElementList.map(function (collapseEl) {
   return new bootstrap.Collapse(collapseEl);
 });
+
+//function to change button text
+function change(e) {
+  var button = document.getElementById(e.id);
+  if (button.innerHTML == "View Less") {
+    button.innerHTML = "View More";
+  } else {
+    button.innerHTML = "View Less";
+  }
+}
