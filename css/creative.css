@@ -956,13 +956,12 @@ section.features .feature-item i {
 
 .goFundMe {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
 }
 
 .goFundMe .wrapper {
-  padding: 0 150px;
+  /* padding: 0 150px; */
 }
 
 .goFundMe-heading {
@@ -977,10 +976,25 @@ section.features .feature-item i {
   border: 1px solid #bbb;
   border-radius: 5px;
 }
-.goFundMe-image {
-  display: block;
-  width: 100%;
+
+.futureHistory-content {
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  align-items: center;
 }
+
+.goFundMe-image {
+  flex-shrink: 1;
+  display: inline-block;
+  align-items: center;
+  padding: 10px;
+}
+
+.futureHistory-imageContainer {
+  margin-left: 150px;
+  align-items: center;
+}
+
 .goFundMe-textContainer {
   border-top: 1px solid #bbb;
   padding: 20px;
