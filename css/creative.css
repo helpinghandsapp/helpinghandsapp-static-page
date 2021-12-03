@@ -955,7 +955,7 @@ section.features .feature-item i {
 /* ------------------- GOFUNDME SECTION STYLES -------------------- */
 
 .goFundMe {
-  display: flex;
+  background-color: white;
   flex-direction: row;
   align-items: center;
 }
