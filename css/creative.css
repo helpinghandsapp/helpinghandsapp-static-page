@@ -2592,6 +2592,7 @@ footer ul li a.active {
 }
 
 .helpP {
+  padding-top: 4px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   margin-top: -10px;
@@ -2641,6 +2642,7 @@ footer ul li a.active {
 }
 
 .help-content {
+  padding-top: 40px;
   width: 900%;
 }
 
