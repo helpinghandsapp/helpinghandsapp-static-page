@@ -402,6 +402,12 @@ header {
   align-items: space-around;
 }
 
+.index-display-flex-flexwrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
 .landing-header {
   margin: 17% 0 10px;
   max-width: 600px;
