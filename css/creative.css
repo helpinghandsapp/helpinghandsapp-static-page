@@ -366,6 +366,7 @@ aside {
   height: 35px;
   width: 75px;
   text-transform: none;
+  
 }
 
 #nav-bar-app:hover {
@@ -393,6 +394,8 @@ header {
   justify-content: center;
   align-items: center;
   padding: 5rem 0;
+  display: flex; 
+  justify-content: flex-start;
 }
 
 .display-flex-flexwrap {
