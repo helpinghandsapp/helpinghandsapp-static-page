@@ -2673,6 +2673,7 @@ footer ul li a.active {
   font-size: 22px;
   border-radius: 20px;
   margin: 0.5rem auto;
+  width: auto;
 }
 
 #parent-help .help-cont-logo:nth-child(2) {
