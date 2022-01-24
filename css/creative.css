@@ -405,10 +405,12 @@ header {
   align-items: space-around;
 }
 
+@media (min-width:769px) {
 .index-display-flex-flexwrap {
   display: flex;
   justify-content: space-around;
   align-items: space-around;
+}
 }
 
 .landing-header {
