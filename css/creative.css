@@ -2633,11 +2633,6 @@ footer ul li a.active {
   margin-top: -10px;
   font-weight: 300;
   font-size: 17px;
-
-
-  @media (min-width:769px) {
-  
-  }
 }
 
 .help-section {
