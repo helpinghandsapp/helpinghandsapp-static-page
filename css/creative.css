@@ -3652,3 +3652,227 @@ img {
     padding-bottom: 50px;
   }
 }
+
+/* volunteer-opportunities.html */
+
+.volunteer-section {
+
+  background: linear-gradient(to bottom left, #2baaed, #0a5f93);
+  padding-bottom: 0px;
+  color: white;
+}
+.volunteer-section .volunteer-heading {
+  font-weight: 600;
+  font-size: 55px;
+  color: white;
+  margin: 70px;
+}
+
+.volunteer-section .volunteer-subheading-section {
+  display: flex; 
+  flex-direction: row; 
+  margin-top: 3em;
+}
+
+.volunteer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.volunteer-grid {
+  display: grid;
+  -ms-display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+
+.volunteer-grid-item {
+  background-color: #fff;
+  border-radius: 40px;
+  box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
+  max-width: 500px;
+  min-width: 250px;
+  padding: 25px;
+  height: 95%;
+  margin: 2rem;
+  color: black;
+}
+
+
+.volunteer-placement {
+  color: black;
+
+}
+
+.volunteer-placement-item-title {
+  margin: 1em;
+}
+
+.volunteer-placement-item-paragraph{
+  margin-top: 1em;
+}
+
+.volunteer-placement-sentence {
+  margin-left: 2em;
+  margin-top: 2em;
+}
+
+.volunteer-placement-apply-button {
+  background: linear-gradient(to bottom right, #f17014, #ffc400);
+  color: white;
+}
+
+
+.volunteer-opportunities-flex-container .volunteer-opportunities-feature-link {
+  text-decoration: none;
+}
+
+.volunteer-opportunities-feature-item {
+  color: #fff;
+  width: 150px;
+  height: 225px;
+  border-radius: 35px;
+  box-shadow: 3px 3px 9px #d5d5d5;
+  background: linear-gradient(
+    to bottom right,
+    rgb(20, 90, 241),
+    rgb(0, 225, 255)
+  );
+  padding: 10px;
+  margin: 5px;
+  transition: 0.5s;
+  display: flex; 
+  align-items: center;
+}
+
+.volunteer-opportunities-feature-content {
+  margin-top: -22.5px;
+  transform: scale(0.8);
+
+}
+
+.volunteer-benefits-students-grid {
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+@media (min-width: 769px) {
+.volunteer-opportunities-img {
+  width: 50%; 
+  height: auto; 
+  border-radius: 30px;
+  margin-left: 2em;
+
+}
+}
+
+.formal-volunteering-item {
+    background: url("/img/checkmark-icon.png") no-repeat 
+    left top;
+    background-size: 15px;
+    height: 15px;
+    padding-left: 20px;
+    padding-top: 3px;
+    margin: 1em;
+}
+@media (min-width: 769px) {
+.volunteer-placement-img{
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  margin-left: 2em;
+}
+}
+
+.volunteer-placement-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.volunteer-opportunities-heading {
+  font-size: 55px;
+  color: #fff;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.volunteer-requirement-title {
+  margin-top: 3em;
+}
+.placement-image-container {
+display: flex; 
+align-items: center;
+}
+
+
+
+/* Mobile Devices */
+
+@media (max-width: 768px ) {
+  .volunteer-section {
+    margin-top: 3em;
+    background: linear-gradient(to bottom left, #2baaed, #0a5f93);
+    padding-bottom: 0px;
+    color: white;
+  }
+  
+  .volunteer-opportunities-heading {
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+    margin: 50px 0;
+  }
+  .volunteer-opportunities-high-school-subheading {
+    text-align: left;
+  }
+  
+  .volunteer-section .volunteer-subheading-section {
+    display: block;
+    text-align: center;
+    
+  }
+  
+  .volunteer-opportunities-img{
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+    margin-top: 2em;
+    text-align: left;
+
+  }
+
+  .volunteer-placement-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .volunteer-placement-item .placement-image-container .volunteer-placement-img{
+    margin-top: 1em;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+  }
+
+  .placement-image-container{
+    display: flex;
+    justify-content: center;
+    display: flex; 
+    align-items: center;
+  }
+
+  .volunteer-placement-sentence {
+    margin-top: 2em;
+    text-align: left;
+  }
+
+  .volunteer-requirement-title {
+    margin-top: 1em;
+  }
