@@ -155,11 +155,11 @@ section {
   padding: 5% 0;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   section {
     padding: 20% 0;
   }
-}
+} */
 
 aside {
   padding: 50px 0;
@@ -3672,12 +3672,23 @@ img {
   display: flex; 
   flex-direction: row; 
   margin-top: 3em;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+.volunteer-section .volunteer-opportunities-high-school-subheading {
+  text-align: left;
+  margin-left: 4em;
 }
 
 .volunteer-section ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+.volunteer-section .not-volunteer-requirement {
+  margin: 1em 4em;
 }
 
 
@@ -3758,11 +3769,28 @@ img {
 
 .volunteer-benefits-students-grid {
   display: flex;
-  
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: black;
 }
+
+.volunteer-benefits-students-grid .volunteer-benefits-students-grid-description{
+  margin-left: 4em;
+  margin-right: 1em;
+  margin-bottom: 2em;
+}
+
+.volunteer-benefits-students-grid .volunteer-benefits-student-grid-item {
+background: #d3d8dc;
+border-radius: 20px;
+min-height: 4em;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 1em;
+}
+
 
 @media (min-width: 769px) {
 .volunteer-opportunities-img {
@@ -3779,9 +3807,10 @@ img {
     left top;
     background-size: 15px;
     height: 15px;
-    padding-left: 20px;
-    padding-top: 3px;
-    margin: 1em;
+    padding-left: 2em;
+    margin-top: 3em;
+
+   
 }
 @media (min-width: 769px) {
 .volunteer-placement-img{
@@ -3807,9 +3836,22 @@ img {
 .volunteer-requirement-title {
   margin-top: 3em;
 }
+
+
 .placement-image-container {
 display: flex; 
 align-items: center;
+}
+
+.not-volunteer-requirement{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.documentCommunityHoursImg{
+  width: 100%;
+  height: auto;
 }
 
 
@@ -3876,3 +3918,13 @@ align-items: center;
   .volunteer-requirement-title {
     margin-top: 1em;
   }
+
+  .volunteer-benefits-students-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-top: 2em;
+  }
+}
