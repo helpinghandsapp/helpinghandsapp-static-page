@@ -380,7 +380,6 @@ aside {
 /*Header-----------------------------------------*/
 header {
   width: 100%;
-  min-height: 100vh;
   text-align: center;
   background-position: center;
   -webkit-background-size: 50%;
@@ -3735,12 +3734,19 @@ img {
 
 }
 
-.volunteer-placement-item-title {
-  margin: 1em;
+.volunteer-placement .volunteer-placement-title {
+  font-size: 3em;
 }
 
-.volunteer-placement-item-paragraph{
+.volunteer-placement .volunteer-placement-item-title {
+  margin: 1em;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.volunteer-placement .volunteer-placement-item-paragraph{
   margin-top: 1em;
+  font-size: 1.1em;
 }
 
 .volunteer-placement-sentence {
@@ -3957,10 +3963,12 @@ align-items: center;
   }
 
 
-.not-volunteer-requirement .volunteer-grid-items {
+  .not-volunteer-requirement-section-container-fluid .not-volunteer-requirement .volunteer-grid-items {
   margin-bottom: 2em;
   margin-top: 1em;
   text-align: left;
+  margin-right: 2em;
+  border: solid red 5px;
 }
 
 .not-volunteer-requirement-section-container-fluid {
