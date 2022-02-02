@@ -3686,6 +3686,22 @@ img {
   margin-left: 4em;
   margin-right: 4em;
 }
+
+.volunteer-section .volunteer-paragraph{
+  margin-top: 3em;
+  text-align: left;
+  margin-left: 4em;
+}
+
+.volunteer-section .volunteer-paragraph{
+  margin-top: 3em;
+  text-align: left;
+  width: 75%;
+  position: relative;
+  top: 1em;
+}
+
+
 }
 /* //////////////////////////////////////// */
 
@@ -3702,17 +3718,23 @@ img {
 
 .volunteer-section .volunteer-paragraph{
   margin-top: 3em;
+  text-align: left;
 }
 
 
+.community-service-req-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+}
 
 .volunteer-grid {
   display: grid;
   -ms-display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   max-width: 1100px;
-  margin: 2rem auto;
 }
 
 .volunteer-grid-item {
@@ -3725,6 +3747,7 @@ img {
   height: 95%;
   color: black;
   margin-bottom: 1em;
+  margin-right: 3em;
 }
 
 
@@ -3747,7 +3770,14 @@ img {
 .volunteer-placement .volunteer-placement-item-paragraph{
   margin-top: 1em;
   font-size: 1.1em;
+  position: relative;
+  left: -0.4em;
 }
+
+.volunteer-placement .volunteer-placement-form-link {
+  color: #f07013;
+}
+
 
 .volunteer-placement-sentence {
   margin-left: 2em;
@@ -3821,8 +3851,12 @@ margin: 1em;
   height: auto; 
   border-radius: 30px;
   margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
   position: relative;
-  top: -2em;
+  top: 5em;
+  left: -3.5em;
+
 
 }
 }
@@ -3841,10 +3875,12 @@ margin: 1em;
 /* desktop view */
 @media (min-width: 769px) {
 .volunteer-placement-img{
-  width: 100%;
+  width: 140%;
   height: auto;
   border-radius: 30px;
-  margin-left: 2em;
+  margin-left: 3em;
+  position: relative;
+  top: 1em;
 }
 
   .not-volunteer-requirement{
@@ -3852,22 +3888,46 @@ margin: 1em;
     flex-direction: row;
     align-items: center;
   }
+
+
+.volunteer-opportunities-hs-student-section {
+display: flex; 
+flex-direction: row;
+margin-bottom: 5em;
 }
+
+.volunteer-opportunities-student-title-paragraph{
+  position: relative;
+  top: 5em;
+}
+
+.volunteer-placement-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: -9em;
+}
+
+}
+/* desktop view media query ends */
 
 .volunteer-placement-item {
   display: flex;
   flex-direction: row;
 }
 
-.volunteer-opportunities-heading {
+.volunteer-opportunities-heading{
   font-size: 55px;
   color: #fff;
   text-align: center;
   margin: 50px 0;
 }
 
+
+
 .volunteer-requirement-title {
   margin-top: 3em;
+  margin-bottom: 2em;
 }
 
 
@@ -3912,12 +3972,19 @@ align-items: center;
   
   .volunteer-opportunities-img{
     border-radius: 30px;
-    width: 100%;
+    width: 95%;
     height: auto;
-    margin-top: 2em;
+    margin-top: 3em;
     text-align: left;
-
   }
+
+  .volunteer-opportunities-hs-student-section {
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 2em;
+    justify-content: center;
+    align-items: center;
+    }
 
   .volunteer-placement-item {
     display: flex;
@@ -3968,7 +4035,6 @@ align-items: center;
   margin-top: 1em;
   text-align: left;
   margin-right: 2em;
-  border: solid red 5px;
 }
 
 .not-volunteer-requirement-section-container-fluid {
@@ -3981,7 +4047,15 @@ align-items: center;
   justify-content: flex-start;
 }
 
-.volunteer-grid-item {
+.volunteer-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3em;
+}
+
+.volunteer-grid .volunteer-grid-item {
   background-color: #fff;
   border-radius: 40px;
   box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
@@ -3990,6 +4064,9 @@ align-items: center;
   padding: 25px;
   height: 95%;
   color: black;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
+  padding-bottom: 3em;
 }
+
+
 }
