@@ -853,8 +853,8 @@ section.features .features-text {
   border-radius: 35px;
   box-shadow: 3px 3px 9px #d5d5d5;
   background: linear-gradient(to bottom right, #f17014, #ffc400);
-  padding: 10px;
   margin: 10px;
+
 }
 .feature-item-image {
   width: 75px;
@@ -4102,5 +4102,13 @@ align-items: center;
 .volunteer-requirement-title {
   margin-bottom: 2em;
 }
+
+}
+
+.workshop-feature-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
