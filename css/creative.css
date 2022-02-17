@@ -380,7 +380,7 @@ aside {
 /*Header-----------------------------------------*/
 header {
   width: 100%;
-  text-align: center;
+
   background-position: center;
   -webkit-background-size: 50%;
   -moz-background-size: 50%;
@@ -392,7 +392,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 0;
+  padding-top: 5rem;
   display: flex; 
   justify-content: flex-start;
 }
@@ -966,9 +966,19 @@ section.features .feature-item i {
 /* ------------------- GOFUNDME SECTION STYLES -------------------- */
 
 .goFundMe {
-  background-color: white;
   flex-direction: row;
   align-items: center;
+  background-image: url('/img/donate-page-section-background-img.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: left;
+  height: 525px;
+width: 751px;
+left: 689px;
+top: 0px;
+border-radius: 0px;
+color: white;
+
 }
 
 .goFundMe .wrapper {
@@ -3006,15 +3016,341 @@ footer ul li a.active {
 }
 
 /* donate section */
+
+/* desktop */
+
+@media (min-width: 769px) {
+
 .donate-section {
-  padding: 5% 0 3%;
-  background: linear-gradient(
-    to bottom left,
-    rgb(0, 152, 238),
-    rgb(0, 76, 143)
-  );
-  min-height: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  
+  justify-content: space-between;
+  background: linear-gradient(277.57deg, #2BAAED 0%, #2D6B9D 100%);
+  color: white; 
 }
+
+.donate-section .donate-header-img{
+  width: 50%;
+  height: auto;
+}
+
+.donate-section .donate-header-paragraph{
+  width: 33%;
+}
+
+.donate-now-button {
+  background: linear-gradient(92.61deg, #F17014 0%, #FFC400 99.92%);
+box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+border-radius: 10px;
+color: #FFFFFF;
+padding: 1em 5em;
+
+}
+
+.donate-body .donate-body-middle{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3em;
+}
+.donate-circular-section-image{
+  width: 100%;
+}
+
+.donate-body-paragraph{
+  width: 75%;
+  height: auto;
+  margin-left: 5em;
+}
+
+.donate-bottom-section .donate-bottom-subtitle {
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+  /* identical to box height */
+  
+  text-align: center;
+  
+  color: #FDB72F;
+  margin-bottom: 1em;
+  }
+
+        .donate-bottom-contact{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin-bottom: 2em;
+        }
+          .donate-bottom-contact .donate-bottom-contact-text {
+          width: 50%;
+          height: auto;
+          margin-bottom: 2em;
+        }
+}
+/* end of donate page desktop */
+
+/* donate page mobile  --------------------------*/
+
+@media (max-width: 768px) {
+  .donate-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(277.57deg, #2BAAED 0%, #2D6B9D 100%);
+    color: white; 
+  }
+  
+  .donate-section .donate-header-img{
+  display: none;
+  }
+  
+  .donate-section .donate-header-paragraph{
+    width: 100%;
+   margin: 1em 0;
+  }
+
+  .donate-header-paragraph{
+    display: flex;
+    flex-direction: column;
+  } 
+
+  .donate-now-button {
+  background: linear-gradient(92.61deg, #F17014 0%, #FFC400 99.92%);
+box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+border-radius: 10px;
+color: #FFFFFF;
+padding: 1em 5em;
+
+}
+  .donate-body .donate-body-middle{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3em;
+    }
+
+    .donate-circular-section{
+      display: flex;
+      justify-content: center;
+    }
+
+    .donate-circular-section-image{
+      width: 75%;
+      margin: 1em 0 3em 0;
+    }
+
+    .donate-body-paragraph{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+    }
+    .donate-bottom-section .donate-bottom-subtitle {
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  
+  text-align: center;
+  
+  color: #FDB72F;
+  margin-bottom: 1em;
+  width: 90%;
+  }
+
+  .donate-bottom-section .donor-box-section {
+    display: box;
+
+
+  
+    }
+    .donate-bottom-section .donor-box-section .donate-bottom-section-highfive{
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: -3em;
+     
+      
+      }
+
+      .donate-list{
+        display: block;
+        justify-content: center;
+        padding: 0 5em;
+        margin-bottom: 3em; 
+        }
+        
+        .donate-list .donate-list-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-right: 2em;
+          margin-top: 1em;
+          margin-bottom: 2em;
+        }
+        
+        .donate-list .donate-list-description {
+          font-family: Roboto;
+          text-align: center;
+        }
+        
+        .donate-list .donate-list-img {
+          margin-top: 2em;
+          width: 15%;
+        }
+
+        .donate-bottom-contact{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin-bottom: 2em;
+        }
+          .donate-bottom-contact .donate-bottom-contact-text {
+          width: 100%;
+          height: auto;
+          margin-bottom: 2em;
+        }
+
+        .donor-box-widget{
+          display: flex;
+          justify-content: center;
+          text-align: center;
+        }
+}
+
+/* end of donate page mobile */
+
+
+@media (min-width: 1201px) {
+  .donate-bottom-section .donor-box-section {
+    display: flex;
+    justify-content: center;
+    }
+    .donate-bottom-section .donor-box-section .donate-bottom-section-highfive{
+      width: 80%;
+      height: auto;
+      
+      }
+
+
+      .donate-list{
+        display: flex;
+        justify-content: center;
+        padding: 0 5em;
+        margin-bottom: 5em; ;
+        }
+        
+        .donate-list .donate-list-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-right: 2em;
+        }
+        
+        .donate-list .donate-list-description {
+          font-family: Roboto;
+          text-align: center;
+          width: 80%;
+        }
+        
+        .donate-list .donate-list-img {
+          margin-top: 2em;
+          width: 15%;
+          height: auto;
+        }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  
+  .donate-list{
+    display: flex;
+    justify-content: center;
+    padding: 0 5em;
+    margin-bottom: 5em; ;
+    }
+    
+    .donate-list .donate-list-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 2em;
+    }
+    
+    .donate-list .donate-list-description {
+      font-family: Roboto;
+      text-align: center;
+      width: 100%;
+    }
+    
+    .donate-list .donate-list-img {
+      margin-top: 2em;
+      width: 15%;
+      height: auto;
+    }
+  
+  .donate-bottom-section .donor-box-section {
+    display: box;
+    }
+    .donate-bottom-section .donor-box-section .donate-bottom-section-highfive{
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: -3em;
+     
+      
+      }
+      .donor-box-widget{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+
+
+
+}
+
+.donate-beginning-sentence{
+  margin-bottom: 1em;
+}
+
+.donate-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4em;
+  background: white;
+}
+
+
+.donate-body-button{ 
+  background: linear-gradient(92.61deg, #F17014 0%, #FFC400 99.92%);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  color: white;
+  padding: 1em 4em;
+}
+
+
+.donate-bottom-section{ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.donate-bottom-section .donate-bottom-title {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+text-align: center;
+color: black;
+}
+
 
 @media (max-width: 970px) {
   .donate-section {
@@ -3029,7 +3365,7 @@ footer ul li a.active {
 }
 
 #donate {
-  background: linear-gradient(to top left, rgb(0, 152, 238), rgb(0, 76, 143));
+  background:#E5E5E5;
 }
 
 #donate #goFundMe {
@@ -3037,6 +3373,8 @@ footer ul li a.active {
   border-top-left-radius: 55px;
   padding: 70px 0;
 }
+
+
 
 /*help-------------------------------------------*/
 
