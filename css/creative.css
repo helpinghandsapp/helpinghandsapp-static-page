@@ -965,8 +965,13 @@ section.features .feature-item i {
 
 /* ------------------- GOFUNDME SECTION STYLES -------------------- */
 
+#page-top {
+  border:solid green 5px;
+  display:flex;
+  flex-direction: column;
+}
 .goFundMe {
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   background-image: url('/img/donate-page-section-background-img.jpg');
   background-repeat: no-repeat;
@@ -978,6 +983,9 @@ left: 689px;
 top: 0px;
 border-radius: 0px;
 color: white;
+align-self: center;
+margin-bottom: 5em;
+
 
 }
 
@@ -1008,7 +1016,7 @@ color: white;
   flex-shrink: 1;
   display: inline-block;
   align-items: center;
-  padding: 10px;
+  padding: 10px; 
 }
 
 .futureHistory-imageContainer {
