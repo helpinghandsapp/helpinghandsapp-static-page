@@ -3109,6 +3109,11 @@ padding: 1em 5em;
           margin-bottom: 2em;
         }
 }
+
+.donate-list-item {
+  flex-basis: 100%;
+  justify-content: space-between;
+}
 /* end of donate page desktop */
 
 /* donate page mobile  --------------------------*/
