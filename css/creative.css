@@ -4217,6 +4217,9 @@ margin: 1em;
     margin: 0;
     position: relative;
     object-fit: contain;
+    top: 0;
+    left: 0
+
   }
 }
 
@@ -4340,6 +4343,7 @@ margin: 1em;
     }
 
     .volunteer-opportunities-img {
+      width: 100%;
       height: auto; 
       border-radius: 30px;
       margin: 2em;
@@ -4515,9 +4519,6 @@ align-items: center;
   width: 90%; 
   height: auto; 
   border-radius: 30px;
-  margin-top: 5em;
-
-
 }
 
 
