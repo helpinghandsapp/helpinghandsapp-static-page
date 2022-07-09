@@ -4210,17 +4210,14 @@ margin: 1em;
 
 
 @media (min-width: 769px) {
-.volunteer-opportunities-img {
-  width: 50%; 
-  height: auto; 
-  border-radius: 30px;
-  margin: 2em;
-  position: relative;
-  top: 5em;
-  left: -3.5em;
-
-
-}
+  .volunteer-opportunities-img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 30px;
+    margin: 0;
+    position: relative;
+    object-fit: contain;
+  }
 }
 
 .formal-volunteering-item {
@@ -4254,7 +4251,6 @@ margin: 1em;
   padding-bottom: 2em; 
   margin-top: 2em; 
   margin-right: 1em; 
-  width: 50%;
 }
 
 .volunteer-communitiy-req-paragraph {
@@ -4263,7 +4259,7 @@ margin: 1em;
 }
 
 .volunteer-requirement-title {
-  margin-top: 3em;
+  /* margin-top: 3em; */
   margin-bottom: 2em;
 }
 }
@@ -4344,7 +4340,6 @@ margin: 1em;
     }
 
     .volunteer-opportunities-img {
-      width: 50%; 
       height: auto; 
       border-radius: 30px;
       margin: 2em;
