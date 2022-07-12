@@ -1160,7 +1160,6 @@ margin-bottom: 5em;
 
 .team2 {
   width: 100%;
-  padding-bottom: 0;
   border-radius: 28px 28px 0 0;
 }
 .team2 .team-h3:nth-child(1) {
@@ -1909,14 +1908,17 @@ margin-right: 10px;
 
 /*Footer--------------------------------------------*/
 footer {
-  background-color: #ffffff;
-  padding: 25px 0;
-  color: rgba(0, 0, 0);
-  text-align: center;
+  background: #5cafdc;    
+  padding: 6vh 0 10px 0;
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+  font-weight: lighter;
 }
 
+
+
 footer p {
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
 }
 
@@ -1925,8 +1927,23 @@ footer ul {
 }
 
 footer ul li a {
-  font-size: 16px;
-  color: rgba(0, 0, 0);
+  font-size: 45px;
+  color: #ffffff
+}
+
+.footer-links {
+  font-size: 18px;
+}
+
+.footer-links a {
+  color: #ffffff;
+}
+
+.footer-copyright-text {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 50px
+
 }
 
 footer ul li a:hover,
@@ -1934,8 +1951,22 @@ footer ul li a:focus,
 footer ul li a:active,
 footer ul li a.active {
   text-decoration: none;
-  color: #000000;
+  color: white;
 }
+
+footer .social-media-icon:hover {
+  transform: scale(0.95);
+}
+
+/* footer mobile  */
+@media (max-width: 768px) {
+  .footer-social-media{
+    padding-top: 3vh;
+  }
+
+}
+
+
 
 .primary {
   border-color: #1b4b7a;
