@@ -515,8 +515,8 @@ header .header-content .header-content-inner p {
 }
 
 .main-title {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 800;
+  font-family: "Nunito Sans", sans-serif; 
+  /* font-weight: 800; */
   color: #000;
 }
 
@@ -831,7 +831,7 @@ section.features .img-responsive {
 
 section.features .features-text {
   color: #000000;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -884,7 +884,7 @@ section.features .features-text {
   }
 
   .main-title {
-    font-size: 45px;
+    font-size: 37px;
     margin-bottom: 5px;
   }
 }
@@ -976,15 +976,13 @@ section.features .feature-item i {
   background-size: 100% 100%;
   text-align: left;
   height: 525px;
-width: 751px;
-left: 689px;
-top: 0px;
-border-radius: 0px;
-color: white;
-align-self: center;
-margin-bottom: 5em;
-
-
+  width: 470px; 
+  left: 689px; 
+  top: 0px;
+  border-radius: 0px;
+  color: white;
+  align-self: center;
+  margin-bottom: 5em;
 }
 
 /* .goFundMe .wrapper {
@@ -1906,7 +1904,7 @@ margin-right: 10px;
 
 /*Footer--------------------------------------------*/
 footer {
-  background: #006b8f;    
+  background: #5895db;    
   padding: 6vh 0 10px 0;
   font-family: "Nunito Sans", sans-serif;
   color: white;
@@ -2714,7 +2712,7 @@ footer .social-media-icon:hover {
 }
 
 .help-section .main-title {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 800;
   margin: 0;
 }
@@ -2739,7 +2737,7 @@ footer .social-media-icon:hover {
 }
 
 .help-content {
-  padding-top: 40px;
+  padding-top: 20px;
   width: 900%;
 }
 
@@ -2929,10 +2927,9 @@ footer .social-media-icon:hover {
 
 /* mission statement section */
 .missionStyle {
-  padding: 4rem 0;
   margin: 0 12px;
-  background: white;
-  border-radius: 50px;
+  background:#8ac4d050;
+  border-radius: 20px;
   max-width: 1055px;
 }
 .missionStyle .section-heading {
@@ -3451,6 +3448,7 @@ color: black;
   border-top-left-radius: 55px;
   padding: 70px 0;
 }
+
 
 
 
