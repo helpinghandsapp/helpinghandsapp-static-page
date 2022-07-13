@@ -109,7 +109,7 @@ p.withbackground {
 
 .btn {
   border: 0;
-  border-radius: 300px;
+  border-radius: 10px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
   filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.16));
@@ -481,14 +481,13 @@ header .header-content .header-content-inner p {
   margin: 0 0 20px;
   width: 100vw;
   text-align: center;
-  background: linear-gradient(to bottom right, #f17014, #ffc400);
+  background:#003b4f  ;
 }
 
 .covid-bar a {
-  color: #000;
+  color:#f8f1f1;
   font-style: italic;
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-size: 18px;
   padding: 0 10px;
 }
@@ -1718,9 +1717,8 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-seconday {
-  border-color: #f07013;
   color: #ffffff;
-  background: linear-gradient(to bottom right, #f17014, #ffc400);
+  background: #faa52d;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -2389,7 +2387,7 @@ footer .social-media-icon:hover {
 /*Volunteer Page*************************************************/
 
 .team-button {
-  background-color: rgb(0 148 233);
+  background-color:#8ac4d0
 }
 
 .team-button:focus {
@@ -2634,10 +2632,14 @@ footer .social-media-icon:hover {
   z-index: 1;
   height: 45px;
   text-align: center;
-  font-family: "Nunito Sans", sans-serif;
+  /* font-family: "Nunito Sans", sans-serif; */
   font-size: 20px;
   padding-top: 10px;
   font-style: italic;
+  border-radius: 10px;
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: #006b8f; */
 }
 @media (max-width: 410px) {
   .tab-vertical {
@@ -2663,11 +2665,13 @@ footer .social-media-icon:hover {
 /* tab colors. Add with more tabs. */
 .column:first-child .tab,
 .slide:nth-child(odd) .tab-vertical {
-  background: linear-gradient(to bottom right, #f17013, #ffc400);
+  background-color: #faa52d;
+  /* background: linear-gradient(to bottom right, #f17013, #ffc400); */
 }
 .column:first-child .tab,
 .slide:nth-child(even) .tab-vertical {
-  background: linear-gradient(to bottom right, #0098ee, #0075db);
+
+  /* background: linear-gradient(to bottom right, #0098ee, #0075db); */
 }
 
 .volunteer-postings-section .volunteer-postings-link {
@@ -3092,13 +3096,6 @@ footer .social-media-icon:hover {
     width: 33%;
   }
 
-  .donate-now-button {
-    background: linear-gradient(92.61deg, #F17014 0%, #FFC400 99.92%);
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    color: #FFFFFF;
-    padding: 1em 5em;
-  }
 
   .donate-body .donate-body-middle{
     display: flex;
@@ -3414,13 +3411,7 @@ footer .social-media-icon:hover {
 }
 
 
-.donate-body-button{ 
-  background: linear-gradient(92.61deg, #F17014 0%, #FFC400 99.92%);
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-  color: white;
-  padding: 1em 4em;
-}
+
 
 
 .donate-bottom-section{ 
@@ -4211,11 +4202,6 @@ img {
 .volunteer-placement-sentence {
   margin-left: 2em;
   margin-top: 2em;
-}
-
-.volunteer-placement-apply-button {
-  background: linear-gradient(to bottom right, #f17014, #ffc400);
-  color: white;
 }
 
 
