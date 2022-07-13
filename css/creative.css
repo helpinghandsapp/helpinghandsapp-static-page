@@ -985,9 +985,6 @@ section.features .feature-item i {
   margin-bottom: 5em;
 }
 
-/* .goFundMe .wrapper {
-  /* padding: 0 150px; */
-/* } */ */
 
 .goFundMe-heading {
   text-align: center;
@@ -1001,6 +998,7 @@ section.features .feature-item i {
   border: 1px solid #bbb;
   border-radius: 5px;
 }
+
 
 .futureHistory-content {
   border: 1px solid #bbb;
@@ -1904,7 +1902,7 @@ margin-right: 10px;
 
 /*Footer--------------------------------------------*/
 footer {
-  background: #5895db;    
+  background: #006b8faf;    
   padding: 6vh 0 10px 0;
   font-family: "Nunito Sans", sans-serif;
   color: white;
@@ -2058,7 +2056,6 @@ footer .social-media-icon:hover {
 }
 
 .workshop-flex-container {
-  background-color: #fff;
   padding: 20px;
   border-radius: 40px;
   display: flex;
@@ -2079,12 +2076,12 @@ footer .social-media-icon:hover {
   color: #fff;
   width: 150px;
   height: 225px;
-  border-radius: 35px;
+  border-radius: 20px;
   box-shadow: 3px 3px 9px #d5d5d5;
   background: linear-gradient(
     to bottom right,
-    rgb(20, 90, 241),
-    rgb(0, 225, 255)
+    #006b8fe2,
+    #006b8f85
   );
   padding: 10px;
   margin: 5px;
