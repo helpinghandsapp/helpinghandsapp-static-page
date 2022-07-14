@@ -191,18 +191,18 @@
 
     <!--How Can We Help You?=======================================================================-->
 
-    <section id="help" class="bg-secondary">
+    <section id="help" class="bg-primary">
       <div class="wrapper">
         <div class="row help-section">
           <!--<div class="col-lg-8 col-lg-offset-2 text-center">-->
           <div class="help-section-content">
             <div class="help-content">
-              <h2 class="helpH2 main-title">How Can We Help You?</h2>
-              <br>
-              <!--<hr class="light">-->
-              <p class="helpP container" style = "width: auto;">Choose what suits you best or fill in the contact <a href = "contactus.html" style = "text-decoration: underline; color: orange;">form</a></p>
 
               <div class="col-md-6">
+                <h2 class="helpH2 main-title">How Can We Help You?</h2>
+                <br>
+                <!--<hr class="light">-->
+                <p class="helpP" style = "width: auto;">Choose what suits you best or fill in the contact <a href = "contactus.html" style = "text-decoration: underline; color: orange;">form</a></p>
                 <ul class="help-buttons">
                   <li id="help-button" class="row">
                     <a class="btn btn-default btn-xl btn-block" href="#student-help" onClick="ga('send', 'event', 'Button', 'Clicked', 'Volunteer Placement');">Find your volunteer placement</a>
@@ -375,9 +375,9 @@
 
     <!--App============================================================================================-->
 
-    <section id="features" class="features bg-primary">
+    <section id="features" class="features bg-secondary">
       <div class="wrapper">
-        <div class="recently-flex-container" style="padding-bottom: 70px;">
+        <div class="recently-flex-container">
           <div class="row text-center missionStyle">
             <div class="single-flex-item">
               <h2 class="main-title section-heading">Our Mission</h2>
@@ -387,87 +387,66 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="device-container center-block">
-              <img class="img-responsive center-block" src="img/HH_iphonex_mock.png" alt="Helping Hands Mobile View of App"/>
+      </div>
+    </section>
+
+    <section class = "bg-secondary wrapper">
+          <div class="row ">
+            <div class="col-md-4">
+              <div class="device-container center-block">
+                <img class="img-responsive center-block" src="img/HH_iphonex_mock.png" alt="Helping Hands Mobile View of App"/>
+              </div>
+              <div class="button">
+                <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+              </div>
             </div>
-            <div class="button">
-              <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+            <div class="section-heading text-center">
+              <h2 class="main-title">Empower Youth. Change the World.</h2>
+              <p class="features-text">
+                Helping Hands is a platform that allows youth to find meaningful volunteer/leadership opportunities and more while showcasing their experience.
+              </p>
+
+              <ul class="flex-container">
+                <li class="feature-item">
+                  <img class="feature-item-image" src="img/icon-volunteer-matching.png" alt="Volunteer Matching Icon"/>
+                  <h3 id="app-info-card-title">Volunteer Matching</h3>
+                  <p id="app-info-card-description">Easily search for volunteer opportunities that match your interests and skills</p>
+                </li>
+
+                <li class="feature-item">
+                  <img class="feature-item-image" src="img/icon_feedback.png" alt="Community Feedback Icon"/>
+                  <h3 id="app-info-card-title">Community Feedback</h3>
+                  <p id="app-info-card-description">Organizations provide feedback to youth helping them develop skills for their future careers</p>
+                </li>
+
+                <li class="feature-item">
+                  <img class="feature-item-image" src="img/icon_tracking.png" alt="Experience Tracking Icon"/>
+                  <h3 id="app-info-card-title">Experience Tracking</h3>
+                  <p id="app-info-card-description">As youth gain experience, we help them keep reflect of the impact they've made</p>
+                </li>
+              </ul>
             </div>
-          </div>
-          <div class="section-heading text-center">
-            <h2 class="main-title">Empower Youth. Change the World.</h2>
-            <p class="features-text">
-              Helping Hands is a platform that allows youth to find meaningful volunteer/leadership opportunities and more while showcasing their experience.
-            </p>
-
-            <ul class="flex-container">
-              <li class="feature-item">
-                <img class="feature-item-image" src="img/icon-volunteer-matching.png" alt="Volunteer Matching Icon"/>
-                <h3 id="app-info-card-title">Volunteer Matching</h3>
-                <p id="app-info-card-description">Easily search for volunteer opportunities that match your interests and skills</p>
-              </li>
-
-              <li class="feature-item">
-                <img class="feature-item-image" src="img/icon_feedback.png" alt="Community Feedback Icon"/>
-                <h3 id="app-info-card-title">Community Feedback</h3>
-                <p id="app-info-card-description">Organizations provide feedback to youth helping them develop skills for their future careers</p>
-              </li>
-
-              <li class="feature-item">
-                <img class="feature-item-image" src="img/icon_tracking.png" alt="Experience Tracking Icon"/>
-                <h3 id="app-info-card-title">Experience Tracking</h3>
-                <p id="app-info-card-description">As youth gain experience, we help them keep reflect of the impact they've made</p>
-              </li>
-            </ul>
           </div>
         </div>
 
         <!--PARTICIPATE IN OUR BETA============================================================================================-->
-
-        <div class="beta row">
-          <div class="col-md-7">
-            <div class="jumbotron">
-              <h2 class="beta-heading main-title">Participate In Our Beta</h2>
-              <p class="features-text">We are currently in the final stage of launching our beta app, would you like to participate in it? Leave your email below to Sign Up</p>
-              <a class="btn btn-seconday btn-xl" href="https://airtable.com/shrrU2EXdkm0RbDvl" target="_blank" onClick="ga('send', 'event', 'Button', 'Clicked', 'Beta Button');">Sign Up</a>
+        <section class = "wrapper">
+          <div class="beta row">
+            <div class="col-md-7">
+              <div class="jumbotron">
+                <h2 class="beta-heading main-title">Participate In Our Beta</h2>
+                <p class="features-text">We are currently in the final stage of launching our beta app, would you like to participate in it? Leave your email below to Sign Up</p>
+                <a class="btn btn-seconday btn-xl" href="https://airtable.com/shrrU2EXdkm0RbDvl" target="_blank" onClick="ga('send', 'event', 'Button', 'Clicked', 'Beta Button');">Sign Up</a>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="center-block">
+                <img class="img-responsive center-block" src="img/illustration_beta-img.png" alt="Drawing of a woman looking at a big slanted mobile device view"/>
+              </div>
             </div>
           </div>
-          <div class="col-md-5">
-            <div class="center-block">
-              <img class="img-responsive center-block" src="img/illustration_beta-img.png" alt="Drawing of a woman looking at a big slanted mobile device view"/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-
-
-      <div class="wrapper">
-        <div class="flex-container"style="padding-bottom: 70px;">
-          <div class="col-lg-12">
-            <div class="col-md-6">
-              <a class="twitter-timeline" href="https://twitter.com/helpinghands?ref_src=twsrc%5Etfw" height='600px' width='500px'>Tweets by helpinghands</a>
-              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-
-            <div class="col-md-6">
-              <!-- SnapWidget -->
-              <h5 class="main-title">Follow Us <a class="instagram-handle" href="https://www.instagram.com/helpinghandsapp/" target="_blank">@HelpingHandsApp</a></h5>
-              <script src="https://snapwidget.com/js/snapwidget.js"></script>
-              <iframe id="ig-feed" class="ig-feed" title="Instagram Feed" src="https://snapwidget.com/embed/723684" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--GOFUNDME ============================================================================================-->
-
-    <section id="goFundMe" class="goFundMe bg-secondary">
-      <div class="gfm-embed" data-url="https://www.gofundme.com/f/helping-hands-platform/widget/large/"></div><script defer src="https://www.gofundme.com/static/js/embed.js"></script>
     </section>
 
     <!--MOBILE VIEW FOR MORE THAN AN APP ============================================================================================-->
@@ -927,104 +906,38 @@
       </div>
     </section>
 
-          <!--============================================================================================-->
 
 
-    <!--NEWS ==============================================================================-->
+    <!--GOFUNDME ============================================================================================-->
 
-    <section id="forbes" class="forbes-section">
-      <div class="text-center wrapper">
-        <div class="col-lg-12 text-center">
-          <h2 class="main-title">In The News</h2>
-        </div>
-
-        <!--Emerging Female Leaders -->
-        <div class="recently-flex-container text-center">
-          <div class="recently-flex-item single-flex-item">
-            <h3 class="forbes-heading">Congratulations to our Founder Janelle Hinds</h3>
-            <p class="forbes-text">for being featured in the Forbes Under 30 for education</p>
-
-            <div class="img-container img-padding0">
-              <img class="exciting-img" src="img/forbesunder30v2.png" alt="Founder Janelle Hinds featured in Forbes Under 30 for education"/>
-            </div>
-            <a class="btn btn-seconday btn-xl" href="https://www.forbes.com/profile/janelle-hinds-1/?list=30under30-education#2109b226b5c3" target="_blank">Read More</a>
-          </div>
-
-          <div class="recently-flex-item single-flex-item">
-            <h3>Leadership in Action</h3>
-            <div class="img-container img-padding0">
-              <img class="exciting-img2" src="./img/sly-news.png" alt="Advertisement that showcases Slye has news for doing a part two online"/>
-            </div>
-            <p class="leadership-text">
-              We have worked with educators across various school boards,
-              employment centres and community groups. For more information or to book us to facilitate a workshop
-              to teach the importance of volunteering and soft skills development please click here.
-            </p>
-            <p class="cannexusP">Guidance Counselor and Educator:</p>
-            <a class="btn btn-seconday btn-xl" href="https://airtable.com/shry55kVWDBqlEISx" target="blank_" onClick="ga('send', 'event', 'Button', 'Clicked', 'Leadership in Action');">Learn More</a>
-          </div>
-        </div>
+<section class = "bg-secondary ">
+  <div class = "wrapper goFundMe">  
+    <div class="gfm-embed" data-url="https://www.gofundme.com/f/helping-hands-platform/widget/large/"></div><script defer src="https://www.gofundme.com/static/js/embed.js"></script>
+  </div>
 
 
-      <!--Future History Maker ============================================================================================-->
-
-      <div class="recently-flex-container text-center">
-        <div class="recently-flex-item single-flex-item">
-          <h3>Congratulations to our 2021 Future History Makers!</h3>
-            <div class="img-container img-padding0">
-              <img class="exciting-img2" width="400" height="400" src="img/futurehistory/futurehistory1.png" alt="Helping Hands Future History Maker Campaign"/>
-              <img class="exciting-img2" width="400" height="400" src="img/futurehistory/futurehistory2.png" alt="Helping Hands Future History Maker Campaign"/>
-            </div>
-            <p class="leadership-text">
-              Let’s give it up for our 2021 Future History Makers!
-                Since 2018, we have been highlighting #HelpingHandsFHM on our social media, and we are excited to continue this tradition every year. We want to do our part in uplifting young Black Canadians who are making a difference—they are the leaders of today who will go down in history. #HelpingHandsFHM starts with Black History Month but looks toward our future, hence Future History Makers.
-                Check out the #HelpingHandsFHM hashtag to learn the stories of these amazing youth!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-
-    <!--============================================================================================-->
-
-    <section id="whats-new" class="whats-new-section">
-      <div class="text-center wrapper">
+<!-- TWITTER INSTAGRAM -->
+    <div class="wrapper">
+      <div class="flex-container">
         <div class="col-lg-12">
-          <h2 class="main-title">See What We've Been Doing Recently</h2>
-          <img class="whats-new-image" src="img/illustration_beaver_updated.png" alt="Drawing of a cartoon beaver"/>
-        </div>
-
-        <!--Emerging Female Leaders -->
-        <div class="recently-flex-container text-center">
-          <div class="recently-flex-item single-flex-item">
-            <h3>Congratulations to our Founder Janelle Hinds and Communications Director Giselle Hinds</h3>
-            <p>for being featured in The Globe and Mail</p>
-            <hr class="secondary">
-            <embed id="embed-news" class="whats-new-embed" src="https://www.theglobeandmail.com/canada/article-mississauga-app-developer-matches-high-school-students-with-volunteer/"/>
+          <div class="col-md-6">
+            <a class="twitter-timeline" href="https://twitter.com/helpinghands?ref_src=twsrc%5Etfw" height='600px' width='500px'>Tweets by helpinghands</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
 
-          <!-- budgeting video -->
-          <div class="recently-flex-item single-flex-item">
-            <h3>Our partnership with Civix</h3>
-            <p class="civix-text">
-              At Helping Hands, we want to provide youth with ways to have their voices heard by government and organizations. That's why we work tirelessly with our sponsors and partners who make this possible. We'd like to give a shout-out to our latest friends are over CIVIX Canada running the Student Budget Consultation! thank you for inviting us to share our voice. They give youth the knowledge, tools, and funding they need to make real change happen in our federal government budgets and policies. Check them out at the link down below!
-            </p>
-            <a class="civix-link" href="http://budgetconsultation.ca" target="blank_">http://budgetconsultation.ca</a>
-
-            <div class="row">
-              <div class="videoWrapper">
-                <iframe class="youth-voices" width="560" height="315" title="Youth Voices" src="https://www.youtube.com/embed/nlFffKkWo38" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>
+          <div class="col-md-6">
+            <!-- SnapWidget -->
+            <h4>Follow Us <a class="instagram-handle" href="https://www.instagram.com/helpinghandsapp/" target="_blank">@HelpingHandsApp</a></h4>
+            <script src="https://snapwidget.com/js/snapwidget.js"></script>
+            <iframe id="ig-feed" class="ig-feed" title="Instagram Feed" src="https://snapwidget.com/embed/723684" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
           </div>
         </div>
-        <!-- budgeting video -->
+      </div>
+    </div>
+</section>
 
-        <!--============================================================================================-->
 
-    </section>
-
+<!-- FOOTER -->
 
     <footer>
       <div class = "wrapper">
