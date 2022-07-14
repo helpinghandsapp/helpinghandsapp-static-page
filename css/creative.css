@@ -1166,7 +1166,6 @@ section.features .feature-item i {
 
 .team2 {
   width: 100%;
-  border-radius: 28px 28px 0 0;
 }
 .team2 .team-h3:nth-child(1) {
   margin-top: 0;
@@ -1851,6 +1850,8 @@ margin-right: 10px;
 .contact-section {
   padding-bottom: 0;
 }
+
+/* 
 .social-media-section {
   padding-top: 3%;
   text-align: center;
@@ -1909,7 +1910,7 @@ margin-right: 10px;
   height: 65px;
   border-radius: 14px;
   margin: 0 5px;
-}
+} */
 
 /*Footer--------------------------------------------*/
 footer {
@@ -2983,8 +2984,7 @@ footer .social-media-icon:hover {
 }
 
 .workshop-section .workshop-featured {
-  border-top-right-radius: 55px;
-  border-top-left-radius: 55px;
+
   padding: 70px 0;
 }
 .workshop-section .workshop-featured .wrapper {
@@ -4613,11 +4613,11 @@ align-items: center;
 .new-header {
   color: white;
   padding-top: 7vh;
-  padding-bottom: 1vh;
-  background: linear-gradient(to bottom left, #1e93d3, #0a5f93);
+  padding-bottom: 2vh;
+  /* background: linear-gradient(to bottom left, #1e93d3, #0a5f93); */
   text-align: center;
 
-  /* background: #006b8fd7; */
+  background: #006b8fd7;
 }
 
 .new-header p {
@@ -4634,7 +4634,7 @@ align-items: center;
 /* anti-black racism header */
 #anti-black_racism_guidebook .new-header {
   padding-top: 2vh;
-    background: #006b8fd7;
+  background: #006b8fd7;
 
 }
 
