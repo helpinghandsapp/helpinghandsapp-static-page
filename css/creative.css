@@ -511,10 +511,6 @@ header .header-content .header-content-inner p {
   }
 }
 
-#covid {
-  padding: 5% 0;
-  background: linear-gradient(to bottom left, #2baaed, #0a5f93);
-}
 
 .main-title {
   font-family: "Nunito Sans", sans-serif; 
@@ -1007,6 +1003,14 @@ section.features .feature-item i {
   border-radius: 5px;
   align-items: center;
 }
+
+
+.future-history-makers-image {
+  display: flex;
+  justify-content: space-evenly;
+  /* width: 90% */
+}
+
 
 .goFundMe-image {
   flex-shrink: 1;
@@ -2251,21 +2255,47 @@ footer .social-media-icon:hover {
     justify-content: center;
     align-items: center;
   }
+  .future-history-makers-image {
+    flex-direction: column;
+    gap: 0
+  }
+
+
+ 
+  
+  .recently-flex-item2 {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 40px;
+    box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
+    max-width: 500px;
+    min-width: 280px;
+  }
+
 }
 
 .recently-flex-item {
   margin-top: 30px;
   background-color: #fff;
   padding: 25px;
-  border-radius: 40px;
+  border-radius: 20px;
   box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
   max-width: 500px;
   min-width: 280px;
   width: calc(100% / 2);
 }
 
+.recently-flex-item2 {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
+
+}
+
 .single-flex-item {
-  width: 90%;
   margin: 2rem auto;
 }
 
@@ -2278,9 +2308,6 @@ footer .social-media-icon:hover {
   margin: 0 auto;
 }
 
-.forbes-section {
-  background: linear-gradient(to bottom left, #2baaed, #0a5f93);
-}
 .forbes-section .main-title {
   color: #fff;
 }
@@ -2306,8 +2333,11 @@ footer .social-media-icon:hover {
 }
 
 .exciting-img {
-  width: 100%;
+  width: 80%;
   display: block;
+  width: 100%;
+  height: 100%; 
+  object-fit: contain;
 }
 
 .exciting-img2 {
@@ -2316,6 +2346,7 @@ footer .social-media-icon:hover {
   margin: 2rem 0 2rem 0;
   display: block;
   position: relative;
+  object-fit: contain;
 }
 
 .cannexusP {
@@ -2345,13 +2376,7 @@ footer .social-media-icon:hover {
   }
 }
 
-.whats-new-section {
-  background: linear-gradient(to bottom left, #2baaed, #0a5f93);
-}
 
-.whats-new-section .main-title {
-  color: #fff;
-}
 
 .whats-new-section .whats-new-image {
   margin-left: 20px;
@@ -4580,3 +4605,33 @@ align-items: center;
 
 }
 
+/* new header */
+
+.new-header {
+  color: white;
+  padding-top: 7vh;
+  padding-bottom: 1vh;
+  background: linear-gradient(to bottom left, #1e93d3, #0a5f93);
+
+  /* background: #006b8fd7; */
+}
+
+.new-header p {
+  margin: 2rem 2rem;
+
+}
+
+.new-header h2 {
+  font-size: 40px;
+}
+
+/* anti-black racism header */
+#anti-black_racism_guidebook .new-header {
+  padding-top: 2vh;
+}
+
+.new-header .covid-link2 {
+  color: white
+
+  ;
+}
