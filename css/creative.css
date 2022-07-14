@@ -2442,8 +2442,6 @@ footer .social-media-icon:hover {
 }
 
 .volunteer-section .volunteer-highlights {
-  border-top-left-radius: 55px;
-  border-top-right-radius: 55px;
   padding-top: 70px;
   display: grid;
   justify-content: center;
@@ -4617,6 +4615,7 @@ align-items: center;
   padding-top: 7vh;
   padding-bottom: 1vh;
   background: linear-gradient(to bottom left, #1e93d3, #0a5f93);
+  text-align: center;
 
   /* background: #006b8fd7; */
 }
@@ -4640,8 +4639,6 @@ align-items: center;
 }
 
 .new-header .covid-link2 {
-  color: white
-
-  ;
+  color: white;
 }
 
