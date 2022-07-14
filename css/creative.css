@@ -626,6 +626,11 @@ header .header-content .header-content-inner p {
   margin: 0.25em auto;
 }
 
+.handbook-widget  {
+  display: flex;
+  justify-content: center;
+}
+
 .covid-feature-section .responsive {
   margin-top: 30px;
 }
@@ -4625,9 +4630,13 @@ align-items: center;
   font-size: 40px;
 }
 
+
+
 /* anti-black racism header */
 #anti-black_racism_guidebook .new-header {
   padding-top: 2vh;
+    background: #006b8fd7;
+
 }
 
 .new-header .covid-link2 {
@@ -4635,3 +4644,4 @@ align-items: center;
 
   ;
 }
+
