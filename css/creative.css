@@ -635,11 +635,6 @@ header .header-content .header-content-inner p {
   margin-top: 30px;
 }
 
-.covid-intro {
-  margin: 2rem 2rem;
-  color: #fff;
-}
-
 .covid-info {
   margin: 2rem 0;
 }
@@ -4615,13 +4610,13 @@ align-items: center;
   padding-top: 7vh;
   padding-bottom: 2vh;
   /* background: linear-gradient(to bottom left, #1e93d3, #0a5f93); */
-  text-align: center;
-
+  /* text-align: center; */
+  padding-left: 30px;
   background: #006b8fd7;
 }
 
 .new-header p {
-  margin: 2rem 2rem;
+  margin: 2rem 3rem;
 
 }
 
