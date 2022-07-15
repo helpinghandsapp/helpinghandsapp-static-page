@@ -716,15 +716,15 @@ header .header-content .header-content-inner p {
   }
 }
 
-section.features .section-heading {
+section.features {
   margin-bottom: 0px;
 }
 
-section.features .section-heading h2 {
+section.featuresh2 {
   margin-top: 0;
 }
 
-section.features .section-heading p {
+section.features p {
   margin-bottom: 0;
 }
 
@@ -767,9 +767,6 @@ section.features .features-text {
 @media (max-width: 1199px) {
   .flex-container {
     margin-top: 25px;
-  }
-  .section-heading {
-    margin-top: 0px;
   }
 
   .main-title {
@@ -2137,20 +2134,10 @@ footer .social-media-icon:hover {
   }
 }
 
-.volunteer-postings-section {
-  padding: 0 0 100px;
-}
-
-.volunteer-postings-heading,
 .volunteer-postings-text {
   text-align: center;
 }
-.volunteer-postings-heading {
-  margin: 0 0 15px;
-  color: #000;
-  font-size: 40px;
-  font-weight: 800;
-}
+
 .volunteer-postings-text {
   margin-bottom: 25px;
   color: #000;
@@ -3850,10 +3837,6 @@ margin: 1em;
   margin-right: 2em;
 }
 
-.volunteer-requirement-title, .donate-title {
-  /* margin-top: 3em; */
-  margin-bottom: 2em;
-}
 }
 /* desktop view media query ends */
 
@@ -4022,9 +4005,6 @@ align-items: center;
     text-align: left;
   }
 
-  .volunteer-requirement-title, .donate-title {
-    margin-top: 1em;
-  }
 
   .volunteer-benefits-students-grid {
     display: flex;
@@ -4092,9 +4072,6 @@ align-items: center;
   margin-left: 2em;
 }
 
-.volunteer-requirement-title, .donate-title {
-  margin-bottom: 2em;
-}
 
 .volunteer-opportunities-img {
   width: 90%; 
@@ -4152,9 +4129,10 @@ align-items: center;
   color: white;
 }
 
+
+/* header mobile  */
+
 @media (max-width: 549px ) {
-
-
   .new-header {
     padding-left: 0px;
     text-align: center;
@@ -4164,7 +4142,12 @@ align-items: center;
     padding: 0;
     margin: 2rem 1rem;
   }
-  
+}
 
+.subtitle-heading {
+  text-align: center;
+  font-size: 35px;
+  color: #000000;
+  margin-bottom: 25px;
 }
 
