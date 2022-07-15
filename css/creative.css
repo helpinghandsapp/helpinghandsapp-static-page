@@ -716,15 +716,15 @@ header .header-content .header-content-inner p {
   }
 }
 
-section.features .section-heading {
+section.features {
   margin-bottom: 0px;
 }
 
-section.features .section-heading h2 {
+section.featuresh2 {
   margin-top: 0;
 }
 
-section.features .section-heading p {
+section.features p {
   margin-bottom: 0;
 }
 
@@ -734,9 +734,10 @@ section.features .img-responsive {
 
 section.features .features-text {
   color: #000000;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.2;
+  padding: 0rem 2rem;
 }
 
 .flex-container {
@@ -767,9 +768,6 @@ section.features .features-text {
 @media (max-width: 1199px) {
   .flex-container {
     margin-top: 25px;
-  }
-  .section-heading {
-    margin-top: 0px;
   }
 
   .main-title {
@@ -2068,20 +2066,20 @@ footer .social-media-icon:hover {
 
 #volunteer-img {
   transition: 0.3s;
-  height: 310px;
-  border-radius: 35px;
+  height: 260px;
   object-fit: cover;
+  opacity: 0.9;
 }
 
 .volunteer-positions {
+
   padding: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 20px auto 0;
   background: #ffffff;
-  border-radius: 45px;
-  max-width: 1000px;
+  max-width: 1250px;
   box-shadow: 0px 4px 6px #d5d5d5;
 }
 .volunteer-positions .volunteer-item {
@@ -2137,20 +2135,10 @@ footer .social-media-icon:hover {
   }
 }
 
-.volunteer-postings-section {
-  padding: 0 0 100px;
-}
-
-.volunteer-postings-heading,
 .volunteer-postings-text {
   text-align: center;
 }
-.volunteer-postings-heading {
-  margin: 0 0 15px;
-  color: #000;
-  font-size: 40px;
-  font-weight: 800;
-}
+
 .volunteer-postings-text {
   margin-bottom: 25px;
   color: #000;
@@ -2523,10 +2511,7 @@ footer .social-media-icon:hover {
   border-radius: 20px;
   max-width: 1055px;
 }
-.missionStyle .section-heading {
-  color: #000;
-  margin: 0 0 15px;
-}
+
 
 /* workshop section */
 .workshop-section {
@@ -3702,9 +3687,6 @@ img {
 
 }
 
-
-
-
 .volunteer-grid {
   display: grid;
   -ms-display: grid;
@@ -3719,18 +3701,11 @@ img {
   box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
   max-width: 500px;
   min-width: 250px;
-  padding: 25px;
+  padding: 20px;
   height: 95%;
   color: black;
   margin-bottom: 1em;
   margin-right: 3em;
-}
-
-
-
-.volunteer-placement {
-  color: black;
-
 }
 
 .volunteer-placement .volunteer-placement-title {
@@ -3780,7 +3755,7 @@ img {
 }
 
 @media (min-width: 769px) {
-.volunteer-benefits-students-grid .volunteer-benefits-students-grid-description{
+.volunteer-benefits-students-grid{
   margin-left: 4em;
   margin-right: 1em;
   margin-bottom: 2em;
@@ -3845,15 +3820,8 @@ margin: 1em;
   margin-right: 1em; 
 }
 
-.volunteer-communitiy-req-paragraph {
-  margin-top: 2em; 
-  margin-right: 2em;
-}
 
-.volunteer-requirement-title, .donate-title {
-  /* margin-top: 3em; */
-  margin-bottom: 2em;
-}
+
 }
 /* desktop view media query ends */
 
@@ -3896,7 +3864,7 @@ margin: 1em;
     width: 140%;
     height: auto;
     border-radius: 30px;
-    margin-left: 5em;
+    /* margin-left: 5em; */
     position: relative;
     top: 1em;
   }
@@ -3907,7 +3875,6 @@ margin: 1em;
 .volunteer-opportunities-hs-student-section {
   display: flex; 
   flex-direction: column;
-  margin-bottom: 5em;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -3928,7 +3895,6 @@ margin: 1em;
     display: flex; 
     flex-direction: row;
     align-items: center;
-    margin-bottom: 5em;
     }
 
     .volunteer-opportunities-img {
@@ -4022,9 +3988,6 @@ align-items: center;
     text-align: left;
   }
 
-  .volunteer-requirement-title, .donate-title {
-    margin-top: 1em;
-  }
 
   .volunteer-benefits-students-grid {
     display: flex;
@@ -4043,16 +4006,16 @@ align-items: center;
 
 
   .not-volunteer-requirement-section-container-fluid .not-volunteer-requirement .volunteer-grid-items {
-  margin-bottom: 2em;
-  margin-top: 1em;
-  text-align: left;
-  margin-right: 2em;
-}
+    margin-bottom: 2em;
+    margin-top: 1em;
+    text-align: left;
+    margin-right: 2em;
+  }
 
 .not-volunteer-requirement-section-container-fluid {
-  text-align: left;
+    text-align: left;
 
-}
+  }
 
 .volunteer-benefits-section {
   display: flex;
@@ -4064,7 +4027,8 @@ align-items: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 3em;
+  margin-left: 0em;
+
 }
 
 .volunteer-grid .volunteer-grid-item {
@@ -4073,33 +4037,44 @@ align-items: center;
   box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
   max-width: 500px;
   min-width: 250px;
-  padding: 25px;
+  padding: 15px;
   height: 95%;
   color: black;
   margin-bottom: 2em;
-  padding-bottom: 3em;
+  margin-right:0em;
+  
 }
 
 .community-service-req-grid-paragraph {
-  padding-bottom: 2em; 
-  margin-top: 3em; 
   margin-left: 1em; 
   width: 100%;
 }
 
-.volunteer-communitiy-req-paragraph {
-  margin-top: 2em; 
-  margin-left: 2em;
-}
-
-.volunteer-requirement-title, .donate-title {
-  margin-bottom: 2em;
-}
 
 .volunteer-opportunities-img {
   width: 90%; 
   height: auto; 
   border-radius: 30px;
+}
+
+.volunteer-benefits-student-grid-item {
+  margin-left: 0;
+  /* margin: 0 1em; */
+}
+
+.container-fluid {
+  padding: 0
+}
+
+.col-lg-6 {
+  padding: 0;
+  margin: 0
+}
+
+.col-sm-12 {
+  padding: 0;
+  margin: 0
+
 }
 
 
@@ -4152,9 +4127,10 @@ align-items: center;
   color: white;
 }
 
+
+/* header mobile  */
+
 @media (max-width: 549px ) {
-
-
   .new-header {
     padding-left: 0px;
     text-align: center;
@@ -4164,7 +4140,12 @@ align-items: center;
     padding: 0;
     margin: 2rem 1rem;
   }
-  
+}
 
+.subtitle-heading {
+  text-align: center;
+  font-size: 35px;
+  color: #000000;
+  margin-bottom: 25px;
 }
 
