@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
 .wrapper {
   max-width: 1080px;
   margin: 0 auto;
@@ -140,11 +134,6 @@ p.withbackground {
 
 .bg-light {
   background-color: #fff;
-}
-
-.bg-dark {
-  color: #fff;
-  background-color: #222;
 }
 
 .text-faded {
@@ -518,10 +507,6 @@ header .header-content .header-content-inner p {
   color: #000;
 }
 
-.covid-H2 {
-  color: #fff;
-}
-
 .beta .beta-heading {
   margin-top: 50px;
 }
@@ -570,12 +555,6 @@ header .header-content .header-content-inner p {
   margin: 0 auto;
 }
 
-@media (max-width: 1200px) {
-  #covid {
-    padding: 5rem 0;
-  }
-}
-
 @media (max-width: 816px) {
   .covid-grid-item {
     margin: 1rem auto;
@@ -611,11 +590,6 @@ header .header-content .header-content-inner p {
 
 /* COVID INFO FEATURE STYLING */
 
-#the-canvas {
-  border: 1px solid black;
-  direction: ltr;
-}
-
 .pdfViewer {
   width: 70vw;
   height: 60vh;
@@ -629,10 +603,6 @@ header .header-content .header-content-inner p {
 .handbook-widget  {
   display: flex;
   justify-content: center;
-}
-
-.covid-feature-section .responsive {
-  margin-top: 30px;
 }
 
 .covid-info {
@@ -659,14 +629,6 @@ header .header-content .header-content-inner p {
 
 .covid-link2 {
   word-wrap: break-word;
-}
-
-.covid-feature-section {
-  margin: 1rem auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .single-item {
@@ -754,63 +716,6 @@ header .header-content .header-content-inner p {
   }
 }
 
-/* EVENTBRITE SECTION ON COVID19.HTML */
-
-#covid-eventbrite {
-  background: linear-gradient(to bottom left, #2baaed, #0a5f93);
-  padding: 5rem 0;
-}
-
-.home-eventbrite-section .covid-eventbite-h3 {
-  font-weight: 800;
-}
-
-.covid-eventbrite-h3 {
-  font-size: 45px;
-}
-
-.eventbrite-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.eventbrite-text {
-  text-align: center;
-  color: #fff;
-}
-
-.eventbrite-button {
-  width: 129px;
-}
-.eventbrite-button a {
-  display: block;
-}
-
-.eventbrite-button img {
-  width: 100%;
-  border-radius: 25px;
-}
-
-.eventbrite-iframe {
-  margin: 0 auto;
-  width: 100%;
-  height: 500px;
-  border: none;
-  margin-top: 20px;
-  border-radius: 25px;
-  box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
-}
-
-@media (max-width: 899px) {
-  #covid-eventbrite {
-    padding: 80px 25px;
-  }
-}
-/* END OF EVENTBRITE SECTION ON COVID19.HTML */
-
-/**/
 section.features .section-heading {
   margin-bottom: 0px;
 }
@@ -1268,254 +1173,6 @@ section.features .feature-item i {
   color: #f07013;
 }
 
-/* sponsors section */
-.sponsor-div {
-  width: 100%;
-  padding: 5rem;
-}
-.sponsors-header {
-  color: black;
-  font-weight: bold;
-  font-size: 40px;
-  text-align: center;
-  margin: 0 0 70px;
-}
-
-.sponsors {
-  display: flex;
-  /* flex-wrap: wrap; */
-  justify-content: space-between;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-.sponsors-item {
-  list-style-type: none;
-  padding: 30px;
-  transition: all ease-in 0.3s;
-}
-.sponsors-funders .sponsors-item,
-.sponsors-supporters .sponsors-item:nth-child(1),
-.sponsors-supporters .sponsors-item:nth-child(2) {
-  width: 500px;
-  height: 180px;
-}
-
-.sponsors-funders .sponsors-item:nth-child(3) {
-  margin: 0 auto 100px;
-}
-.sponsors-trustees .sponsors-item {
-  width: 500px;
-  height: 200px;
-}
-
-.sponsors-funders .sponsors-item,
-.sponsors-trustees .sponsors-item {
-  margin-bottom: 100px;
-}
-
-.sponsors-supporters .sponsors-item {
-  margin-bottom: 60px;
-}
-
-.sponsors-item:hover {
-  transform: scale(0.95);
-}
-
-.sponsors-supporters .sponsors-item:nth-child(3),
-.sponsors-supporters .sponsors-item:nth-child(4),
-.sponsors-supporters .sponsors-item:nth-child(5) {
-  height: 250px;
-  width: 250px;
-}
-
-.sponsors-link {
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-}
-.sponsors-image {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-.image-vertical {
-  display: none;
-}
-
-@media (max-width: 1240px) {
-  .sponsors {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .sponsors-funders .sponsors-item:nth-child(3) {
-    margin: 0 0 100px;
-  }
-}
-@media (max-width: 690px) {
-  .sponsors-funders .sponsors-item,
-  .sponsors-trustees .sponsors-item,
-  .sponsors-supporters .sponsors-item:nth-child(1),
-  .sponsors-supporters .sponsors-item:nth-child(2) {
-    width: 100%;
-  }
-  .sponsor-div {
-    width: 100%;
-    padding: 5rem 2rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .sponsors-header {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 490px) {
-  .image-horizontal {
-    display: none;
-  }
-  .image-vertical {
-    display: block;
-  }
-  .sponsors-funders .sponsors-item:nth-child(3) {
-    height: 280px;
-  }
-}
-@media (max-width: 400px) {
-  .sponsor-div {
-    padding: 5rem 1rem;
-  }
-}
-
-
-/* end sponsors section */
-
-.job-item {
-  width: 180px;
-  height: 35px;
-  border-radius: 35px;
-  box-shadow: 3px 3px 9px #d5d5d5;
-  background: linear-gradient(to bottom right, #f17014, #ffc400);
-  padding-top: 5px;
-  margin: 15px;
-  color: #fff;
-  font-weight: 650;
-}
-
-.job-text {
-  color: #fff;
-  text-align: center;
-}
-
-.portfolio-box {
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  max-width: 650px;
-}
-
-.portfolio-box .portfolio-box-caption {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  color: #fff;
-  opacity: 0;
-  background: rgba(240, 95, 64, 0.9);
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
-}
-
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  transform: translateY(-50%);
-}
-
-.portfolio-box
-  .portfolio-box-caption
-  .portfolio-box-caption-content
-  .project-category,
-.portfolio-box
-  .portfolio-box-caption
-  .portfolio-box-caption-content
-  .project-name {
-  padding: 0 15px;
-  font-family: "Roboto", sans-serif;
-}
-
-.portfolio-box
-  .portfolio-box-caption
-  .portfolio-box-caption-content
-  .project-category {
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.portfolio-box
-  .portfolio-box-caption
-  .portfolio-box-caption-content
-  .project-name {
-  font-size: 18px;
-}
-
-.portfolio-box:hover .portfolio-box-caption {
-  opacity: 1;
-}
-
-@media (min-width: 768px) {
-  .portfolio-box
-    .portfolio-box-caption
-    .portfolio-box-caption-content
-    .project-category {
-    font-size: 16px;
-  }
-
-  .portfolio-box
-    .portfolio-box-caption
-    .portfolio-box-caption-content
-    .project-name {
-    font-size: 22px;
-  }
-}
-
-/*---------------------------------------------------------*/
-
-.workshop-panel {
-  background: transparent url(../img/workshop.jpg) no-repeat center center /
-    cover;
-}
-
-.fair-panel {
-  background: transparent url(../img/volunteerfair.png) no-repeat center center /
-    cover;
-}
-
-.mentor-panel {
-  background: transparent url(../img/mentor.png) no-repeat center center / cover;
-}
-
-.council-panel {
-  background: transparent url(../img/council.jpg) no-repeat center center /
-    cover;
-}
-
-.story-panel {
-  background: transparent url(../img/sharingstory.png) no-repeat center center /
-    cover;
-}
-
-.entrepreneur-panel {
-  background: transparent url(../img/entrepreneur.png) no-repeat center center /
-    cover;
-}
 
 .tint {
   box-shadow: rgba(0, 0, 0, 0.2) 3px 5px 5px;
@@ -1538,25 +1195,6 @@ section.features .feature-item i {
   background: none;
 }
 
-.t2:before {
-  background: rgba(69, 178, 158, 0.5);
-}
-
-.t3:before {
-  background: rgba(214, 209, 142, 0.5);
-}
-
-.t4:before {
-  background: rgba(242, 186, 85, 0.5);
-}
-
-.t5:before {
-  background: rgba(242, 162, 36, 0.5);
-}
-
-.t6:before {
-  background: rgba(240, 112, 19, 0.6);
-}
 
 /*---------------------------------------------------------*/
 
@@ -1846,67 +1484,6 @@ margin-right: 10px;
   padding-bottom: 0;
 }
 
-/* 
-.social-media-section {
-  padding-top: 3%;
-  text-align: center;
-}
-
-.social-media-section .flex-container {
-  margin: 0 0 50px;
-}
-
-.social-media-section .main-title {
-  font-family: " roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  margin: 18px 0 25px;
-}
-
-.social-media-section .ig-feed {
-  border: none;
-  overflow: hidden;
-  margin-top: -10px;
-}
-
-.social-media-section .social-media-icon {
-  transition: 0.3s;
-  display: inline-block;
-}
-
-.social-media-section .social-media-icon:hover {
-  transform: scale(0.95);
-}
-
-.social-media-section .social-media-heading,
-.social-media-section .social-media-text {
-  color: #000;
-}
-
-.social-media-section .social-media-heading {
-  font-size: 40px;
-}
-
-.social-media-section .social-media-heading .fa-heart {
-  color: #dd4b39;
-}
-
-.social-media-section .list-social {
-  margin: 20px 0 0;
-}
-
-.social-media-section .list-social .social-media-link {
-  color: #000;
-  text-decoration: none;
-}
-
-.social-media-section .social-media-image {
-  width: 65px;
-  height: 65px;
-  border-radius: 14px;
-  margin: 0 5px;
-} */
-
 /*Footer--------------------------------------------*/
 footer {
   background: #006b8faf;    
@@ -1915,8 +1492,6 @@ footer {
   color: white;
   font-weight: lighter;
 }
-
-
 
 footer p {
   font-size: 18px;
@@ -1966,6 +1541,8 @@ footer .social-media-icon:hover {
   }
 
 }
+
+/* END FOOTER */
 
 
 
@@ -2428,13 +2005,6 @@ footer .social-media-icon:hover {
     rgb(0, 152, 238),
     rgb(0, 76, 143)
   );
-}
-
-.volunteer-section .volunteer-heading {
-  font-size: 55px;
-  color: #fff;
-  text-align: center;
-  margin: 50px 0;
 }
 
 .volunteer-section .volunteer-highlights {
@@ -2957,10 +2527,6 @@ footer .social-media-icon:hover {
   color: #000;
   margin: 0 0 15px;
 }
-.missionStyle .missionStyle-text {
-  margin-bottom: 0;
-  font-size: 16px;
-}
 
 /* workshop section */
 .workshop-section {
@@ -3104,15 +2670,6 @@ footer .social-media-icon:hover {
     color: white; 
   }
 
-  .donate-section .donate-header-img{
-    width: 50%;
-    height: auto;
-  }
-
-  .donate-section .donate-header-paragraph{
-    width: 33%;
-  }
-
 
   .donate-body .donate-body-middle{
     display: flex;
@@ -3200,14 +2757,6 @@ footer .social-media-icon:hover {
     display: flex;
     flex-direction: column;
   } 
-
-  .donate-now-button {
-    background: linear-gradient(92.61deg, #F17014 0%, #FFC400 99.92%);
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    color: #FFFFFF;
-    padding: 1em 5em;
-  }
 
   .donate-body .donate-body-middle{
     display: flex;
@@ -3416,9 +2965,6 @@ footer .social-media-icon:hover {
 
 }
 
-.donate-beginning-sentence{
-  margin-bottom: 1em;
-}
 
 .donate-body{
   display: flex;
@@ -3633,14 +3179,6 @@ img {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 16px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
 
 /* The dots/bullets/indicators */
 .dot {
@@ -4227,24 +3765,6 @@ img {
   text-decoration: none;
 }
 
-.volunteer-opportunities-feature-item {
-  color: #fff;
-  width: 150px;
-  height: 225px;
-  border-radius: 35px;
-  box-shadow: 3px 3px 9px #d5d5d5;
-  background: linear-gradient(
-    to bottom right,
-    rgb(20, 90, 241),
-    rgb(0, 225, 255)
-  );
-  padding: 10px;
-  margin: 5px;
-  transition: 0.5s;
-  display: flex; 
-  align-items: center;
-}
-
 .volunteer-opportunities-feature-content {
   margin-top: -22.5px;
   transform: scale(0.8);
@@ -4444,14 +3964,6 @@ display: flex;
 align-items: center;
 }
 
-
-.documentCommunityHoursImg{
-  width: 100%;
-  height: auto;
-}
-
-
-
 /* Mobile Devices */
 
 @media (max-width: 768px ) {
@@ -4607,12 +4119,17 @@ align-items: center;
 
 .new-header {
   color: white;
-  padding-top: 7vh;
+  padding-top: 7.5vh;
   padding-bottom: 2vh;
   /* background: linear-gradient(to bottom left, #1e93d3, #0a5f93); */
   /* text-align: center; */
   padding-left: 30px;
   background: #006b8fd7;
+}
+
+.new-header h2 {
+  font-style: italic;
+
 }
 
 .new-header p {
@@ -4624,8 +4141,6 @@ align-items: center;
   font-size: 40px;
 }
 
-
-
 /* anti-black racism header */
 #anti-black_racism_guidebook .new-header {
   padding-top: 2vh;
@@ -4635,5 +4150,21 @@ align-items: center;
 
 .new-header .covid-link2 {
   color: white;
+}
+
+@media (max-width: 768px ) {
+
+
+  .new-header {
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .new-header p {
+    padding: 0;
+    margin: 2rem 1rem;
+  }
+  
+
 }
 
