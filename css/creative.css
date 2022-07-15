@@ -2066,20 +2066,20 @@ footer .social-media-icon:hover {
 
 #volunteer-img {
   transition: 0.3s;
-  height: 310px;
-  border-radius: 35px;
+  height: 260px;
   object-fit: cover;
+  opacity: 0.9;
 }
 
 .volunteer-positions {
+
   padding: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 20px auto 0;
   background: #ffffff;
-  border-radius: 45px;
-  max-width: 1000px;
+  max-width: 1250px;
   box-shadow: 0px 4px 6px #d5d5d5;
 }
 .volunteer-positions .volunteer-item {
