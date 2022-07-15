@@ -734,9 +734,10 @@ section.features .img-responsive {
 
 section.features .features-text {
   color: #000000;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.2;
+  padding: 0rem 2rem;
 }
 
 .flex-container {
@@ -2510,10 +2511,7 @@ footer .social-media-icon:hover {
   border-radius: 20px;
   max-width: 1055px;
 }
-.missionStyle .section-heading {
-  color: #000;
-  margin: 0 0 15px;
-}
+
 
 /* workshop section */
 .workshop-section {
