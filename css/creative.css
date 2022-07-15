@@ -3687,9 +3687,6 @@ img {
 
 }
 
-
-
-
 .volunteer-grid {
   display: grid;
   -ms-display: grid;
@@ -3704,18 +3701,11 @@ img {
   box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
   max-width: 500px;
   min-width: 250px;
-  padding: 25px;
+  padding: 20px;
   height: 95%;
   color: black;
   margin-bottom: 1em;
   margin-right: 3em;
-}
-
-
-
-.volunteer-placement {
-  color: black;
-
 }
 
 .volunteer-placement .volunteer-placement-title {
@@ -3765,7 +3755,7 @@ img {
 }
 
 @media (min-width: 769px) {
-.volunteer-benefits-students-grid .volunteer-benefits-students-grid-description{
+.volunteer-benefits-students-grid{
   margin-left: 4em;
   margin-right: 1em;
   margin-bottom: 2em;
@@ -3830,10 +3820,7 @@ margin: 1em;
   margin-right: 1em; 
 }
 
-.volunteer-communitiy-req-paragraph {
-  margin-top: 2em; 
-  margin-right: 2em;
-}
+
 
 }
 /* desktop view media query ends */
@@ -3877,7 +3864,7 @@ margin: 1em;
     width: 140%;
     height: auto;
     border-radius: 30px;
-    margin-left: 5em;
+    /* margin-left: 5em; */
     position: relative;
     top: 1em;
   }
@@ -3888,7 +3875,6 @@ margin: 1em;
 .volunteer-opportunities-hs-student-section {
   display: flex; 
   flex-direction: column;
-  margin-bottom: 5em;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -3909,7 +3895,6 @@ margin: 1em;
     display: flex; 
     flex-direction: row;
     align-items: center;
-    margin-bottom: 5em;
     }
 
     .volunteer-opportunities-img {
@@ -4021,16 +4006,16 @@ align-items: center;
 
 
   .not-volunteer-requirement-section-container-fluid .not-volunteer-requirement .volunteer-grid-items {
-  margin-bottom: 2em;
-  margin-top: 1em;
-  text-align: left;
-  margin-right: 2em;
-}
+    margin-bottom: 2em;
+    margin-top: 1em;
+    text-align: left;
+    margin-right: 2em;
+  }
 
 .not-volunteer-requirement-section-container-fluid {
-  text-align: left;
+    text-align: left;
 
-}
+  }
 
 .volunteer-benefits-section {
   display: flex;
@@ -4042,7 +4027,8 @@ align-items: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 3em;
+  margin-left: 0em;
+
 }
 
 .volunteer-grid .volunteer-grid-item {
@@ -4051,23 +4037,17 @@ align-items: center;
   box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
   max-width: 500px;
   min-width: 250px;
-  padding: 25px;
+  padding: 15px;
   height: 95%;
   color: black;
   margin-bottom: 2em;
-  padding-bottom: 3em;
+  margin-right:0em;
+  
 }
 
 .community-service-req-grid-paragraph {
-  padding-bottom: 2em; 
-  margin-top: 3em; 
   margin-left: 1em; 
   width: 100%;
-}
-
-.volunteer-communitiy-req-paragraph {
-  margin-top: 2em; 
-  margin-left: 2em;
 }
 
 
@@ -4075,6 +4055,26 @@ align-items: center;
   width: 90%; 
   height: auto; 
   border-radius: 30px;
+}
+
+.volunteer-benefits-student-grid-item {
+  margin-left: 0;
+  /* margin: 0 1em; */
+}
+
+.container-fluid {
+  padding: 0
+}
+
+.col-lg-6 {
+  padding: 0;
+  margin: 0
+}
+
+.col-sm-12 {
+  padding: 0;
+  margin: 0
+
 }
 
 
