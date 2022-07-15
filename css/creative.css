@@ -555,12 +555,6 @@ header .header-content .header-content-inner p {
   margin: 0 auto;
 }
 
-@media (max-width: 1200px) {
-  #covid {
-    padding: 5rem 0;
-  }
-}
-
 @media (max-width: 816px) {
   .covid-grid-item {
     margin: 1rem auto;
@@ -4125,7 +4119,7 @@ align-items: center;
 
 .new-header {
   color: white;
-  padding-top: 7vh;
+  padding-top: 7.5vh;
   padding-bottom: 2vh;
   /* background: linear-gradient(to bottom left, #1e93d3, #0a5f93); */
   /* text-align: center; */
@@ -4156,5 +4150,21 @@ align-items: center;
 
 .new-header .covid-link2 {
   color: white;
+}
+
+@media (max-width: 768px ) {
+
+
+  .new-header {
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .new-header p {
+    padding: 0;
+    margin: 2rem 1rem;
+  }
+  
+
 }
 
