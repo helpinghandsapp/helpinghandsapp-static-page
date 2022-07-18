@@ -498,6 +498,9 @@ header .header-content .header-content-inner p {
   .covid-bar {
     margin-top: 5%;
   }
+  .covid-bar .covid-bar-link {
+    padding: 5px 0 
+  }
 }
 
 
@@ -830,6 +833,8 @@ section.features .features-text {
   text-decoration: none;
   padding: 1em;
 }
+
+
 
 #app-info-card-description {
   font-family: "Roboto", sans-serif;
@@ -2512,6 +2517,16 @@ footer .social-media-icon:hover {
   max-width: 1055px;
 }
 
+@media (max-width: 767px) {
+
+  .missionStyle {
+    margin: 0
+  }
+  section.features .features-text {
+    padding: 0 10px 
+  }
+}
+
 
 /* workshop section */
 .workshop-section {
@@ -4062,6 +4077,10 @@ align-items: center;
   /* margin: 0 1em; */
 }
 
+#app-info-card-title {
+  padding :0
+}
+
 .container-fluid {
   padding: 0
 }
@@ -4071,12 +4090,13 @@ align-items: center;
   margin: 0
 }
 
-.col-sm-12 {
-  padding: 0;
-  margin: 0
-
+.volunteer-benefits-students-grid .volunteer-benefits-student-grid-item {
+  margin: 1em 0
 }
 
+.volunteer-placement .btn-l {
+  margin-bottom: 1em;
+}
 
 }
 
@@ -4140,6 +4160,13 @@ align-items: center;
     padding: 0;
     margin: 2rem 1rem;
   }
+  #anti-black_racism_guidebook {
+    padding: 2vh 0;
+
+  
+  }
+
+
 }
 
 .subtitle-heading {
