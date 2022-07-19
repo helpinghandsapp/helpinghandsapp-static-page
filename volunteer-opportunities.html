@@ -73,7 +73,7 @@
   <!--==================NavBar-StaticPages==================================================-->
 
   <body id="page-top">
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <nav role = "navigation"id="mainNav" class="navbar navbar-default navbar-fixed-top" aria-label = "Main Menu">
       <!--<div class="container-fluid">-->
       <div class="wrapper">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -89,12 +89,12 @@
           </h1>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse" role = "menubar" aria-hidden="false">
           <ul class="nav navbar-nav navbar-right">
             <li>
               <a href="index.html">Home</a>
             </li>
-            <li class="subnav-menu">
+            <li class="subnav-menu" aria-haspopup="true">
               <a>About <span>&#9660;</span></a>
               <ul class="nav subnav">
                 <li class="subnav-link">
@@ -105,7 +105,7 @@
                 </li>
               </ul>
             </li>
-            <li class="subnav-menu">
+            <li class="subnav-menu" aria-haspopup="true">
               <a>Resources <span>&#9660;</span></a>
               <ul class="nav subnav">
                 <li class="subnav-link">
@@ -120,7 +120,7 @@
 
               </ul>
             </li>
-            <li class="subnav-menu">
+            <li class="subnav-menu" aria-haspopup="true">
               <a>Get Involved <span>&#9660;</span></a>
               <ul class="nav subnav">
                 <li class="subnav-link">
