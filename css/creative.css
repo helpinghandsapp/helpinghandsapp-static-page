@@ -4176,3 +4176,29 @@ align-items: center;
   margin-bottom: 25px;
 }
 
+
+
+
+/* skip to main content button  */
+.skip-to-content-link {
+  position: absolute;
+  transform: translateY(-100%);
+}
+
+.skip-to-content-link a {
+  color: white
+}
+
+.skip-to-content-link {
+  background: black;
+  color: white;
+  height: 30px;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+.skip-to-content-link:focus {
+  transform: translateY(0%);
+}
