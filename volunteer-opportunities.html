@@ -7,6 +7,9 @@
     <meta name="description" content="Find volunteer opportunities in Ontario. We match youth with places to volunteer across the GTA. Earn your community hours with great volunteering experience.">
     <meta name="author" content="">
     <title>Student Volunteer Opportunities in Ontario - Helping Hands</title>
+
+    <script defer src="app.js"></script>
+
     <link rel="icon" href="img/logo_2.ico" type="image/x-icon" />
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -94,8 +97,8 @@
             <li>
               <a href="index.html">Home</a>
             </li>
-            <li class="subnav-menu" aria-haspopup="true" aria-expanded = "false">
-              <a href = "#">About <span>&#9660;</span></a>
+            <li class="subnav-menu" >
+              <a href = "#" id = "collapsible" aria-haspopup="true"aria-expanded="false" onclick="myFunction()">About <span>&#9660;</span></a>
               <ul class="nav subnav">
                 <li class="subnav-link">
                   <a href="team.html">Our Team</a>
@@ -105,8 +108,8 @@
                 </li>
               </ul>
             </li>
-            <li class="subnav-menu" aria-haspopup="true">
-              <a href = "#">Resources <span>&#9660;</span></a>
+            <li class="subnav-menu">
+              <a href = "#"aria-haspopup="true" onclick="myFunction()">Resources <span>&#9660;</span></a>
               <ul class="nav subnav">
                 <li class="subnav-link">
                   <a href="volunteer-opportunities.html">Volunteer Opportunities</a>
@@ -120,8 +123,8 @@
 
               </ul>
             </li>
-            <li class="subnav-menu" aria-haspopup="true">
-              <a href = "#">Get Involved <span>&#9660;</span></a>
+            <li class="subnav-menu">
+              <a href = "#"aria-haspopup="true">Get Involved <span>&#9660;</span></a>
               <ul class="nav subnav">
                 <li class="subnav-link">
                   <a href="jointeam.html">Join the Team</a>
