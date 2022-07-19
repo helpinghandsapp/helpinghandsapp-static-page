@@ -3047,7 +3047,7 @@ color: black;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  outline: none;
+  /* outline: none; */
   display: block;
   width: 100%;
   padding: 7px;
