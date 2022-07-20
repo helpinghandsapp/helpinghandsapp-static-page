@@ -3636,7 +3636,7 @@ tbody.collapse.in {
   bottom: 100%;
   margin-bottom: 2px;
 }
-@media (min-width: 1030px) {
+@media (min-width: 1096px) {
   .navbar-right .dropdown-menu {
     right: 0;
     left: auto;
@@ -4319,7 +4319,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 1030px) {
+@media (min-width: 1096px) {
   .navbar-toggle {
     display: none;
   }
@@ -4477,14 +4477,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-@media (min-width: 1030px) {
+@media (min-width: 1096px) {
   .navbar-text {
     float: left;
     margin-right: 15px;
     margin-left: 15px;
   }
 }
-@media (min-width: 1030px) {
+@media (min-width: 1096px) {
   .navbar-left {
     float: left !important;
   }

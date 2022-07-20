@@ -1,7 +1,7 @@
 function myFunction() {
     var subnavBar = document.getElementsByClassName("subnav")
     var menu = document.getElementById("collapsible")
-    if (subnavBar.style.display !=="none" ){
+    if (subnavBar.style.display ==="none" ){
       menu.setAttribute("aria-expanded", "true")
 
     }
