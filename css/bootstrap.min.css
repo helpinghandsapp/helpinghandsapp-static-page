@@ -5586,7 +5586,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 }
 
-@media (min-width: 1030px) {
+@media (min-width: 1096px) {
   .navbar-left {
     float: left !important;
   }
@@ -8484,7 +8484,7 @@ button.close {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (2px) and (max-width: 1199px) {
   .hidden-md {
     display: none !important;
   }

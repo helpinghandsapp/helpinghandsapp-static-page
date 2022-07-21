@@ -1087,48 +1087,47 @@ section.features .feature-item i {
 .managing-team {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 5em;
   }
 
 .team-component {
   display: flex;
-  width: 50%;
-  padding: 10px;
+  width: 49%;
   align-items: center;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: #fff;
+  height:250px;
+  border-radius: 20px;
+  box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
+
 }
 
 .volunteer-component {
   display: flex;
   flex-direction: column;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  width: 290px;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  padding-top: 2em;
+  background-color: #fff;
+    border-radius: 20px;
+  box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
 }
 
 .volunteer-team2 {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   justify-content: space-between;
-}
+  justify-items: center;
 
-.volunteer-team-paragraph {
-  width: 300px;
- 
-}
-
-.volunteer-team-paragraph >.about-us{
-  padding: 0;
 
 }
 
-.volunteer-team-paragraph #position-title {
-  padding: 0;
-}
 
-.volunteer-team-paragraph #team-name {
-  padding: 0;
-}
 
 .volunteer-image {
   display: flex;
@@ -1147,47 +1146,54 @@ section.features .feature-item i {
 @media (max-width: 1100px) {
 
   .managing-team {
-    justify-items: center
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 
   .volunteer-team2 {
     justify-content: center
   }
   .team-component {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-items: center;
-  }
-
-  .team-paragraph {
-    width: auto;
+    height: auto;
+    padding: 2em;
+    width: auto; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    height: auto;
+    width: 290px;
+    /* margin: 5em 1em; */
+    padding-top: 2em;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 7px 7px 11px rgb(0 0 0 / 16%);
   }
 
   .volunteer-component {
-    width: 50%;
     align-items: center;
-  }
-
-  .team-paragraph {
-    width: 300px
   }
 
 }
 
 @media (max-width: 700px) {
-  .managing-team {
+  /* .managing-team {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+  } */
   .team-component {
-    width:auto;
   }
 
   .volunteer-component {
     display: flex;
     align-items: center; 
-    width: auto 
   }
 
   .volunteer-team-paragraph{
@@ -1196,11 +1202,11 @@ section.features .feature-item i {
     justify-content: center;
 
   }
-  .volunteer-team2 {
+  /* .volunteer-team2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+  } */
 }
 
 .rotateimg270 {
