@@ -318,7 +318,7 @@ aside {
   color: #f17014;
 }
 
-@media (max-width: 994px) {
+@media (max-width: 1096px) {
   .navbar-nav .subnav-menu .subnav {
     position: initial;
     display: block;
