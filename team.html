@@ -7,6 +7,10 @@
     <meta name="description" content="Get familiar with our teams and managers who work along to help students develop their skills through volunteering, Entrepreneurship, and Early Career Exploration.">
     <meta name="author" content="">
     <title>Meet The Team | Helping Hands</title>
+
+    <!-- load javascript for navbar accesibility -->
+
+    <script defer src="js/navbar-accesibility.js"></script>
     <link rel="icon" href="img/logo_2.ico" type="image/x-icon" />
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -78,79 +82,80 @@
     <a class = "skip-to-content-link" href = "#main-content">Skip to content</a>
    
    <!-- nav -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-      <!--<div class="container-fluid">-->
-      <div class="wrapper">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </button>
-          <h1>
-            <a class="navbar-brand page-scroll" href="index.html">Helping Hands</a>
-          </h1>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li class="subnav-menu">
-              <a>About <span>&#9660;</span></a>
-              <ul class="nav subnav">
-                <li class="subnav-link">
-                  <a href="team.html">Our Team</a>
-                </li>
-                <li class="subnav-link">
-                  <a class="page-scroll" href="news.html">In the News</a>
-                </li>
-              </ul>
-            </li>
-            <li class="subnav-menu">
-              <a>Resources <span>&#9660;</span></a>
-              <ul class="nav subnav">
-                <li class="subnav-link">
-                  <a href="volunteer-opportunities.html">Volunteer Opportunities</a>
-                </li>
-                <li class="subnav-link">
-                  <a href="covid19.html">Covid Response</a>
-                </li>
-                <li class="subnav-link">
-                  <a class="page-scroll" href="covid19.html#anti-black_racism_guidebook">Anti-Black Racism Guidebook</a>                
-                </li>
-
-              </ul>
-            </li>
-            <li class="subnav-menu">
-              <a>Get Involved <span>&#9660;</span></a>
-              <ul class="nav subnav">
-                <li class="subnav-link">
-                  <a href="jointeam.html">Join the Team</a>
-                </li>
-                <li class="subnav-link">
-                  <a href="donate.html">Donate</a>
-                </li>
-              </ul>
-            <li>
-              <a href="workshops.html">Workshops</a>
-            </li>
-            <li>
-              <a href="./blog">Blog</a>
-            </li>
-            <li>
-              <a class="page-scroll" href="contactus.html">Contact Us</a>
-            </li>
-            <a href="index.html#help"><button class="btn btn-seconday btn-sm" style="margin-left: 12px; margin-top: 12px;">How can we help?</button></a>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+   <nav role = "navigation"id="mainNav" class="navbar navbar-default navbar-fixed-top" aria-label = "Main Menu">
+    <!--<div class="container-fluid">-->
+    <div class="wrapper">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <h1>
+          <a class="navbar-brand page-scroll" href="index.html">Helping Hands</a>
+        </h1>
       </div>
-      <!-- /.container-fluid -->
-    </nav>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse" role = "menubar" aria-hidden="false">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li class="subnav-menu" >
+            <a href = "#" id = "collapsible" class = "menu__link"role = "button" aria-haspopup="true"aria-expanded="false" onclick="myFunction()">About &#9660;</a>
+            <ul class="nav subnav">
+              <li class="subnav-link">
+                <a href="team.html">Our Team</a>
+              </li>
+              <li class="subnav-link">
+                <a class="page-scroll" href="news.html">In the News</a>
+              </li>
+            </ul>
+          </li>
+          <li class="subnav-menu">
+            <a href = "#"  aria-haspopup="true" class = "menu__link" onclick="myFunction()">Resources &#9660;</a>
+            <ul class="nav subnav submenu">
+              <li class="subnav-link">
+                <a href="volunteer-opportunities.html">Volunteer Opportunities</a>
+              </li>
+              <li class="subnav-link">
+                <a href="covid19.html">Covid Response</a>
+              </li>
+              <li class="subnav-link">
+                <a class="page-scroll" href="covid19.html#anti-black_racism_guidebook">Anti-Black Racism Guidebook</a>                
+              </li>
+
+            </ul>
+          </li>
+          <li class="subnav-menu">
+            <a href = "#" class = "menu__link"aria-haspopup="true">Get Involved &#9660;</a>
+            <ul class="nav subnav">
+              <li class="subnav-link">
+                <a href="jointeam.html">Join the Team</a>
+              </li>
+              <li class="subnav-link">
+                <a href="donate.html">Donate</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="workshops.html">Workshops</a>
+          </li>
+          <li>
+            <a href="./blog">Blog</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="contactus.html">Contact Us</a>
+          </li>
+          <a href="index.html#help"><button class="btn btn-seconday btn-sm" style="margin-left: 12px; margin-top: 12px;">How can we help?</button></a>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
 
     
     <!------------------------ Description Before Header -------------------------->
