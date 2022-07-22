@@ -262,7 +262,6 @@ aside {
   height: 1px;
   width: 1px;
   overflow: hidden;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 
 
@@ -297,8 +296,8 @@ aside {
   padding: 0.5rem 0;
   height: auto;
   clip: auto;
-}
 
+}
 
 
 .navbar-nav .subnav-menu:hover button {
@@ -319,18 +318,20 @@ aside {
   color: #f17014;
 }
 
-
-
-
-
-
-
-@media (max-width: 994px) {
+@media (max-width: 1096px) {
   .navbar-nav .subnav-menu .subnav {
     position: initial;
     display: block;
     padding-left: 15px;
+    height: auto;
+    clip: auto;
   }
+
+ .navbar-nav .subnav-menu:hover .subnav  {
+    padding: 0 0 0 15px;
+
+  }
+
   .navbar-default .nav > li:hover > a {
     color: #f17014;
   }
