@@ -1780,11 +1780,12 @@ footer .social-media-icon:hover {
   height: 225px;
   border-radius: 20px;
   box-shadow: 3px 3px 9px #d5d5d5;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom right,
     #4284BD,
     #006b8f85
-  );
+  ); */
+  background-color: #4284BD;
   padding: 10px;
   margin: 5px;
   transition: 0.5s;
