@@ -2813,6 +2813,10 @@ footer .social-media-icon:hover {
     width: 75%;
     height: auto;
     margin-left: 5em;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 20px;
+    box-shadow: 7px 7px 11px rgb(0 0 0 / 16%);
   }
 
   .donate-bottom-section {
@@ -3049,7 +3053,7 @@ footer .social-media-icon:hover {
     }
     
   .donate-list .donate-list-item {
-    display: flåex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 2em;
