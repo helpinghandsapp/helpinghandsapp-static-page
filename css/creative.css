@@ -2394,7 +2394,7 @@ footer .social-media-icon:hover {
   margin-top: -20px;
   padding: 0 20px;
 }
-.helpH2 {
+.help-title {
   font-size: 45px;
 }
 
@@ -2544,7 +2544,7 @@ footer .social-media-icon:hover {
     margin-top: 100px;
   }
 
-  .helpH2 {
+  .help-title {
     text-align: center;
   }
 
@@ -2602,7 +2602,7 @@ footer .social-media-icon:hover {
   .help-img2 {
     margin: 0 50px;
   }
-  .helpH2 {
+  .help-title {
     font-size: 2.5rem;
   }
 }
