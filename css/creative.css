@@ -1780,11 +1780,12 @@ footer .social-media-icon:hover {
   height: 225px;
   border-radius: 20px;
   box-shadow: 3px 3px 9px #d5d5d5;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom right,
     #4284BD,
     #006b8f85
-  );
+  ); */
+  background-color: #4284BD;
   padding: 10px;
   margin: 5px;
   transition: 0.5s;
@@ -2394,7 +2395,7 @@ footer .social-media-icon:hover {
   margin-top: -20px;
   padding: 0 20px;
 }
-.helpH2 {
+.help-title {
   font-size: 45px;
 }
 
@@ -2544,7 +2545,7 @@ footer .social-media-icon:hover {
     margin-top: 100px;
   }
 
-  .helpH2 {
+  .help-title {
     text-align: center;
   }
 
@@ -2602,7 +2603,7 @@ footer .social-media-icon:hover {
   .help-img2 {
     margin: 0 50px;
   }
-  .helpH2 {
+  .help-title {
     font-size: 2.5rem;
   }
 }
