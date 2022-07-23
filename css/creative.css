@@ -2045,6 +2045,19 @@ footer .social-media-icon:hover {
   object-fit: contain;
 }
 
+@media (max-width: 540px) {
+  .exciting-img2 {
+    width: 100%;
+    max-width: 700px;
+    margin: 2rem 0 2rem 0;
+    display: block;
+    position: relative;
+    object-fit: contain;
+    height:100%
+  }
+  
+}
+
 .cannexusP {
   font-style: italic;
   font-weight: 700;
@@ -2544,10 +2557,10 @@ footer .social-media-icon:hover {
     margin-left: auto;
   }
 
-  .center-block {
+  /* .center-block { */
     /* padding: 2rem 0; */
-    margin: 0 auto;
-  }
+    /* margin: 0 auto; */
+  /* } */
 
   .helpImgContainer {
     padding: 0;
@@ -3206,6 +3219,7 @@ color: black;
   visibility: hidden;
   opacity: 0;
   overflow-y: scroll;
+  height: 60%;
 }
 
 .overlay:target {
