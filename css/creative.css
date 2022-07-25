@@ -871,8 +871,6 @@ section.features .features-text {
 }
 
 .workshop-feature-item #app-info-card-title {
-
-  
   font-size: 19px;
 }
 
@@ -3234,7 +3232,19 @@ color: black;
   visibility: hidden;
   opacity: 0;
   overflow-y: scroll;
+}
+
+
+
+.help-section >.overlay {
   height: 60%;
+}
+
+@media (max-width: 768px) {
+  .help-section >.overlay {
+    height: auto;
+  
+  }
 }
 
 .overlay:target {
