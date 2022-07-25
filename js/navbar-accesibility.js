@@ -19,7 +19,6 @@ document.addEventListener('click', function(event) {
 })
 
 subNav.forEach(link=>{
-  console.log(link.closest (".subnav"))
   if (link.closest(".subnav-menu") !==null) {
     link.addEventListener('focus', function() {
       // opens submenu
