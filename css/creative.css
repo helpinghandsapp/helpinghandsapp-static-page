@@ -1474,11 +1474,16 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-seconday {
-  color: #ffffff;
-  background: #faa52d;
+  color: #24383D;
+  background: #ffa500  ;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
+}
+
+.btn-seconday:hover {
+  transform: scale(0.95);
+
 }
 
 .btn-primary:hover,
