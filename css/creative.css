@@ -870,6 +870,11 @@ section.features .features-text {
   padding: 1em;
 }
 
+.workshop-feature-item #app-info-card-title {
+
+  
+  font-size: 19px;
+}
 
 
 #app-info-card-description {
@@ -1790,7 +1795,7 @@ footer .social-media-icon:hover {
     #4284BD,
     #006b8f85
   ); */
-  background-color: #4284BD;
+  background-color: #386F9F;
   padding: 10px;
   margin: 5px;
   transition: 0.5s;
