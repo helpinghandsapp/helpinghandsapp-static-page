@@ -796,10 +796,11 @@ section.features .features-text {
 }
 
 .feature-item {
-  width: 200px;
+  /* width: 200px; */
   border-radius: 35px;
   box-shadow: 3px 3px 9px #d5d5d5;
-  background: linear-gradient(to bottom right, #f17014, #ffc400);
+  /* background: linear-gradient(to bottom right, #f17014, #ffc400); */
+  background-color: #fff  ;
   margin: 10px;
   font-family: Verdana, sans-serif;
   padding: 15px;
