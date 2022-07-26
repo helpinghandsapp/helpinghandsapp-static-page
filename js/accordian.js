@@ -10,3 +10,9 @@ $verticalTabs.click(function() {
   $(this).parent(".slide").toggleClass("show");
   $verticalTabs.not(this).parent().removeClass("show");
 });
+
+$verticalTabs.focus(function() {
+  $(this).parent(".slide").toggleClass("show");
+  $verticalTabs.not(this).parent().removeClass("show");
+});
+

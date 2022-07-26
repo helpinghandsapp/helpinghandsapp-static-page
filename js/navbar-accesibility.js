@@ -1,17 +1,15 @@
 const topLevelLinks = document.querySelectorAll('.menu__link')
 const subNav = document.querySelectorAll(".nav-link")
-
-const collapsibleNavBarLinks = document.getElementById('collapsible')
+const collapsibleNavBarLinks = document.getElementsByClassName('collapsible')
 const subNavClass = document.getElementsByClassName('subnav-menu')
 const menuLinkClass = document.getElementsByClassName('menu__link')
 
 
-document.addEventListener('click', function(event) {
-  if (event.target.id != 'collapsible') {
+document.addEventListener('mouseover', function(event) {
+  if (event.target.classList != 'collapsible') {
     for(var i = 0; i < menuLinkClass.length; i++){
       menuLinkClass[i].setAttribute('aria-expanded', 'false')
     }
-    collapsibleNavBarLinks.setAttribute('aria-expanded', 'false')
     for(var i = 0; i < subNavClass.length; i++){
       subNavClass[i].classList.remove('focus')
       }
@@ -54,8 +52,8 @@ subNav.forEach(link=>{
 
   
 })
-
 topLevelLinks.forEach(link => {
+
   if (link.nextElementSibling) {
     link.addEventListener('focus', function() {
       this.parentElement.classList.add('focus')  
@@ -76,3 +74,17 @@ topLevelLinks.forEach(link => {
     })
   }
 })
+
+
+$(document).ready(function(){
+  $(".previous-volunteers").slice(0, 3).show();
+  $("#loadMore").on("click", function(e){
+    e.preventDefault();
+    $(".previous-volunteers:hidden").slice(0, 6).slideDown();
+    if($(".previous-volunteers:hidden").length == 0) {
+      $("#loadMore").css("display","none");
+    }
+  });
+  
+})
+
