@@ -9,9 +9,6 @@
 
     <title> Helping Hands - Find Your Volunteer Placement Today</title>
 
-    <!-- load javascript for navbar accesibility -->
-    <script defer src="js/navbar-accesibility.js"></script>
-
     <link rel="icon" href="img/logo_2.ico" type="image/x-icon" />
 
     <!-- Bootstrap Core CSS -->
@@ -125,7 +122,7 @@
               <a class = "nav-link"href="index.html">Home</a>
             </li>
             <li class="subnav-menu" >
-              <a href = "#" id = "collapsible" class = "menu__link"role = "button" aria-haspopup="true"aria-expanded="false" >About &#9660;</a>
+              <a href = "#" class = "collapsible menu__link"role = "button" aria-haspopup="true"aria-expanded="false" >About &#9660;</a>
               <ul class="nav subnav">
                 <li class="subnav-link">
                   <a class = "nav-link" href="team.html">Our Team</a>
@@ -136,7 +133,7 @@
               </ul>
             </li>
             <li class="subnav-menu">
-              <a href = "#"  id = "collapsible" aria-haspopup="true" aria-expanded="false" role = "button" class = "menu__link">Resources &#9660;</a>
+              <a href = "#"  class = "collapsible menu__link" aria-haspopup="true" aria-expanded="false" role = "button" >Resources &#9660;</a>
               <ul class="nav subnav submenu">
                 <li class="subnav-link">
                   <a class = "nav-link" href="volunteer-opportunities.html">Volunteer Opportunities</a>
@@ -151,7 +148,7 @@
               </ul>
             </li>
             <li class="subnav-menu">
-              <a href = "#" id = "collapsible" class = "menu__link"aria-haspopup="true" role = "button" aria-expanded="false">Get Involved &#9660;</a>
+              <a href = "#" class = "collapsible menu__link"aria-haspopup="true" role = "button" aria-expanded="false">Get Involved &#9660;</a>
               <ul class="nav subnav">
                 <li class="subnav-link">
                   <a class = "nav-link"href="jointeam.html">Join the Team</a>
@@ -170,9 +167,9 @@
             <li>
               <a class="page-scroll" href="contactus.html">Contact Us</a>
             </li>
-            <a href="index.html#help"><button class="btn btn-seconday btn-sm" style="margin-left: 12px; margin-top: 12px;">How can we help?</button></a>
+            <a href="index.html#help" class="btn btn-seconday btn-sm" style="margin-left: 12px; margin-top: 12px;">How can we help?</a>
           </ul>
-        </div>
+        </div> 
         <!-- /.navbar-collapse -->
       </div>
       <!-- /.container-fluid -->
@@ -407,9 +404,9 @@
               <div class="device-container center-block">
                 <img class="img-responsive center-block" src="img/HH_iphonex_mock.png" alt="Helping Hands Mobile View of App"/>
               </div>
-              <div class="button">
+              <!-- <div class="button"> -->
                 <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-              </div>
+              <!-- </div> -->
             </div>
             <div class = "subtitle-heading">
               <h2 class="main-title">Empower Youth. Change the World.</h2>
@@ -1033,5 +1030,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/slick2.js"></script>
+    <!-- load javascript for navbar accesibility -->
+    <script defer src="js/navbar-accesibility.js"></script>
   </body>
 </html>
