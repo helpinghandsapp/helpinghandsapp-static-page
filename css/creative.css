@@ -280,7 +280,7 @@ aside {
 }
 .navbar-nav .subnav-menu:hover {
   background-color: #fff;
-  color: #f17014;
+  color: #A85910  ;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -314,11 +314,11 @@ aside {
   color: #000;
 }
 .navbar-nav .subnav-menu:hover > a {
-  color: #f17014;
+  color: #A85910;
   border-radius: 0;
 }
 .navbar-nav .subnav .subnav-link:hover > a {
-  color: #f17014;
+  color: #A85910 ;
 }
 
 @media (max-width: 1096px) {
@@ -336,7 +336,7 @@ aside {
   }
 
   .navbar-default .nav > li:hover > a {
-    color: #f17014;
+    color: #A85910;
   }
 }
 
@@ -352,7 +352,7 @@ aside {
 
   .navbar-default .navbar-header .navbar-brand:hover,
   .navbar-default .navbar-header .navbar-brand:focus {
-    color: #f17014;
+    color: #A85910;
   }
 
   .navbar-default .nav > li > a,
@@ -361,7 +361,7 @@ aside {
   }
 
   .navbar-default .nav > li > a:hover {
-    color: #f17014;
+    color: #A85910;
     background-color: #fff;
     border-radius: 5px;
   }
