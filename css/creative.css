@@ -190,11 +190,13 @@ aside {
   border-radius: 10px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
-  padding: 5px 10px;
   font-size: 13px;
   line-height: 1.5;
-  margin-left: 10px;
+  align-self: center;
   margin-top: 10px;
+  /* margin-bottom: 15px;
+  margin-top: 15px; */
+
 }
 
 
