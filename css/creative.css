@@ -185,6 +185,20 @@ aside {
   background: #717171 !important;
 }
 
+.nav >.nav-button > button{
+  border: 0;
+  border-radius: 10px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  padding: 5px 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+
+
 .navbar-default {
   padding: 7.5px;
   background-color: #fff;
@@ -217,7 +231,7 @@ aside {
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > p {
   font-family: "Roboto", sans-serif;
-  font-size: 17px;
+  /* font-size: 17px; */
   font-weight: 400;
 }
 
@@ -358,8 +372,7 @@ aside {
     color: #A85910;
   }
 
-  .navbar-default .nav > li > a,
-  .navbar-default .nav > li > button {
+  .navbar-default .nav > li > a {
     color: rgba(255, 255, 255);
   }
 
