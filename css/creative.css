@@ -185,7 +185,7 @@ aside {
   background: #717171 !important;
 }
 
-.nav >.nav-button > button{
+.nav >.nav-button > .btn{
   border: 0;
   border-radius: 10px;
   font-family: "Nunito Sans", sans-serif;
@@ -193,15 +193,15 @@ aside {
   font-size: 13px;
   line-height: 1.5;
   align-self: center;
-  margin-top: 10px;
-  /* margin-bottom: 15px;
-  margin-top: 15px; */
+  padding: 7px;
+  color: black;
+  margin-top: 8px;
+  margin-left: 8px;
 
 }
-
-.nav-button >button> a{
-  color: black;
-
+.nav >.nav-button > .btn:hover{
+  background-color: #ffa500;
+  color:black;
 }
 
 
