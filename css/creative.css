@@ -199,6 +199,12 @@ aside {
 
 }
 
+.nav-button >button> a{
+  color: black;
+
+}
+
+
 
 
 .navbar-default {
