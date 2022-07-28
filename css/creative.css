@@ -200,11 +200,20 @@ aside {
 
 }
 .nav >.nav-button > .btn:hover, 
-.nav >.nav-button > .btn:focus
-
-{
+.nav >.nav-button > .btn:focus, 
+.navbar-default.affix .nav > .nav-button > .btn:hover,
+.navbar-default.affix .nav > .nav-button > .btn:hover {
   background-color: #ffa500;    
-  color:black;
+  color:black
+}
+
+
+
+
+.nav >.nav-button > .btn:hover, 
+.nav >.nav-button > .btn:focus {
+  background-color: #ffa500;    
+  color:black
 }
 
 
