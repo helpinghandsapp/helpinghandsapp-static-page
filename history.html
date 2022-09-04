@@ -7,7 +7,7 @@
     <meta name="description" content="Helping hands serves as a platform to match students with volunteer placements in organizations of their interest. See what we have been doing and how we have been impacting our community">
     <meta name="author" content="">
 
-    <title> In the News - Helping Hands</title>
+    <title> Our History  - Helping Hands</title>
 
 
     <link rel="icon" href="img/logo_2.ico" type="image/x-icon" />
@@ -172,7 +172,7 @@
           <!-- HEADER -->
     <div class="new-header" id = main-content>
         <div class = "wrapper">
-            <h2> Our History
+            <h2> Our History 
             <!-- <img id="volunteer-icon" src="img/illustration_animal.png" alt="Drawing of a cartoon character"> -->
             </h2>
             
@@ -188,15 +188,17 @@
             <!-- photos -->
             <div class = historyPhotos>
                 <img src = "img/HistoryPhotoJanelle.jpg" class = "historyPhoto1">
-                <img src = "img/HistoryPanel.jpg"   class = "historyPhoto2" >
-                <img src = "img/HIstorygiselleandjanelle.png"  class = "historyPhoto3">
+                <div class = "historyPhotoSecondColumn">
+                  <img src = "img/HistoryPanel.jpg"    >
+                  <img src = "img/HIstorygiselleandjanelle.png"  >  
+                </div>
 
                 
 
             </div >
             <!-- text -->
             <div class = historyText>
-                <h1> Our History</h1>
+                <h2> Our History</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut debitis veritatis cupiditate ab maiores assumenda doloribus. Non architecto quis mollitia voluptates dignissimos neque eligendi, perferendis iure? Eius quia suscipit repudiandae vitae ratione, rem pariatur quam deserunt provident ea molestiae modi sequi, inventore temporibus quae repellat placeat illum similique laudantium earum.
                 </p>
@@ -215,34 +217,40 @@
 
 
 
-     <div class="timeline">
-        <div class="containerLeft container"
+     <div class="timeline" >
+        <div class="containerLeft leftFirst container"
         >
-          <div class="content" style= "display: flex;">
+          <div class="content fadein" style= "display: flex;" >
             <img src="/img/council.jpg" style= "width: 150px;  object-fit: contain"/>
-            <div>
+            <div >
                 <h2>2018</h2>
 
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, perspiciatis, iste delectus eligendi quidem atque eos illo consequuntur tenetur temporibus numquam incidunt est veritatis. Corrupti?</p>
             </div>
           </div>
         </div>
+
         <div class="containerRight right container">
-          <div class="content">
-            <h2>2019</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est non expedita quod alias, aperiam consequatur provident nulla earum minima esse quam temporibus officiis maxime qui!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus molestias expedita quaerat, ducimus dolore suscipit, deserunt inventore aliquid facere, nostrum hic voluptates officia veritatis illum.</p>
+          <div class="content  fadein" >
+            <div>
+              <h2>2019</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est non expedita quod alias, aperiam consequatur provident nulla earum minima esse quam temporibus officiis maxime qui!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus molestias expedita quaerat, ducimus dolore suscipit, deserunt inventore aliquid facere, nostrum hic voluptates officia veritatis illum.</p>
+            </div>
+
           </div>
         </div>
-        <div class="containerLeft left container">
-            <div class="content">
+
+        <div class="containerLeft left container ">
+            <div class="content  fadein">
+
               <h2>2020</h2>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil corporis perferendis totam animi quo vero unde aliquid commodi consequuntur saepe. Itaque eos excepturi alias consequatur?</p>
             </div>
           </div>
         <div class="containerRight right container">
-            <div class="content">
+            <div class="content  fadein">
               <h2>2021</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, repudiandae sunt inventore dolorem harum quibusdam, nihil aliquid soluta ea nam odio consequatur. Facilis, quaerat pariatur!</p>
+              <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, repudiandae sunt inventore dolorem harum quibusdam, nihil aliquid soluta ea nam odio consequatur. Facilis, quaerat pariatur!</p>
             </div>
           </div>
       </div> 
@@ -317,6 +325,8 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
@@ -335,6 +345,8 @@
     <script src="js/slick2.js"></script>
     <!-- load javascript for navbar accesibility -->
     <script defer src="js/navbar-accesibility.js"></script>
+    
+    <script defer src="js/timelineAnimations.js"></script>
 
 </body>
 </html>
