@@ -132,6 +132,7 @@
     <!-- end Mixpanel -->
 
     <!--[endif]-->
+    <script src="footer.js"></script>
   </head>
   <body id="page-top">
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -323,13 +324,13 @@
       </section>
     </main>
 
-    <footer>
-      <div class="wrapper">
-        <p class="footer-text">
-          &copy; 2021 Helping Hands. All Rights Reserved.
-        </p>
-      </div>
-    </footer>
+        <!-- FOOTER -->
+        <div id="footer-container">
+          <script>
+            const footerContainer = document.getElementById('footer-container');
+            footerContainer.innerHTML = generateFooter();
+          </script>
+        </div>
 
     <!--====================Some Javascript=====================================-->
     <!-- jQuery -->

@@ -200,6 +200,7 @@
 
     <!-- mailchimp pop up code  -->
     <!-- <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"bb1a6c0f75e6f04a1ef2e8ca5","lid":"d9576472f9"}) })</script> -->
+    <script src="footer.js"></script>
   </head>
 
   <!--====================================================================-->
@@ -337,37 +338,13 @@
       </div>
     </section>
 
-    <footer>
-      <div class="container">
-        <p>&copy; 2020 Helping Hands. All Rights Reserved.</p>
-        <ul class="list-inline">
-          <li>
-            <a class="page-scroll" href="index.html">Home</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="team.html">Team</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/helphandsapp" target="_blank"
-              >Instagram</a
-            >
-          </li>
-          <li>
-            <a href="https://twitter.com/helphandsapp" target="_blank"
-              >Twitter</a
-            >
-          </li>
-          <li>
-            <a href="https://www.facebook.com/helphandsapp" target="_blank"
-              >Facebook</a
-            >
-          </li>
-          <li>
-            <a href="mailto:myhelpinghandsapp@gmail.com">Email</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
+    <!-- FOOTER -->
+    <div id="footer-container">
+      <script>
+        const footerContainer = document.getElementById("footer-container");
+        footerContainer.innerHTML = generateFooter();
+      </script>
+    </div>
 
     <!--============================================================================================-->
     <!-- jQuery -->
