@@ -200,87 +200,19 @@
 
     <!-- mailchimp pop up code  -->
     <!-- <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"bb1a6c0f75e6f04a1ef2e8ca5","lid":"d9576472f9"}) })</script> -->
+    <script src="navbar.js"></script>
     <script src="footer.js"></script>
   </head>
 
   <!--====================================================================-->
 
   <body class="bg-primary" id="page-top">
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-      <!--<div class="container-fluid">-->
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle collapsed"
-            data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1"
-          >
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <h1>
-            <a class="navbar-brand page-scroll" href="index.html#page-top"
-              >Helping Hands</a
-            >
-          </h1>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="subnav-menu">
-              <button>Home <span>&#9660;</span></button>
-              <ul class="nav subnav">
-                <li class="subnav-link">
-                  <a href="index.html">Homepage</a>
-                </li>
-                <li class="subnav-link">
-                  <a class="page-scroll" href="index.html#features">About</a>
-                </li>
-                <li class="subnav-link">
-                  <a class="page-scroll" href="index.html#help">Help</a>
-                </li>
-                <li class="subnav-link">
-                  <a class="page-scroll" href="index.html#contact">Contact</a>
-                </li>
-              </ul>
-            </li>
-            <li class="subnav-menu">
-              <button>Covid/Anti-Black Racism <span>&#9660;</span></button>
-              <ul class="nav subnav">
-                <li class="subnav-link">
-                  <a href="covid19.html">Covid Response</a>
-                </li>
-                <li class="subnav-link">
-                  <a
-                    class="page-scroll"
-                    href="covid19.html#anti-black_racism_guidebook"
-                    >Anti-Black Racism Guidebook</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="team.html">Team</a>
-            </li>
-            <li>
-              <a href="jointeam.html">Join Team</a>
-            </li>
-            <li>
-              <a href="workshops.html">Workshops</a>
-            </li>
-            <li>
-              <a href="/blog">Blog</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container-fluid -->
-    </nav>
+    <div id="navbar-container">
+      <script>
+        const navbarContainer = document.getElementById("navbar-container");
+        navbarContainer.innerHTML = generateNavbar();
+      </script>
+    </div>
 
     <!--================================================================-->
 
