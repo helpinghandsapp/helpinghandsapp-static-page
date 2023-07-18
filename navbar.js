@@ -1,6 +1,6 @@
 function generateNavbar() {
   return `
-  <nav role = "navigation"id="mainNav" class="navbar navbar-default navbar-fixed-top" aria-label = "Main Menu">
+    <nav role = "navigation"id="mainNav" class="navbar navbar-default navbar-fixed-top" aria-label = "Main Menu">
       <!--<div class="container-fluid">-->
       <div class="wrapper">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -44,7 +44,6 @@ function generateNavbar() {
                 <li class="subnav-link">
                   <a class = "nav-link" class="page-scroll" href="covid19.html#anti-black_racism_guidebook">Anti-Black Racism Guidebook</a>                
                 </li>
-
               </ul>
             </li>
             <li class="subnav-menu">
@@ -73,7 +72,6 @@ function generateNavbar() {
               </a>
             </li>
             <!-- <a href="index.html#help" class="btn btn-seconday btn-sm" style="margin-left: 12px; margin-top: 12px;">How can we help?</a> -->
-
           </ul>
         </div> 
         <!-- /.navbar-collapse -->
