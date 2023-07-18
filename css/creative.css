@@ -313,7 +313,7 @@ aside {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   max-height: 0;
-  transition: max-height 0.5s ease;
+  transition: max-height 0s ease;
 }
 .navbar-nav .subnav-menu:hover {
   background-color: #fff;
