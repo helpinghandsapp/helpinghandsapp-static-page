@@ -325,7 +325,7 @@ aside {
 .navbar-nav .subnav-menu:hover .subnav {
   padding: 0.5rem 0;
   height: auto;
-  max-height: 200px;
+  max-height: 300px;
 }
 
 
@@ -366,7 +366,7 @@ aside {
 
  .navbar-nav .subnav-menu:hover .subnav  {
     padding: 0 0 0 15px;
-    max-height: 200px;
+    max-height: 300px;
     clip: auto
   }
 
