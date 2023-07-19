@@ -7,11 +7,10 @@ body {
   width: 100%;
   height: 100%;
   background: rgb(237, 243, 250);
-  font-family: "Roboto", sans-serif;
 }
 
-::selection {
-  color: white;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 .visuallyHidden:not(:focus):not(:active) {
