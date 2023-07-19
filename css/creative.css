@@ -2282,23 +2282,24 @@ footer .social-media-icon:hover {
   transform: scale(1);
 }
 
-.sizeone {
-  margin-left: 28rem;
-}
 .sizetwo {
-  margin-left: 26rem;
+  margin-left: 20rem;
 }
 .sizethree {
-  margin-left: 22rem;
+  margin-left: 16rem;
 }
 .sizefour {
-  margin-left: 17rem;
+  margin-left: 23.6rem;
 }
 .sizefive {
-  margin-left: 23.8rem;
+  margin-left: 23rem;
 }
+
 .sizesix {
-  margin-left: 16em;
+  margin-left: 15em;
+}
+.sizeseven {
+  margin-left: 21.6rem;
 }
 @media (max-width: 410px) {
   .tab-vertical {
