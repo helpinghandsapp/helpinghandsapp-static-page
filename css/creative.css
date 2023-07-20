@@ -302,9 +302,9 @@ aside {
   left: 0;
   padding: 0;
   list-style: none;
-  height: auto;
-  height: 1px;
-  width: 1px;
+  /* height: auto; */
+  height: 0px;
+  /* width: 1px; */
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -312,8 +312,8 @@ aside {
   overflow-y: hidden;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  max-height: 0;
-  transition: max-height 0s ease;
+  /* max-height: 0; */
+  /* transition: max-height 0s ease; */
 }
 .navbar-nav .subnav-menu:hover {
   background-color: #fff;
