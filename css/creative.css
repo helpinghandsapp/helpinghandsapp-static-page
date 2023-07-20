@@ -306,14 +306,13 @@ aside {
   height: 0px;
   /* width: 1px; */
   overflow: hidden;
-  position: absolute;
   width: 100%;
   z-index: 1;
   overflow-y: hidden;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   max-height: 0;
-  transition: max-height 0s ease;
+  transition: max-height 0.7s ease;
 }
 .navbar-nav .subnav-menu:hover {
   background-color: #fff;
@@ -360,14 +359,25 @@ aside {
     display: block;
     padding-left: 15px;
     height: auto;
-    clip: auto;
     
+  }
+
+  .navbar-nav .subnav-menu {
+    position: relative;
+    cursor: pointer; /* Add cursor property to make the subnav-menu clickable */
+  }
+
+  .navbar-nav .subnav-menu:hover {
+    background-color: #fff;
+    color: #a85910;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
   }
 
  .navbar-nav .subnav-menu:hover .subnav  {
     padding: 0 0 0 15px;
     max-height: 300px;
-    clip: auto
+    
   }
 
   .navbar-default .nav > li:hover > a {
