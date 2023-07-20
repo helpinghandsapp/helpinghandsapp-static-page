@@ -1,11 +1,28 @@
 function generateNavbar() {
+  // Flag to track if the menu is open or closed
+  let isMenuOpen = false;
+
+  // Function to handle the toggle button click event
+  const handleToggleClick = () => {
+    isMenuOpen = !isMenuOpen; // Toggle the menu state
+    const menuCollapseElement = document.getElementById(
+      "bs-example-navbar-collapse-1"
+    );
+
+    if (isMenuOpen) {
+      menuCollapseElement.classList.add("in"); // Add the "in" class to show the menu
+    } else {
+      menuCollapseElement.classList.remove("in"); // Remove the "in" class to hide the menu
+    }
+  };
+
   return `
     <nav role = "navigation"id="mainNav" class="navbar navbar-default navbar-fixed-top" aria-label = "Main Menu">
       <!--<div class="container-fluid">-->
       <div class="wrapper">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-haspopup="true">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-haspopup="true" onclick="handleToggleClick()">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>

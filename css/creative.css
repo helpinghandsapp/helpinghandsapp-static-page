@@ -312,8 +312,8 @@ aside {
   overflow-y: hidden;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  /* max-height: 0; */
-  /* transition: max-height 0s ease; */
+  max-height: 0;
+  transition: max-height 0s ease;
 }
 .navbar-nav .subnav-menu:hover {
   background-color: #fff;
