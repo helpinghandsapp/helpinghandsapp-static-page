@@ -7,16 +7,16 @@ function generateFooter() {
             <!-- <div class = "footer-links col-sm-6"> -->
               <ul class = "footer-links col-sm-2">
                 <li>
-                    <a href = "/contactus.html">Contact Us</a>
+                    <a href = "contactus.html">Contact Us</a>
                 </li>
                 <li>
-                    <a href = "/jointeam.html">Join Team</a>
+                    <a href = "jointeam.html">Join Team</a>
                 </li>
                 <li>
-                    <a href = "/donate.html">Donate</a>
+                    <a href = "donate.html">Donate</a>
                 </li>
                 <li>
-                    <a href = "/blog">Blog</a>
+                    <a href = "blog">Blog</a>
                 </li>
               </ul>
             <!-- </div> -->
