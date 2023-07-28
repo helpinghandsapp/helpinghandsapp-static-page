@@ -2271,12 +2271,12 @@ footer .social-media-icon:hover {
   z-index: 1;
   height: 100px;
   font-size: 20px;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   font-style: italic;
   border-radius: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .tab-vertical:hover {
   background: linear-gradient(to bottom right, #f17013, #ffc400);
@@ -2286,24 +2286,6 @@ footer .social-media-icon:hover {
   transform: scale(1);
 }
 
-.sizeone {
-  margin-left: 28rem;
-}
-.sizetwo {
-  margin-left: 26rem;
-}
-.sizethree {
-  margin-left: 22rem;
-}
-.sizefour {
-  margin-left: 17rem;
-}
-.sizefive {
-  margin-left: 23.8rem;
-}
-.sizesix {
-  margin-left: 16em;
-}
 @media (max-width: 410px) {
   .tab-vertical {
     font-size: 16px;
@@ -2322,7 +2304,7 @@ footer .social-media-icon:hover {
   height: 100%;
   overflow: hidden;
   background-color: whitesmoke;
-  padding: 45px;
+  margin-top: 100px;
 }
 
 /* tab colors. Add with more tabs. */
