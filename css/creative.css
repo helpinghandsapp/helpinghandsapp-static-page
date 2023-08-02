@@ -4252,7 +4252,7 @@ img {
 }
 
 /* The circles on the timeline */
-.container::after {
+.timeline-entry::after {
   content: "";
   position: absolute;
   width: 25px;
