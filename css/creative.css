@@ -2351,11 +2351,6 @@ footer .social-media-icon:hover {
   width: 100%;
 }
 
-.help-section * {
-  max-width: 100vw;
-  white-space: normal;
-}
-
 .help-section .close {
   margin: 10px 15px 10px 0;
 }
@@ -2416,6 +2411,7 @@ footer .social-media-icon:hover {
   margin: 0.5rem auto;
   width: auto;
   max-width: 400px;
+  white-space: normal;
 }
 
 #parent-help .help-cont-logo:nth-child(2) {
