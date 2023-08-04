@@ -2380,7 +2380,7 @@ footer .social-media-icon:hover {
   margin-top: 15px;
   padding-top: 8px;
   font-size: 18px;
-  height: 40px;
+  min-height: 40px;
 }
 
 .help-section-content {
