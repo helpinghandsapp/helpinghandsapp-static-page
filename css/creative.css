@@ -2381,6 +2381,7 @@ footer .social-media-icon:hover {
   padding-top: 8px;
   font-size: 18px;
   min-height: 40px;
+  white-space: normal;
 }
 
 .help-section-content {
@@ -2395,7 +2396,7 @@ footer .social-media-icon:hover {
   width: 900%;
 }
 
-#help-buttons {
+.help-buttons {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -2404,16 +2405,17 @@ footer .social-media-icon:hover {
   height: 75%;
 }
 
-#help-button {
+.help-button {
   width: 100%;
 }
 
-#help-button a {
+.help-button a {
   /* margin:5px 5px 5px 0px; */
   font-size: 22px;
   border-radius: 20px;
   margin: 0.5rem auto;
   width: auto;
+  max-width: 400px;
 }
 
 #parent-help .help-cont-logo:nth-child(2) {
@@ -2430,6 +2432,7 @@ footer .social-media-icon:hover {
 
 .help-img2 {
   max-height: 500px;
+  max-width: 100%;
 }
 
 @media (max-width: 1392px) {
