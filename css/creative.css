@@ -3408,6 +3408,7 @@ img {
 
 #contact-img {
   max-height: 450px;
+  max-width: 100vw;
 }
 
 @media (max-width: 992px) {
@@ -4485,7 +4486,7 @@ img {
 .bmff-button-grid-item {
   background-color: #f07015;
   border-radius: 20px;
-  width: 400px;
+  width: 320px;
   max-width: 100vw;
   padding: 20px;
   color: white;
