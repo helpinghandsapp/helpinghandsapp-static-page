@@ -3885,8 +3885,7 @@ img {
 
   .community-service-req-grid-paragraph {
     padding-bottom: 2em;
-    margin-top: 2em;
-    margin-right: 1em;
+    padding-top: 2em;
   }
 }
 /* desktop view media query ends */
@@ -4098,7 +4097,6 @@ img {
   }
 
   .community-service-req-grid-paragraph {
-    margin-left: 1em;
     width: 100%;
   }
 
