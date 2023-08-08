@@ -4,24 +4,24 @@ function generateFooter() {
       <div class="wrapper">
         <div class="footer-contents container-fluid row">
           <!-- footer links -->
-          <!-- <div class = "footer-links col-sm-6"> -->
-          <ul class="footer-links col-sm-2">
-            <li>
-              <a href="contactus.html">Contact Us</a>
-            </li>
-            <li>
-              <a href="jointeam.html">Join Team</a>
-            </li>
-            <li>
-              <a href="donate.html">Donate</a>
-            </li>
-            <li>
-              <a href="blog">Blog</a>
-            </li>
-          </ul>
-          <!-- </div> -->
-          <div class="footer-links col-sm-6">
-            <p class="footer-contents text-center">Funded & Supported By:</p>
+          <div class="col-sm-2">
+            <ul class="footer-links">
+              <li>
+                <a href="contactus.html">Contact Us</a>
+              </li>
+              <li>
+                <a href="jointeam.html">Join Team</a>
+              </li>
+              <li>
+                <a href="donate.html">Donate</a>
+              </li>
+              <li>
+                <a href="blog">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-div col-sm-6">
+            <p class="text-center">Funded & Supported By:</p>
             <div class="footer-logo-container">
               <div class="footer-logo-item">
                 <div class="footer-feature-content">
@@ -80,8 +80,7 @@ function generateFooter() {
             </div>
           </div>
           <!-- footer social media  -->
-          <div class="footer-social-media col-sm-4">
-            <!-- <h2>We <i class="fa fa-heart"></i> New Friends</h2> -->
+          <div class="footer-div col-sm-4">
             <p>
               Want to collaborate, join the team, or just have general feedback?
             </p>
@@ -163,7 +162,6 @@ function generateFooter() {
             </div>
           </div>
         </div>
-
         <!-- copyright -->
         <div>
           <p class="footer-copyright-text">
