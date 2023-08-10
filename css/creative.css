@@ -3432,6 +3432,7 @@ img {
     width: 400px;
     height: 400px;
     margin-top: 20px;
+   
   }
 }
 
@@ -3445,6 +3446,9 @@ img {
 }
 
 @media (max-width: 483px) {
+  .contact bg-primary{
+    width: 100%;
+  }
   #ig-feed {
     width: 300px;
     height: 300px;
@@ -3455,6 +3459,8 @@ img {
   #ig-feed {
     width: 250px;
     height: 250px;
+    
+
   }
 }
 
@@ -3462,6 +3468,7 @@ img {
   #ig-feed {
     width: 200px;
     height: 200px;
+    margin-inline: auto;
   }
 }
 
@@ -4158,6 +4165,7 @@ img {
   font-size: 40px;
 }
 
+
 /* anti-black racism header */
 #anti-black_racism_guidebook .new-header {
   padding-top: 2vh;
@@ -4171,11 +4179,14 @@ img {
 /* header mobile  */
 
 @media (max-width: 549px) {
+
+  
   .new-header {
     padding-left: 0px;
     text-align: center;
+    
   }
-
+  
   .new-header p {
     padding: 0;
     margin: 2rem 1rem;
