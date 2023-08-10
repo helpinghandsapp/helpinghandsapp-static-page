@@ -222,6 +222,7 @@ aside {
   transition: all 0.35s;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
+  max-width: 100vw;
 }
 
 .navbar-default .navbar-header .navbar-brand {
@@ -1516,9 +1517,13 @@ footer ul {
   margin-bottom: 0;
 }
 
+.footer-contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .footer-links {
   margin-left: 15px;
-  margin-right: -15px;
 }
 
 .list-social li a {
@@ -1567,7 +1572,7 @@ footer .social-media-icon:hover {
 }
 /* footer mobile  */
 @media (max-width: 768px) {
-  .footer-social-media {
+  .footer-div {
     padding-top: 3vh;
   }
 }
@@ -2374,7 +2379,8 @@ footer .social-media-icon:hover {
   margin-top: 15px;
   padding-top: 8px;
   font-size: 18px;
-  height: 40px;
+  min-height: 40px;
+  white-space: normal;
 }
 
 .help-section-content {
@@ -2389,7 +2395,7 @@ footer .social-media-icon:hover {
   width: 900%;
 }
 
-#help-buttons {
+.help-buttons {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -2398,16 +2404,18 @@ footer .social-media-icon:hover {
   height: 75%;
 }
 
-#help-button {
+.help-button {
   width: 100%;
 }
 
-#help-button a {
+.help-button a {
   /* margin:5px 5px 5px 0px; */
   font-size: 22px;
   border-radius: 20px;
   margin: 0.5rem auto;
   width: auto;
+  max-width: 400px;
+  white-space: normal;
 }
 
 #parent-help .help-cont-logo:nth-child(2) {
@@ -2424,6 +2432,7 @@ footer .social-media-icon:hover {
 
 .help-img2 {
   max-height: 500px;
+  max-width: 100%;
 }
 
 @media (max-width: 1392px) {
@@ -3399,6 +3408,7 @@ img {
 
 #contact-img {
   max-height: 450px;
+  max-width: 100vw;
 }
 
 @media (max-width: 992px) {
@@ -3882,8 +3892,7 @@ img {
 
   .community-service-req-grid-paragraph {
     padding-bottom: 2em;
-    margin-top: 2em;
-    margin-right: 1em;
+    padding-top: 2em;
   }
 }
 /* desktop view media query ends */
@@ -4095,7 +4104,6 @@ img {
   }
 
   .community-service-req-grid-paragraph {
-    margin-left: 1em;
     width: 100%;
   }
 
@@ -4145,7 +4153,7 @@ img {
 
 .new-header {
   color: white;
-  padding-top: 7.5vh;
+  padding-top: 66px;
   padding-bottom: 2vh;
   /* background: linear-gradient(to bottom left, #1e93d3, #0a5f93); */
   /* text-align: center; */
@@ -4456,7 +4464,7 @@ img {
   color: #006b8f
 }
 
-.bmff-button {
+.bmff-survey-button {
   background-color: #f07015;
   border-radius: 40px;
   color: white;
@@ -4470,8 +4478,12 @@ img {
 .bmff-grid {
   display: grid;
   -ms-display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   max-width: 1100px;
+}
+
+.bmff-grid img {
+  max-width: 100%;
 }
 
 .bmff-button-grid {
@@ -4480,12 +4492,14 @@ img {
   align-items: center;
 }
 
-.bmff-grid-item {
+.bmff-button-grid-item {
   background-color: #f07015;
   border-radius: 20px;
-  width: 400px;
+  width: 320px;
+  max-width: 100vw;
   padding: 20px;
   color: white;
   font-weight: bold;
   margin-top: 1em;
+  white-space: normal;
 }

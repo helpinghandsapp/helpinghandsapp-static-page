@@ -115,78 +115,72 @@
 
     <main id="main-content">
       <section id="contact" class="contact-section">
-        <div class="help-container">
-          <div class="wrapper">
-            <div class="row">
-              <div class="col-lg-10 col-lg-offset-1">
-                <div class="col-sm-6">
-                  <div class="center-block display-flex-center">
-                    <img
-                      id="contact-img"
-                      class="img-responsive center-block display-flex-center"
-                      src="img/illustration_contact.png"
-                      alt="Drawing of an hand holding a phone viewing a checked email"
-                    />
-                  </div>
+        <div class="wrapper">
+          <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+              <div class="col-sm-6">
+                <div class="center-block display-flex-center">
+                  <img
+                    id="contact-img"
+                    class="img-responsive center-block display-flex-center"
+                    src="img/illustration_contact.png"
+                    alt="Drawing of an hand holding a phone viewing a checked email"
+                  />
                 </div>
-                <div class="col-sm-6">
-                  <h2 class="main-title">Let's Get In Touch!</h2>
-                  <p class="app-info-card-description">
-                    Drop us a message below and we will get back to you as soon
-                    as possible.
-                  </p>
-                  <div class="help-form">
-                    <form
-                      action="https://formspree.io/info@helpinghandsapp.com"
-                      method="POST"
+              </div>
+              <div class="col-sm-6">
+                <h2 class="main-title">Let's Get In Touch!</h2>
+                <p class="app-info-card-description">
+                  Drop us a message below and we will get back to you as soon as
+                  possible.
+                </p>
+                <div class="help-form">
+                  <form
+                    action="https://formspree.io/info@helpinghandsapp.com"
+                    method="POST"
+                  >
+                    <script type="text/javascript">
+                      //auto expand textarea
+                      function adjust_textarea(h) {
+                        h.style.height = "20px";
+                        h.style.height = h.scrollHeight + "px";
+                      }
+                    </script>
+
+                    <label class="visuallyHidden" for="nameInput">Name</label>
+                    <input
+                      id="nameInput"
+                      type="text"
+                      name="Name"
+                      placeholder="Name"
+                    />
+
+                    <label class="visuallyHidden" for="emailInput">Email</label>
+                    <input
+                      id="emailInput"
+                      type="email"
+                      name="Email"
+                      placeholder="Email"
+                    />
+
+                    <label class="visuallyHidden" for="messageInput"
+                      >Message</label
                     >
-                      <script type="text/javascript">
-                        //auto expand textarea
-                        function adjust_textarea(h) {
-                          h.style.height = "20px";
-                          h.style.height = h.scrollHeight + "px";
-                        }
-                      </script>
+                    <textarea
+                      id="messageInput"
+                      placeholder="Message"
+                      name="Message"
+                      onkeyup="adjust_textarea(this)"
+                    ></textarea>
 
-                      <label class="visuallyHidden" for="nameInput">Name</label>
-                      <input
-                        id="nameInput"
-                        type="text"
-                        name="Name"
-                        placeholder="Name"
-                      />
-
-                      <label class="visuallyHidden" for="emailInput"
-                        >Email</label
-                      >
-                      <input
-                        id="emailInput"
-                        type="email"
-                        name="Email"
-                        placeholder="Email"
-                      />
-
-                      <label class="visuallyHidden" for="messageInput"
-                        >Message</label
-                      >
-                      <textarea
-                        id="messageInput"
-                        placeholder="Message"
-                        name="Message"
-                        onkeyup="adjust_textarea(this)"
-                      ></textarea>
-
-                      <label class="visuallyHidden" for="submitInput"
-                        >Send</label
-                      >
-                      <input
-                        id="submitInput"
-                        class="btn btn-seconday btn-xl"
-                        type="submit"
-                        value="Send"
-                      />
-                    </form>
-                  </div>
+                    <label class="visuallyHidden" for="submitInput">Send</label>
+                    <input
+                      id="submitInput"
+                      class="btn btn-seconday btn-xl"
+                      type="submit"
+                      value="Send"
+                    />
+                  </form>
                 </div>
               </div>
             </div>
@@ -198,13 +192,13 @@
 
       <section id="social-media-embed" class="contact bg-primary">
         <div class="wrapper">
-          <div class="flex-container">
+          <div class="flex-container justify-content-center align-items-center">
             <div class="col-lg-12">
               <div class="col-md-6 ">
                 <a
                   class="twitter-timeline"
                   href="https://twitter.com/helpinghands?ref_src=twsrc%5Etfw"
-                 
+
                   >Tweets by helpinghands</a
                 >
                 <script
@@ -216,19 +210,20 @@
 
               <div class="col-md-6">
                 <!-- SnapWidget -->
-                <h3>
+                <h4 class="center-block display-flex-center">
                   Follow Us
                   <a
                     class="instagram-handle"
                     href="https://www.instagram.com/helpinghandsapp/"
+                    aria-label="Find is on Instagram"
                     target="_blank"
                     >@HelpingHandsApp</a
                   >
-                </h3>
+                </h4>
                 <script src="https://snapwidget.com/js/snapwidget.js"></script>
                 <iframe
                   id="ig-feed"
-                  class="ig-feed"
+                  class="ig-feed center-block display-flex-center"
                   title="Instagram Feed"
                   src="https://snapwidget.com/embed/723684"
                   allowtransparency="true"
