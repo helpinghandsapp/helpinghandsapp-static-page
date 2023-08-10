@@ -2278,12 +2278,23 @@ footer .social-media-icon:hover {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 767px) {
+.tab-vertical.active {
+  background: linear-gradient(to bottom right, #f17013, #ffc400);
+  color: white;
+  font-size: 1.4rem;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1);
+}
+}
+@media (min-width: 768px) {
 .tab-vertical:hover {
   background: linear-gradient(to bottom right, #f17013, #ffc400);
   color: white;
   font-size: 1.4rem;
   transition: all 0.2s ease-in-out;
   transform: scale(1);
+}
 }
 
 @media (max-width: 410px) {
