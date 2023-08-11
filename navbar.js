@@ -127,7 +127,7 @@ function generateNavbar() {
               <a class="nav-link" href="workshops.html">Workshops</a>
             </li>
             <li>
-              <a href="./blog">Blog</a>
+              <a href="Blog.html">Blog</a>
             </li>
             <li>
               <a class="page-scroll" href="contactus.html">Contact Us</a>
