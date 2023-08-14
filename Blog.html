@@ -1,14 +1,10 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content=""/>
+    <meta name="description" content="" />
     <title>Blog</title>
 
     <link rel="icon" href="img/logo_2.ico" type="image/x-icon" />
@@ -40,7 +36,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css" />
     <link rel="stylesheet" href="img/device-mockups/device-mockups.min.css" />
-   
+
     <!-- add slick.css -->
     <link
       rel="stylesheet"
@@ -66,7 +62,7 @@
     <script src="footer.js"></script>
   </head>
 
-  <body id="page-top">
+  <body id="page-top" class="blog-body">
     <!-- skip to main content (accesibility) -->
     <a class="skip-to-content-link" href="#Blog">Blog</a>
 
@@ -79,36 +75,55 @@
     </div>
 
     <header id="blog-header">
-        <div class="wrapper">
-          <h2 style="color: white; font-style: italic;  font-size:40px ">Blog</h2>
-          <p style="color:white; margin-top:2rem;margin-bottom:2rem; margin-inline: 3rem; ">Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, 
-          </p>
-        </div>
+      <div class="wrapper">
+        <h2 class="blog-headline">Blog</h2>
+        <p class="blog-summary">
+          Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+          Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+          libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,
+        </p>
+      </div>
     </header>
 
-
-    <section id="#Blog">
-        <div class="wrapper" >
-          <h3 style="text-align: center;">Helping Hands Information</h3>
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <img style="width: 400px"src="https://media.istockphoto.com/id/887987150/photo/blogging-woman-reading-blog.jpg?s=1024x1024&w=is&k=20&c=nP1hJR8pdUnI2bl1822mokIDtXQB_5cntElWFC6UYRg=" alt="" >
-            <div>
-              <p style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
+    <section id="#Blog" class="section-blog">
+      <!-- <div class="blog-section"> -->
+        <div class="card-first">
+          <h1 class="card-title">Helping hands winning bLOG WITH 3'S EXTRA</h1>
+          <div class="flex-image">
+          <img
+            class="card-img-top first-img"
+            src="https://media.istockphoto.com/id/887987150/photo/blogging-woman-reading-blog.jpg?s=1024x1024&w=is&k=20&c=nP1hJR8pdUnI2bl1822mokIDtXQB_5cntElWFC6UYRg="
+            alt="Card image cap"
+          /></div>
+        </div>
+        <div class="card-second">
+          <div>
+            <button class="btn btn1"  >article</button>
+            <button class="btn btn2"> hiking</button>
           </div>
+
+          <h3 class="title">Helping Hands Best Feautures</h3>
+          <p class="blog-text"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            explicabo, quidem animi facere ullam suscipit dolorum consequatur
+          </p>
+          <img
+            class="card-img-top"
+            src="https://media.istockphoto.com/id/887987150/photo/blogging-woman-reading-blog.jpg?s=1024x1024&w=is&k=20&c=nP1hJR8pdUnI2bl1822mokIDtXQB_5cntElWFC6UYRg="
+            alt="Card image cap"
+          />
+        <!-- </div> -->
       </div>
     </section>
     <!-- FOOTER -->
     <div id="footer-container">
-        <script>
-          const footerContainer = document.getElementById("footer-container");
-          footerContainer.innerHTML = generateFooter();
-        </script>
-      </div>
+      <script>
+        const footerContainer = document.getElementById("footer-container");
+        footerContainer.innerHTML = generateFooter();
+      </script>
+    </div>
 
-
-
- <!--============================================================================================-->
+    <!--============================================================================================-->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
