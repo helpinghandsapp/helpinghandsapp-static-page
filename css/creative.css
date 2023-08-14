@@ -4559,15 +4559,9 @@ img {
   }
   .blog-text {
     padding-inline: 0;
-    text-align: start;
   }
-  .title {
-    text-align: start;
-  }
-  .btn{
-    text-align: start;
-  }
-  .card-second{
-    text-align: start;
+
+  #blog-header {
+    text-align: center;
   }
 }
