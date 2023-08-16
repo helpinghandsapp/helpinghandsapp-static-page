@@ -1,0 +1,124 @@
+.forbes-section .main-title {
+  color: #fff;
+}
+
+.forbes-section .recently-flex-item:nth-child(1) .forbes-heading {
+  margin-bottom: 0;
+}
+
+.forbes-section .recently-flex-item:nth-child(1) .forbes-text {
+  margin-bottom: 15px;
+}
+
+.forbes-section .recently-flex-item:nth-child(1) .btn {
+  margin-top: 15px;
+  padding-top: 8px;
+  font-size: 18px;
+  height: 40px;
+  width: 130px;
+}
+
+.forbes-section .recently-flex-item:nth-child(2) .leadership-text {
+  padding: 0px 20px 0px 20px;
+}
+
+.exciting-img {
+  width: 80%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.exciting-img2 {
+  width: 43%;
+  max-width: 700px;
+  margin: 2rem 0 2rem 0;
+  display: block;
+  border-radius: 1rem;
+  position: relative;
+  object-fit: contain;
+}
+.future-history-makers-image {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 540px) {
+  .exciting-img2 {
+    width: 100%;
+    max-width: 700px;
+    margin: 2rem 0 2rem 0;
+    display: block;
+    position: relative;
+    object-fit: cover;
+    height: 100%;
+  }
+  .future-history-makers-image {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.cannexusP {
+  font-style: italic;
+  font-weight: 700;
+}
+
+@media (max-width: 386px) {
+  .recently-flex-container {
+    max-width: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .recently-flex-container {
+    max-width: none;
+  }
+
+  .workshop-flex-container {
+    padding-bottom: 104px;
+    min-width: auto;
+    max-height: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.whats-new-section .whats-new-image {
+  margin-left: 20px;
+  width: 150px;
+}
+
+.whats-new-section .secondary {
+  border-color: #e9e9e9;
+  margin: 10px 0 20px;
+}
+
+.whats-new-section .whats-new-embed {
+  width: 90%;
+  height: 470px;
+  border-radius: 20px;
+}
+@media (max-width: 450px) {
+  .whats-new-embed {
+    width: 100%;
+    height: 470px;
+    border-radius: 20px;
+  }
+}
+
+.whats-new-section .civix-text {
+  padding: 0px 20px 0px 20px;
+}
+
+.whats-new-section .videoWrapper {
+  margin-top: 10px;
+}
+
+.whats-new-section .youth-voices {
+  border-radius: 25px;
+}

@@ -1,0 +1,29 @@
+
+/*contact-------------------------------------------*/
+
+.contact-section {
+    background: #f5f7fa;
+  }
+  
+  .contact-section .main-title,
+  .contact-section .app-info-card-description,
+  .contact-section .help-form {
+    text-align: center;
+  }
+  
+  .contact-section .app-info-card-description {
+    color: black;
+  }
+  @media (max-width: 768) {
+    app-info-card-description {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  
+  .contact-section {
+    padding-bottom: 0;
+  }
+  
+
+  /* form of the page come back for it later after creating index.css */
