@@ -1,6 +1,5 @@
 var $tabs = $(".tab");
 var $verticalTabs = $(".tab-vertical");
-var $size = $(".size");
 
 $tabs.click(function () {
   $(this).parent(".column").toggleClass("show");
@@ -8,17 +7,19 @@ $tabs.click(function () {
 });
 
 $verticalTabs.click(function () {
-  $("#change").val("-");
+  const $size = $(this).find(".togleSign"); // Update to select the indicator span
   $(this).parent(".slide").toggleClass("show");
-  $verticalTabs.css({ opacity: "0.3", color: black });
+
+  // Toggle the indicator text
+  if ($(this).parent(".slide").hasClass("show")) {
+    $size.text("-");
+  } else {
+    $size.text("+");
+  }
+
   $verticalTabs.not(this).parent().removeClass("show");
 });
-
 $verticalTabs.focus(function () {
   $(this).parent(".slide").toggleClass("show");
   $verticalTabs.not(this).parent().removeClass("show");
-});
-
-$verticalTabs.click(function () {
-  $size.val("-");
 });
