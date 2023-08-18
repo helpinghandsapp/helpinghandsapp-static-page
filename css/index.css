@@ -76,7 +76,6 @@
 }
 
 .help-button a {
-  /* margin:5px 5px 5px 0px; */
   font-size: 22px;
   border-radius: 20px;
   margin: 0.5rem auto;
@@ -135,10 +134,6 @@
   #help .wrapper {
     padding: 0;
   }
-
-  /*  */
-  /*  */
-  /*  */
 }
 
 @media (max-width: 991px) {
@@ -166,11 +161,6 @@
     margin-right: auto;
     margin-left: auto;
   }
-
-  /* .center-block { */
-  /* padding: 2rem 0; */
-  /* margin: 0 auto; */
-  /* } */
 
   .helpImgContainer {
     padding: 0;
@@ -262,68 +252,6 @@
   section.features .features-text {
     padding: 0 10px;
   }
-}
-/*help-------------------------------------------*/
-
-.help-form {
-  font-family: "Roboto", sans-serif;
-  max-width: 500px;
-  padding: 25px;
-  background: #ffffff;
-  margin: 25px auto 50px;
-  text-align: center;
-  border-radius: 30px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.16);
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.16);
-}
-
-.help-form input[type="text"],
-.help-form input[type="date"],
-.help-form input[type="datetime"],
-.help-form input[type="email"],
-.help-form input[type="number"],
-.help-form input[type="search"],
-.help-form input[type="time"],
-.help-form input[type="url"],
-.help-form input[type="password"],
-.help-form textarea,
-.help-form select {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  /* outline: none; */
-  display: block;
-  width: 100%;
-  padding: 7px;
-  border: none;
-  border-bottom: 1px solid #ddd;
-  border-radius: 0px;
-  background: transparent;
-  margin-bottom: 10px;
-  font-family: "Roboto", sans-serif;
-  height: 45px;
-}
-
-.help-form textarea {
-  resize: none;
-  overflow: hidden;
-}
-
-.help-form input[type="button"],
-.help-form input[type="submit"] {
-  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.16);
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.16);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.16);
-  max-width: 130px;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  padding: 8px 18px;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 .overlay {
@@ -450,11 +378,6 @@
   height: 225px;
   border-radius: 20px;
   box-shadow: 3px 3px 9px #d5d5d5;
-  /* background: linear-gradient(
-      to bottom right,
-      #4284BD,
-      #006b8f85
-    ); */
   background-color: #386f9f;
   padding: 10px;
   margin: 5px;
@@ -470,4 +393,249 @@
   width: 75px;
   height: 75px;
   margin-top: 20px;
+}
+
+section.features {
+  margin-bottom: 0px;
+}
+
+section.featuresh2 {
+  margin-top: 0;
+}
+
+section.features p {
+  margin-bottom: 0;
+}
+
+section.features .img-responsive {
+  filter: drop-shadow(1px 1px 2px #959595);
+}
+
+section.features .features-text {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.2;
+  padding: 0rem 2rem;
+}
+
+.feature-item {
+  border-radius: 35px;
+  box-shadow: 3px 3px 9px #d5d5d5;
+  background-color: #fff;
+  margin: 10px;
+  font-family: Verdana, sans-serif;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px #d5d5d5;
+}
+
+.feature-item #app-info-card-title {
+  padding: 0;
+}
+.feature-item-image {
+  width: 75px;
+  height: 75px;
+  margin-top: 30px;
+}
+
+@media (max-width: 359px) {
+  .overlay-app {
+    height: 756px;
+    margin-top: -770px;
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 519px) {
+  .overlay-app {
+    margin-top: -725px;
+    height: 720px;
+    margin-left: -2px;
+    margin-right: -2px;
+    padding-top: 77px;
+  }
+
+  #app-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .overlay-app {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .overlay-app {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+}
+@media (max-width: 750px) {
+  .feature-item {
+    height: 320px;
+  }
+}
+
+@media (max-width: 661px) {
+  .feature-item {
+    height: auto;
+    width: auto;
+    padding: 0;
+  }
+  .flex-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 340px) {
+  .feature-item {
+    height: 300px;
+  }
+}
+
+@media (max-width: 1356px) {
+  #app-img {
+    margin-top: 0px;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .overlay-app {
+    height: 472px;
+  }
+
+  #app-img {
+    margin-top: 20px;
+    max-height: 400px;
+    width: auto;
+  }
+
+  .more-than-an-app-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #app-img {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  .overlay-app {
+    transform: scale(1.086);
+  }
+}
+
+@media (max-width: 554px) {
+  .overlay-app {
+    margin-top: -716px;
+  }
+}
+
+.overlay-app {
+  position: relative;
+  margin-top: -470px;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(1.1);
+  z-index: 1;
+  color: #000;
+  background: #f5f7fa;
+}
+
+.overlay-app:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay-app .content {
+  margin-top: 15px;
+}
+
+.overlay-app .main-title {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.overlay-app .app-info-card-description,
+.overlay-desktop-app .app-info-card-description {
+  font-size: 16px;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.overlay-app .img-responsive {
+  border-radius: 20px;
+  padding: 0;
+}
+
+.beta-testing {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 6px #d5d5d5;
+}
+
+@media (min-width: 1356px) {
+  #Volunteer_Fairs.overlay-desktop-app {
+    padding-top: 5px;
+  }
+
+  #Mentors.overlay-desktop-app {
+    padding-top: 179px;
+  }
+
+  #Councils.overlay-desktop-app {
+    padding-top: 197px;
+  }
+
+  #Sharing_Stories.overlay-desktop-app {
+    padding-top: 208px;
+  }
+
+  #Entrepreneur.overlay-desktop-app {
+    padding-top: 185px;
+  }
+}
+.workshop-feature-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 360px) {
+  .workshop-feature-item {
+    width: 155px;
+    height: 225px;
+    border-radius: 30px;
+  }
+}
+
+.workshop-feature-item:hover {
+  transform: scale(0.95);
+}
+
+.device-container {
+  max-width: 310px;
+}
+
+.workshop-feature-item #app-info-card-title {
+  font-size: 19px;
+}
+
+#app-info-card-description {
+  line-height: 1.1;
+  font-weight: 400;
+  font-size: 16px;
 }

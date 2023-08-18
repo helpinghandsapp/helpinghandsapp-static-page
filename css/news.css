@@ -122,3 +122,22 @@
 .whats-new-section .youth-voices {
   border-radius: 25px;
 }
+
+.recently-flex-item {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
+  max-width: 500px;
+  min-width: 280px;
+  width: calc(100% / 2);
+}
+
+.recently-flex-item2 {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
+}

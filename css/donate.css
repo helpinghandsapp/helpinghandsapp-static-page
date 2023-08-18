@@ -1,7 +1,4 @@
-/* DONATE SECTION  */
-
 /* desktop */
-
 @media (min-width: 769px) {
   .donate-section {
     display: flex;
@@ -337,4 +334,3 @@
   color: #fff;
   margin: 50px 0 25px;
 }
-

@@ -165,8 +165,6 @@
   justify-content: space-between;
   align-items: center;
 }
-/* .sign {
-  } */
 
 .jobPostings {
   width: 100%;
@@ -199,8 +197,6 @@
 }
 
 /* vertical accordian styles */
-
-/* this fits accordian to full width // can be switched to any column using :nth-child selector */
 .column:first-child .content {
   width: 100%;
   margin: 0 0 0 25px;
@@ -281,18 +277,10 @@
   margin-top: 100px;
 }
 
-/* tab colors. Add with more tabs. */
 .column:first-child .tab,
 .slide:nth-child(odd) .tab-vertical {
   background-color: #faa52d50;
-  /* background: linear-gradient(to bottom right, #f17013, #ffc400); */
 }
-
-/* .column:first-child .tab,
-.slide:nth-child(even) .tab-vertical { */
-
-/* background: linear-gradient(to bottom right, #0098ee, #0075db); */
-/* } */
 
 .volunteer-postings-link {
   display: block;
