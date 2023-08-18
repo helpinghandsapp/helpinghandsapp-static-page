@@ -80,7 +80,7 @@
     <script>
       function toggleTab(tab) {
         tab.classList.toggle("active");
-        let spanElement = tab.querySelector("span");
+        const spanElement = tab.querySelector("span");
         if (tab.classList.contains("active")) {
           spanElement.textContent = "-";
         } else {
