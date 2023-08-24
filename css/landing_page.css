@@ -1,0 +1,230 @@
+body {
+  background-color: #faa52d;
+  box-sizing: border-box;
+  margin-left: 3rem;
+  color: #fdf9e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: League Spartan;
+}
+a {
+  cursor: pointer;
+  color: #fdf9e4;
+}
+p,
+div,
+button,
+span {
+  font-family: Lato;
+}
+
+/* header  */
+.landing-header {
+  height: 75vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-image {
+  width: 500px;
+  margin-top: 9rem;
+  height: 400px;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 550;
+  margin-bottom: 30px;
+}
+.first-landing-div {
+  width: 50%;
+}
+.header-button {
+  background-color: #f07015;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  width: 120px;
+  color: #fcfbfa;
+}
+
+/* need-to-volunteer sectionpul */
+.need-to-volunteer {
+  margin-top: 4rem;
+  height: 40vh;
+}
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.landing-volunteer-details {
+  font-size: 1.2rem;
+  width: 1100px;
+  padding: 10px;
+  margin-top: 0;
+}
+.third-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.organised-list {
+  width: 600px;
+  font-size: 1.1rem;
+}
+.third-section-btn {
+  background-color: #f07015;
+  border-radius: 1.4rem;
+  width: 80%;
+  letter-spacing: 0.3px;
+  padding: 0.9rem;
+  margin-left: 10px;
+  color: #fcfbfa;
+}
+
+/* third section    */
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-inline: 2rem;
+  max-width: 400px;
+}
+.photo-two {
+  width: 500px;
+  height: 500px;
+}
+
+/* accordion */
+.accordion {
+  background-color: #f07015;
+  color: #fcfbfa;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 21px;
+  border: 1px solid black;
+  margin-bottom: 2px;
+}
+.panel {
+  background-color: #faa52d;
+  display: none;
+  overflow: hidden;
+  font-size: 18px;
+}
+.span-sign {
+  font-size: 22px;
+}
+.faq-title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+/* last section */
+.landing-btn-last {
+  background-color: #f07015;
+  margin-top: 40px;
+  border-radius: 1rem;
+  font-size: 20px;
+}
+.landing-last-p {
+  font-size: 19px;
+}
+.list-organized {
+  font-size: 18px;
+}
+.span-content {
+  color: #fcfbfa;
+  font-size: 21px;
+}
+.landing-last {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 1.4rem;
+}
+/* responsiveness */
+@media (max-width: 450px) {
+  body {
+    text-align: center;
+    margin-left: 20rem;
+    max-width: 450px;
+  }
+  .container {
+    padding: 0;
+  }
+
+  .landing-header {
+    flex-direction: column;
+    margin-bottom: 1.4rem;
+    height: auto;
+  }
+  .need-to-volunteer {
+    margin-bottom: 5rem;
+  }
+  h3 {
+    font-size: 2.3rem;
+  }
+  .header-button {
+    font-size: 1.4rem;
+    width: 180px;
+    letter-spacing: 2px;
+    padding: 1.2rem;
+  }
+  h1 {
+    text-align: center;
+    margin-inline: auto;
+  }
+  .header-image {
+    margin-top: 0;
+  }
+
+  .landing-volunteer-details {
+    padding-inline: 15rem;
+    text-align: start;
+    font-size: 1.4rem;
+  }
+  .third-section {
+    flex-direction: column;
+    text-align: start;
+  }
+  .accordion {
+    text-align: center;
+    max-width: 600px;
+    margin-left: 20rem;
+  }
+  .panel {
+    margin-left: 20rem;
+    max-width: 600px;
+    text-align: start;
+  }
+  .third-section-btn {
+    margin-top: 1.2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  .organised-list {
+    font-size: 1.5rem;
+  }
+  .third-section-btn {
+    font-size: 1.2rem;
+  }
+}
