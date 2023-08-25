@@ -6,6 +6,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 h1,
@@ -26,33 +27,44 @@ button,
 span {
   font-family: Lato;
 }
+button {
+  border: none;
+  outline-color: #f07015;
+  box-shadow: none;
+  color: #fcfbfa;
+}
 
 /* header  */
 .landing-header {
   height: 75vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  margin-left: 40px;
 }
 .header-image {
   width: 500px;
   margin-top: 9rem;
-  height: 400px;
+  height: 500px;
+  margin-right: 70px;
 }
 h1 {
-  font-size: 4rem;
-  font-weight: 550;
+  font-size: 6rem;
+  width: 800px;
+  font-weight: 800;
   margin-bottom: 30px;
+  margin-left: 40px;
 }
-.first-landing-div {
-  width: 50%;
-}
+
 .header-button {
   background-color: #f07015;
-  padding: 0.6rem;
+  padding: 1rem;
   border-radius: 1rem;
-  width: 120px;
+  width: 180px;
   color: #fcfbfa;
+  margin-left: 30px;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
 }
 
 /* need-to-volunteer sectionpul */
@@ -79,7 +91,7 @@ h3 {
 }
 .organised-list {
   width: 600px;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 .third-section-btn {
   background-color: #f07015;
@@ -89,14 +101,17 @@ h3 {
   padding: 0.9rem;
   margin-left: 10px;
   color: #fcfbfa;
+  font-size: 0.9rem;
+  margin-top: 20px;
 }
 
 /* third section    */
 h2 {
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 500;
   padding-inline: 2rem;
-  max-width: 400px;
+  max-width: 500px;
+  color: #fcfbfa;
 }
 .photo-two {
   width: 500px;
@@ -118,8 +133,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   font-size: 21px;
-  border: 1px solid black;
-  margin-bottom: 2px;
+  margin-bottom: 10px;
 }
 .panel {
   background-color: #faa52d;
@@ -141,17 +155,19 @@ h2 {
   background-color: #f07015;
   margin-top: 40px;
   border-radius: 1rem;
-  font-size: 20px;
+  font-size: 1.3rem;
+  text-align: start;
+  padding-left: 1.5rem;
 }
 .landing-last-p {
   font-size: 19px;
+  padding-inline: 10px;
 }
-.list-organized {
-  font-size: 18px;
-}
+
 .span-content {
   color: #fcfbfa;
   font-size: 21px;
+  font-weight: 500;
 }
 .landing-last {
   margin-top: 1rem;
@@ -160,71 +176,214 @@ h2 {
   align-items: center;
   margin-right: 1.4rem;
 }
+.interested {
+  padding: 1rem 1.7rem;
+}
+.list-organized {
+  font-size: 18px;
+  padding-inline: 4rem;
+}
+
 /* responsiveness */
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   body {
     text-align: center;
-    margin-left: 20rem;
-    max-width: 450px;
+    margin-left: 10rem;
+    width: 100%;
   }
   .container {
-    padding: 0;
+    padding-inline: auto;
   }
 
   .landing-header {
     flex-direction: column;
     margin-bottom: 1.4rem;
     height: auto;
+    margin-top: 3rem;
   }
-  .need-to-volunteer {
-    margin-bottom: 5rem;
-  }
-  h3 {
-    font-size: 2.3rem;
-  }
+
   .header-button {
-    font-size: 1.4rem;
-    width: 180px;
+    font-size: 1.9rem;
+    width: 220px;
     letter-spacing: 2px;
-    padding: 1.2rem;
+    padding: 1.5rem;
   }
   h1 {
     text-align: center;
-    margin-inline: auto;
+    font-size: 4.5rem;
+    margin-left: 5rem;
   }
   .header-image {
+    width: 600px;
     margin-top: 0;
+    margin-left: 5rem;
+  }
+  .need-to-volunteer {
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+    height: auto;
+  }
+  .faq-title {
+    font-size: 5rem;
   }
 
   .landing-volunteer-details {
-    padding-inline: 15rem;
-    text-align: start;
-    font-size: 1.4rem;
+    text-align: left;
+    font-size: 1.6rem;
+    max-width: 600px;
   }
   .third-section {
     flex-direction: column;
     text-align: start;
+    margin-top: 10rem;
+    margin-left: 5rem;
   }
   .accordion {
-    text-align: center;
-    max-width: 600px;
-    margin-left: 20rem;
+    text-align: left;
+    width: 600px;
+    margin-left: 6rem;
+    font-size: 2rem;
   }
   .panel {
-    margin-left: 20rem;
+    margin-left: 5rem;
     max-width: 600px;
     text-align: start;
   }
   .third-section-btn {
     margin-top: 1.2rem;
+    font-size: 1.6rem;
   }
   h2 {
+    font-size: 2.3rem;
+  }
+  .organised-list {
+    font-size: 1.7rem;
+  }
+
+  .landing-btn-last {
+    max-width: 600px;
+    text-align: left;
+  }
+  h3 {
+    text-align: left;
+    font-size: 3rem;
+  }
+  .photo-two {
+    margin-left: -100px;
+  }
+  .interested {
+    margin-left: 5rem;
+    max-width: 600px;
+  }
+
+  .span-content {
     font-size: 1.8rem;
+  }
+  .list-organized {
+    font-size: 1.6rem;
+    padding: 0;
+    padding-left: 50px;
+  }
+  .landing-last-p {
+    font-size: 1.7rem;
+    text-align: start;
+  }
+  .landing-last {
+    font-size: 1.1rem;
+  }
+}
+
+/* tablet media */
+@media screen and (min-width: 501px) and (max-width: 750px) {
+  .landing-header {
+    margin-top: 1rem;
+    margin-left: 22rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  .header-button {
+    padding: 1rem;
+    width: 160px;
+    font-size: 1.4rem;
+  }
+  h1 {
+    font-size: 5.5rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    margin-left: 40px;
+  }
+  h3 {
+    margin-left: 22rem;
+    font-size: 2.5rem;
+  }
+  .landing-volunteer-details {
+    margin-left: 24rem;
+    width: 900px;
+    font-size: 1.6rem;
+  }
+  .third-section {
+    flex-direction: column;
+    margin-top: 13rem;
+    margin-left: 17rem;
+  }
+  h2 {
+    font-size: 2rem;
+    max-width: 700px;
   }
   .organised-list {
     font-size: 1.5rem;
+    width: 800px;
   }
   .third-section-btn {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    width: 100%;
+  }
+  .accordion,
+  .panel {
+    margin-left: 25rem;
+    width: 800px;
+  }
+  .accordion {
+    font-size: 27px;
+  }
+  .panel {
+    font-size: 1.6rem;
+  }
+  .landing-btn-last {
+    font-size: 1.5rem;
+    margin-left: 23rem;
+  }
+  .landing-last-p {
+    margin-left: 23rem;
+    font-size: 1.5rem;
+  }
+  .list-organized {
+    margin-left: 25rem;
+    font-size: 1.6rem;
+  }
+  .span-content {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 900px) {
+  .landing-header {
+    margin-top: 1rem;
+    margin-left: 16rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  .landing-volunteer-details,
+  .third-section {
+    max-width: 900px;
+  }
+  h2 {
+    font-size: 1.8rem;
+    max-width: 900px;
+  }
+  .organised-list {
+    font-size: 1.3rem;
   }
 }
