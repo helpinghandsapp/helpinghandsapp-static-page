@@ -121,6 +121,9 @@ function generateNavbar() {
                 <li class="subnav-link">
                   <a class="nav-link" href="lendahandsurvey.html">Lend a Hand Survey</a>
                 </li>
+                <li class="subnav-link">
+                <a class="nav-link" href="youth-leading-the-way.html">Find your volunteer opportunity</a>
+              </li>
               </ul>
             </li>
             <li>
