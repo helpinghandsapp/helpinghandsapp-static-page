@@ -3,8 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Youth Leading the Way</title>
-    <!-- google fonts -->
+
+    <title>Youth Leading the way</title>
+
+    <meta name="description" content="" />
+    <link rel="icon" href="img/logo_2.ico" type="image/x-icon" />
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+
+    <!-- Custom Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,19 +19,193 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/youth-leading-the-way.css" />
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css" />
+    <link rel="stylesheet" href="img/device-mockups/device-mockups.min.css" />
+    <link rel="stylesheet" href="css/youth-leading-the-way.css" type="text/css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
+
+    <!-- add slick.css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./slick-1.8.1/slick/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./slick-1.8.1/slick/slick-theme.css"
+    />
+
+    <!-- pdf flipper library -->
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.4.456/build/pdf.min.js"></script>
+
+    <!-- start Mixpanel -->
+    <script type="text/javascript" src="js/mixpanel.js"></script>
+    <!-- end Mixpanel -->
+
+    <!--[endif]-->
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
   </head>
   <body>
-    <section class="container">
-      <header class="landing-header">
+    <div>
+      <!-- <div id="navbar-container">
+        <script>
+          const navbarContainer = document.getElementById("navbar-container");
+          navbarContainer.innerHTML = generateNavbar();
+        </script> -->
+        <nav
+      role="navigation"
+      id="mainNav"
+      class="navbar navbar-default navbar-fixed-top"
+      aria-label="Main Menu"
+    >
+      <!--<div class="container-fluid">-->
+      <div class="wrapper">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-haspopup="true"
+            onclick="handleToggleClick()"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <h1>
+            <a class="navbar-brand page-scroll" href="index.html">Helping Hands</a>
+          </h1>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div
+          id="bs-example-navbar-collapse-1"
+          class="collapse navbar-collapse"
+          role="menubar"
+        >
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="subnav-menu">
+              <a
+                href="#"
+                class="collapsible menu__link"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >About &#9660;</a
+              >
+              <ul class="nav subnav">
+                <li class="subnav-link">
+                  <a class="nav-link" href="team.html">Our Team</a>
+                </li>
+                <li class="subnav-link">
+                  <a class="nav-link" class="page-scroll" href="news.html"
+                    >In the News</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="subnav-menu">
+              <a
+                href="#"
+                class="collapsible menu__link"
+                aria-haspopup="true"
+                aria-expanded="false"
+                role="button"
+                >Resources &#9660;</a
+              >
+              <ul class="nav subnav submenu">
+                <li class="subnav-link">
+                  <a class="nav-link" href="volunteer-opportunities.html"
+                    >Volunteer Opportunities</a
+                  >
+                </li>
+                <li class="subnav-link">
+                  <a class="nav-link" href="covid19.html">Covid Response</a>
+                </li>
+                <li class="subnav-link">
+                  <a
+                    class="nav-link"
+                    class="page-scroll"
+                    href="covid19.html#anti-black_racism_guidebook"
+                    >Anti-Black Racism Guidebook</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="subnav-menu">
+              <a
+                href="#"
+                class="collapsible menu__link"
+                aria-haspopup="true"
+                role="button"
+                aria-expanded="false"
+                >Get Involved &#9660;</a
+              >
+              <ul class="nav subnav">
+                <li class="subnav-link">
+                  <a class="nav-link" href="jointeam.html">Join the Team</a>
+                </li>
+                <li class="subnav-link">
+                  <a class="nav-link" href="donate.html">Donate</a>
+                </li>
+                <li class="subnav-link">
+                  <a class="nav-link" href="lendahandsurvey.html">Lend a Hand Survey</a>
+                </li>
+                <li class="subnav-link">
+                <a class="nav-link" href="youth-leading-the-way.html">Find your volunteer opportunity</a>
+              </li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" href="workshops.html">Workshops</a>
+            </li>
+            <li>
+              <a href="./blog">Blog</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="contactus.html">Contact Us</a>
+            </li>
+            <li class="nav-button">
+              <a class="btn btn-seconday btn-sm" href="index.html#help">
+                How can we help?
+              </a>
+            </li>
+            <!-- <a href="index.html#help" class="btn btn-seconday btn-sm" style="margin-left: 12px; margin-top: 12px;">How can we help?</a> -->
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  
+      </div>
+
+      <!-- header section -->
+      <div class="first-div">
         <div class="first-landing-div">
-          <h1>YOUTH LEADING THE WAY</h1>
+          <h2 class="help-title main-title">YOUTH LEADING THE WAY</h2>
           <button class="header-button">PROGRAM</button>
         </div>
-        <img class="header-image" src="./img/lsc1.png" alt="" />
-      </header>
+        <img class="landing-header" src="./img/lsc1.png" alt="" />
+      </div>
+
+      <!-- second section -->
       <div class="need-to-volunteer">
         <h3>Do you want more volunteering experience?</h3>
         <p class="landing-volunteer-details">
@@ -37,6 +218,8 @@
           program, you can receive some recognition and compensation.
         </p>
       </div>
+
+      <!-- third section -->
       <div class="third-section">
         <div class="third-section-div">
           <h2>
@@ -65,9 +248,9 @@
             For any questions, please email outreach@helpinghandsapp.com
           </button>
         </div>
-        <img class="photo-two" src="./img/lp3.png" alt="" />
+        <img class="landing-header second-img" src="./img/lp3.png" alt="" />
       </div>
-
+      <!-- fourth section -->
       <div class="faq">
         <h3 class="faq-title">FAQ</h3>
         <div>
@@ -87,7 +270,7 @@
                 /></svg
             ></span>
           </button>
-          <ul class="panel">
+          <ol class="panel">
             <li>
               Email Helping Hands at
               <a href="mailto=outreach@helpinghandsapp.com">
@@ -102,7 +285,7 @@
               Once you are contacted you can attend information sessions for
               better understanding of the workshop.
             </li>
-          </ul>
+          </ol>
 
           <button class="accordion">
             Am I eligible
@@ -120,15 +303,14 @@
                 /></svg
             ></span>
           </button>
-          <ul class="panel">
+          <ol class="panel">
             <li>Living in the GTA</li>
             <li>
               You must either be a Candian Citizen, Permanent Resident or
               Granted Refugee Status
             </li>
             <li>Age Range: 15-30 years of age</li>
-          </ul>
-
+          </ol>
           <button class="accordion">
             What if I change my mind about the program?
             <span>
@@ -145,13 +327,13 @@
                 /></svg
             ></span>
           </button>
-          <ul class="panel">
+          <ol class="panel">
             <li>
               That is totally fine if you do not feel that you will be able to
               stay committed to the program please let the outreach coordinator
               know before you drop out.
             </li>
-          </ul>
+          </ol>
           <button class="accordion">
             What can I receive from this program?
             <span>
@@ -168,7 +350,7 @@
                 /></svg
             ></span>
           </button>
-          <ul class="panel">
+          <ol class="panel">
             <li>
               In person event to receive your certificate about your
               accomplishment (being able to travel to toronto is required)
@@ -179,7 +361,7 @@
               program
             </li>
             <li>Financial Aid Assistance to the youth</li>
-          </ul>
+          </ol>
           <button class="accordion">
             What can count towards the 120 hours requirement?
             <span>
@@ -196,7 +378,7 @@
                 /></svg
             ></span>
           </button>
-          <ul class="panel">
+          <ol class="panel">
             <li>
               Participating in training and information sessions from Helping
               Hands
@@ -214,7 +396,7 @@
               Any applications, or surveys completed for Helping Hands and/or
               CSC can count towards an hour.
             </li>
-          </ul>
+          </ol>
 
           <button class="accordion">
             What kinds of volunteer opportunities are there?
@@ -232,7 +414,7 @@
                 /></svg
             ></span>
           </button>
-          <ul class="panel">
+          <ol class="panel">
             <li>
               Depending on what is available at the time, volunteer
               opportunities may look very different. They can range from:
@@ -256,10 +438,11 @@
             <li>
               You can be volunteering in the front or from behind the scenes!
             </li>
-          </ul>
+          </ol>
         </div>
       </div>
 
+      <!-- last section -->
       <div class="interested">
         <button class="landing-btn-last">
           If you are an organization that is interested in hosting some
@@ -292,11 +475,29 @@
           </ol>
         </div>
         <div class="landing-last">
-          <p>Youth Leading the Way is funded by Canada Service Corps.</p>
+          <p class="sponsors">
+            Youth Leading the Way is funded by Canada Service Corps.
+          </p>
         </div>
       </div>
-    </section>
+      <!-- FOOTER -->
+      <div id="footer-container">
+        <script>
+          const footerContainer = document.getElementById("footer-container");
+          footerContainer.innerHTML = generateFooter();
+        </script>
+      </div>
 
+      <!--====================Footer=============================================-->
+      <div id="footer-container">
+        <script>
+          const footerContainer = document.getElementById("footer-container");
+          footerContainer.innerHTML = generateFooter();
+        </script>
+      </div>
+    </div>
+
+    <!-- script -->
     <script>
       let acc = document.getElementsByClassName("accordion");
       let i;
@@ -313,6 +514,23 @@
           }
         });
       }
+
+      // Flag to track if the menu is open or closed
+  let isMenuOpen = false;
+
+  // Function to handle the toggle button click event
+  const handleToggleClick = () => {
+    isMenuOpen = !isMenuOpen; // Toggle the menu state
+    const menuCollapseElement = document.getElementById(
+      "bs-example-navbar-collapse-1"
+    );
+
+    if (isMenuOpen) {
+      menuCollapseElement.classList.add("in"); // Add the "in" class to show the menu
+    } else {
+      menuCollapseElement.classList.remove("in"); // Remove the "in" class to hide the menu
+    }
+  };
     </script>
   </body>
 </html>
