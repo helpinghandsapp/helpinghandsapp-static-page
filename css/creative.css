@@ -13,7 +13,14 @@ body {
 ::selection {
   color: white;
 }
+.container-fluid {
+  padding: 0;
+}
 
+.col-lg-6 {
+  padding: 0;
+  margin: 0;
+}
 .visuallyHidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
