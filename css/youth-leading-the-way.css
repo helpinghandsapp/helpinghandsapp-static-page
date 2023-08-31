@@ -156,6 +156,7 @@ button {
   }
   .accordion {
     font-size: 1.8rem;
+    width: 90%;
   }
   .panel {
     font-size: 1.5rem;
@@ -164,9 +165,15 @@ button {
     margin-top: 4rem;
     font-size: 1.1rem;
     padding: 2rem;
+    width: 90%;
+    margin-left: 4rem;
   }
   .sponsors {
     font-size: 1rem;
+  }
+  .last-landing-div {
+    width: 90%;
+    margin-left: 4rem;
   }
   .list-organised {
     font-size: 1.2rem;
