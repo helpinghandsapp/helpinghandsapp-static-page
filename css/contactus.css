@@ -1,0 +1,40 @@
+.contact-section {
+  background: #f5f7fa;
+}
+
+.contact-section .main-title,
+.contact-section .app-info-card-description,
+.contact-section .help-form {
+  text-align: center;
+}
+
+.contact-section .app-info-card-description {
+  color: black;
+}
+@media (max-width: 768) {
+  app-info-card-description {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.contact-section {
+  padding-bottom: 0;
+}
+
+#contact-img {
+  max-height: 450px;
+  max-width: 100vw;
+}
+
+@media (max-width: 992px) {
+  #contact-img {
+    margin-top: -50px;
+  }
+}
+
+@media (max-width: 768px) {
+  #contact-img {
+    margin-top: -10px;
+  }
+}
