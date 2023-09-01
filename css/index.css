@@ -6,6 +6,10 @@
 .help-title {
   font-size: 45px;
 }
+#help-popup-img {
+  max-height: 370px;
+  margin-bottom: 20px;
+}
 
 .helpP {
   padding-top: 4px;
@@ -111,6 +115,12 @@
     margin-left: auto;
   }
 }
+@media (max-width: 768px) {
+  #help-popup-img,
+  .educator-img {
+    margin-top: 0px;
+  }
+}
 
 @media (min-width: 992px) {
   .help-container {
@@ -124,13 +134,22 @@
   #help-button {
     max-width: 405px;
   }
-}
-@media (max-width: 992px) {
   #help .wrapper {
     padding: 0;
   }
 }
+@media (max-width: 991px) {
+  .helpP {
+    text-align: center;
+  }
 
+  .help-img2 {
+    margin: 0 215px;
+  }
+  .help-title {
+    text-align: center;
+  }
+}
 @media (max-width: 940px) {
   .help-img2 {
     margin: 0 150px;

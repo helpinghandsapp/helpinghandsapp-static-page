@@ -403,21 +403,10 @@ aside {
 }
 
 @media (max-width: 991px) {
-  .help-img2 {
-    margin: 0 215px;
-  }
-
-  .helpP {
-    text-align: center;
-  }
-
   .help-container {
     margin-top: 100px;
   }
 
-  .help-title {
-    text-align: center;
-  }
   /* Slideshow container */
   .slideshow-container {
     max-width: 1000px;
@@ -1217,24 +1206,9 @@ img {
   padding-top: 66px;
 }
 
-#help-popup-img,
 .educator-img {
   max-height: 370px;
   margin-bottom: 20px;
-}
-
-@media (max-width: 992px) {
-  #help-popup-img,
-  .educator-img {
-    margin-top: 60px;
-  }
-}
-
-@media (max-width: 768px) {
-  #help-popup-img,
-  .educator-img {
-    margin-top: 0px;
-  }
 }
 
 .social-container {
