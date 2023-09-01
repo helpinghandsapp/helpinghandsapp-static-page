@@ -22,15 +22,13 @@
     rel="stylesheet"
     href="font-awesome/css/font-awesome.min.css"
     type="text/css"
-  />
-  <link
-  rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-  integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
-  crossorigin="anonymous"
-/>
-
-
+    />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+    crossorigin="anonymous"
+    />
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css" />
 
@@ -528,21 +526,51 @@
       }
 
       // Flag to track if the menu is open or closed
-  let isMenuOpen = false;
+      let isMenuOpen = false;
 
-  // Function to handle the toggle button click event
-  const handleToggleClick = () => {
-    isMenuOpen = !isMenuOpen; // Toggle the menu state
-    const menuCollapseElement = document.getElementById(
-      "bs-example-navbar-collapse-1"
-    );
+      // Function to handle the toggle button click event
+      const handleToggleClick = () => {
+          isMenuOpen = !isMenuOpen; // Toggle the menu state
+          const menuCollapseElement = document.getElementById(
+            "bs-example-navbar-collapse-1"
+          );
 
-    if (isMenuOpen) {
-      menuCollapseElement.classList.add("in"); // Add the "in" class to show the menu
-    } else {
-      menuCollapseElement.classList.remove("in"); // Remove the "in" class to hide the menu
-    }
-  };
-    </script>
+          if (isMenuOpen) {
+            menuCollapseElement.classList.add("in"); // Add the "in" class to show the menu
+          } else {
+            menuCollapseElement.classList.remove("in"); // Remove the "in" class to hide the menu
+          }
+        };
+      </script>
+      <!-- jQuery -->
+      <script src="js/jquery.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Plugin JavaScript -->
+      <script src="js/jquery.easing.min.js"></script>
+      <script src="js/jquery.fittext.js"></script>
+      <script src="js/wow.min.js"></script>
+      <!-- MailGo Script -->
+      <script src="https://unpkg.com/mailgo@0.9.14/dist/mailgo.min.js"></script>
+      <!-- Custom Theme JavaScript -->
+      <script src="js/creative.js"></script>
+      <!-- slick.css -->
+      <script src="slick-1.8.1/slick/slick.js"></script>
+      <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-1.11.0.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="./slick-1.8.1/slick/slick.min.js"
+      ></script>
+      <script src="js/slick2.js"></script>
+      <!-- load javascript for navbar accesibility -->
+      <script defer src="js/navbar-accesibility.js"></script>
+  
   </body>
 </html>

@@ -323,7 +323,6 @@ aside {
 .subnav-menu.focus .subnav {
   padding: 0.5rem 0;
   height: auto;
-
 }
 
 .navbar-nav .subnav-menu:hover button {
@@ -352,10 +351,9 @@ aside {
     clip: auto;
   }
 
- .navbar-nav .subnav-menu:hover .subnav  {
+  .navbar-nav .subnav-menu:hover .subnav {
     padding: 0 0 0 15px;
     max-height: 300px;
-    
   }
 
   .navbar-default .nav > li:hover > a {
@@ -4463,7 +4461,7 @@ img {
 }
 
 .bmff-title {
-  color: #006b8f
+  color: #006b8f;
 }
 
 .bmff-survey-button {
