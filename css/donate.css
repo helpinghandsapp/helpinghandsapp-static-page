@@ -70,10 +70,7 @@
   height: 70%;
 }
 
-/* end of donate page desktop */
-
 /* donate page mobile  --------------------------*/
-
 @media (max-width: 768px) {
   .donate-section {
     flex-direction: column;
@@ -203,44 +200,6 @@
   }
 }
 
-/* end of donate page mobile */
-
-@media (min-width: 1201px) {
-  .donate-bottom-section .donor-box-section {
-    display: flex;
-    justify-content: center;
-  }
-
-  .donate-bottom-section .donor-box-section .donate-bottom-section-highfive {
-    width: 80%;
-    height: auto;
-  }
-
-  .donate-list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5em;
-  }
-
-  .donate-list .donate-list-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 2em;
-  }
-
-  .donate-list .donate-list-description {
-    font-family: Roboto;
-    text-align: center;
-    width: 80%;
-  }
-
-  .donate-list .donate-list-img {
-    margin-top: 2em;
-    width: 15%;
-    height: auto;
-  }
-}
 @media (min-width: 769px) and (max-width: 1200px) {
   .donate-list {
     display: flex;
@@ -293,6 +252,43 @@
   }
 }
 
+@media (min-width: 1201px) {
+  .donate-bottom-section .donor-box-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .donate-bottom-section .donor-box-section .donate-bottom-section-highfive {
+    width: 80%;
+    height: auto;
+  }
+
+  .donate-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5em;
+  }
+
+  .donate-list .donate-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2em;
+  }
+
+  .donate-list .donate-list-description {
+    font-family: Roboto;
+    text-align: center;
+    width: 80%;
+  }
+
+  .donate-list .donate-list-img {
+    margin-top: 2em;
+    width: 15%;
+    height: auto;
+  }
+}
+
 .donate-body {
   display: flex;
   flex-direction: column;
@@ -306,7 +302,6 @@
   align-items: center;
   text-align: left;
 }
-
 
 .donate-bottom-section {
   font-family: Roboto;

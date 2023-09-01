@@ -2,6 +2,7 @@
   max-width: 1080px;
   margin: 0 auto;
 }
+
 html,
 body {
   width: 100%;
@@ -13,14 +14,7 @@ body {
 ::selection {
   color: white;
 }
-.container-fluid {
-  padding: 0;
-}
 
-.col-lg-6 {
-  padding: 0;
-  margin: 0;
-}
 .visuallyHidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
@@ -408,6 +402,49 @@ aside {
   }
 }
 
+@media (max-width: 991px) {
+  .help-img2 {
+    margin: 0 215px;
+  }
+
+  .helpP {
+    text-align: center;
+  }
+
+  .help-container {
+    margin-top: 100px;
+  }
+
+  .help-title {
+    text-align: center;
+  }
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  .app-info-card-description {
+    text-align: center;
+  }
+
+  .help-content {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .helpImgContainer {
+    padding: 0;
+    margin-top: 25px;
+  }
+
+  .display-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 #nav-bar-app {
   margin-top: 8px;
   padding-top: 7px;
@@ -695,6 +732,11 @@ section.features .feature-item i {
   #ig-feed {
     width: 300px;
     height: 300px;
+  }
+}
+@media (max-width: 1392px) {
+  .help-container {
+    margin-top: 50px;
   }
 }
 
@@ -1006,129 +1048,6 @@ footer .social-media-icon:hover {
   margin-top: 7.5px;
 }
 
-/* check at index.html */
-
-.overlay-desktop-app {
-  height: 687px;
-  color: black;
-  background: #f5f7fa;
-}
-
-.overlay-desktop-app .content {
-  margin-top: 15px;
-}
-
-.overlay-desktop-app .img-responsive {
-  border-radius: 20px;
-}
-
-@media (max-width: 1356px) {
-  .workshop-feature-item {
-    width: 125px;
-    height: 175px;
-    border-radius: 25px;
-  }
-
-  .workshop-flex-container {
-    width: 460px;
-  }
-
-  .icon {
-    margin-left: 62px;
-    margin-top: 0px;
-    transform: scale(0.8);
-  }
-
-  .workshop-feature-content {
-    margin-top: -22.5px;
-    transform: scale(0.8);
-  }
-
-  .overlay-desktop-app {
-    height: 585px;
-  }
-
-  #Workshops.overlay-desktop-app {
-    padding-top: 0;
-  }
-
-  #Mentors.overlay-desktop-app {
-    padding-top: 105px;
-  }
-
-  #Councils.overlay-desktop-app {
-    padding-top: 128px;
-  }
-
-  #Sharing_Stories.overlay-desktop-app {
-    padding-top: 153px;
-  }
-
-  #Entrepreneur.overlay-desktop-app {
-    padding-top: 132px;
-  }
-}
-
-@media (max-width: 1201px) {
-  .overlay-desktop-app {
-    height: 590px;
-  }
-}
-
-@media (max-width: 1101px) {
-  .overlay-desktop-app {
-    height: 610px;
-  }
-}
-
-@media (max-width: 1096px) {
-  #Mentors.overlay-desktop-app {
-    padding-top: 104px;
-  }
-  #Councils.overlay-desktop-app,
-  #Entrepreneur.overlay-desktop-app {
-    padding-top: 152px;
-  }
-  #Sharing_Stories.overlay-desktop-app {
-    padding-top: 202px;
-  }
-}
-
-@media (max-width: 992px) {
-  .workshop-feature-item {
-    width: 150px;
-    height: 220px;
-    border-radius: 35px;
-    padding: 0 5px;
-  }
-
-  .workshop-feature-item #app-info-card-title {
-    font-size: 16px;
-  }
-
-  .icon {
-    margin-left: 90px;
-    margin-top: 7.5px;
-    padding-top: 5px;
-    transform: scale(1);
-  }
-
-  .workshop-feature-content {
-    margin-top: 0px;
-    transform: scale(1);
-  }
-
-  .workshop-flex-container {
-    width: auto;
-  }
-}
-
-@media (max-width: 360px) {
-  .icon {
-    margin-left: 80px;
-  }
-}
-
 .recently-flex-container {
   background: transparent;
   margin: auto;
@@ -1187,7 +1106,6 @@ img {
   vertical-align: middle;
 }
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -1231,34 +1149,6 @@ img {
   bottom: 8px;
   width: 100%;
   text-align: center;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 2s;
-  animation-name: fade;
-  animation-duration: 2;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.75;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.75;
-  }
-
-  to {
-    opacity: 1;
-  }
 }
 
 /* On smaller screens, decrease text size */
@@ -1579,4 +1469,12 @@ img {
 
 .footer-feature-content {
   object-fit: contain;
+}
+
+@media (max-width: 991px) {
+  .display-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

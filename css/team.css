@@ -47,6 +47,7 @@
   background-image: url("/img/Profile\ Background\ blue.png");
   background-size: cover;
 }
+
 .managing-team .team-component:nth-child(2n + 1) .main-team-photo {
   background-image: url("/img/Profile\ Background\ orange.png");
   background-size: cover;
@@ -77,6 +78,7 @@
   border-radius: 20px;
   box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
 }
+
 .previous-volunteers {
   display: none;
 }

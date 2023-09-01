@@ -39,6 +39,7 @@
   position: relative;
   object-fit: contain;
 }
+
 .future-history-makers-image {
   display: flex;
   justify-content: space-around;
@@ -103,6 +104,7 @@
   height: 470px;
   border-radius: 20px;
 }
+
 @media (max-width: 450px) {
   .whats-new-embed {
     width: 100%;

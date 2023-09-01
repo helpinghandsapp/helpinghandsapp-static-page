@@ -405,12 +405,17 @@
   .volunteer-benefits-student-grid-item {
     margin-left: 0;
   }
+  .container-fluid {
+    padding: 0;
+  }
+  .col-lg-6 {
+    padding: 0;
+    margin: 0;
+  }
 
   #app-info-card-title {
     padding: 0;
   }
-
-  
 
   .volunteer-benefits-students-grid .volunteer-benefits-student-grid-item {
     margin: 1em 0;

@@ -2,6 +2,7 @@
   margin-top: -20px;
   padding: 0 20px;
 }
+
 .help-title {
   font-size: 45px;
 }
@@ -101,12 +102,6 @@
   max-width: 100%;
 }
 
-@media (max-width: 1392px) {
-  .help-container {
-    margin-top: 50px;
-  }
-}
-
 @media (max-width: 1200px) {
   #help {
     margin-bottom: 90px;
@@ -133,44 +128,6 @@
 @media (max-width: 992px) {
   #help .wrapper {
     padding: 0;
-  }
-}
-
-@media (max-width: 991px) {
-  .help-img2 {
-    margin: 0 215px;
-  }
-
-  .helpP {
-    text-align: center;
-  }
-
-  .help-container {
-    margin-top: 100px;
-  }
-
-  .help-title {
-    text-align: center;
-  }
-
-  .app-info-card-description {
-    text-align: center;
-  }
-
-  .help-content {
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .helpImgContainer {
-    padding: 0;
-    margin-top: 25px;
-  }
-
-  .display-flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -638,4 +595,125 @@ section.features .features-text {
   line-height: 1.1;
   font-weight: 400;
   font-size: 16px;
+}
+
+.overlay-desktop-app {
+  height: 687px;
+  color: black;
+  background: #f5f7fa;
+}
+
+.overlay-desktop-app .content {
+  margin-top: 15px;
+}
+
+.overlay-desktop-app .img-responsive {
+  border-radius: 20px;
+}
+
+@media (max-width: 1356px) {
+  .workshop-feature-item {
+    width: 125px;
+    height: 175px;
+    border-radius: 25px;
+  }
+
+  .workshop-flex-container {
+    width: 460px;
+  }
+
+  .icon {
+    margin-left: 62px;
+    margin-top: 0px;
+    transform: scale(0.8);
+  }
+
+  .workshop-feature-content {
+    margin-top: -22.5px;
+    transform: scale(0.8);
+  }
+
+  .overlay-desktop-app {
+    height: 585px;
+  }
+
+  #Workshops.overlay-desktop-app {
+    padding-top: 0;
+  }
+
+  #Mentors.overlay-desktop-app {
+    padding-top: 105px;
+  }
+
+  #Councils.overlay-desktop-app {
+    padding-top: 128px;
+  }
+
+  #Sharing_Stories.overlay-desktop-app {
+    padding-top: 153px;
+  }
+
+  #Entrepreneur.overlay-desktop-app {
+    padding-top: 132px;
+  }
+}
+
+@media (max-width: 1201px) {
+  .overlay-desktop-app {
+    height: 590px;
+  }
+}
+
+@media (max-width: 1101px) {
+  .overlay-desktop-app {
+    height: 610px;
+  }
+}
+
+@media (max-width: 1096px) {
+  #Mentors.overlay-desktop-app {
+    padding-top: 104px;
+  }
+  #Councils.overlay-desktop-app,
+  #Entrepreneur.overlay-desktop-app {
+    padding-top: 152px;
+  }
+  #Sharing_Stories.overlay-desktop-app {
+    padding-top: 202px;
+  }
+}
+
+@media (max-width: 360px) {
+  .icon {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 992px) {
+  .workshop-feature-item {
+    width: 150px;
+    height: 220px;
+    border-radius: 35px;
+    padding: 0 5px;
+  }
+
+  .workshop-feature-item #app-info-card-title {
+    font-size: 16px;
+  }
+
+  .icon {
+    margin-left: 90px;
+    margin-top: 7.5px;
+    padding-top: 5px;
+    transform: scale(1);
+  }
+
+  .workshop-feature-content {
+    margin-top: 0px;
+    transform: scale(1);
+  }
+
+  .workshop-flex-container {
+    width: auto;
+  }
 }
