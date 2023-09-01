@@ -10,6 +10,11 @@ html {
   padding: 1rem;
   margin-left: 7.9rem;
   border-radius: 1rem;
+  border: none;
+  background-color: #f07015;
+  box-shadow: none;
+  color: #fcfbfa;
+  width: 22%;
 }
 .main-title {
   color: #fdf9e4;
@@ -42,6 +47,14 @@ button {
   background-color: #f07015;
   box-shadow: none;
   color: #fcfbfa;
+}
+.third-section-btn,
+.landing-btn-last {
+  border: none;
+  background-color: #f07015;
+  font-size: 0.8rem;
+  color: #fcfbfa;
+  padding: 0.4rem;
 }
 
 .accordion {
@@ -106,9 +119,12 @@ button {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 146px;
+    margin-left: 149px;
     margin-top: 30px;
     margin-inline: 3rem;
+  }
+  .first-landing-div {
+    margin-left: 2rem;
   }
 
   .main-title {
@@ -185,6 +201,11 @@ button {
   .landing-last-p {
     font-size: 1.4rem;
   }
+  .third-section-btn {
+    font-size: 1.2rem;
+    width: 75%;
+    padding-left: 1.6rem;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
@@ -197,6 +218,7 @@ button {
     width: 180px;
     padding: 18px;
   }
+
   h3 {
     text-align: center;
     font-size: 1.9rem;
