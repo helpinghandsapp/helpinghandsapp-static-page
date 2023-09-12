@@ -32,7 +32,7 @@ function generateNavbar() {
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
             aria-haspopup="true"
-            onclick="handleToggleClick()"
+            onClick="handleToggleClick()"
           >
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -121,7 +121,7 @@ function generateNavbar() {
                   <a class="nav-link" href="lendahandsurvey.html">Lend a Hand Survey</a>
                 </li>
                 <li class="subnav-link">
-                <a class="nav-link" href="youth-leading-the-way.html">Find your volunteer opportunity</a>
+                <a class="nav-link" href="youth-leading-the-way.html">Find Your Volunteer Opportunity</a>
               </li>
               </ul>
             </li>

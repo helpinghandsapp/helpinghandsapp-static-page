@@ -1,65 +1,55 @@
 body,
 html {
   background-color: #faa52d;
-  color: #fdf9e4;
+  color: white;
 }
-.first-div {
-  margin-top: 4.1rem;
+
+.csc-header {
+  padding-top: 66px;
+  display: grid;
+  -ms-display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  max-width: 1200px;
 }
-.header-button {
-  padding: 1rem;
-  margin-left: 7.9rem;
-  border-radius: 1rem;
-  border: none;
-  background-color: #f07015;
-  box-shadow: none;
-  color: #fcfbfa;
-  width: 22%;
+
+.csc-header img {
+  max-width: 100%;
 }
+
 .main-title {
-  color: #fdf9e4;
-}
-.landing-header {
-  margin-left: 1.2rem;
-  margin-top: 10px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+  font-weight: 600;
+  font-size: 75px;
   font-family: League Spartan;
-  color: #fdf9e4;
 }
-a {
-  cursor: pointer;
-  color: #fdf9e4;
+
+.sub-title {
+  font-weight: 600;
+  font-size: 40px;
+  font-family: League Spartan;
 }
-p,
-div,
-button,
-span {
+
+.csc-text {
+  font-size: 23px;
   font-family: Lato;
 }
-button {
-  border: none;
-  background-color: #f07015;
-  box-shadow: none;
-  color: #fcfbfa;
+
+#main-content {
+  font-family: Lato;
+  font-size: 23px;
 }
-.third-section-btn,
+
+.round-box,
 .landing-btn-last {
   border: none;
   background-color: #f07015;
+  color: white;
   font-size: 0.8rem;
-  color: #fcfbfa;
-  padding: 0.4rem;
+  padding: 20px;
+  max-width: max-content;
 }
 
 .accordion {
   background-color: #f07015;
-  color: #fcfbfa;
   cursor: pointer;
   padding: 10px;
   text-align: left;
@@ -74,6 +64,7 @@ button {
   margin-inline: auto;
   width: 100%;
 }
+
 .panel {
   background-color: #faa52d;
   display: none;
@@ -90,12 +81,11 @@ button {
 }
 
 .landing-btn-last,
-.third-section-btn {
+.round-box {
   border-radius: 1rem;
 }
 
 .span-content {
-  color: #fcfbfa;
   font-size: 17px;
   font-weight: 500;
 }
@@ -106,38 +96,12 @@ button {
   justify-content: end;
   align-items: center;
 }
+
 .sponsors {
   font-size: 0.7rem;
 }
 
 @media (min-width: 900px) {
-  .first-div {
-    height: 75vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-left: 149px;
-    margin-top: 30px;
-    margin-inline: 3rem;
-  }
-  .first-landing-div {
-    margin-left: 2rem;
-  }
-
-  .main-title {
-    font-size: 4.5rem;
-    width: 670px;
-    font-weight: 800;
-    margin-bottom: 30px;
-    margin-left: 20px;
-  }
-  .landing-header {
-    height: 400px;
-  }
-  .header-button {
-    margin-left: 30px;
-    padding: 2rem;
-  }
   .second-img {
     width: 20%;
     margin-right: 100px;
@@ -145,11 +109,6 @@ button {
   h3 {
     text-align: center;
     font-size: 2.5rem;
-  }
-  .landing-volunteer-details {
-    text-align: start;
-    margin-left: 7rem;
-    font-size: 1.3rem;
   }
   .third-section {
     display: flex;
@@ -163,9 +122,6 @@ button {
   .interested {
     max-width: 1400px;
     margin-left: 7rem;
-  }
-  .need-to-volunteer {
-    max-width: 97%;
   }
   .accordion {
     font-size: 1.8rem;
@@ -198,24 +154,12 @@ button {
   .landing-last-p {
     font-size: 1.4rem;
   }
-  .third-section-btn {
+  .round-box {
     font-size: 1.2rem;
-    width: 75%;
-    padding-left: 1.6rem;
   }
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
-  .main-title {
-    font-size: 5rem;
-    font-weight: 800;
-  }
-  .header-button {
-    margin-inline: 16rem;
-    width: 180px;
-    padding: 18px;
-  }
-
   h3 {
     text-align: center;
     font-size: 1.9rem;
