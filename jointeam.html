@@ -34,6 +34,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css" />
+    <link rel="stylesheet" href="css/jointeam.css" />
     <link rel="stylesheet" href="img/device-mockups/device-mockups.min.css" />
     <link
       rel="stylesheet"
@@ -80,6 +81,12 @@
     <script>
       function toggleTab(tab) {
         tab.classList.toggle("active");
+        const spanElement = tab.querySelector("span");
+        if (tab.classList.contains("active")) {
+          spanElement.textContent = "-";
+        } else {
+          spanElement.textContent = "+";
+        }
       }
     </script>
   </head>
