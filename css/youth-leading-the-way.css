@@ -111,9 +111,6 @@ button {
 }
 
 @media (min-width: 900px) {
-  .navbar-default {
-    background-color: #006b8fd7 !important;
-  }
   .first-div {
     height: 75vh;
     display: flex;

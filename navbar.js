@@ -23,7 +23,6 @@ function generateNavbar() {
       class="navbar navbar-default navbar-fixed-top"
       aria-label="Main Menu"
     >
-      <!--<div class="container-fluid">-->
       <div class="wrapper">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -140,12 +139,9 @@ function generateNavbar() {
                 How can we help?
               </a>
             </li>
-            <!-- <a href="index.html#help" class="btn btn-seconday btn-sm" style="margin-left: 12px; margin-top: 12px;">How can we help?</a> -->
           </ul>
         </div>
-        <!-- /.navbar-collapse -->
       </div>
-      <!-- /.container-fluid -->
     </nav>
   `;
 }
