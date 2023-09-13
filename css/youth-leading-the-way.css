@@ -12,7 +12,7 @@ html {
   max-width: 1200px;
 }
 
-.csc-header img {
+img {
   max-width: 100%;
 }
 
@@ -23,7 +23,6 @@ html {
 }
 
 .sub-title {
-  font-weight: 600;
   font-size: 40px;
   font-family: League Spartan;
 }
@@ -33,9 +32,9 @@ html {
   font-family: Lato;
 }
 
-#main-content {
-  font-family: Lato;
-  font-size: 23px;
+.csc-link {
+  text-decoration: underline;
+  color: white;
 }
 
 .round-box,
@@ -43,9 +42,14 @@ html {
   border: none;
   background-color: #f07015;
   color: white;
-  font-size: 0.8rem;
   padding: 20px;
   max-width: max-content;
+}
+
+.bottom-box {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 
 .accordion {
@@ -113,10 +117,7 @@ html {
   .third-section {
     display: flex;
     justify-content: space-between;
-    margin-left: 7rem;
     align-items: center;
-    margin-bottom: 4rem;
-    max-width: 1400px;
   }
   .faq,
   .interested {
