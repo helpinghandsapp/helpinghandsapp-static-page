@@ -24,6 +24,7 @@ img {
 
 .csc-subtitle {
   font-size: 40px;
+  font-weight: bold;
   font-family: League Spartan;
 }
 
@@ -96,7 +97,7 @@ img {
 }
 
 .subsublist li {
-  list-style-type: square !important;
+  list-style-type: square;
 }
 
 .csc-sponsor-segment {
