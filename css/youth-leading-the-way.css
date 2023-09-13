@@ -37,11 +37,9 @@ img {
   color: white;
 }
 
-@media (min-width: 900px) {
-  .details-section {
-    display: flex;
-    align-items: center;
-  }
+.details-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .csc-round-box {
