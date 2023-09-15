@@ -7,7 +7,6 @@ html {
 .csc-header {
   padding-top: 66px;
   display: grid;
-  -ms-display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   max-width: 1200px;
 }
@@ -38,9 +37,11 @@ img {
   color: white;
 }
 
-.details-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+@media (min-width: 650px) {
+  .details-section {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+  }
 }
 
 .csc-round-box {
@@ -49,13 +50,13 @@ img {
   color: white;
   padding: 20px;
   border-radius: 1rem;
+  font-size: 18px;
   max-width: max-content;
 }
 
 .csc-bottom-box {
   margin-top: 40px;
   margin-bottom: 20px;
-  font-size: 18px;
 }
 
 .csc-accordion {
