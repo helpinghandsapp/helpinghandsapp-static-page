@@ -23,7 +23,6 @@ function generateNavbar() {
       class="navbar navbar-default navbar-fixed-top"
       aria-label="Main Menu"
     >
-      <!--<div class="container-fluid">-->
       <div class="wrapper">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -33,7 +32,7 @@ function generateNavbar() {
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
             aria-haspopup="true"
-            onclick="handleToggleClick()"
+            onClick="handleToggleClick()"
           >
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -121,6 +120,9 @@ function generateNavbar() {
                 <li class="subnav-link">
                   <a class="nav-link" href="lendahandsurvey.html">Lend a Hand Survey</a>
                 </li>
+                <li class="subnav-link">
+                <a class="nav-link" href="youth-leading-the-way.html">Find Your Volunteer Opportunity</a>
+              </li>
               </ul>
             </li>
             <li>
@@ -137,12 +139,9 @@ function generateNavbar() {
                 How can we help?
               </a>
             </li>
-            <!-- <a href="index.html#help" class="btn btn-seconday btn-sm" style="margin-left: 12px; margin-top: 12px;">How can we help?</a> -->
           </ul>
         </div>
-        <!-- /.navbar-collapse -->
       </div>
-      <!-- /.container-fluid -->
     </nav>
   `;
 }
