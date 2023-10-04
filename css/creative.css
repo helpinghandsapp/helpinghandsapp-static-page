@@ -306,7 +306,7 @@ aside {
 .navbar-nav .subnav-menu:hover .subnav {
   padding: 0.5rem 0;
   height: auto;
-  max-height: 300px;
+  max-height: 400px;
 }
 
 .subnav-menu.focus .subnav {
@@ -342,7 +342,6 @@ aside {
 
   .navbar-nav .subnav-menu:hover .subnav {
     padding: 0 0 0 15px;
-    max-height: 300px;
   }
 
   .navbar-default .nav > li:hover > a {
@@ -1455,6 +1454,7 @@ img {
 
 .accordion {
   background-color: #f07015;
+  color: white;
   cursor: pointer;
   font-size: 23px;
   font-family: League Spartan;
