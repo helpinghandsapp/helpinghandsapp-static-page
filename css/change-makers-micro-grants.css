@@ -73,20 +73,9 @@ img {
   max-width: max-content;
 }
 
-.cmmgp-bottom-box {
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
 .program-section img {
   max-width: 300px;
   align-items: right;
-}
-
-.details-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  margin-bottom: 20px;
 }
 
 .details-section img {
