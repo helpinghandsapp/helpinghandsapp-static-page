@@ -17,7 +17,7 @@
       type="text/css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=League+Spartan:wght@400;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800;900&family=League+Spartan:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -127,7 +127,7 @@
       </section>
       <section class="wrapper">
         <h2 class="csc-title text-center">FAQ</h2>
-        <button class="csc-accordion">
+        <button class="accordion">
           How do I get started?
           <i class="fa fa-chevron-down"></i>
         </button>
@@ -148,7 +148,7 @@
             better understanding of the workshop
           </li>
         </ul>
-        <button class="csc-accordion">
+        <button class="accordion">
           Am I eligible?
           <i class="fa fa-chevron-down"></i>
         </button>
@@ -160,7 +160,7 @@
           </li>
           <li>Age Range: 15-30 years of age</li>
         </ul>
-        <button class="csc-accordion">
+        <button class="accordion">
           What if I change my mind about the program?
           <i class="fa fa-chevron-down"></i>
         </button>
@@ -171,7 +171,7 @@
             know before you drop out
           </li>
         </ul>
-        <button class="csc-accordion">
+        <button class="accordion">
           What can I receive from this program?
           <i class="fa fa-chevron-down"></i>
         </button>
@@ -187,7 +187,7 @@
           </li>
           <li>Financial Aid Assistance to the youth</li>
         </ul>
-        <button class="csc-accordion">
+        <button class="accordion">
           What can count towards the 120 hours requirement?
           <i class="fa fa-chevron-down"></i>
         </button>
@@ -210,7 +210,7 @@
             can count towards an hour
           </li>
         </ul>
-        <button class="csc-accordion">
+        <button class="accordion">
           Can the 120 hours count towards my school's 40 mandatory community
           involvement hours?
           <i class="fa fa-chevron-down"></i>
@@ -251,7 +251,7 @@
             </ul>
           </li>
         </ul>
-        <button class="csc-accordion">
+        <button class="accordion">
           What kinds of volunteer opportunities are there?
           <i class="fa fa-chevron-down"></i>
         </button>
@@ -336,7 +336,7 @@
     </div>
     <!-- faq accordion script -->
     <script>
-      const accordion = document.getElementsByClassName("csc-accordion");
+      const accordion = document.getElementsByClassName("accordion");
       for (let i = 0; i < accordion.length; i++) {
         accordion[i].addEventListener("click", function () {
           const chevron = this.children[0];

@@ -1,0 +1,166 @@
+body,
+html {
+  background-color: white;
+}
+
+@media (min-width: 1096px) {
+  .navbar-default .navbar-header .navbar-brand {
+    color: #222222;
+  }
+
+  .navbar-default .nav > li > a {
+    color: #222222;
+  }
+}
+
+.cmmgp-header {
+  padding-top: 66px;
+}
+
+@media (min-width: 640px) {
+  .cmmgp-header {
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+  }
+  .program-details {
+    padding-right: 30px;
+  }
+  .grant-details {
+    padding-left: 30px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.cmmgp-title {
+  font-weight: 800;
+  font-size: 75px;
+  font-family: League Spartan;
+  color: #f07015;
+}
+
+.cmmgp-subtitle {
+  font-size: 40px;
+  font-weight: bold;
+  color: #f07015;
+  font-family: League Spartan;
+}
+
+.cmmgp-text {
+  font-size: 23px;
+  font-family: Lato;
+  color: #006b8f;
+}
+
+.cmmgp-link {
+  text-decoration: underline;
+}
+
+.cmmgp-round-box {
+  border: none;
+  background-color: #f07015;
+  color: white;
+  padding: 20px;
+  border-radius: 1rem;
+  font-size: 18px;
+  max-width: max-content;
+}
+
+.program-section img {
+  max-width: 300px;
+  align-items: right;
+}
+
+.details-section img {
+  max-width: 300px;
+}
+
+.details-section .cmmgp-subtitle {
+  font-size: 30px;
+}
+
+.program-details {
+  font-size: 18px;
+}
+
+.grant-details {
+  font-size: 14px;
+}
+
+.details-section ul li {
+  list-style-type: disc;
+  margin-left: 40px;
+  border: none;
+  outline: none;
+}
+
+.faq-title {
+  color: #006b8f;
+}
+
+.faq-text {
+  display: none;
+  font-size: 18px;
+  font-family: Lato;
+  color: #006b8f;
+  box-shadow: none;
+}
+
+.faq-text li {
+  list-style-type: disc;
+  margin-left: 40px;
+  border: none;
+  outline: none;
+}
+
+.sublist {
+  list-style-type: none !important;
+}
+
+.sublist li {
+  list-style-type: circle;
+}
+
+.subsublist li {
+  list-style-type: square;
+}
+
+.dates-header {
+  border: none;
+  background-color: #f07015;
+  color: white;
+  padding: 10px;
+  border-radius: 1rem;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: League Spartan;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dates-subtitle {
+  font-family: League Spartan;
+  color: #006b8f;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.dates-text {
+  font-family: League Spartan;
+  color: #f07015;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.dates-section img {
+  max-width: 300px;
+}
