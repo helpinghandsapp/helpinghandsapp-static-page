@@ -60,7 +60,6 @@
   margin-top: 2em;
   margin-bottom: 2em;
   background-color: #fff;
-  height: 250px;
   border-radius: 20px;
   box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
 }
@@ -83,7 +82,7 @@
   display: none;
 }
 
-.volunteer-team2 {
+.volunteer-team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   justify-content: space-between;
@@ -115,7 +114,7 @@
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 
-  .volunteer-team2 {
+  .volunteer-team-grid {
     justify-content: center;
   }
   .team-component {
