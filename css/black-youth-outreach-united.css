@@ -1,0 +1,61 @@
+body,
+html {
+  background-color: white;
+}
+
+@media (min-width: 1096px) {
+  .navbar-default .navbar-header .navbar-brand {
+    color: #222222;
+  }
+
+  .navbar-default .nav > li > a {
+    color: #222222;
+  }
+}
+
+.byou-header {
+  padding-top: 66px;
+}
+
+.byou-title {
+  font-weight: 800;
+  font-size: 75px;
+  font-family: League Spartan;
+  color: #f07015;
+}
+
+.byou-top-subtitle {
+  font-family: League Spartan;
+  color: #006b8f;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.byou-subtitle {
+  font-size: 40px;
+  font-weight: bold;
+  color: #f07015;
+  font-family: League Spartan;
+}
+
+.byou-text {
+  font-size: 23px;
+  font-family: Lato;
+  color: #006b8f;
+}
+
+.byou-link {
+  text-decoration: underline;
+}
+
+.faq-title {
+  color: #006b8f;
+}
+
+.faq-text {
+  display: none;
+  font-size: 18px;
+  font-family: Lato;
+  color: #006b8f;
+  box-shadow: none;
+}

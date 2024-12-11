@@ -126,6 +126,9 @@ function generateNavbar() {
                 <li class="subnav-link">
                   <a class="nav-link" href="change-makers-micro-grants.html">Change Makers Micro-grants</a>
                 </li>
+                <li class="subnav-link">
+                  <a class="nav-link" href="black-youth-outreach-united.html">Black Youth Outreach United</a>
+                </li>
               </ul>
             </li>
             <li>
