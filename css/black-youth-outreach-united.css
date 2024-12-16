@@ -17,6 +17,17 @@ html {
   padding-top: 66px;
 }
 
+@media (min-width: 640px) {
+  .image-on-side {
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
 .byou-title {
   font-weight: 800;
   font-size: 75px;
@@ -58,4 +69,9 @@ html {
   font-family: Lato;
   color: #006b8f;
   box-shadow: none;
+}
+
+.side-by-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
