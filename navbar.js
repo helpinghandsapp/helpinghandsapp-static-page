@@ -141,7 +141,7 @@ function generateNavbar() {
               <a class="page-scroll" href="contactus.html">Contact Us</a>
             </li>
             <li class="nav-button">
-              <a class="btn btn-seconday btn-sm" href="index.html#help">
+              <a class="btn btn-secondary btn-sm" href="index.html#help">
                 How can we help?
               </a>
             </li>

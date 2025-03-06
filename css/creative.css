@@ -817,7 +817,7 @@ fieldset[disabled] .btn-default.active {
   transition: all 0.35s;
 }
 
-.btn-seconday {
+.btn-secondary {
   color: #24383d;
   background: #ffa500;
   -webkit-transition: all 0.35s;
@@ -825,7 +825,7 @@ fieldset[disabled] .btn-default.active {
   transition: all 0.35s;
 }
 
-.btn-seconday:hover {
+.btn-secondary:hover {
   transform: scale(0.95);
 }
 
