@@ -17,6 +17,11 @@
   font-size: 1.1em;
 }
 
+.volunteer-match-process {
+  max-width: 100%;
+  margin-top: 2em;
+}
+
 .volunteer-grid-item {
   background-color: #fff;
   border-radius: 40px;
