@@ -28,11 +28,9 @@ body {
   overflow: hidden;
 }
 hr {
-  max-width: 100px;
   margin: 25px auto 0;
   border-width: 1px;
   border-color: rgba(34, 34, 34, 0.1);
-  max-width: 500px;
   border-width: 3px;
 }
 
