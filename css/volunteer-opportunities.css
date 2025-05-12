@@ -1,63 +1,3 @@
-.volunteer-section {
-  background: linear-gradient(to bottom left, #2baaed, #0a5f93);
-  padding-bottom: 0px;
-  color: white;
-}
-.volunteer-section .volunteer-heading {
-  font-weight: 600;
-  font-size: 55px;
-  color: white;
-  margin: 70px;
-}
-
-@media (min-width: 769px) {
-  .volunteer-section .volunteer-opportunities-high-school-subheading {
-    text-align: left;
-    margin-left: 4em;
-    margin-top: 6em;
-    position: relative;
-    top: 3em;
-  }
-
-  .volunteer-section .volunteer-subheading-section {
-    display: flex;
-    flex-direction: row;
-    margin-top: 3em;
-    margin-left: 4em;
-    margin-right: 4em;
-  }
-
-  .volunteer-section .volunteer-paragraph {
-    margin-top: 3em;
-    text-align: left;
-    margin-left: 4em;
-  }
-
-  .volunteer-section .volunteer-paragraph {
-    margin-top: 3em;
-    text-align: left;
-    width: 75%;
-    position: relative;
-    top: 1em;
-  }
-}
-
-.volunteer-section ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.volunteer-section .not-volunteer-requirement {
-  margin: 1em 4em;
-  padding-bottom: 3em;
-}
-
-.volunteer-section .volunteer-paragraph {
-  margin-top: 3em;
-  text-align: left;
-}
-
 .community-service-req-grid {
   display: flex;
   flex-direction: column;
@@ -73,6 +13,15 @@
   margin-left: 2em;
 }
 
+.volunteer-paragraph p {
+  font-size: 1.1em;
+}
+
+.volunteer-match-process {
+  max-width: 100%;
+  margin-top: 2em;
+}
+
 .volunteer-grid-item {
   background-color: #fff;
   border-radius: 40px;
@@ -84,10 +33,6 @@
   color: black;
   margin-bottom: 1em;
   margin-right: 3em;
-}
-
-.volunteer-placement .volunteer-placement-title {
-  font-size: 3em;
 }
 
 .volunteer-placement .volunteer-placement-item-title {
@@ -110,15 +55,6 @@
 .volunteer-placement-sentence {
   margin-left: 2em;
   margin-top: 2em;
-}
-
-.volunteer-opportunities-flex-container .volunteer-opportunities-feature-link {
-  text-decoration: none;
-}
-
-.volunteer-opportunities-feature-content {
-  margin-top: -22.5px;
-  transform: scale(0.8);
 }
 
 .volunteer-benefits-students-grid {
@@ -163,19 +99,12 @@
 .formal-volunteering-item {
   background: url("/img/checkmark-icon.png") no-repeat left top;
   background-size: 15px;
-  height: 15px;
   padding-left: 2em;
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 /* desktop view */
 @media (min-width: 769px) {
-  .not-volunteer-requirement {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
   .volunteer-placement-item {
     display: flex;
     flex-direction: column;
@@ -265,16 +194,18 @@
   }
 }
 
+.not-volunteer-requirements {
+  color: #cc0000;
+}
+
+.not-volunteer-requirements ul li {
+  list-style-type: disc;
+  margin-left: 40px;
+}
+
 .volunteer-placement-item {
   display: flex;
   flex-direction: row;
-}
-
-.volunteer-opportunities-heading {
-  font-size: 55px;
-  color: #fff;
-  text-align: center;
-  margin: 50px 0;
 }
 
 .placement-image-container {
@@ -283,25 +214,7 @@
 }
 
 @media (max-width: 768px) {
-  .volunteer-section {
-    margin-top: 3em;
-    background: linear-gradient(to bottom left, #2baaed, #0a5f93);
-    padding-bottom: 0px;
-    color: white;
-  }
-
-  .volunteer-opportunities-heading {
-    font-size: 2.5em;
-    color: #fff;
-    text-align: center;
-    margin: 50px 0;
-  }
   .volunteer-opportunities-high-school-subheading {
-    text-align: left;
-  }
-
-  .volunteer-section .volunteer-subheading-section {
-    display: block;
     text-align: left;
   }
 
@@ -346,24 +259,6 @@
     align-items: center;
     color: black;
     margin-top: 2em;
-  }
-
-  .not-volunteer-requirement {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .not-volunteer-requirement-section-container-fluid
-    .not-volunteer-requirement
-    .volunteer-grid-items {
-    margin-bottom: 2em;
-    margin-top: 1em;
-    text-align: left;
-    margin-right: 2em;
-  }
-
-  .not-volunteer-requirement-section-container-fluid {
-    text-align: left;
   }
 
   .volunteer-benefits-section {

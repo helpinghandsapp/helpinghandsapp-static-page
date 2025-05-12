@@ -28,11 +28,9 @@ body {
   overflow: hidden;
 }
 hr {
-  max-width: 100px;
   margin: 25px auto 0;
   border-width: 1px;
   border-color: rgba(34, 34, 34, 0.1);
-  max-width: 500px;
   border-width: 3px;
 }
 
@@ -817,7 +815,7 @@ fieldset[disabled] .btn-default.active {
   transition: all 0.35s;
 }
 
-.btn-seconday {
+.btn-secondary {
   color: #24383d;
   background: #ffa500;
   -webkit-transition: all 0.35s;
@@ -825,7 +823,7 @@ fieldset[disabled] .btn-default.active {
   transition: all 0.35s;
 }
 
-.btn-seconday:hover {
+.btn-secondary:hover {
   transform: scale(0.95);
 }
 
