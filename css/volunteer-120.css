@@ -96,3 +96,11 @@ img {
 .csc-sponsor {
   font-family: League Spartan;
 }
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.small-text {
+  font-size: 15px;
+}
