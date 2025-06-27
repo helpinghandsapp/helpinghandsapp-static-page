@@ -736,3 +736,129 @@ section.features .features-text {
     width: auto;
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;900&display=swap');
+
+/* Hero base */
+.hero-section {
+  background: #FB7900;
+  color: #fff;
+  padding: 6rem 0 12rem;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Left column */
+.hero-text {
+  position: relative;
+  z-index: 2;  
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-title {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+.hero-title .line {
+  display: block;
+  white-space: nowrap; 
+}
+
+.highlight {
+  position: relative;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 100%; height: .35em;
+  background: rgba(255,255,255,0.3);
+  z-index: -1;
+}
+
+.btn-hero {
+  background: #006D86;
+  color: #fff;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: .75rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Right column: blob image only */
+.hero-image {
+  position: relative;
+  overflow: visible;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.blob-svg {
+  display: block;
+  position: absolute;
+  top: -15vw;
+  right: -20vw;   
+  width: 90vw;
+  height: auto;
+  z-index: 0;
+}
+
+/* Tablet & below */
+@media (max-width: 991px) {
+  .wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 2.75rem;
+  }
+  .btn-hero {
+    margin-top: 2rem;
+  }
+  .hero-image {
+    margin-top: 3rem;
+    justify-content: center;
+  }
+  .blob-svg {
+    width: 120vw;
+    top: -60px;
+    right: -10vw;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 8rem 0 8rem;
+  }
+  .hero-title {
+    font-size: 2.25rem;
+  }
+  .btn-hero {
+    font-size: 1.25rem;
+    padding: .5rem 2rem;
+  }
+  .blob-svg {
+    width: 150vw;
+    top: -40px;
+    right: -25vw;
+  }
+}
