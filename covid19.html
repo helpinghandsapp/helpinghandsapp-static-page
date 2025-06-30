@@ -66,7 +66,7 @@
     <!-- end Mixpanel -->
 
     <!--[endif]-->
-    <script src="footer.js"></script>
+    <script src="js/load-containers.js"></script>
   </head>
 
   <body id="page-top">
@@ -208,15 +208,12 @@
     </main>
 
     <!-- FOOTER -->
-    <div id="footer-container">
-      <script>
-        const footerContainer = document.getElementById("footer-container");
-        footerContainer.innerHTML = generateFooter();
-      </script>
-    </div>
+    <div id="footer-container"></div>
 
     <!--============================================================================================-->
-
+    <script>
+      loadContainers("navbar", "footer");
+    </script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->

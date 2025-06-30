@@ -147,6 +147,11 @@ form label {
   margin-right: 4px;
 }
 
+.email-input {
+  position: relative;
+  align-items: right;
+}
+
 #email {
   width: 100%;
   background-color: #f07015;
@@ -156,12 +161,7 @@ form label {
   border-radius: 40px;
 }
 
-.email-input {
-  position: relative;
-  align-items: right;
-}
-
-.email-submit-button {
+.email-input button {
   position: absolute;
   transform: translateY(-39px);
   right: 5px;
@@ -177,7 +177,7 @@ form label {
   justify-content: center;
 }
 
-.email-submit-button:hover {
+.email-input button:hover {
   background: #006b8f;
 }
 

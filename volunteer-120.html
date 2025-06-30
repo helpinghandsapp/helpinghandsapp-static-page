@@ -55,7 +55,7 @@
       />
     </noscript>
     <!-- End Facebook Pixel Code -->
-    <script src="footer.js"></script>
+    <script src="js/load-containers.js"></script>
   </head>
   <body>
     <div id="navbar-container"></div>
@@ -351,12 +351,10 @@
       </div>
     </main>
     <!-- FOOTER -->
-    <div id="footer-container">
-      <script>
-        const footerContainer = document.getElementById("footer-container");
-        footerContainer.innerHTML = generateFooter();
-      </script>
-    </div>
+    <div id="footer-container"></div>
+    <script>
+      loadContainers("navbar", "footer");
+    </script>
     <!-- faq accordion script -->
     <script>
       const accordion = document.getElementsByClassName("accordion");
