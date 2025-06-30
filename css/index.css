@@ -747,7 +747,7 @@ section.features .features-text {
 }
 
 body {
-  font-family: "League Spartan", sans-serif;
+  font-family: "League Spartan", sans-serif !important;
 }
 
 /* ─── Hero Section ─── */
@@ -777,10 +777,11 @@ body {
 }
 
 .hero-title {
-  font-size: 2.8rem;
-  font-weight: 900;
+  font-size: 2.8rem !important;
+  font-weight: 900 !important;
   line-height: 0.7;
   margin-bottom: 2rem;
+  font-family: "League Spartan", sans-serif !important;
 }
 
 .hero-title span {
@@ -797,8 +798,9 @@ body {
   padding: 0.9rem 1.8rem;
   border-radius: 2rem;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.2rem !important;
   margin-top: 0.5rem;
+  font-family: "League Spartan", sans-serif !important;
 }
 
 .hero-blob {
@@ -817,18 +819,27 @@ body {
   max-width: none;
   object-fit: contain;
 }
-/* ─── Responsive ─── */
-@media (max-width: 1024px) {
+
+/* ─── Responsive - Tablets ─── */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .hero-title {
+    font-size: 1.5rem !important;
+  }
+
   .hero-blob {
-    top: 0px;
-    right: -30px;
-    height: 100%;
+    top: 5vh;
+    right: 0;
+    height: auto;
+    width: auto;
+    transform: translateX(20%) translateY(0%) scale(0.6);
   }
 
   .hero-blob img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    height: auto;
+    width: auto;
+    max-height: 70vh;
+    max-width: 50vw;
+    object-fit: contain;
   }
 }
 
@@ -847,10 +858,12 @@ body {
     max-width: 90%;
   }
 
+  /* FIXED: Changed from 0.5rem to 2rem for mobile */
   .hero-title {
-    font-size: 0.5rem;
+    font-size: 2rem !important;
     line-height: 1.2;
     margin-bottom: 0.5rem;
+    font-family: "League Spartan", sans-serif !important;
   }
 
   .hero-title span {
@@ -859,45 +872,53 @@ body {
   }
 
   .hero-button {
-    font-size: 0.95rem;
+    font-size: 0.95rem !important;
     padding: 0.65rem 1.2rem;
     margin-top: 1.2rem;
+    font-family: "League Spartan", sans-serif !important;
   }
 
-  @media (max-width: 768px) {
-    .hero-blob {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      pointer-events: none;
-      z-index: 0;
-    }
+  .hero-blob {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    pointer-events: none;
+    z-index: 0;
+  }
 
-    .hero-blob img {
-      width: auto;
-      height: auto;
-      max-width: 100%;
-      transform: scale(0.45) translateY(45vh);
-      object-fit: contain;
-      display: block;
-    }
+  .hero-blob img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    transform: scale(0.45) translateY(45vh);
+    object-fit: contain;
+    display: block;
+  }
+}
 
-    /* Extra adjustment for narrow & tall screens (iPhone SE, Galaxy S8+) */
-    @media (max-width: 376px) and (min-height: 667px),
-      (max-width: 361px) and (min-height: 740px) {
-      .hero-blob img {
-        transform: scale(0.45) translateY(50vh);
-      }
-    }
-    @media (min-width: 700px) and (max-width: 800px) and (orientation: portrait) {
-      .hero-blob img {
-        transform: scale(0.8) translateY(10vh);
-      }
-    }
+/* Extra adjustment for narrow & tall screens (iPhone SE, Galaxy S8+) */
+@media (max-width: 376px) and (min-height: 667px),
+       (max-width: 361px) and (min-height: 740px) {
+  .hero-blob img {
+    transform: scale(0.45) translateY(50vh);
+  }
+  
+  .hero-title {
+    font-size: 1.8rem !important;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 800px) and (orientation: portrait) {
+  .hero-blob img {
+    transform: scale(0.8) translateY(10vh);
+  }
+  
+  .hero-title {
+    font-size: 2.2rem !important;
   }
 }
