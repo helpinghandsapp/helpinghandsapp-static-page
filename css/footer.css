@@ -121,11 +121,11 @@ footer .social-media-icon:hover {
   font-size: 2.3rem;
 }
 
-a {
+footer a {
   color: white;
 }
 
-form {
+footer form {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -134,7 +134,7 @@ form {
   color: #d46312;
 }
 
-form label {
+footer form label {
   font-weight: 400;
   font-size: 20px;
 }
@@ -152,7 +152,7 @@ form label {
   align-items: right;
 }
 
-#email {
+.email-input input {
   width: 100%;
   background-color: #f07015;
   color: white;
