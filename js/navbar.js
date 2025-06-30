@@ -1,6 +1,6 @@
 let isMenuOpen = false;
 
-// Function to handle the toggle button click event
+// Function to handle menu toggle in mobile view
 const handleToggleClick = () => {
   isMenuOpen = !isMenuOpen; // Toggle the menu state
   const menuCollapseElement = document.getElementById(
