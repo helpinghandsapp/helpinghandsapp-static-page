@@ -921,86 +921,6 @@ textarea {
   padding: 5px;
 }
 
-/*Footer--------------------------------------------*/
-footer {
-  background: #006b8fd7;
-  padding: 6vh 0 10px 0;
-  font-family: "Nunito Sans", sans-serif;
-  color: white;
-  font-weight: lighter;
-}
-
-footer p {
-  font-size: 18px;
-  margin: 0;
-}
-
-footer ul {
-  margin-bottom: 0;
-}
-
-.footer-contents {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.footer-links {
-  margin-left: 15px;
-}
-
-.list-social li a {
-  font-size: 45px;
-  color: #ffffff;
-}
-
-.footer-links li a {
-  font-size: 18px;
-  text-decoration: auto;
-}
-
-.footer-links li {
-  list-style-type: disc;
-}
-
-.footer-links li a:hover {
-  font-size: 18px;
-  text-decoration: none;
-}
-
-.footer-links a {
-  color: #ffffff;
-  list-style-type: circle;
-}
-
-.footer-copyright-text {
-  text-align: center;
-  font-size: 14px;
-  padding-top: 50px;
-}
-
-.list-social li a:hover,
-.list-social li a:focus,
-.list-social li a:active,
-.list-social li a.active {
-  text-decoration: none;
-  color: white;
-}
-
-footer .social-media-icon:hover {
-  transform: scale(0.95);
-}
-.icon-size {
-  font-size: 2.3rem;
-}
-/* footer mobile  */
-@media (max-width: 768px) {
-  .footer-div {
-    padding-top: 3vh;
-  }
-}
-
-/* END FOOTER */
-
 .primary {
   border-color: #1b4b7a;
 }
@@ -1397,49 +1317,6 @@ img {
 
 .skip-to-content-link:focus {
   transform: translateY(0%);
-}
-
-.footer-logo-container {
-  padding: 20px;
-  border-radius: 40px;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  margin: auto;
-  max-width: 550px;
-  height: auto;
-  text-align: center;
-  flex-wrap: wrap;
-}
-
-.footer-logo-item {
-  color: #f5f7fa;
-  width: 160px;
-  height: 70px;
-  border-radius: 20px;
-  background-color: #367694;
-  padding: 10px;
-  margin: 7.5px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-logo-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-logo-image {
-  max-width: 100%;
-  max-height: 55px;
-}
-
-.footer-feature-content {
-  object-fit: contain;
 }
 
 @media (max-width: 991px) {

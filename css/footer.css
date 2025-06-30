@@ -1,0 +1,188 @@
+footer {
+  background: #faa52d;
+  padding: 6vh 0 10px 0;
+  font-family: "League Spartan";
+  color: white;
+  position: relative;
+}
+
+footer p {
+  font-size: 18px;
+  margin: 0;
+}
+
+footer ul {
+  margin-bottom: 0;
+}
+
+.footer-contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: #f07015;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+}
+
+.footer-links {
+  margin-left: 15px;
+}
+
+.list-social li a {
+  font-size: 45px;
+  color: #ffffff;
+}
+
+.footer-links li a {
+  font-size: 18px;
+  text-decoration: auto;
+}
+
+.footer-links li {
+  list-style-type: disc;
+}
+
+.footer-links li a:hover {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer-links a {
+  color: #ffffff;
+  list-style-type: circle;
+}
+
+.footer-logo-container {
+  border-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  max-width: 450px;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.footer-logo-item {
+  color: #f5f7fa;
+  width: 170px;
+  height: 80px;
+  border-radius: 20px;
+  background-color: #f07015;
+  padding: 10px;
+  margin: 7.5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo-image {
+  max-width: 100%;
+  max-height: 55px;
+}
+
+.footer-feature-content {
+  object-fit: contain;
+}
+
+.footer-copyright-text {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 50px;
+}
+
+.list-social li a:hover,
+.list-social li a:focus,
+.list-social li a:active,
+.list-social li a.active {
+  text-decoration: none;
+  color: white;
+}
+
+footer .social-media-icon:hover {
+  transform: scale(0.95);
+}
+
+.icon-size {
+  font-size: 2.3rem;
+}
+
+a {
+  color: white;
+}
+
+form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.red-text {
+  color: #d46312;
+}
+
+form label {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#opt-in {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 4px;
+  margin-right: 4px;
+}
+
+#email {
+  width: 100%;
+  background-color: #f07015;
+  color: white;
+  border: none;
+  padding: 10px 45px 10px 10px;
+  border-radius: 40px;
+}
+
+.email-input {
+  position: relative;
+  align-items: right;
+}
+
+.email-submit-button {
+  position: absolute;
+  transform: translateY(-39px);
+  right: 5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #fdf9d4;
+  color: #8ac4d0;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-submit-button:hover {
+  background: #006b8f;
+}
+
+@media (max-width: 768px) {
+  .footer-div {
+    padding-top: 3vh;
+  }
+}
