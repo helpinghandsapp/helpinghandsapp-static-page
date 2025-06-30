@@ -737,149 +737,140 @@ section.features .features-text {
   }
 }
 
+/* 1. Font import */
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;900&display=swap');
 
-/* ─── Hero base ─── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+}
+
+/* ─── Hero Section ─── */
 .hero-section {
-  background: #FB7900;
-  color: #fff;
-  padding: 6rem 0 12rem;
+  position: relative;
+  background-color: #f07015;
+  color: white;
+  padding: 10rem 1rem 4rem;
   overflow: hidden;
 }
 
-/* Wrapper centered container, contents hug left */
-.hero-section .wrapper {
+.hero-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-/* ── Left column ── */
-.hero-text {
+  flex-wrap: wrap;
   position: relative;
   z-index: 2;
-  flex: 0 0 auto;
-  max-width: 600px;
+}
+
+/* ─── Text Area ─── */
+.hero-text {
+  flex: 1 1 500px;
+  min-width: 280px;
 }
 
 .hero-title {
-  font-family: 'League Spartan', sans-serif;
+  font-size: 2.8rem;
   font-weight: 900;
-  font-size: 3.5rem;
-  line-height: 1.3;
+  line-height: 0.7;
   margin-bottom: 2rem;
 }
 
-.hero-title .line {
+.hero-title span {
   display: block;
   white-space: nowrap;
 }
 
-.highlight {
-  position: relative;
-}
-.highlight::after {
-  content: '';
-  position: absolute;
-  left: 0; bottom: 0;
-  width: 100%; height: .35em;
-  background: rgba(255,255,255,0.3);
-  z-index: -1;
-}
-
-.btn-hero {
-  background: #006D86;
-  color: #fff;
-  font-family: 'League Spartan', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 800;
-  padding: .75rem 1.5rem;
-  border-radius: 30px;
-  text-decoration: none;
+/* ─── Button ─── */
+.hero-button {
   display: inline-block;
+  background-color: #006b8f;
+  color: white;
+  font-weight: 700;
+  padding: 0.9rem 1.8rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
 }
 
-/* ── Right column ── */
-.hero-image {
-  position: relative;
-  overflow: visible;
-  margin-left: auto;
-  display: flex;
-  justify-content: flex-end;
-}
-
-/* Blob SVG */
-.blob-svg {
-  display: block;
+/* ─── Blob ─── */
+.hero-blob {
   position: absolute;
-  top: -15vw;
-  right: -20vw;
-  width: 90vw;
-  height: auto;
-  z-index: 0;
-}
-
-.blob-photo {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(40%, -20%);
-  width: 35vw;
-  height: 35vw;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  top: 0;
+  right: -120px;
+  height: 120%;
   z-index: 1;
+  overflow: hidden;
 }
 
-/* ─── Tablet & below ─── */
-@media (max-width: 991px) {
-  .hero-section .wrapper {
-    flex-direction: column;
-    text-align: center;
+.hero-blob img {
+  height: 120%;
+  width: auto;
+  max-height: none;
+  object-fit: cover;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 1024px) {
+  .hero-blob {
+    right: -80px;
+    height: 110%;
   }
-  .hero-title { font-size: 2.75rem; }
-  .btn-hero { margin-top: 2rem; }
-  .hero-image {
-    margin-top: 3rem;
-    justify-content: center;
-  }
-  .blob-svg {
-    width: 120vw;
-    top: -60px;
-    right: -10vw;
-  }
-  .blob-photo {
-    /* smaller circle on tablet */
-    width: 30vw;
-    height: 30vw;
-    top: 8vw;
-    right: -5vw;
+
+  .hero-blob img {
+    height: 110%;
   }
 }
 
-/* ─── Mobile ─── */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .hero-section {
-    padding: 8rem 0 8rem;
+    padding: 5rem 1rem 3rem;
   }
-  .hero-title { font-size: 2.25rem; }
-  .btn-hero {
-    font-size: 1.25rem;
-    padding: .5rem 2rem;
+
+  .hero-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .blob-svg {
-    width: 150vw;
-    top: -40px;
-    right: -25vw;
+
+  .hero-text {
+    text-align: left;
+    max-width: 90%;
   }
-  .blob-photo {
-    width: 40vw;
-    height: 40vw;
-    top: 10vw;
-    right: -15vw;
+
+  .hero-title {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-title span {
+    display: inline; /* ⬅️ prevents each span from wrapping too soon */
+    white-space: normal;
+  }
+
+  .hero-button {
+    font-size: 0.95rem;
+    padding: 0.65rem 1.2rem;
+    margin-top: 1.2rem;
+  }
+
+  .hero-blob {
+    right: -50px;
+    height: 100%;
+    top: auto;
+    bottom: 0;
+    transform: none;
+  }
+
+  .hero-blob img {
+    height: 100%;
   }
 }
