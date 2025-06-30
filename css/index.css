@@ -819,6 +819,51 @@ body {
   max-width: none;
   object-fit: contain;
 }
+/* ─── Responsive - Laptops ─── */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .hero-title {
+    font-size: 2rem !important;
+  }
+
+  .hero-button {
+    font-size: 1rem !important;
+    padding: 1rem 2rem;
+  }
+
+  .hero-blob {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    transform: translateX(10vw) translateY(5vh) scale(0.9);
+  }
+
+  .hero-blob img {
+    min-width: 900px;
+  }
+}
+
+/* ─── Responsive - Large PCs / Monitors ─── */
+@media (min-width: 1441px) {
+  .hero-title {
+    font-size: 3rem !important;
+  }
+
+  .hero-button {
+    font-size: 1.35rem !important;
+    padding: 1.1rem 2.2rem;
+  }
+
+  .hero-blob {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    transform: translateX(5vw) translateY(4vh) scale(0.9);
+  }
+
+  .hero-blob img {
+    min-width: 1000px;
+  }
+}
 
 /* ─── Responsive - Tablets ─── */
 @media (max-width: 1024px) and (min-width: 769px) {
@@ -858,7 +903,6 @@ body {
     max-width: 90%;
   }
 
-  /* FIXED: Changed from 0.5rem to 2rem for mobile */
   .hero-title {
     font-size: 2rem !important;
     line-height: 1.2;
