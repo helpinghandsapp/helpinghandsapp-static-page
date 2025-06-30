@@ -800,15 +800,15 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  top: 100%;       /* pin just below the word */
+  top: 100%; /* pin just below the word */
   bottom: auto;
   width: 100%;
-  height: 0.25em;  /* thickness scales with font-size */
+  height: 0.25em; /* thickness scales with font-size */
   background: url("https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/top-underline.svg")
-              no-repeat center top;
+    no-repeat center top;
   background-size: 100% auto;
   pointer-events: none;
-  transform: translateY(0.15em);  /* little extra drop */
+  transform: translateY(0.15em); /* little extra drop */
 }
 
 /* ─── Button ─── */
@@ -988,19 +988,24 @@ body {
     transform: translate(25vw, 43vh);
   }
 
-  /* ─── Mobile-only underline tweak ─── */
+  /* ─── Tweak “real” underline on phones ─── */
+  .underline-real {
+    display: inline-block;
+  }
   .underline-real::after {
-    /* drop it slightly under the descender line */
+    /* remove desktop top+transform */
     top: auto;
-    bottom: -0.15em;
-    height: 0.15em;
     transform: none;
+    /* hug the baseline */
+    bottom: -0.15em;
+    /* slim it down for smaller text */
+    height: 0.35em;
   }
 }
 
 /* ─── Narrow & Tall Phones ─── */
 @media (max-width: 376px) and (min-height: 667px),
-       (max-width: 361px) and (min-height: 740px) {
+  (max-width: 361px) and (min-height: 740px) {
   .hero-blob img:first-child {
     transform: scale(0.45) translateY(50vh);
   }
