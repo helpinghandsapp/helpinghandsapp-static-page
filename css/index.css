@@ -738,7 +738,7 @@ section.features .features-text {
 }
 
 /* 1. Font import */
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;900&display=swap");
 
 * {
   margin: 0;
@@ -747,7 +747,7 @@ section.features .features-text {
 }
 
 body {
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
 }
 
 /* ─── Hero Section ─── */
@@ -803,8 +803,8 @@ body {
 
 .hero-blob {
   position: absolute;
-  top: 30px;   
-  right: 0px;      
+  top: 30px;
+  right: 0px;
   height: 95%;
   z-index: 1;
   overflow: hidden;
@@ -812,7 +812,7 @@ body {
 
 .hero-blob img {
   height: 100%;
-  min-width: 800px; 
+  min-width: 800px;
   width: auto;
   max-width: none;
   object-fit: contain;
@@ -864,34 +864,40 @@ body {
     margin-top: 1.2rem;
   }
 
-@media (max-width: 768px) {
-  .hero-blob {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    pointer-events: none;
-    z-index: 0;
-  }
+  @media (max-width: 768px) {
+    .hero-blob {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      pointer-events: none;
+      z-index: 0;
+    }
 
-  .hero-blob img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    transform: scale(0.4) translateY(20vh);
-    object-fit: contain;
-    display: block;
-  }
-}
+    .hero-blob img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      transform: scale(0.45) translateY(45vh);
+      object-fit: contain;
+      display: block;
+    }
 
-/* 🔧 Edge Case */
-@media (max-width: 375px) {
-  .hero-blob img {
-    transform: scale(0.4) translateY(60vh); 
+    /* Extra adjustment for narrow & tall screens (iPhone SE, Galaxy S8+) */
+    @media (max-width: 376px) and (min-height: 667px),
+      (max-width: 361px) and (min-height: 740px) {
+      .hero-blob img {
+        transform: scale(0.45) translateY(50vh);
+      }
+    }
+    @media (min-width: 700px) and (max-width: 800px) and (orientation: portrait) {
+      .hero-blob img {
+        transform: scale(0.8) translateY(10vh);
+      }
+    }
   }
-}
 }
