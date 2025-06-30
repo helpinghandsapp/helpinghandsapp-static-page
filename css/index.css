@@ -803,6 +803,7 @@ body {
   font-family: "League Spartan", sans-serif !important;
 }
 
+/* ─── Blob ─── */
 .hero-blob {
   position: absolute;
   top: 30px;
@@ -812,13 +813,28 @@ body {
   overflow: hidden;
 }
 
-.hero-blob img {
+.hero-blob img:first-child {
   height: 100%;
   min-width: 800px;
   width: auto;
   max-width: none;
   object-fit: contain;
 }
+
+/* ─── Inner Image Inside Blob ─── */
+.blob-inner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(50vw, 40vh);
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 2;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
 /* ─── Responsive - Laptops ─── */
 @media (min-width: 1025px) and (max-width: 1440px) {
   .hero-title {
@@ -837,8 +853,14 @@ body {
     transform: translateX(10vw) translateY(5vh) scale(0.9);
   }
 
-  .hero-blob img {
+  .hero-blob img:first-child {
     min-width: 900px;
+  }
+
+  .blob-inner-image {
+    width: 500px;
+    height: 500px;
+    transform: translate(50vw, 40vh);
   }
 }
 
@@ -857,11 +879,17 @@ body {
     top: auto;
     bottom: 0;
     right: 0;
-    transform: translateX(5vw) translateY(4vh) scale(0.9);
+    transform: translateX(5vw) translateY(4vh) scale(1);
   }
 
-  .hero-blob img {
+  .hero-blob img:first-child {
     min-width: 1000px;
+  }
+
+  .blob-inner-image {
+    width: 580px;
+    height: 580px;
+    transform: translate(12vw, 2vh);
   }
 }
 
@@ -876,18 +904,25 @@ body {
     right: 0;
     height: auto;
     width: auto;
-    transform: translateX(20%) translateY(0%) scale(0.6);
+    transform: translateX(20%) translateY(0%) scale(0.5);
   }
 
-  .hero-blob img {
+  .hero-blob img:first-child {
     height: auto;
     width: auto;
     max-height: 70vh;
     max-width: 50vw;
     object-fit: contain;
   }
+
+  .blob-inner-image {
+    width: 500px;
+    height: 500px;
+    transform: translate(15vw, 1vh);
+  }
 }
 
+/* ─── Responsive - Phones ─── */
 @media (max-width: 768px) {
   .hero-section {
     padding: 5rem 1rem 3rem;
@@ -935,34 +970,53 @@ body {
     z-index: 0;
   }
 
-  .hero-blob img {
+  .hero-blob img:first-child {
     width: auto;
     height: auto;
     max-width: 100%;
-    transform: scale(0.45) translateY(45vh);
+    transform: scale(0.8) translateY(30vh);
     object-fit: contain;
     display: block;
   }
+
+  .blob-inner-image {
+    width: 190px;
+    height: 190px;
+    transform: translate(25vw, 43vh);
+  }
 }
 
-/* Extra adjustment for narrow & tall screens (iPhone SE, Galaxy S8+) */
+/* ─── Narrow & Tall Phones ─── */
 @media (max-width: 376px) and (min-height: 667px),
-       (max-width: 361px) and (min-height: 740px) {
-  .hero-blob img {
+  (max-width: 361px) and (min-height: 740px) {
+  .hero-blob img:first-child {
     transform: scale(0.45) translateY(50vh);
   }
-  
+
   .hero-title {
     font-size: 1.8rem !important;
   }
+
+  .blob-inner-image {
+    width: 200px;
+    height: 200px;
+    transform: translate(25vw, 60vh);
+  }
 }
 
+/* ─── Portrait Tablets ─── */
 @media (min-width: 700px) and (max-width: 800px) and (orientation: portrait) {
-  .hero-blob img {
+  .hero-blob img:first-child {
     transform: scale(0.8) translateY(10vh);
   }
-  
+
   .hero-title {
     font-size: 2.2rem !important;
+  }
+
+  .blob-inner-image {
+    width: 450px;
+    height: 450px;
+    transform: translate(23vw, 30vh);
   }
 }
