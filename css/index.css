@@ -1,3 +1,8 @@
+/* Force League Spartan font everywhere */
+* {
+  font-family: "League Spartan", sans-serif !important;
+}
+
 #help .wrapper {
   margin-top: -20px;
   padding: 0 20px;
@@ -13,7 +18,6 @@
 
 .helpP {
   padding-top: 4px;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   margin-top: -10px;
   font-weight: 300;
@@ -400,7 +404,6 @@ section.features .features-text {
   box-shadow: 3px 3px 9px #d5d5d5;
   background-color: #fff;
   margin: 10px;
-  font-family: Verdana, sans-serif;
   padding: 15px;
   border-radius: 20px;
   box-shadow: 0px 4px 6px #d5d5d5;
@@ -931,6 +934,7 @@ body {
 }
 
 #current .container {
+  position: relative;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -940,6 +944,7 @@ body {
   color: #fff;
   font-size: 2.5rem;
   text-align: left;
+  font-weight: 800;
   margin-bottom: 2rem;
 }
 
@@ -947,35 +952,35 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.8rem;
+  gap: 5rem;
+  /* enable 3D perspective for hover effect */
+  perspective: 1000px;
 }
 
-/* ─── UPDATED CARD RULE ─── */
+/* ─── Card base ─── */
 #current .card {
   position: relative;
   overflow: hidden;
-
-  /* make each card square: */
   aspect-ratio: 1 / 1;
-
-  /* bump up base size: */
-  flex: 1 1 360px; /* starts at 360px wide */
-  max-width: 420px; /* can grow up to 420px */
-
+  flex: 1 1 300px;
+  max-width: 360px;
   background-color: #8ac4d0;
   border-radius: 1rem;
-
-  /* keep extra bottom padding for the semicircle */
+  /* room for semicircle */
   padding: 2rem 1rem 4rem;
   box-sizing: border-box;
-
   color: #214051;
+  transform-style: preserve-3d;
+  transform-origin: center bottom;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
+/* second card background */
 #current .card:nth-child(2) {
   background-color: #faa52d;
 }
 
+/* ─── Card header & title ─── */
 #current .card-header {
   display: flex;
   justify-content: space-between;
@@ -983,14 +988,16 @@ body {
   font-size: 1rem;
   margin-bottom: 0.5rem;
   color: #23596b;
+  font-family: "League Spartan", sans-serif;
 }
 
 #current .card-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0.25rem 0 1rem;
   font-weight: 800;
 }
 
+/* ─── Read more button ─── */
 #current .read-more {
   display: inline-block;
   margin-bottom: 1rem;
@@ -1003,12 +1010,13 @@ body {
   color: inherit;
 }
 
+/* ─── Semicircle image wrapper ─── */
 #current .card-image-wrapper {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, 45%);
-  width: 110%;
+  transform: translate(-50%, 40%);
+  width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   overflow: hidden;
@@ -1020,6 +1028,13 @@ body {
   object-fit: cover;
 }
 
+/* ─── Tweak only the 2nd card’s image for desktop ─── */
+#current .card:nth-child(2) .card-image-wrapper {
+  width: 100%;
+  bottom: -20%;
+  transform: translate(-50%, 25%);
+}
+
 /* ─── Mobile adjustments ─── */
 @media (max-width: 600px) {
   #current .cards {
@@ -1029,20 +1044,49 @@ body {
   }
 
   #current .card {
-    /* full width, no max-width limit */
     flex: none;
     width: 100%;
     max-width: none;
-
-    /* a gentle portrait ratio so it’s not too tall */
+    /* portrait on mobile */
     aspect-ratio: 4 / 3;
   }
 
+  /* general semicircle positioning on mobile */
   #current .card-image-wrapper {
-    /* center horizontally only, and push the circle down so its top half peeks in */
     left: 50%;
     bottom: -25%;
     width: 80%;
     transform: translate(-50%, 20%);
   }
+
+  /* bespoke mobile tweaks for only the 2nd card */
+  #current .card:nth-child(2) {
+    aspect-ratio: 3 / 2;
+    padding-bottom: 3rem;
+  }
+  #current .card:nth-child(2) .card-image-wrapper {
+    width: 80%;
+    bottom: -30%;
+    transform: translate(-50%, 30%);
+  }
+}
+
+/* ─── 3D Hover Effect ─── */
+#current .card:hover {
+  transform: translateY(-10px) rotateX(8deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* ─── Section divider ─── */
+.section-divider {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1500px;
+  height: 2px;
+  background: #faa52d;
+  margin-bottom: 2rem;
+  border-radius: 0;
+  z-index: 10;
 }
