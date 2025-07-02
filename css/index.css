@@ -952,24 +952,25 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 5rem;
-  /* enable 3D perspective for hover effect */
-  perspective: 1000px;
+  gap: 2rem;             /* increased gap between cards */
+  perspective: 1000px;   /* enable 3D perspective */
 }
 
 /* ─── Card base ─── */
 #current .card {
   position: relative;
-  overflow: hidden;
+  overflow: hidden;      /* default: clip semicircles */
+
   aspect-ratio: 1 / 1;
-  flex: 1 1 300px;
+  flex: 1 1 300px;       /* shrink basis so 3 cards + gap stay on one line */
   max-width: 360px;
+
   background-color: #8ac4d0;
   border-radius: 1rem;
-  /* room for semicircle */
   padding: 2rem 1rem 4rem;
   box-sizing: border-box;
   color: #214051;
+
   transform-style: preserve-3d;
   transform-origin: center bottom;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -984,11 +985,11 @@ body {
 #current .card-header {
   display: flex;
   justify-content: space-between;
+  font-family: "League Spartan", sans-serif;
   font-weight: 600;
   font-size: 1rem;
   margin-bottom: 0.5rem;
   color: #23596b;
-  font-family: "League Spartan", sans-serif;
 }
 
 #current .card-title {
@@ -1047,11 +1048,9 @@ body {
     flex: none;
     width: 100%;
     max-width: none;
-    /* portrait on mobile */
     aspect-ratio: 4 / 3;
   }
 
-  /* general semicircle positioning on mobile */
   #current .card-image-wrapper {
     left: 50%;
     bottom: -25%;
@@ -1059,7 +1058,6 @@ body {
     transform: translate(-50%, 20%);
   }
 
-  /* bespoke mobile tweaks for only the 2nd card */
   #current .card:nth-child(2) {
     aspect-ratio: 3 / 2;
     padding-bottom: 3rem;
@@ -1077,6 +1075,24 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
+/* ─── BYOU card: full circle outside ─── */
+#current .card:nth-child(3) {
+  overflow: visible;     /* allow its image to escape */
+}
+
+#current .card:nth-child(3) .card-image-wrapper {
+  position: absolute;
+  width: 60%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+
+  bottom: -15%;          /* pull it down below the card */
+  right: -10%;           /* push it out to the right */
+  left: auto;            /* cancel the normal centering */
+  transform: none;       /* remove the previous translate */
+}
+
 /* ─── Section divider ─── */
 .section-divider {
   position: absolute;
@@ -1087,6 +1103,5 @@ body {
   height: 2px;
   background: #faa52d;
   margin-bottom: 2rem;
-  border-radius: 0;
   z-index: 10;
 }
