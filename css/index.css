@@ -736,3 +736,56 @@ section.features .features-text {
     width: auto;
   }
 }
+
+.bg-dark-orange {
+  background-color: #f07015;
+  color: white;
+}
+
+.partnerships-header {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hands-img {
+  max-width: 100px;
+}
+
+.dark-blue {
+  background-color: #006b8f;
+}
+
+.medium-blue {
+  background-color: #3fadc4;
+}
+
+.partnerships-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.partnerships-content {
+  margin: 10px;
+  width: 500px;
+  border-radius: 20px;
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.partnerships-wrapper a {
+  color: white;
+  text-decoration: none;
+}
+
+.partnerships-link {
+  border-radius: 20px;
+  max-width: 400px;
+  border: 3px solid white;
+  padding: 10px;
+}
