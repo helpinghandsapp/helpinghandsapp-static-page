@@ -816,7 +816,7 @@ body {
   font-weight: 900;
   padding: 0.9rem 1.8rem;
   border-radius: 2rem;
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 1rem;
   margin-top: 0.5rem;
   transition: background-color 0.3s ease, transform 0.2s ease,
@@ -856,7 +856,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-45%, -30%);
+  transform: translate(-49%, -33%);
   width: 80%;
   aspect-ratio: 1;
   border-radius: 50%;
