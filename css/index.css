@@ -923,3 +923,126 @@ body {
     transform: none;
   }
 }
+
+/* ─── Current Programming Section ─── */
+#current {
+  background-color: #f07015;
+  padding: 4rem 1rem;
+}
+
+#current .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+#current .section-title {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+#current .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+/* ─── UPDATED CARD RULE ─── */
+#current .card {
+  position: relative;
+  overflow: hidden;
+
+  /* make each card square: */
+  aspect-ratio: 1 / 1;
+
+  /* bump up base size: */
+  flex: 1 1 360px; /* starts at 360px wide */
+  max-width: 420px; /* can grow up to 420px */
+
+  background-color: #8ac4d0;
+  border-radius: 1rem;
+
+  /* keep extra bottom padding for the semicircle */
+  padding: 2rem 1rem 4rem;
+  box-sizing: border-box;
+
+  color: #214051;
+}
+
+#current .card:nth-child(2) {
+  background-color: #faa52d;
+}
+
+#current .card-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #23596b;
+}
+
+#current .card-title {
+  font-size: 2.5rem;
+  margin: 0.25rem 0 1rem;
+  font-weight: 800;
+}
+
+#current .read-more {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.4rem 1rem;
+  border: 2px solid currentColor;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  color: inherit;
+}
+
+#current .card-image-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 45%);
+  width: 110%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#current .card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ─── Mobile adjustments ─── */
+@media (max-width: 600px) {
+  #current .cards {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  #current .card {
+    /* full width, no max-width limit */
+    flex: none;
+    width: 100%;
+    max-width: none;
+
+    /* a gentle portrait ratio so it’s not too tall */
+    aspect-ratio: 4 / 3;
+  }
+
+  #current .card-image-wrapper {
+    /* center horizontally only, and push the circle down so its top half peeks in */
+    left: 50%;
+    bottom: -25%;
+    width: 80%;
+    transform: translate(-50%, 20%);
+  }
+}
