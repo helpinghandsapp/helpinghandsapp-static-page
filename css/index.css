@@ -975,7 +975,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4.5rem;
+  gap: 4.6rem;
   perspective: 1000px; /* enable 3D perspective for hover */
 }
 
@@ -1011,6 +1011,11 @@ body {
   font-size: 1rem;
   margin-bottom: 0.5rem;
   color: #23596b;
+}
+
+/* make the year extra light */
+#current .card-header .year {
+  font-weight: 300;
 }
 
 #current .card-title {
@@ -1055,6 +1060,44 @@ body {
   transform: translate(-50%, 25%);
 }
 
+/* ─── 3D Hover Effect ─── */
+#current .card:hover {
+  transform: translateY(-10px) rotateX(8deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* ─── BYOU card: full circle outside ─── */
+#current .card:nth-child(3) {
+  overflow: visible;
+}
+
+#current .card:nth-child(3) .card-image-wrapper {
+  position: absolute;
+  width: 60%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+  bottom: -15%;
+  right: -10%;
+  left: auto;
+  transform: none;
+}
+
+/* ─── BYOU Stars SVG Overlay ─── */
+#current .card:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  background: url("https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/byou-stars.svg")
+    no-repeat center;
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+  bottom: -15%;
+  right: 35%;
+  pointer-events: none;
+  z-index: 5;
+}
+
 /* ─── Mobile adjustments ─── */
 @media (max-width: 600px) {
   #current .cards {
@@ -1081,49 +1124,30 @@ body {
     aspect-ratio: 3 / 2;
     padding-bottom: 3rem;
   }
+
   #current .card:nth-child(2) .card-image-wrapper {
     width: 80%;
     bottom: -30%;
     transform: translate(-50%, 30%);
   }
-}
 
-/* ─── 3D Hover Effect ─── */
-#current .card:hover {
-  transform: translateY(-10px) rotateX(8deg);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
-}
-
-/* ─── BYOU card: full circle outside ─── */
-#current .card:nth-child(3) {
-  overflow: visible;
-}
-
-#current .card:nth-child(3) .card-image-wrapper {
-  position: absolute;
-  width: 60%;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  overflow: hidden;
-
-  bottom: -15%; /* pull it down below the card */
-  right: -10%; /* push it out to the right */
-  left: auto; /* cancel the normal centering */
-  transform: none; /* remove the previous translate */
-}
-
-/* ─── BYOU Stars SVG Overlay ─── */
-#current .card:nth-child(3)::after {
-  content: "";
-  position: absolute;
-  background: url("https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/byou-stars.svg")
-    no-repeat center;
-  background-size: contain;
-  width: 150px;
-  height: 150px;
-  /* start just outside the card — tweak these values to move */
-  bottom: -15%;
-  right: 35%;
-  pointer-events: none;
-  z-index: 5;
+  /* ─── BYOU mobile overrides ─── */
+  #current .card:nth-child(3) {
+    overflow: visible;
+    aspect-ratio: 4 / 3;
+    padding-bottom: 3rem;
+  }
+  #current .card:nth-child(3) .card-image-wrapper {
+    width: 50%;
+    bottom: -20%;
+    right: -5%;
+    left: auto;
+    transform: none;
+  }
+  #current .card:nth-child(3)::after {
+    width: 120px;
+    height: 100px;
+    bottom: -10%;
+    right: 35%;
+  }
 }
