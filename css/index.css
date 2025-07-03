@@ -1,3 +1,7 @@
+body * {
+  font-family: League Spartan;
+}
+
 #help .wrapper {
   margin-top: -20px;
   padding: 0 20px;
@@ -742,10 +746,19 @@ section.features .features-text {
   color: white;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .partnerships-header {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.partnerships-header h1 {
+  font-weight: 700;
+  font-size: 50px !important;
 }
 
 .hands-img {
@@ -764,21 +777,76 @@ section.features .features-text {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.partnerships-container {
+  position: relative;
+  width: 500px;
+  max-width: 100%;
   margin-top: 20px;
 }
 
+.youth-circle {
+  width: 130px;
+  max-width: 25%;
+  height: auto;
+  position: absolute;
+  overflow: hidden;
+  left: 10px;
+  top: -15%;
+  z-index: 2;
+}
+
+.youth-spiral {
+  width: 100px;
+  max-width: 25vw;
+  height: auto;
+  position: absolute;
+  overflow: hidden;
+  left: -6%;
+  top: 30px;
+  z-index: 0;
+}
+
+.community-circle {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  overflow: hidden;
+  right: -35px;
+  bottom: -30px;
+  z-index: 2;
+}
+
+.navy-dotted-circle {
+  width: 120px;;
+  height: auto;
+  position: absolute;
+  overflow: hidden;
+  right: -45px;
+  bottom: -40px;
+  z-index: 0;
+}
+
 .partnerships-content {
+  position: relative;
   margin: 10px;
-  width: 500px;
+  max-width: 100%;
+  height: 100%;
   border-radius: 20px;
   padding: 0 20px 20px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
-.partnerships-wrapper a {
+.partnerships-content * {
+  font-weight: 700;
+}
+
+.partnerships-content a {
   color: white;
   text-decoration: none;
 }
