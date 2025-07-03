@@ -753,6 +753,13 @@ body {
   font-family: "League Spartan", sans-serif;
 }
 
+/* ─── Wrapper for consistent layout ─── */
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 /* ─── Hero Section ─── */
 .hero-section {
   position: relative;
@@ -763,8 +770,6 @@ body {
 }
 
 .hero-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -895,35 +900,52 @@ body {
   .hero-section {
     padding: 5rem 1rem 3rem;
   }
+
   .hero-wrapper {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .hero-title {
     font-size: 2rem;
     line-height: 1.2;
     margin-bottom: 0.5rem;
   }
+
   .hero-title > span {
     display: inline;
     white-space: normal;
   }
+
   .hero-button {
     font-size: 0.95rem;
     padding: 0.65rem 1.2rem;
     margin-top: 1rem;
   }
+
   .hero-blob {
     width: clamp(300px, 70vw, 600px);
   }
+
   .hero-blob .blob-inner-image {
     width: 80%;
   }
+
   .underline-real::after {
     height: 0.35em;
     bottom: -0.15em;
     top: auto;
     transform: none;
+  }
+}
+
+/* ─── Shift only text slightly left on large screens ─── */
+@media (min-width: 1025px) {
+  .hero-text {
+    transform: translateX(-15%);
+  }
+  .hero-blob {
+    transform: translateX(-5%);
   }
 }
 
@@ -935,7 +957,7 @@ body {
 
 #current .wrapper {
   position: relative;
-  max-width: 1080px;    /* match site wrapper */
+  max-width: 1080px; /* match site wrapper */
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -946,7 +968,7 @@ body {
   text-align: left;
   font-weight: 800;
   margin-bottom: 2rem;
-  max-width: 30ch;       /* constrain for natural wrapping */
+  max-width: 30ch; /* constrain for natural wrapping */
 }
 
 #current .cards {
@@ -954,7 +976,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 4.5rem;
-  perspective: 1000px;   /* enable 3D perspective for hover */
+  perspective: 1000px; /* enable 3D perspective for hover */
 }
 
 /* ─── Card base ─── */
@@ -1084,17 +1106,18 @@ body {
   border-radius: 50%;
   overflow: hidden;
 
-  bottom: -15%;          /* pull it down below the card */
-  right: -10%;           /* push it out to the right */
-  left: auto;            /* cancel the normal centering */
-  transform: none;       /* remove the previous translate */
+  bottom: -15%; /* pull it down below the card */
+  right: -10%; /* push it out to the right */
+  left: auto; /* cancel the normal centering */
+  transform: none; /* remove the previous translate */
 }
 
 /* ─── BYOU Stars SVG Overlay ─── */
 #current .card:nth-child(3)::after {
   content: "";
   position: absolute;
-  background: url('https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/byou-stars.svg') no-repeat center;
+  background: url("https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/byou-stars.svg")
+    no-repeat center;
   background-size: contain;
   width: 150px;
   height: 150px;
