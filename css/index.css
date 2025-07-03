@@ -1136,6 +1136,7 @@ body {
   }
 }
 
+/* ─── Mission Section ─── */
 .mission-section {
   position: relative;
   min-height: 600px;
@@ -1152,8 +1153,8 @@ body {
 .mission-blob-bg {
   position: absolute;
   left: 0;
-  bottom: 0;
-  width: 760px; /* Adjust as needed for desktop */
+  bottom: -20px;
+  width: 1050px; /* Adjust as needed for desktop */
   height: auto;
   z-index: 1;
   pointer-events: none;
@@ -1165,7 +1166,8 @@ body {
 
 .mission-content {
   position: absolute;
-  left: 60px;
+  left: 200px;
+  font-weight: 800;
   bottom: 120px;
   z-index: 2;
   max-width: 600px;
@@ -1181,6 +1183,7 @@ body {
   font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: 800;
   margin-bottom: 1.5rem;
+  text-align: center;
   color: #fff;
   line-height: 1.1;
 }
@@ -1193,6 +1196,38 @@ body {
   line-height: 1.3;
 }
 
+.mission-image {
+  position: absolute;
+
+  /* ↓ force it further down ↓ */
+  bottom: clamp(-80px, 12vw, 30px);
+
+  /* ← keep your left‐shift here or tweak as needed ← */
+  right: clamp(160px, 12vw, 200px);
+
+  width: clamp(360px, 40vw, 650px);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.mission-image .mission-circle {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.mission-image .mission-photo {
+  position: absolute;
+  top: 54%;
+  left: 55%;
+  width: 78%;    /* fills more of the circle */
+  height: 88%;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ─── Medium Screens ─── */
 @media (max-width: 1000px) {
   .mission-blob-bg {
     width: 70vw;
@@ -1206,6 +1241,7 @@ body {
   }
 }
 
+/* ─── Small Screens ─── */
 @media (max-width: 700px) {
   .mission-section {
     min-height: 350px;
@@ -1227,5 +1263,12 @@ body {
   }
   .mission-text {
     font-size: clamp(0.9rem, 3vw, 1.1rem);
+  }
+
+  /* let the dotted circle grow & slide off on tiny screens */
+  .mission-image {
+    width: 60vw;
+    bottom: -5vw;
+    right:  -5vw;
   }
 }
