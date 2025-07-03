@@ -740,9 +740,7 @@ section.features .features-text {
   }
 }
 
-/* 1. Font import */
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;900&display=swap");
-
+/* ───────── Global Reset & Base ───────── */
 * {
   margin: 0;
   padding: 0;
@@ -753,15 +751,15 @@ body {
   font-family: "League Spartan", sans-serif;
 }
 
-/* ─── Wrapper for consistent layout ─── */
+/* ─── Generic Wrapper for Layout ─── */
 .wrapper {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-/* ─── Hero Section ─── */
-.hero-section {
+/* ───────── Hero Section ───────── */
+#hero {
   position: relative;
   background-color: #f07015;
   color: #fff;
@@ -769,7 +767,7 @@ body {
   overflow: hidden;
 }
 
-.hero-wrapper {
+#hero .hero-wrapper {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -778,74 +776,71 @@ body {
   z-index: 2;
 }
 
-/* ─── Text Area ─── */
-.hero-text {
+#hero .hero-text {
   flex: 1 1 500px;
   min-width: 280px;
 }
 
-.hero-title {
+#hero .hero-title {
   font-size: 2.8rem;
   font-weight: 900;
   line-height: 0.7;
   margin-bottom: 2rem;
 }
 
-.hero-title > span {
+#hero .hero-title > span {
   display: block;
   white-space: nowrap;
 }
 
-/* ─── Underline on "real" ─── */
-.underline-real {
+/* underline under “real” */
+#hero .underline-real {
   position: relative;
   display: inline-block;
 }
 
-.underline-real::after {
+#hero .underline-real::after {
   content: "";
   position: absolute;
   left: 0;
   top: 100%;
   width: 100%;
   height: 0.25em;
-  background: url("https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/top-underline.svg")
-    no-repeat center top;
+  background: url("https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/top-underline.svg") no-repeat center top;
   background-size: 100% auto;
   pointer-events: none;
   transform: translateY(0.15em);
 }
 
-/* ─── Button ─── */
-.hero-button {
+/* hero button */
+#hero .hero-button {
   display: inline-block;
   background-color: #006b8f;
   color: #fff;
   font-weight: 900;
   padding: 0.9rem 1.8rem;
   border-radius: 2rem;
-  text-decoration: none !important;
+  text-decoration: none;
   font-size: 1.2rem;
   margin-top: 0.5rem;
-  transition: background-color 0.3s ease, transform 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: background-color 0.3s ease,
+              transform 0.2s ease,
+              box-shadow 0.2s ease;
 }
-
-.hero-button:hover,
-.hero-button:focus {
+#hero .hero-button:hover,
+#hero .hero-button:focus {
   background-color: #005f7a;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
-
-.hero-button:active {
+#hero .hero-button:active {
   background-color: #004f68;
   transform: translateY(0);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-/* ─── Blob ─── */
-.hero-blob {
+/* the blob background */
+#hero .hero-blob {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -853,14 +848,12 @@ body {
   overflow: hidden;
   z-index: 1;
 }
-
-.hero-blob .blob-bg {
+#hero .hero-blob .blob-bg {
   display: block;
   width: 100%;
   height: auto;
 }
-
-.hero-blob .blob-inner-image {
+#hero .hero-blob .blob-inner-image {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -870,68 +863,59 @@ body {
   border-radius: 50%;
   object-fit: cover;
   z-index: 2;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
-/* ─── Tablets (768px up to 1024px) ─── */
+/* ─── Hero Responsive ─── */
+/* Tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .hero-title {
-    font-size: 2.2rem !important;
+  #hero .hero-title {
+    font-size: 2.2rem;
     line-height: 0.5;
     margin-bottom: 1rem;
   }
-
-  .hero-button {
+  #hero .hero-button {
     font-size: 1.05rem;
     padding: 0.75rem 1.5rem;
   }
-
-  .hero-blob {
+  #hero .hero-blob {
     width: clamp(350px, 50vw, 700px);
   }
-
-  .hero-blob .blob-inner-image {
+  #hero .hero-blob .blob-inner-image {
     width: 80%;
   }
 }
 
-/* ─── Phones (up to 767px) ─── */
+/* Phones */
 @media (max-width: 767px) {
-  .hero-section {
+  #hero {
     padding: 5rem 1rem 3rem;
   }
-
-  .hero-wrapper {
+  #hero .hero-wrapper {
     flex-direction: column;
     align-items: flex-start;
   }
-
-  .hero-title {
+  #hero .hero-title {
     font-size: 2rem;
     line-height: 1.2;
     margin-bottom: 0.5rem;
   }
-
-  .hero-title > span {
+  #hero .hero-title > span {
     display: inline;
     white-space: normal;
   }
-
-  .hero-button {
+  #hero .hero-button {
     font-size: 0.95rem;
     padding: 0.65rem 1.2rem;
     margin-top: 1rem;
   }
-
-  .hero-blob {
+  #hero .hero-blob {
     width: clamp(300px, 70vw, 600px);
   }
-
-  .hero-blob .blob-inner-image {
+  #hero .hero-blob .blob-inner-image {
     width: 80%;
   }
-
-  .underline-real::after {
+  #hero .underline-real::after {
     height: 0.35em;
     bottom: -0.15em;
     top: auto;
@@ -939,12 +923,12 @@ body {
   }
 }
 
-/* ─── Shift only text slightly left on large screens ─── */
+/* shift left on very large screens */
 @media (min-width: 1025px) {
-  .hero-text {
+  #hero .hero-text {
     transform: translateX(-15%);
   }
-  .hero-blob {
+  #hero .hero-blob {
     transform: translateX(-5%);
   }
 }
@@ -1126,7 +1110,7 @@ body {
   }
 
   #current .card:nth-child(2) .card-image-wrapper {
-    width: 80%;
+    width: 70%;
     bottom: -30%;
     transform: translate(-50%, 30%);
   }
