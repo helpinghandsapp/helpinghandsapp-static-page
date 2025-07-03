@@ -820,7 +820,7 @@ body {
   padding: 0.9rem 1.8rem;
   border-radius: 2rem;
   text-decoration: none !important;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-top: 0.5rem;
   transition: background-color 0.3s ease, transform 0.2s ease,
     box-shadow 0.2s ease;
@@ -927,15 +927,15 @@ body {
   }
 }
 
-/* ─── Current Programming Section ─── */
+/* ─── Current Section ─── */
 #current {
   background-color: #f07015;
   padding: 4rem 1rem;
 }
 
-#current .container {
+#current .wrapper {
   position: relative;
-  max-width: 1200px;
+  max-width: 1080px;    /* match site wrapper */
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -946,37 +946,36 @@ body {
   text-align: left;
   font-weight: 800;
   margin-bottom: 2rem;
+  max-width: 30ch;       /* constrain for natural wrapping */
 }
 
 #current .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;             /* increased gap between cards */
-  perspective: 1000px;   /* enable 3D perspective */
+  gap: 4.5rem;
+  perspective: 1000px;   /* enable 3D perspective for hover */
 }
 
 /* ─── Card base ─── */
 #current .card {
   position: relative;
-  overflow: hidden;      /* default: clip semicircles */
-
+  overflow: hidden;
   aspect-ratio: 1 / 1;
-  flex: 1 1 300px;       /* shrink basis so 3 cards + gap stay on one line */
+  flex: 1 1 300px;
   max-width: 360px;
-
   background-color: #8ac4d0;
   border-radius: 1rem;
   padding: 2rem 1rem 4rem;
   box-sizing: border-box;
   color: #214051;
 
+  /* prepare for 3D hover */
   transform-style: preserve-3d;
   transform-origin: center bottom;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* second card background */
 #current .card:nth-child(2) {
   background-color: #faa52d;
 }
@@ -993,12 +992,11 @@ body {
 }
 
 #current .card-title {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin: 0.25rem 0 1rem;
   font-weight: 800;
 }
 
-/* ─── Read more button ─── */
 #current .read-more {
   display: inline-block;
   margin-bottom: 1rem;
@@ -1029,7 +1027,6 @@ body {
   object-fit: cover;
 }
 
-/* ─── Tweak only the 2nd card’s image for desktop ─── */
 #current .card:nth-child(2) .card-image-wrapper {
   width: 100%;
   bottom: -20%;
@@ -1077,7 +1074,7 @@ body {
 
 /* ─── BYOU card: full circle outside ─── */
 #current .card:nth-child(3) {
-  overflow: visible;     /* allow its image to escape */
+  overflow: visible;
 }
 
 #current .card:nth-child(3) .card-image-wrapper {
@@ -1093,15 +1090,17 @@ body {
   transform: none;       /* remove the previous translate */
 }
 
-/* ─── Section divider ─── */
-.section-divider {
+/* ─── BYOU Stars SVG Overlay ─── */
+#current .card:nth-child(3)::after {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1500px;
-  height: 2px;
-  background: #faa52d;
-  margin-bottom: 2rem;
-  z-index: 10;
+  background: url('https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/byou-stars.svg') no-repeat center;
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+  /* start just outside the card — tweak these values to move */
+  bottom: -15%;
+  right: 35%;
+  pointer-events: none;
+  z-index: 5;
 }
