@@ -36,11 +36,6 @@
     <link rel="stylesheet" href="css/creative.css" type="text/css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="img/device-mockups/device-mockups.min.css" />
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
 
     <!-- add slick.css -->
     <link
@@ -52,21 +47,17 @@
       type="text/css"
       href="./slick-1.8.1/slick/slick-theme.css" />
 
-    <!--[endif]-->
-
     <!-- Google Tag Manager -->
     <script src="js/google-tag.js"></script>
-    <!-- End Google Tag Manager -->
 
-    <!-- Google Analytics Tracking Code for http://helpinghandsapp.com -->
+    <!-- Google Analytics -->
     <script src="js/google-analytics.js"></script>
 
-    <!-- Hotjar Tracking Code for http://helpinghandsapp.com -->
+    <!-- Hotjar Tracking -->
     <script src="js/hotjar.js"></script>
 
-    <!-- Facebook Pixel Code -->
+    <!-- Facebook Pixel -->
     <script src="js/facebook.js"></script>
-
     <noscript>
       <img
         height="1"
@@ -75,151 +66,154 @@
         src="https://www.facebook.com/tr?id=469056013291786&ev=PageView&noscript=1"
         alt="Facebook page view" />
     </noscript>
-    <!-- End Facebook Pixel Code -->
 
-    <!-- mailchimp pop up code  -->
-    <!-- <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"bb1a6c0f75e6f04a1ef2e8ca5","lid":"d9576472f9"}) })</script> -->
     <script src="navbar.js"></script>
     <script src="footer.js"></script>
   </head>
 
-  <!--============================================================================================-->
   <body id="page-top">
-    <!-- skip to main content (accesibility) -->
+    <!-- Accessibility: skip link -->
     <a class="skip-to-content-link" href="#main-content">Skip to content</a>
 
     <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
+    <noscript>
+      <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-N283VZD"
         height="0"
         width="0"
-        style="display: none; visibility: hidden"></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+        style="display: none; visibility: hidden"></iframe>
+    </noscript>
+
+    <!-- Navbar -->
     <div id="navbar-container">
       <script>
         const navbarContainer = document.getElementById("navbar-container");
         navbarContainer.innerHTML = generateNavbar();
       </script>
     </div>
-    <!--============================================================================================-->
-    <!-- index.html -->
+
+    <!-- Hero Section -->
     <section id="hero" class="hero-section">
-  <div class="wrapper">
-    <div class="hero-wrapper">
-      <div class="hero-text">
-        <h1 class="hero-title">
-          <span>Fueling youth ambition</span><br />
-          <span>with <span class="underline-real">real</span> experience and</span><br />
-          <span>purpose-driven work</span>
-        </h1>
-        <a href="#" class="hero-button">See how we do it</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="hero-blob">
-    <img
-      class="blob-bg"
-      src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/top-orange-blob-testing.svg"
-      alt="Blob" />
-    <img
-      class="blob-inner-image"
-      src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/top-image.jpg"
-      alt="Inner Image" />
-  </div>
-</section>
-
-
-    <!-- Current Programming ===================================================== -->
-</style>
-
-<section id="current" class="current bg-secondary">
-  <div class="wrapper">
-    <div class="section-divider"></div>
-    <h2 class="section-title">Current Programming</h2>
-    <div class="cards">
-      <!-- Card 1 -->
-      <div class="card">
-        <div class="card-header">
-          <span class="category">Volunteerism</span>
-          <span class="year">2025</span>
-        </div>
-        <h3 class="card-title">Volunteer 120</h3>
-        <div class="card-image-wrapper">
-          <img src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/volunteer-120.png" alt="Volunteer 120" />
+      <div class="wrapper">
+        <div class="hero-wrapper">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span>Fueling youth ambition</span><br />
+              <span
+                >with <span class="underline-real">real</span> experience
+                and</span
+              ><br />
+              <span>purpose-driven work</span>
+            </h1>
+            <a href="#" class="hero-button">See how we do it</a>
+          </div>
         </div>
       </div>
 
-      <!-- Card 2 -->
-      <div class="card">
-        <div class="card-header">
-          <span class="category">Social Entrepreneurship</span>
-          <span class="year">2024</span>
+      <div class="hero-blob">
+        <img
+          class="blob-bg"
+          src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/top-orange-blob-testing.svg"
+          alt="Blob" />
+        <img
+          class="blob-inner-image"
+          src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/top-image.jpg"
+          alt="Inner Image" />
+      </div>
+    </section>
+
+    <!-- Current Programming -->
+    <section id="current" class="current bg-secondary">
+      <div class="wrapper">
+        <div class="section-divider"></div>
+        <h2 class="section-title">Current Programming</h2>
+        <div class="cards">
+          <!-- Card 1 -->
+          <div class="card">
+            <div class="card-header">
+              <span class="category">Volunteerism</span>
+              <span class="year">2025</span>
+            </div>
+            <h3 class="card-title">Volunteer 120</h3>
+            <div class="card-image-wrapper">
+              <img
+                src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/volunteer-120.png"
+                alt="Volunteer 120" />
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="card-header">
+              <span class="category">Social Entrepreneurship</span>
+              <span class="year">2024</span>
+            </div>
+            <h3 class="card-title">Changemakers Microgrant</h3>
+            <div class="card-image-wrapper">
+              <img
+                src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/changemakers-microgrant.jpg"
+                alt="Changemakers Microgrant" />
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="card-header">
+              <span class="category">Community Supports</span>
+              <span class="year">2025</span>
+            </div>
+            <h3 class="card-title">BYOU</h3>
+            <a href="#" class="read-more">Read more</a>
+            <div class="card-image-wrapper">
+              <img
+                src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/byou-new.PNG"
+                alt="BYOU" />
+            </div>
+          </div>
         </div>
-        <h3 class="card-title">Changemakers Microgrant</h3>
-        <div class="card-image-wrapper">
-          <img src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/changemakers-microgrant.jpg" alt="Changemakers Microgrant" />
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="mission-section">
+      <div class="mission-blob-container">
+        <img
+          class="mission-blob-bg"
+          src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/new-mission-blob.svg"
+          alt="Mission Blob Background" />
+        <div class="mission-content">
+          <h2 class="mission-title">Our Mission</h2>
+          <p class="mission-text">
+            Helping Hands Platform (Helping Hands) is a grassroots, youth-led
+            not-for-profit organization that works to increase youth community
+            engagement!
+          </p>
+          <p class="mission-text">
+            Helping Hands aims to help young people build their skills and
+            careers through volunteer, entrepreneurship, and early career
+            exploration. Ontario youth between the ages of 13–29 have access to
+            our services free of charge.
+          </p>
         </div>
       </div>
 
-      <!-- Card 3 -->
-      <div class="card">
-        <div class="card-header">
-          <span class="category">Community Supports</span>
-          <span class="year">2025</span>
-        </div>
-        <h3 class="card-title">BYOU</h3>
-        <a href="#" class="read-more">Read more</a>
-        <div class="card-image-wrapper">
-          <img src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/byou-new.PNG" alt="BYOU" />
-        </div>
+      <div class="mission-image">
+        <img
+          class="mission-circle"
+          src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/dotted-circle-white-cropped.svg"
+          alt=""
+          aria-hidden="true" />
+        <img
+          class="mission-photo"
+          src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/our-mission-new.jpg"
+          alt="Helping Hands team" />
       </div>
-    </div>
-  </div>
-</section>
-    <!--============================================================================================-->
-<section id="mission" class="mission-section">
-  <img
-    class="mission-blob-bg"
-    src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/new-mission-blob.svg"
-    alt="Mission Blob Background"
-  />
+    </section>
 
-  <div class="mission-content">
-    <h2 class="mission-title">Our Mission</h2>
-    <p class="mission-text">
-      Helping Hands Platform (Helping Hands) is a grassroots, youth-led not-for-profit organization that works to increase youth community engagement!
-    </p>
-    <p class="mission-text">
-      Helping Hands aims to help young people build their skills and careers through volunteer, entrepreneurship, and early career exploration. Ontario youth between the ages of 13-29 have access to our services free of charge.
-    </p>
-  </div>
-
-  <!-- new image container -->
-  <div class="mission-image">
-    <!-- dotted circle border -->
-    <img
-      class="mission-circle"
-      src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/dotted-circle-white-cropped.svg"
-      alt=""
-      aria-hidden="true"
-    />
-    <!-- your photo -->
-    <img
-      class="mission-photo"
-      src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/our-mission.jpg"
-      alt="Helping Hands team"
-    />
-  </div>
-</section>
-
-    <!--MOBILE VIEW FOR MORE THAN AN APP ============================================================================================-->
-
+    <!-- More Than an App Section -->
     <section id="mta" class="bg-primary"> section 4 </section>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <div id="footer-container">
       <script>
         const footerContainer = document.getElementById("footer-container");
@@ -227,33 +221,19 @@
       </script>
     </div>
 
-    <!--============================================================================================-->
-
-    <!-- jQuery -->
+    <!-- Scripts -->
     <script src="js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/wow.min.js"></script>
-    <!-- MailGo Script -->
     <script src="https://unpkg.com/mailgo@0.9.14/dist/mailgo.min.js"></script>
-    <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
-    <!-- slick.css -->
     <script src="slick-1.8.1/slick/slick.js"></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script
-      type="text/javascript"
-      src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/slick2.js"></script>
-    <!-- load javascript for navbar accesibility -->
     <script defer src="js/navbar-accesibility.js"></script>
   </body>
 </html>
