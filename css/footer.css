@@ -7,10 +7,10 @@ footer {
 }
 
 footer h1,
-h2,
-h3,
-h4 {
-  font-family: League Spartan;
+footer h2,
+footer h3,
+footer h4 {
+  font-family: "League Spartan";
 }
 
 .footer-contents {
