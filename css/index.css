@@ -1225,7 +1225,7 @@ body {
   width: 78%;          /* slightly inset so border is visible */
   height: 88%;
   object-fit: cover;
-  object-position: 80% 40%;
+  object-position: -50% 30%; 
   border-radius: 50%;
   transform: translate(-60%, -50%) ;
   z-index: 1;
@@ -1259,9 +1259,14 @@ body {
     margin: 2rem auto 0;
     pointer-events: auto;
   }
+
+  .mission-circle {
+    width: 90%;
+    height: auto;
+    transform: translate(70%, 0%) ;
+  }
   .mission-image .mission-photo {
     transform: translate(15%, -50%);
-    object-position: center;
   }
 }
 
