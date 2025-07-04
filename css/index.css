@@ -806,7 +806,8 @@ body {
   top: 100%;
   width: 100%;
   height: 0.25em;
-  background: url("https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/top-underline.svg") no-repeat center top;
+  background: url("https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/top-underline.svg")
+    no-repeat center top;
   background-size: 100% auto;
   pointer-events: none;
   transform: translateY(0.15em);
@@ -823,20 +824,19 @@ body {
   text-decoration: none;
   font-size: 1.2rem;
   margin-top: 0.5rem;
-  transition: background-color 0.3s ease,
-              transform 0.2s ease,
-              box-shadow 0.2s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 #hero .hero-button:hover,
 #hero .hero-button:focus {
   background-color: #005f7a;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 #hero .hero-button:active {
   background-color: #004f68;
   transform: translateY(0);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 /* the blob background */
@@ -863,7 +863,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   z-index: 2;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ─── Hero Responsive ─── */
@@ -1143,56 +1143,60 @@ body {
   overflow: hidden;
   width: 100vw;
   max-width: 100%;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0;
 }
 
+/* ─── Blob Container ─── */
+.mission-blob-container {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  z-index: 1;
+}
+
+/* ─── Fluid Mission Blob (default) ─── */
 .mission-blob-bg {
   position: absolute;
-  left: 0;
-  bottom: -20px;
-  width: 1050px;
+  left: 50%;
+  bottom: 0;
+  width: clamp(120vw, 150vw, 180vw);
   height: auto;
-  z-index: 1;
+  transform: translateX(-50%) translateY(20%);
+  transform-origin: bottom center;
   pointer-events: none;
   user-select: none;
-  max-width: 100vw;
-  min-width: 350px;
-  transition: width 0.3s;
 }
 
+/* ─── Mission Text ─── */
 .mission-content {
   position: relative;
   z-index: 2;
   padding: 6rem 2rem 4rem;
   max-width: 600px;
   width: 100%;
-  font-weight: 800;
-  color: #fff;
-  font-size: clamp(1rem, 2vw, 1.2rem);
   margin-left: 6vw;
+  color: #fff;
+  font-weight: 800;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  text-align: left;
 }
-
 .mission-title {
   font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: 800;
   margin-bottom: 2rem;
-  color: #fff;
   line-height: 1.2;
-  text-align: left;
 }
-
 .mission-text {
   font-size: clamp(1rem, 2vw, 1.2rem);
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 1.2rem;
-  color: #fff;
   line-height: 1.4;
-  text-align: left;
 }
 
+/* ─── Mission Image & Hover ─── */
 .mission-image {
   position: absolute;
   bottom: clamp(-80px, 12vw, 30px);
@@ -1200,118 +1204,110 @@ body {
   width: clamp(360px, 40vw, 650px);
   z-index: 2;
   pointer-events: none;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  overflow: visible;   /* allow the dotted border to show */
 }
 
+/* Keep the dotted circle full-size and on top */
 .mission-image .mission-circle {
+  position: relative;
   display: block;
-  width: 100%;
+  width: 84%;
   height: auto;
+  z-index: 2;
 }
 
+/* Clip just the photo into a circle, centered behind the border */
 .mission-image .mission-photo {
   position: absolute;
-  top: 54%;
-  left: 55%;
-  width: 78%;
+  top: 50%;
+  left: 50%;
+  width: 78%;          /* slightly inset so border is visible */
   height: 88%;
   object-fit: cover;
-  object-position: -20% -20%;
-  border-radius: 200%;
-  transform: translate(-50%, -50%);
+  object-position: 50% 50%;
+  border-radius: 50%;
+  transform: translate(-60%, -50%);
+  z-index: 1;
+  transition: transform 0.4s ease, filter 0.4s ease;
 }
 
-/* Phones: stack layout */
+/* Hover zoom effect (unchanged) */
+.mission-image:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.2));
+  cursor: pointer;
+}
+
+.mission-image:hover .mission-photo {
+  transform: translate(-50%, -50%) scale(1.05);
+  filter: brightness(1.05);
+}
+
+/* ─── Phones: Stack Layout ─── */
 @media (max-width: 767px) {
   .mission-content {
     margin-left: 0;
     padding: 4rem 1.5rem 3rem;
+    text-align: center;
   }
-
-  .mission-title {
-    font-size: 1.8rem;
-    text-align: left;
-  }
-
-  .mission-text {
-    font-size: 1rem;
-  }
-
+  .mission-title { font-size: 1.8rem; }
+  .mission-text  { font-size: 0.9rem; }
   .mission-image {
     position: relative;
     width: 75vw;
-    right: auto;
-    bottom: auto;
     margin: 2rem auto 0;
+    pointer-events: auto;
   }
-
   .mission-image .mission-photo {
-    width: 78%;
-    height: 88%;
-    top: 50%;
-    left: 50%;
-    object-position: -20% -25%;
-    transform: translate(-45%, -45%);
-  }
-
-  .mission-blob-bg {
-    width: 130vw;
-    left: -20vw;
-    bottom: -12vw;
+    transform: translate(-50%, -50%);
+    object-position: center;
   }
 }
 
-/* Medium Screens (tablet and small desktop) */
+/* ─── Tablets & Small Desktops ─── */
 @media (min-width: 768px) and (max-width: 1199px) {
   .mission-content {
     margin-left: 4vw;
     padding: 5rem 2rem 3rem;
+    text-align: center;
   }
-
-  .mission-title {
-    font-size: 2.3rem;
-  }
-
-  .mission-text {
-    font-size: 1.1rem;
-  }
-
+  .mission-title { font-size: 2.3rem; }
+  .mission-text  { font-size: 1.1rem; }
   .mission-image {
     position: relative;
     width: 70vw;
     margin: 3rem auto 0;
-    right: auto;
-    bottom: auto;
+    pointer-events: auto;
   }
-
   .mission-image .mission-photo {
-    width: 78%;
-    height: 88%;
-    top: 50%;
-    left: 50%;
-    object-position: -20% -20%;
     transform: translate(-45%, -45%);
-  }
-
-  .mission-blob-bg {
-    width: 120vw;
-    left: -15vw;
-    bottom: -10vw;
+    object-position: center;
   }
 }
 
+/* ─── Large Screens (Desktop ≥1200px) ─── */
 @media (min-width: 1200px) {
   .mission-section {
-    display: block; /* avoid flex collapse */
+    display: block;
     min-height: 600px;
+  }
+
+  /* Blob bottom-left, text inside */
+  .mission-blob-bg {
+    left: 0;
+    bottom: -20px;
+    width: clamp(800px, 50vw, 1000px);
+    transform: translate(-10%, 100%);
   }
 
   .mission-content {
     position: absolute;
-    left: 020px;
-    bottom: 30px;
-    max-width: 600px;
-    width: 40vw;
-    z-index: 2;
+    top: 15%;        /* tweak as needed */
+    left: 8%;        /* inside the blob */
+    width: 35vw;
+    margin-left: 0;
+    text-align: left;
   }
 
   .mission-image {
@@ -1319,6 +1315,6 @@ body {
     right: 160px;
     bottom: clamp(-80px, 12vw, 30px);
     width: clamp(360px, 40vw, 650px);
-    z-index: 2;
+    pointer-events: auto;
   }
 }
