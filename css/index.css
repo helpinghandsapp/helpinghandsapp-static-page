@@ -1197,7 +1197,6 @@ body {
   line-height: 1.4;
 }
 
-/* ─── Mission Image & Hover ─── */
 .mission-image {
   position: absolute;
   bottom: clamp(-80px, 12vw, 30px);
@@ -1206,10 +1205,9 @@ body {
   z-index: 2;
   pointer-events: none;
   transition: transform 0.4s ease, filter 0.4s ease;
-  overflow: visible;  
+  overflow: visible;
 }
 
-/* Keep the dotted circle full-size and on top */
 .mission-image .mission-circle {
   position: relative;
   display: block;
@@ -1218,17 +1216,16 @@ body {
   z-index: 2;
 }
 
-/* Clip just the photo into a circle, centered behind the border */
 .mission-image .mission-photo {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 78%;       
+  width: 78%;
   height: 88%;
   object-fit: cover;
-  object-position: 0% 30%; 
+  object-position: 0% 30%;
   border-radius: 50%;
-  transform: translate(-60%, -50%) ;
+  transform: translate(-60%, -50%);
   z-index: 1;
   transition: transform 0.4s ease, filter 0.4s ease;
 }
@@ -1240,11 +1237,13 @@ body {
     padding: 4rem 1.5rem 3rem;
     text-align: left;
   }
-  .mission-title { 
+  .mission-title {
     font-size: 1.8rem;
     text-align: center;
-   }
-  .mission-text  { font-size: 0.9rem; }
+  }
+  .mission-text {
+    font-size: 0.9rem;
+  }
   .mission-image {
     position: relative;
     width: 75vw;
@@ -1255,7 +1254,7 @@ body {
   .mission-circle {
     width: 90%;
     height: auto;
-    transform: translate(70%, 0%) ;
+    transform: translate(70%, 0%);
   }
   .mission-image .mission-photo {
     transform: translate(15%, -50%);
@@ -1269,10 +1268,13 @@ body {
     padding: 5rem 2rem 3rem;
     text-align: left;
   }
-  .mission-title { 
-    font-size: 2.3rem; 
-    text-align: center;}
-  .mission-text  { font-size: 1.4rem; }
+  .mission-title {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+  .mission-text {
+    font-size: 1.4rem;
+  }
   .mission-image {
     position: relative;
     width: 70vw;
@@ -1283,7 +1285,7 @@ body {
   .mission-circle {
     width: 90%;
     height: auto;
-    transform: translate(50%, 0%) ;
+    transform: translate(50%, 0%);
   }
   .mission-image .mission-photo {
     transform: translate(-6%, -50%);
@@ -1308,15 +1310,15 @@ body {
 
   .mission-content {
     position: absolute;
-    top: 15%; 
-    left: 3%;        
+    top: 15%;
+    left: 3%;
     width: 35vw;
     margin-left: 0;
     text-align: left;
   }
   .mission-title {
     font-size: 3.5rem;
-    left: 20%; 
+    left: 20%;
     text-align: center;
   }
 
