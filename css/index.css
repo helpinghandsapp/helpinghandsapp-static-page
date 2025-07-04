@@ -1250,6 +1250,11 @@ body {
     margin: 2rem auto 0;
     pointer-events: auto;
   }
+  .mission-blob-bg {
+    left: 50%;
+    width: clamp(650px, 50vw, 850px);
+    transform: translateX(-50%) translateY(30%);
+  }
 
   .mission-circle {
     width: 90%;
