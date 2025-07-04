@@ -55,16 +55,11 @@
       />
     </noscript>
     <!-- End Facebook Pixel Code -->
-    <script src="navbar.js"></script>
-    <script src="footer.js"></script>
+    <script src="js/load-containers.js"></script>
   </head>
   <body>
-    <div id="navbar-container">
-      <script>
-        const navbarContainer = document.getElementById("navbar-container");
-        navbarContainer.innerHTML = generateNavbar();
-      </script>
-    </div>
+    <div id="navbar-container"></div>
+    <script src="js/navbar-load.js"></script>
     <!-- header section -->
     <div class="csc-header wrapper">
       <div>
@@ -356,12 +351,11 @@
       </div>
     </main>
     <!-- FOOTER -->
-    <div id="footer-container">
-      <script>
-        const footerContainer = document.getElementById("footer-container");
-        footerContainer.innerHTML = generateFooter();
-      </script>
-    </div>
+    <div id="footer-container"></div>
+    <script>
+      loadContainers("navbar", "footer");
+    </script>
+    <script src="js/footer.js"></script>
     <!-- faq accordion script -->
     <script>
       const accordion = document.getElementsByClassName("accordion");
