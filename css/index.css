@@ -839,7 +839,6 @@ body {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-/* the blob background */
 #hero .hero-blob {
   position: absolute;
   right: 0;
@@ -987,7 +986,7 @@ body {
 
 #current .wrapper {
   position: relative;
-  max-width: 1080px; /* match site wrapper */
+  max-width: 1080px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -998,7 +997,7 @@ body {
   text-align: left;
   font-weight: 800;
   margin-bottom: 2rem;
-  max-width: 30ch; /* constrain for natural wrapping */
+  max-width: 30ch;
 }
 
 #current .cards {
@@ -1006,7 +1005,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 4.6rem;
-  perspective: 1000px; /* enable 3D perspective for hover */
+  perspective: 1000px;
 }
 
 /* ─── Card base ─── */
@@ -1182,35 +1181,34 @@ body {
   }
 
   #current .card-title {
-  font-size: 1.6rem;
-  margin: 0.25rem 0 1rem;
-  font-weight: 800;
-  
-}
+    font-size: 1.6rem;
+    margin: 0.25rem 0 1rem;
+    font-weight: 800;
+  }
 }
 /* ─── Tablet adjustments (only card titles) ─── */
 @media (min-width: 601px) and (max-width: 1024px) {
- #current .section-title {
-  color: #fff;
-  font-size: 2.5rem;
-  text-align: center;
-  font-weight: 800;
-  margin-bottom: 2rem;
-  max-width: 30ch; 
-}
+  #current .section-title {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    max-width: 30ch;
+  }
 }
 
 /* ─── Small-desktop adjustments ─── */
 @media (min-width: 1027px) and (max-width: 1111px) {
-   #current .section-title {
-  color: #fff;
-  font-size: 2.5rem;
-  text-align: center;
-  font-weight: 800;
-  margin-bottom: 2rem;
-  max-width: 30ch;
-  margin-left: 12%;
-}
+  #current .section-title {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    max-width: 30ch;
+    margin-left: 12%;
+  }
 }
 
 /* ─── Mission Section ─── */
@@ -1310,8 +1308,8 @@ body {
 /* ─── Phones: Stack Layout ─── */
 @media (max-width: 767px) {
   .mission-content {
-    margin-left: 0;
-    padding: 4rem 1.5rem 3rem;
+    margin-left: 2vw;
+    padding: 5rem 2rem 3rem;
     text-align: left;
   }
   .mission-title {
@@ -1332,7 +1330,6 @@ body {
     width: clamp(650px, 50vw, 850px);
     transform: translateX(-50%) translateY(30%);
   }
-
   .mission-circle {
     width: 90%;
     height: auto;
@@ -1343,10 +1340,56 @@ body {
   }
 }
 
+@media (min-width: 663px) and (max-width: 766px) {
+  .mission-section {
+    min-height: auto;
+    padding: 4rem 2rem;
+  }
+  .mission-blob-bg {
+    left: 50%;
+    bottom: -10%;
+    width: clamp(850px, 90vw, 950px);
+    transform: translate(-50%, 25%);
+  }
+  .mission-content {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    text-align: left;
+  }
+  .mission-title {
+    font-size: 2.8rem;
+    left: auto;
+    text-align: center !important;
+  }
+  .mission-text {
+    font-size: 1.1rem;
+  }
+  .mission-image {
+    position: relative;
+    bottom: 0;
+    right: auto;
+    width: clamp(300px, 80vw, 500px);
+    margin: 0 auto;
+    transform: none;
+    object-position: center center;
+  }
+  .mission-circle {
+    width: 90%;
+    height: auto;
+    transform: translate(10%, 0%);
+  }
+  .mission-image .mission-photo {
+    transform: translate(-50%, -50%);
+  }
+}
 /* ─── Tablets & Small Desktops ─── */
 @media (min-width: 768px) and (max-width: 1199px) {
   .mission-content {
-    margin-left: 4vw;
+    margin-left: 2vw;
     padding: 5rem 2rem 3rem;
     text-align: left;
   }
@@ -1355,7 +1398,7 @@ body {
     text-align: center;
   }
   .mission-text {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   .mission-image {
     position: relative;
@@ -1393,23 +1436,64 @@ body {
   .mission-content {
     position: absolute;
     top: 15%;
-    left: 3%;
+    left: 6%;
+    width: 35vw;
+    margin-left: 0;
+    text-align: left;
+  }
+  .mission-title {
+    font-size: 3.3rem;
+    left: 40%;
+    text-align: center !important;
+  }
+
+  .mission-text {
+    font-size: 1.2rem;
+  }
+
+  .mission-image {
+    position: absolute;
+    right: -10px;
+    bottom: clamp(-80px, 12vw, 30px);
+    width: clamp(360px, 40vw, 650px);
+    object-position: -100% 50%;
+    pointer-events: auto;
+  }
+}
+
+/* ─── Extra-Large Screens (Desktop ≥1600px) ─── */
+@media (min-width: 1600px) {
+  .mission-blob-bg {
+    left: 0;
+    bottom: -20px;
+    width: clamp(900px, 50vw, 1100px);
+    transform: translate(-10%, 100%);
+  }
+
+  .mission-content {
+    position: absolute;
+    top: 15%;
+    left: 5%;
     width: 35vw;
     margin-left: 0;
     text-align: left;
   }
   .mission-title {
     font-size: 3.5rem;
-    left: 20%;
-    text-align: center;
+    left: 40%;
+    text-align: center !important;
+  }
+
+  .mission-text {
+    font-size: 1.4rem;
   }
 
   .mission-image {
     position: absolute;
-    right: 160px;
+    right: 0px;
     bottom: clamp(-80px, 12vw, 30px);
     width: clamp(360px, 40vw, 650px);
-    object-position: -100% 40%;
+    object-position: -100% 50%;
     pointer-events: auto;
   }
 }
