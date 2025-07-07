@@ -787,7 +787,6 @@ body {
   line-height: 0.7;
   margin-bottom: 2rem;
 }
-
 /* underline under "real" */
 #hero .underline-real {
   position: relative;
@@ -807,6 +806,7 @@ body {
   pointer-events: none;
   transform: translateY(0.15em);
 }
+
 #hero .hero-button {
   display: inline-block;
   background-color: #006b8f;
@@ -820,12 +820,14 @@ body {
   transition: background-color 0.3s ease, transform 0.2s ease,
     box-shadow 0.2s ease;
 }
+
 #hero .hero-button:hover,
 #hero .hero-button:focus {
   background-color: #005f7a;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+
 #hero .hero-button:active {
   background-color: #004f68;
   transform: translateY(0);
@@ -840,11 +842,13 @@ body {
   overflow: hidden;
   z-index: 1;
 }
+
 #hero .hero-blob .blob-bg {
   display: block;
   width: 100%;
   height: auto;
 }
+
 #hero .hero-blob .blob-inner-image {
   position: absolute;
   top: 50%;
@@ -867,7 +871,7 @@ body {
 }
 
 /* ─── Phones ─── */
-@media (min-width: 400px) and (max-width: 550px) {
+@media (min-width: 400px) and (max-width: 549px) {
   #hero {
     padding: 5rem 1rem 3rem;
   }
@@ -916,7 +920,6 @@ body {
     margin-bottom: 0.5rem;
     width: 80vw !important;
   }
-
   #hero .hero-button {
     font-size: 0.95rem;
     padding: 0.65rem 1.2rem;
@@ -974,7 +977,7 @@ body {
 }
 
 /* ─── Small Tablets ─── */
-@media (min-width: 768px) and (max-width: 949px) {
+@media (min-width: 767px) and (max-width: 949px) {
   #hero .hero-title {
     font-size: 1.7rem !important;
     line-height: 1.2;
@@ -996,6 +999,28 @@ body {
     bottom: -0.3em !important;
     top: auto;
     transform: none;
+  }
+}
+/* ─── Desktop: locked 3-line layout ─── */
+@media (min-width: 768px) {
+  #hero .hero-title {
+    display: flex;
+    flex-direction: column;
+  }
+  #hero .hero-title .line {
+    display: block;
+    white-space: nowrap;
+  }
+}
+
+/* ─── Mobile: free wrapping ─── */
+@media (max-width: 767px) {
+  #hero .hero-title {
+    display: block;
+  }
+  #hero .hero-title .line {
+    display: inline;
+    white-space: normal;
   }
 }
 
@@ -1140,28 +1165,6 @@ body {
   }
 }
 
-/* ─── Desktop: locked 3-line layout ─── */
-@media (min-width: 768px) {
-  #hero .hero-title {
-    display: flex;
-    flex-direction: column;
-  }
-  #hero .hero-title .line {
-    display: block;
-    white-space: nowrap;
-  }
-}
-
-/* ─── Mobile: free wrapping ─── */
-@media (max-width: 767px) {
-  #hero .hero-title {
-    display: block;
-  }
-  #hero .hero-title .line {
-    display: inline;
-    white-space: normal;
-  }
-}
 
 /* ─── Current Section ─── */
 #current {
