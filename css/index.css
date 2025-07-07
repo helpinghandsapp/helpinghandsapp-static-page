@@ -978,7 +978,7 @@ body {
 }
 
 /* ─── Midsize Desktops ─── */
-@media (min-width: 1200px) and (max-width: 1440px) {
+@media (min-width: 1200px) and (max-width: 1299px) {
   #hero .hero-title {
     font-size: 2.4rem !important;
     line-height: 1.3;
@@ -1000,10 +1000,32 @@ body {
   }
 }
 
+@media (min-width: 1300px) and (max-width: 1440px) {
+  #hero .hero-title {
+    font-size: 2.4rem !important;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+  #hero .underline-real::after {
+    height: 0.35em;
+    bottom: -0.15em;
+    top: auto;
+    transform: none;
+  }
+  #hero .hero-text {
+    transform: translateX(0%);
+  }
+  #hero .hero-blob {
+    position: absolute;
+    width: clamp(350px, 50vw, 550px);
+    transform: translate(-30%, 1%);
+  }
+}
+
 /* ─── Large Desktops ─── */
 @media (min-width: 1441px) {
   #hero .hero-title {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
     line-height: 1.2;
     margin-bottom: 1rem;
   }
@@ -1019,7 +1041,30 @@ body {
   #hero .hero-blob {
     position: absolute;
     width: clamp(550px, 40vw, 650px);
-    transform: translate(-33%, 1%);
+    transform: translate(-53%, 1%) !important;
+    transform-origin: center center;
+  }
+}
+/* ─── Large Desktops ─── */
+@media (min-width: 1550px) {
+  #hero .hero-title {
+    font-size: 2.5rem !important;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  #hero .underline-real::after {
+    height: 0.35em;
+    bottom: -0.15em;
+    top: auto;
+    transform: none;
+  }
+  #hero .hero-text {
+    transform: translateX(-10%);
+  }
+  #hero .hero-blob {
+    position: absolute;
+    width: clamp(550px, 40vw, 650px);
+    transform: translate(-40%, 1%);
     transform-origin: center center;
   }
 }
@@ -1195,10 +1240,10 @@ body {
   pointer-events: none;
   z-index: 5;
 }
-@media (min-width: 320px) and (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 377px) {
   /* Card 1 image adjustments */
   #current .card:nth-child(1) .card-image-wrapper {
-    width: 70%;
+    width: 60%;
     bottom: -20%;
     left: 50%;
     transform: translate(-50%, 25%);
@@ -1206,10 +1251,10 @@ body {
 
   /* Card 2 image adjustments */
   #current .card:nth-child(2) .card-image-wrapper {
-    width: 70%;
+    width: 60% !important;
     bottom: -25%;
     left: 50%;
-    transform: translate(-50%, 30%);
+    transform: translate(-50%, 20%) !important;
   }
 
   #current .card-title {
@@ -1227,6 +1272,40 @@ body {
     max-width: 30ch;
   }
 }
+
+@media (min-width: 378px) and (max-width: 468px) {
+  /* Card 1 image adjustments */
+  #current .card:nth-child(1) .card-image-wrapper {
+    width: 80%;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+  }
+
+  /* Card 2 image adjustments */
+  #current .card:nth-child(2) .card-image-wrapper {
+    width: 70% !important;
+    bottom: -25%;
+    left: 50%;
+    transform: translate(-50%, 20%) !important;
+  }
+
+  #current .card-title {
+    font-size: 1.2rem !important;
+    margin: 0.25rem 0 1rem;
+    font-weight: 800;
+  }
+
+  #current .section-title {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    max-width: 30ch;
+  }
+}
+
 @media (max-width: 600px) {
   #current .cards {
     flex-direction: column;
@@ -1256,7 +1335,7 @@ body {
   #current .card:nth-child(2) .card-image-wrapper {
     width: 70%;
     bottom: -30%;
-    transform: translate(-50%, 30%);
+    transform: translate(-50%, 10%);
   }
 
   /* ─── BYOU mobile overrides ─── */
