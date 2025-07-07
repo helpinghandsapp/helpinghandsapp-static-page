@@ -1176,8 +1176,38 @@ body {
   pointer-events: none;
   z-index: 5;
 }
+@media (min-width: 320px) and (max-width: 375px) {
+  /* Card 1 image adjustments */
+  #current .card:nth-child(1) .card-image-wrapper {
+    width: 70%;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+  }
 
-/* ─── Mobile adjustments ─── */
+  /* Card 2 image adjustments */
+  #current .card:nth-child(2) .card-image-wrapper {
+    width: 70%;
+    bottom: -25%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+  }
+
+  #current .card-title {
+    font-size: 1rem !important;
+    margin: 0.25rem 0 1rem;
+    font-weight: 800;
+  }
+
+  #current .section-title {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    max-width: 30ch;
+  }
+}
 @media (max-width: 600px) {
   #current .cards {
     flex-direction: column;
@@ -1245,6 +1275,7 @@ body {
     font-weight: 800;
     margin-bottom: 2rem;
     max-width: 30ch;
+    margin-left: 5%;
   }
 }
 
