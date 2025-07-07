@@ -788,11 +788,6 @@ body {
   margin-bottom: 2rem;
 }
 
-#hero .hero-title > span {
-  display: block;
-  white-space: nowrap;
-}
-
 /* underline under "real" */
 #hero .underline-real {
   position: relative;
@@ -812,8 +807,6 @@ body {
   pointer-events: none;
   transform: translateY(0.15em);
 }
-
-/* hero button */
 #hero .hero-button {
   display: inline-block;
   background-color: #006b8f;
@@ -864,7 +857,8 @@ body {
   z-index: 2;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-/* Smaller Phones */
+
+/* ─── Smaller Phones ─── */
 @media (min-width: 320px) and (max-width: 380px) {
   #hero .hero-blob {
     width: clamp(300px, 70vw, 400px) !important;
@@ -872,7 +866,7 @@ body {
   }
 }
 
-/* Phones */
+/* ─── Phones ─── */
 @media (max-width: 767px) {
   #hero {
     padding: 5rem 1rem 3rem;
@@ -885,11 +879,9 @@ body {
     font-size: 2rem !important;
     line-height: 1.2;
     margin-bottom: 0.5rem;
+    width: 90vw;
   }
-  #hero .hero-title > span {
-    display: inline;
-    white-space: normal;
-  }
+
   #hero .hero-button {
     font-size: 0.95rem;
     padding: 0.65rem 1.2rem;
@@ -910,11 +902,11 @@ body {
   }
 }
 
-/* Small Tablets */
+/* ─── Small Tablets ─── */
 @media (min-width: 768px) and (max-width: 949px) {
   #hero .hero-title {
     font-size: 1.7rem !important;
-    line-height: 0.7;
+    line-height: 1.2;
     margin-bottom: 1.5rem;
   }
   #hero .hero-button {
@@ -928,12 +920,19 @@ body {
   #hero .hero-blob .blob-inner-image {
     width: 80%;
   }
+  #hero .underline-real::after {
+    height: 0.35em;
+    bottom: -0.3em !important;
+    top: auto;
+    transform: none;
+  }
 }
-/* Tablets */
+
+/* ─── Tablets ─── */
 @media (min-width: 950px) and (max-width: 1024px) {
   #hero .hero-title {
     font-size: 2rem !important;
-    line-height: 0.7;
+    line-height: 1;
     margin-bottom: 1.5rem;
   }
   #hero .hero-button {
@@ -947,17 +946,20 @@ body {
   #hero .hero-blob .blob-inner-image {
     width: 80%;
   }
+  #hero .underline-real::after {
+    height: 0.35em;
+    bottom: -0.3em !important;
+    top: auto;
+    transform: none;
+  }
 }
-/* Tablets and Small Desktops */
+
+/* ─── Tablets & Small Desktops ─── */
 @media (min-width: 1025px) and (max-width: 1199px) {
   #hero .hero-title {
     font-size: 2rem !important;
     line-height: 1.3;
     margin-bottom: 1rem;
-  }
-  #hero .hero-title > span {
-    display: inline;
-    white-space: normal;
   }
   #hero .underline-real::after {
     height: 0.35em;
@@ -974,16 +976,13 @@ body {
     transform: translate(-20%, 1%);
   }
 }
-/* Midsize Desktops */
+
+/* ─── Midsize Desktops ─── */
 @media (min-width: 1200px) and (max-width: 1440px) {
   #hero .hero-title {
     font-size: 2.4rem !important;
     line-height: 1.3;
     margin-bottom: 1rem;
-  }
-  #hero .hero-title > span {
-    display: inline;
-    white-space: normal;
   }
   #hero .underline-real::after {
     height: 0.35em;
@@ -1000,16 +999,19 @@ body {
     transform: translate(-23%, 1%);
   }
 }
-/* Large Desktops */
+
+/* ─── Large Desktops ─── */
 @media (min-width: 1441px) {
   #hero .hero-title {
     font-size: 3rem !important;
     line-height: 1.2;
     margin-bottom: 1rem;
   }
-  #hero .hero-title > span {
-    display: inline;
-    white-space: normal;
+  #hero .underline-real::after {
+    height: 0.35em;
+    bottom: -0.15em;
+    top: auto;
+    transform: none;
   }
   #hero .hero-text {
     transform: translateX(-10%);
@@ -1020,11 +1022,28 @@ body {
     transform: translate(-33%, 1%);
     transform-origin: center center;
   }
-  #hero .underline-real::after {
-    height: 0.35em;
-    bottom: -0.15em;
-    top: auto;
-    transform: none;
+}
+
+/* ─── Desktop: locked 3-line layout ─── */
+@media (min-width: 768px) {
+  #hero .hero-title {
+    display: flex;
+    flex-direction: column;
+  }
+  #hero .hero-title .line {
+    display: block;
+    white-space: nowrap;
+  }
+}
+
+/* ─── Mobile: free wrapping ─── */
+@media (max-width: 767px) {
+  #hero .hero-title {
+    display: block;
+  }
+  #hero .hero-title .line {
+    display: inline;
+    white-space: normal;
   }
 }
 
