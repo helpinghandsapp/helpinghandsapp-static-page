@@ -864,25 +864,11 @@ body {
   z-index: 2;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-
-/* ─── Hero Responsive ─── */
-/* Tablets */
-@media (min-width: 768px) and (max-width: 1024px) {
-  #hero .hero-title {
-    font-size: 1.5rem !important;
-    line-height: 0.7;
-    margin-bottom: 1.5rem;
-  }
-  #hero .hero-button {
-    font-size: 1rem;
-    padding: 0.75rem 1.5rem;
-  }
+/* Smaller Phones */
+@media (min-width: 320px) and (max-width: 380px) {
   #hero .hero-blob {
-    width: clamp(250px, 50vw, 450px) !important;
-    transform: translate(-25%, 0%);
-  }
-  #hero .hero-blob .blob-inner-image {
-    width: 80%;
+    width: clamp(300px, 70vw, 400px) !important;
+    transform: translate(-5%, 1%) !important;
   }
 }
 
@@ -924,8 +910,46 @@ body {
   }
 }
 
+/* Small Tablets */
+@media (min-width: 768px) and (max-width: 949px) {
+  #hero .hero-title {
+    font-size: 1.7rem !important;
+    line-height: 0.7;
+    margin-bottom: 1.5rem;
+  }
+  #hero .hero-button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+  #hero .hero-blob {
+    width: clamp(250px, 50vw, 450px) !important;
+    transform: translate(-15%, 0%);
+  }
+  #hero .hero-blob .blob-inner-image {
+    width: 80%;
+  }
+}
+/* Tablets */
+@media (min-width: 950px) and (max-width: 1024px) {
+  #hero .hero-title {
+    font-size: 2rem !important;
+    line-height: 0.7;
+    margin-bottom: 1.5rem;
+  }
+  #hero .hero-button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+  #hero .hero-blob {
+    width: clamp(250px, 50vw, 450px) !important;
+    transform: translate(-25%, 0%);
+  }
+  #hero .hero-blob .blob-inner-image {
+    width: 80%;
+  }
+}
 /* Tablets and Small Desktops */
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1199px) {
   #hero .hero-title {
     font-size: 2rem !important;
     line-height: 1.3;
@@ -950,6 +974,32 @@ body {
     transform: translate(-20%, 1%);
   }
 }
+/* Midsize Desktops */
+@media (min-width: 1200px) and (max-width: 1440px) {
+  #hero .hero-title {
+    font-size: 2.4rem !important;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+  #hero .hero-title > span {
+    display: inline;
+    white-space: normal;
+  }
+  #hero .underline-real::after {
+    height: 0.35em;
+    bottom: -0.15em;
+    top: auto;
+    transform: none;
+  }
+  #hero .hero-text {
+    transform: translateX(0%);
+  }
+  #hero .hero-blob {
+    position: absolute;
+    width: clamp(350px, 50vw, 550px);
+    transform: translate(-23%, 1%);
+  }
+}
 /* Large Desktops */
 @media (min-width: 1441px) {
   #hero .hero-title {
@@ -967,7 +1017,7 @@ body {
   #hero .hero-blob {
     position: absolute;
     width: clamp(550px, 40vw, 650px);
-    transform: translate(-30%, 1%);
+    transform: translate(-33%, 1%);
     transform-origin: center center;
   }
   #hero .underline-real::after {
@@ -1306,7 +1356,7 @@ body {
 }
 
 /* ─── Phones: Stack Layout ─── */
-@media (min-width: 320px) and (max-width: 424px)   {
+@media (min-width: 320px) and (max-width: 424px) {
   .mission-content {
     margin-left: 2vw;
     padding: 5rem 2rem 3rem;
@@ -1327,7 +1377,7 @@ body {
   }
   .mission-blob-bg {
     left: 50%;
-    width: clamp(550px, 50vw, 650px)!important;;
+    width: clamp(550px, 50vw, 650px) !important;
     transform: translateX(-50%) translateY(10%) !important;
   }
   .mission-circle {
@@ -1381,7 +1431,6 @@ body {
 
 /* ─── Tablets & Small Desktops ─── */
 @media (min-width: 768px) and (max-width: 1199px) {
-
   .mission-blob-bg {
     left: 50%;
     bottom: -10%;
