@@ -875,12 +875,12 @@ body {
     margin-bottom: 1rem;
   }
   #hero .hero-button {
-    font-size: 1.05rem;
+    font-size: 1rem;
     padding: 0.75rem 1.5rem;
   }
   #hero .hero-blob {
     width: clamp(250px, 50vw, 450px) !important;
-    transform: translate(-30%, 0%);
+    transform: translate(-25%, 0%);
   }
   #hero .hero-blob .blob-inner-image {
     width: 80%;
