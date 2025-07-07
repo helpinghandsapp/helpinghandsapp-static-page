@@ -1388,9 +1388,21 @@ body {
 }
 /* ─── Tablets & Small Desktops ─── */
 @media (min-width: 768px) and (max-width: 1199px) {
+
+  .mission-blob-bg {
+    left: 50%;
+    bottom: -10%;
+    width: clamp(850px, 90vw, 950px);
+    transform: translate(-50%, 25%);
+  }
+
   .mission-content {
-    margin-left: 2vw;
-    padding: 5rem 2rem 3rem;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 2rem;
     text-align: left;
   }
   .mission-title {
@@ -1410,10 +1422,10 @@ body {
   .mission-circle {
     width: 90%;
     height: auto;
-    transform: translate(50%, 0%);
+    transform: translate(40%, 0%);
   }
   .mission-image .mission-photo {
-    transform: translate(-6%, -50%);
+    transform: translate(-17%, -50%);
     object-position: center;
   }
 }
@@ -1429,14 +1441,14 @@ body {
   .mission-blob-bg {
     left: 0;
     bottom: -20px;
-    width: clamp(800px, 50vw, 1000px);
+    width: clamp(900px, 50vw, 1000px);
     transform: translate(-10%, 100%);
   }
 
   .mission-content {
     position: absolute;
     top: 15%;
-    left: 6%;
+    left: 10%;
     width: 35vw;
     margin-left: 0;
     text-align: left;
@@ -1453,7 +1465,7 @@ body {
 
   .mission-image {
     position: absolute;
-    right: -10px;
+    right: 0px;
     bottom: clamp(-80px, 12vw, 30px);
     width: clamp(360px, 40vw, 650px);
     object-position: -100% 50%;
@@ -1466,7 +1478,7 @@ body {
   .mission-blob-bg {
     left: 0;
     bottom: -20px;
-    width: clamp(900px, 50vw, 1100px);
+    width: clamp(1000px, 50vw, 1200px);
     transform: translate(-10%, 100%);
   }
 
@@ -1490,7 +1502,42 @@ body {
 
   .mission-image {
     position: absolute;
-    right: 0px;
+    right: 200px;
+    bottom: clamp(-80px, 12vw, 30px);
+    width: clamp(360px, 40vw, 650px);
+    object-position: -100% 50%;
+    pointer-events: auto;
+  }
+}
+@media (min-width: 2200px) {
+  .mission-blob-bg {
+    left: 0;
+    bottom: -20px;
+    width: clamp(900px, 50vw, 1100px);
+    transform: translate(-10%, 100%);
+  }
+
+  .mission-content {
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    width: 35vw;
+    margin-left: 0;
+    text-align: left;
+  }
+  .mission-title {
+    font-size: 3.5rem;
+    left: 40%;
+    text-align: center !important;
+  }
+
+  .mission-text {
+    font-size: 1.4rem;
+  }
+
+  .mission-image {
+    position: absolute;
+    right: 500px;
     bottom: clamp(-80px, 12vw, 30px);
     width: clamp(360px, 40vw, 650px);
     object-position: -100% 50%;
