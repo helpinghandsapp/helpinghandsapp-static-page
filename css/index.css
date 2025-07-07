@@ -1306,10 +1306,49 @@ body {
 }
 
 /* ─── Phones: Stack Layout ─── */
-@media (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 424px)   {
   .mission-content {
     margin-left: 2vw;
     padding: 5rem 2rem 3rem;
+    text-align: left;
+  }
+  .mission-title {
+    font-size: 1.8rem !important;
+    text-align: center;
+  }
+  .mission-text {
+    font-size: 0.9rem;
+  }
+  .mission-image {
+    position: relative;
+    width: 75vw;
+    margin: 2rem auto 0;
+    pointer-events: auto;
+  }
+  .mission-blob-bg {
+    left: 50%;
+    width: clamp(550px, 50vw, 650px)!important;;
+    transform: translateX(-50%) translateY(10%) !important;
+  }
+  .mission-circle {
+    width: 90%;
+    height: auto;
+    transform: translate(85%, 0%) !important;
+  }
+  .mission-image .mission-photo {
+    transform: translate(32%, -50%) !important;
+  }
+}
+
+/* ─── Phones: Stack Layout ─── */
+@media (max-width: 767px) {
+  .mission-content {
+    position: relative;
+    top: auto;
+    left: 5%;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 1rem;
     text-align: left;
   }
   .mission-title {
@@ -1333,76 +1372,30 @@ body {
   .mission-circle {
     width: 90%;
     height: auto;
-    transform: translate(70%, 0%);
+    transform: translate(50%, 0%);
   }
   .mission-image .mission-photo {
-    transform: translate(15%, -50%);
+    transform: translate(-7%, -50%);
   }
 }
 
-@media (min-width: 663px) and (max-width: 766px) {
-  .mission-section {
-    min-height: auto;
-    padding: 4rem 2rem;
-  }
-  .mission-blob-bg {
-    left: 50%;
-    bottom: -10%;
-    width: clamp(850px, 90vw, 950px);
-    transform: translate(-50%, 25%);
-  }
-  .mission-content {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto 2rem;
-    text-align: left;
-  }
-  .mission-title {
-    font-size: 2.8rem;
-    left: auto;
-    text-align: center !important;
-  }
-  .mission-text {
-    font-size: 1.1rem;
-  }
-  .mission-image {
-    position: relative;
-    bottom: 0;
-    right: auto;
-    width: clamp(300px, 80vw, 500px);
-    margin: 0 auto;
-    transform: none;
-    object-position: center center;
-  }
-  .mission-circle {
-    width: 90%;
-    height: auto;
-    transform: translate(10%, 0%);
-  }
-  .mission-image .mission-photo {
-    transform: translate(-50%, -50%);
-  }
-}
 /* ─── Tablets & Small Desktops ─── */
 @media (min-width: 768px) and (max-width: 1199px) {
 
   .mission-blob-bg {
     left: 50%;
     bottom: -10%;
-    width: clamp(850px, 90vw, 950px);
+    width: clamp(800px, 90vw, 900px);
     transform: translate(-50%, 25%);
   }
 
   .mission-content {
     position: relative;
     top: auto;
-    left: auto;
+    left: 5%;
     width: 100%;
     max-width: 600px;
-    margin: 0 auto 2rem;
+    margin: 0 auto 1rem;
     text-align: left;
   }
   .mission-title {
