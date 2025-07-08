@@ -1117,7 +1117,7 @@ body {
 }
 
 /* ─── Large Desktops ─── */
-@media (min-width: 1441px) {
+@media (min-width: 1441px) and (max-width: 1549px) {
   #hero .hero-title {
     font-size: 2.5rem !important;
     line-height: 1.2;
@@ -1135,7 +1135,7 @@ body {
   #hero .hero-blob {
     position: absolute;
     width: clamp(550px, 40vw, 650px);
-    transform: translate(-53%, 1%) !important;
+    transform: translate(-52%, 1%) !important;
     transform-origin: center center;
   }
 }
@@ -1158,7 +1158,7 @@ body {
   #hero .hero-blob {
     position: absolute;
     width: clamp(550px, 40vw, 650px);
-    transform: translate(-40%, 1%);
+    transform: translate(-50%, 1%) !important;
     transform-origin: center center;
   }
 }
