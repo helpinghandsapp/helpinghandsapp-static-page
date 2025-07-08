@@ -50,7 +50,6 @@ body * {
 
 #hero .hero-button {
   display: inline-block;
-  background-color: #006b8f;
   color: #fff;
   font-weight: 600;
   padding: 0.9rem 1.8rem;
@@ -818,7 +817,7 @@ body * {
   .mission-blob-bg {
     left: 50%;
     width: clamp(550px, 50vw, 650px) !important;
-    transform: translateX(-50%) translateY(10%) !important;
+    transform: translateX(-50%) translateY(2%) !important;
   }
   .mission-circle {
     width: 90%;
@@ -857,7 +856,7 @@ body * {
   .mission-blob-bg {
     left: 50%;
     width: clamp(650px, 50vw, 850px);
-    transform: translateX(-50%) translateY(30%);
+    transform: translateX(-50%) translateY(20%);
   }
   .mission-circle {
     width: 90%;
@@ -875,7 +874,7 @@ body * {
     left: 50%;
     bottom: -10%;
     width: clamp(800px, 90vw, 900px);
-    transform: translate(-50%, 25%);
+    transform: translate(-50%, 20%);
   }
   .mission-content {
     position: relative;
