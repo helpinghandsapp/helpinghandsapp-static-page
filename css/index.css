@@ -885,7 +885,6 @@ body {
     margin-bottom: 0.5rem;
     width: 80vw !important;
   }
-
   #hero .hero-button {
     font-size: 0.95rem;
     padding: 0.65rem 1.2rem;
@@ -955,7 +954,6 @@ body {
     margin-bottom: 0.5rem;
     width: 90vw;
   }
-
   #hero .hero-button {
     font-size: 0.95rem;
     padding: 0.65rem 1.2rem;
@@ -1165,7 +1163,6 @@ body {
   }
 }
 
-
 /* ─── Current Section ─── */
 #current {
   background-color: #f07015;
@@ -1322,21 +1319,17 @@ body {
     left: 50%;
     transform: translate(-50%, 25%);
   }
-
-  /* Card 2 image adjustments */
   #current .card:nth-child(2) .card-image-wrapper {
     width: 60% !important;
     bottom: -25%;
     left: 50%;
     transform: translate(-50%, 20%) !important;
   }
-
   #current .card-title {
     font-size: 1rem !important;
     margin: 0.25rem 0 1rem;
     font-weight: 800;
   }
-
   #current .section-title {
     color: #fff;
     font-size: 2rem;
@@ -1355,7 +1348,6 @@ body {
     left: 50%;
     transform: translate(-50%, 25%);
   }
-
   /* Card 2 image adjustments */
   #current .card:nth-child(2) .card-image-wrapper {
     width: 70% !important;
@@ -1363,13 +1355,11 @@ body {
     left: 50%;
     transform: translate(-50%, 20%) !important;
   }
-
   #current .card-title {
     font-size: 1.2rem !important;
     margin: 0.25rem 0 1rem;
     font-weight: 800;
   }
-
   #current .section-title {
     color: #fff;
     font-size: 2rem;
@@ -1386,33 +1376,27 @@ body {
     align-items: stretch;
     gap: 1rem;
   }
-
   #current .card {
     flex: none;
     width: 100%;
     max-width: none;
     aspect-ratio: 4 / 3;
   }
-
   #current .card-image-wrapper {
     left: 50%;
     bottom: -25%;
     width: 80%;
     transform: translate(-50%, 20%);
   }
-
   #current .card:nth-child(2) {
     aspect-ratio: 3 / 2;
     padding-bottom: 3rem;
   }
-
   #current .card:nth-child(2) .card-image-wrapper {
     width: 70%;
     bottom: -30%;
     transform: translate(-50%, 10%);
   }
-
-  /* ─── BYOU mobile overrides ─── */
   #current .card:nth-child(3) {
     overflow: visible;
     aspect-ratio: 4 / 3;
@@ -1431,7 +1415,6 @@ body {
     bottom: -10%;
     right: 35%;
   }
-
   #current .card-title {
     font-size: 1.6rem;
     margin: 0.25rem 0 1rem;
@@ -1640,7 +1623,6 @@ body {
     width: clamp(800px, 90vw, 900px);
     transform: translate(-50%, 25%);
   }
-
   .mission-content {
     position: relative;
     top: auto;
@@ -1681,15 +1663,12 @@ body {
     display: block;
     min-height: 600px;
   }
-
-  /* Blob bottom-left, text inside */
   .mission-blob-bg {
     left: 0;
     bottom: -20px;
     width: clamp(900px, 50vw, 1000px);
     transform: translate(-10%, 100%);
   }
-
   .mission-content {
     position: absolute;
     top: 15%;
@@ -1703,11 +1682,9 @@ body {
     left: 40%;
     text-align: center !important;
   }
-
   .mission-text {
     font-size: 1.2rem;
   }
-
   .mission-image {
     position: absolute;
     right: 0px;
@@ -1726,7 +1703,6 @@ body {
     width: clamp(1000px, 50vw, 1200px);
     transform: translate(-10%, 100%);
   }
-
   .mission-content {
     position: absolute;
     top: 15%;
@@ -1740,11 +1716,9 @@ body {
     left: 40%;
     text-align: center !important;
   }
-
   .mission-text {
     font-size: 1.4rem;
   }
-
   .mission-image {
     position: absolute;
     right: 200px;
@@ -1761,7 +1735,6 @@ body {
     width: clamp(900px, 50vw, 1100px);
     transform: translate(-10%, 100%);
   }
-
   .mission-content {
     position: absolute;
     top: 15%;
@@ -1775,11 +1748,9 @@ body {
     left: 40%;
     text-align: center !important;
   }
-
   .mission-text {
     font-size: 1.4rem;
   }
-
   .mission-image {
     position: absolute;
     right: 500px;
