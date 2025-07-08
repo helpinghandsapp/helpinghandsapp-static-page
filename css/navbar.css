@@ -1,0 +1,27 @@
+nav * {
+  font-family: "League Spartan" !important;
+}
+
+.navbar-brand {
+  font-weight: 700 !important;
+  font-size: 24px !important;
+}
+
+.navbar-collapse * {
+  font-weight: 600 !important;
+}
+
+.nav > .nav-button > .btn {
+  border-radius: 1rem !important;
+  font-size: 16px;
+  color: white !important;
+  background-color: #006b8f !important;
+  margin-top: 6px;
+  margin-left: 0px;
+}
+
+@media (min-width: 1096px) {
+  .nav > .nav-button > .btn {
+    margin-left: 8px;
+  }
+}

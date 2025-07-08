@@ -15,8 +15,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 
     <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700;800;900&family=Roboto:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
       type="text/css" />
     <link
@@ -66,9 +68,8 @@
         src="https://www.facebook.com/tr?id=469056013291786&ev=PageView&noscript=1"
         alt="Facebook page view" />
     </noscript>
-
-    <script src="navbar.js"></script>
-    <script src="footer.js"></script>
+    
+    <script src="js/load-containers.js"></script>
   </head>
 
   <body id="page-top">
@@ -85,12 +86,7 @@
     </noscript>
 
     <!-- Navbar -->
-    <div id="navbar-container">
-      <script>
-        const navbarContainer = document.getElementById("navbar-container");
-        navbarContainer.innerHTML = generateNavbar();
-      </script>
-    </div>
+    <div id="navbar-container"></div>
 
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
@@ -208,7 +204,6 @@
           </p>
         </div>
       </div>
-
       <div class="mission-image">
         <img
           class="mission-circle"
@@ -222,18 +217,68 @@
       </div>
     </section>
 
-    <!-- More Than an App Section -->
-    <section id="mta" class="bg-primary"> section 4 </section>
+    <section class="bg-dark-orange text-center overflow-hidden">
+      <div class="wrapper">
+        <div class="partnerships-header">
+          <img
+            class="hands-img"
+            src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/hands.svg"
+            alt="Strong handshake"
+          />
+          <h1>Strong partnerships power our work</h1>
+        </div>
+        <div class="partnerships-wrapper">
+          <div class="partnerships-container">
+            <img
+              class="youth-circle"
+              src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/for-youth.png"
+              alt="Youth photo"
+            />
+            <img
+              class="youth-spiral"
+              src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/spiral.svg"
+              alt="Spiral"
+            />
+            <div class="partnerships-content dark-blue">
+              <h2>For youth</h2>
+              <a href="volunteer-opportunities.html">
+                <div class="partnerships-link">
+                  <h4>Learn more about our services</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="partnerships-container">
+            <img
+              class="community-circle"
+              src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/for-community.png"
+              alt="Community photo"
+            />
+            <img
+              class="navy-dotted-circle"
+              src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/navy-dotted-circle.svg"
+              alt="Navy dotted circle"
+            />
+            <div class="partnerships-content medium-blue">
+                <h2>For community-based organizations</h2>
+                <a href="jointeam.html">
+                  <div class="partnerships-link">
+                    <h4>Learn more about becoming a partner</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
 
-    <!-- Footer -->
-    <div id="footer-container">
-      <script>
-        const footerContainer = document.getElementById("footer-container");
-        footerContainer.innerHTML = generateFooter();
-      </script>
-    </div>
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
 
     <!-- Scripts -->
+    <script>
+      loadContainers("navbar", "footer");
+    </script>
+    <script src="js/footer.js"></script>
+    <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>

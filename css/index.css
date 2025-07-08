@@ -1,6 +1,5 @@
-/* Force League Spartan font everywhere */
-* {
-  font-family: "League Spartan", sans-serif !important;
+body * {
+  font-family: "League Spartan";
 }
 
 #help .wrapper {
@@ -1759,4 +1758,121 @@ body {
     object-position: -100% 50%;
     pointer-events: auto;
   }
+}
+
+.bg-dark-orange {
+  background-color: #f07015;
+  color: white;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.partnerships-header {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partnerships-header h1 {
+  font-weight: 700;
+  font-size: 50px !important;
+}
+
+.hands-img {
+  max-width: 100px;
+}
+
+.dark-blue {
+  background-color: #006b8f;
+}
+
+.medium-blue {
+  background-color: #3fadc4;
+}
+
+.partnerships-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.partnerships-container {
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.youth-circle {
+  width: 130px;
+  max-width: 25%;
+  height: auto;
+  position: absolute;
+  overflow: hidden;
+  left: 10px;
+  top: -15%;
+  z-index: 2;
+}
+
+.youth-spiral {
+  width: 100px;
+  max-width: 25vw;
+  height: auto;
+  position: absolute;
+  overflow: hidden;
+  left: -6%;
+  top: 30px;
+  z-index: 0;
+}
+
+.community-circle {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  overflow: hidden;
+  right: -35px;
+  bottom: -30px;
+  z-index: 2;
+}
+
+.navy-dotted-circle {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  overflow: hidden;
+  right: -45px;
+  bottom: -40px;
+  z-index: 0;
+}
+
+.partnerships-content {
+  position: relative;
+  margin: 10px;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.partnerships-content * {
+  font-weight: 700;
+}
+
+.partnerships-content a {
+  color: white;
+  text-decoration: none;
+}
+
+.partnerships-link {
+  border-radius: 20px;
+  max-width: 400px;
+  border: 3px solid white;
+  padding: 10px;
 }
