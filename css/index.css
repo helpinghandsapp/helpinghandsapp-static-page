@@ -2,7 +2,6 @@ body * {
   font-family: "League Spartan";
 }
 
-/* ───────── Hero Section ───────── */
 #hero {
   position: relative;
   background-color: #f07015;
@@ -26,12 +25,10 @@ body * {
 }
 
 #hero .hero-title {
-  font-size: 2.8rem;
-  font-weight: 900;
-  line-height: 0.7;
-  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 100px;
 }
-/* underline under "real" */
+
 #hero .underline-real {
   position: relative;
   display: inline-block;
@@ -55,7 +52,7 @@ body * {
   display: inline-block;
   background-color: #006b8f;
   color: #fff;
-  font-weight: 900;
+  font-weight: 600;
   padding: 0.9rem 1.8rem;
   border-radius: 2rem;
   text-decoration: none;
@@ -108,7 +105,7 @@ body * {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-/* ─── Smaller Phones ─── */
+/* Smaller Phones */
 @media (min-width: 320px) and (max-width: 380px) {
   #hero .hero-blob {
     width: clamp(300px, 70vw, 400px) !important;
@@ -116,7 +113,7 @@ body * {
   }
 }
 
-/* ─── Phones ─── */
+/* Phones */
 @media (min-width: 400px) and (max-width: 549px) {
   #hero {
     padding: 5rem 1rem 3rem;
@@ -150,7 +147,8 @@ body * {
     transform: none;
   }
 }
-/* ─── Phones ─── */
+
+/* Phones */
 @media (min-width: 550px) and (max-width: 766px) {
   #hero {
     padding: 5rem 1rem 3rem;
@@ -185,7 +183,7 @@ body * {
   }
 }
 
-/* ─── Phones ─── */
+/* Phones */
 @media (max-width: 767px) {
   #hero {
     padding: 5rem 1rem 3rem;
@@ -220,7 +218,7 @@ body * {
   }
 }
 
-/* ─── Small Tablets ─── */
+/* Small Tablets */
 @media (min-width: 767px) and (max-width: 949px) {
   #hero .hero-title {
     font-size: 1.7rem !important;
@@ -245,7 +243,8 @@ body * {
     transform: none;
   }
 }
-/* ─── Desktop: locked 3-line layout ─── */
+
+/* Desktop: locked 3-line layout */
 @media (min-width: 768px) {
   #hero .hero-title {
     display: flex;
@@ -257,7 +256,7 @@ body * {
   }
 }
 
-/* ─── Mobile: free wrapping ─── */
+/* Mobile: free wrapping */
 @media (max-width: 767px) {
   #hero .hero-title {
     display: block;
@@ -268,7 +267,7 @@ body * {
   }
 }
 
-/* ─── Tablets ─── */
+/* Tablets */
 @media (min-width: 950px) and (max-width: 1024px) {
   #hero .hero-title {
     font-size: 2rem !important;
@@ -294,7 +293,7 @@ body * {
   }
 }
 
-/* ─── Tablets & Small Desktops ─── */
+/* Tablets & Small Desktops */
 @media (min-width: 1025px) and (max-width: 1199px) {
   #hero .hero-title {
     font-size: 2rem !important;
@@ -317,7 +316,7 @@ body * {
   }
 }
 
-/* ─── Midsize Desktops ─── */
+/* Midsize Desktops */
 @media (min-width: 1200px) and (max-width: 1299px) {
   #hero .hero-title {
     font-size: 2.4rem !important;
@@ -362,7 +361,7 @@ body * {
   }
 }
 
-/* ─── Large Desktops ─── */
+/* Large Desktops */
 @media (min-width: 1441px) and (max-width: 1549px) {
   #hero .hero-title {
     font-size: 2.5rem !important;
@@ -385,7 +384,8 @@ body * {
     transform-origin: center center;
   }
 }
-/* ─── Large Desktops ─── */
+
+/* Large Desktops */
 @media (min-width: 1550px) {
   #hero .hero-title {
     font-size: 2.5rem !important;
@@ -409,7 +409,7 @@ body * {
   }
 }
 
-/* ─── Current Section ─── */
+/* Current Section */
 #current {
   background-color: #f07015;
   padding: 4rem 1rem;
@@ -426,7 +426,7 @@ body * {
   color: #fff;
   font-size: 2.5rem;
   text-align: left;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 2rem;
   max-width: 30ch;
 }
@@ -439,7 +439,7 @@ body * {
   perspective: 1000px;
 }
 
-/* ─── Card base ─── */
+/* Card base */
 #current .card {
   position: relative;
   overflow: hidden;
@@ -464,7 +464,7 @@ body * {
   background-color: #faa52d;
 }
 
-/* ─── Card header & title ─── */
+/* Card header & title */
 #current .card-header {
   display: flex;
   justify-content: space-between;
@@ -498,7 +498,7 @@ body * {
   color: inherit;
 }
 
-/* ─── Semicircle image wrapper ─── */
+/* Semicircle image wrapper */
 #current .card-image-wrapper {
   position: absolute;
   bottom: 0;
@@ -522,13 +522,13 @@ body * {
   transform: translate(-50%, 25%);
 }
 
-/* ─── 3D Hover Effect ─── */
+/* 3D Hover Effect */
 #current .card:hover {
   transform: translateY(-10px) rotateX(8deg);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
-/* ─── BYOU card: full circle outside ─── */
+/* BYOU card: full circle outside */
 #current .card:nth-child(3) {
   overflow: visible;
 }
@@ -545,7 +545,7 @@ body * {
   transform: none;
 }
 
-/* ─── BYOU Stars SVG Overlay ─── */
+/* BYOU Stars SVG Overlay */
 #current .card:nth-child(3)::after {
   content: "";
   position: absolute;
@@ -669,7 +669,8 @@ body * {
     font-weight: 800;
   }
 }
-/* ─── Tablet adjustments (only card titles) ─── */
+
+/* Tablet adjustments (only card titles) */
 @media (min-width: 601px) and (max-width: 1024px) {
   #current .section-title {
     color: #fff;
@@ -682,7 +683,7 @@ body * {
   }
 }
 
-/* ─── Small-desktop adjustments ─── */
+/* Small-desktop adjustments */
 @media (min-width: 1027px) and (max-width: 1111px) {
   #current .section-title {
     color: #fff;
@@ -695,7 +696,7 @@ body * {
   }
 }
 
-/* ─── Mission Section ─── */
+/* Mission Section */
 .mission-section {
   position: relative;
   background: #f07015;
@@ -708,7 +709,7 @@ body * {
   align-items: flex-start;
 }
 
-/* ─── Blob Container ─── */
+/* Blob Container */
 .mission-blob-container {
   position: relative;
   width: 100%;
@@ -716,7 +717,7 @@ body * {
   z-index: 1;
 }
 
-/* ─── Fluid Mission Blob (default) ─── */
+/* Fluid Mission Blob (default) */
 .mission-blob-bg {
   position: absolute;
   left: 50%;
@@ -729,7 +730,7 @@ body * {
   user-select: none;
 }
 
-/* ─── Mission Text ─── */
+/* Mission Text */
 .mission-content {
   position: relative;
   z-index: 2;
@@ -744,12 +745,13 @@ body * {
 }
 .mission-title {
   font-size: clamp(2rem, 4vw, 3.5rem);
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 3rem;
   text-align: center;
   line-height: 1.2;
 }
 .mission-text {
+  font-family: "Poppins";
   font-size: clamp(1.5rem, 1.2vw, 1.2rem);
   font-weight: 500;
   margin-bottom: 1.2rem;
@@ -793,7 +795,7 @@ body * {
     filter 0.4s ease;
 }
 
-/* ─── Phones: Stack Layout ─── */
+/* Phones: Stack Layout */
 @media (min-width: 320px) and (max-width: 424px) {
   .mission-content {
     margin-left: 2vw;
@@ -828,7 +830,7 @@ body * {
   }
 }
 
-/* ─── Phones: Stack Layout ─── */
+/* Phones: Stack Layout */
 @media (max-width: 767px) {
   .mission-content {
     position: relative;
@@ -867,7 +869,7 @@ body * {
   }
 }
 
-/* ─── Tablets & Small Desktops ─── */
+/* Tablets & Small Desktops */
 @media (min-width: 768px) and (max-width: 1199px) {
   .mission-blob-bg {
     left: 50%;
@@ -909,7 +911,7 @@ body * {
   }
 }
 
-/* ─── Large Screens (Desktop ≥1200px) ─── */
+/* Large Screens (Desktop ≥1200px) */
 @media (min-width: 1200px) {
   .mission-section {
     display: block;
@@ -947,7 +949,7 @@ body * {
   }
 }
 
-/* ─── Extra-Large Screens (Desktop ≥1600px) ─── */
+/* Extra-Large Screens (Desktop ≥1600px) */
 @media (min-width: 1600px) {
   .mission-blob-bg {
     left: 0;
