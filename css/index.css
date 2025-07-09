@@ -7,6 +7,18 @@ body * {
   color: white;
 }
 
+.dark-blue {
+  background-color: #006b8f;
+}
+
+.medium-blue {
+  background-color: #3fadc4;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
 #hero {
   position: relative;
   background-color: #f07015;
@@ -700,6 +712,8 @@ body * {
   }
 }
 
+/* Mission Section */
+
 .mission-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -733,19 +747,16 @@ body * {
 }
 
 .mission-title {
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: 3.5rem;
   font-weight: 700;
-  margin-bottom: 3rem;
   text-align: center;
   line-height: 1.2;
 }
 
 .mission-text {
   font-family: "Poppins";
-  font-size: clamp(1.5rem, 1.2vw, 1.2rem);
+  font-size: 1.4rem;
   font-weight: 500;
-  margin-bottom: 1.2rem;
-  line-height: 1.4;
 }
 
 .mission-image-container {
@@ -788,23 +799,7 @@ body * {
   }
 }
 
-.mission-content {
-  margin-left: 0;
-  text-align: left;
-}
-
-.mission-title {
-  font-size: 3.5rem;
-  left: 40%;
-}
-
-.mission-text {
-  font-size: 1.4rem;
-}
-
-.overflow-hidden {
-  overflow: hidden;
-}
+/* Partnerships Section */
 
 .partnerships-header {
   max-width: 500px;
@@ -818,14 +813,6 @@ body * {
 
 .hands-img {
   max-width: 100px;
-}
-
-.dark-blue {
-  background-color: #006b8f;
-}
-
-.medium-blue {
-  background-color: #3fadc4;
 }
 
 .partnerships-wrapper {
@@ -867,7 +854,6 @@ body * {
   width: 100px;
   height: auto;
   position: absolute;
-  overflow: hidden;
   right: -35px;
   bottom: -30px;
   z-index: 2;
@@ -877,7 +863,6 @@ body * {
   width: 120px;
   height: auto;
   position: absolute;
-  overflow: hidden;
   right: -45px;
   bottom: -40px;
   z-index: 0;
