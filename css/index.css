@@ -23,25 +23,25 @@ body * {
   font-family: "League Spartan";
 }
 
-#hero {
+.hero {
   position: relative;
   background-color: #f07015;
   color: #fff;
   padding: 5rem 1rem 3rem;
   overflow: hidden;
 }
-#hero .hero-wrapper {
+.hero .hero-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   z-index: 2;
 }
-#hero .hero-text {
+.hero .hero-text {
   flex: 1 1 500px;
   min-width: 280px;
   padding-left: 4vw;
 }
-#hero .hero-title {
+.hero .hero-title {
   font-weight: 700;
   font-size: 2rem;
   line-height: 1.2;
@@ -49,15 +49,15 @@ body * {
   width: 90vw;
   display: block;
 }
-#hero .hero-title .line {
+.hero .hero-title .line {
   display: inline;
   white-space: normal;
 }
-#hero .underline-real {
+.hero .underline-real {
   position: relative;
   display: inline-block;
 }
-#hero .underline-real::after {
+.hero .underline-real::after {
   content: "";
   position: absolute;
   left: 0;
@@ -70,7 +70,7 @@ body * {
   pointer-events: none;
   transform: translateY(-0.25em);
 }
-#hero .hero-button {
+.hero .hero-button {
   display: inline-block;
   color: #fff;
   font-weight: 600;
@@ -82,18 +82,18 @@ body * {
   transition: background-color 0.3s ease, transform 0.2s ease,
     box-shadow 0.2s ease;
 }
-#hero .hero-button:hover,
-#hero .hero-button:focus {
+.hero .hero-button:hover,
+.hero .hero-button:focus {
   background-color: #005f7a;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-#hero .hero-button:active {
+.hero .hero-button:active {
   background-color: #004f68;
   transform: translateY(0);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
-#hero .hero-blob {
+.hero .hero-blob {
   position: absolute;
   right: 5vw;
   bottom: -3vw;
@@ -101,12 +101,12 @@ body * {
   overflow: hidden;
   z-index: 1;
 }
-#hero .hero-blob .blob-bg {
+.hero .hero-blob .blob-bg {
   display: block;
   width: 100%;
   height: auto;
 }
-#hero .hero-blob .blob-inner-image {
+.hero .hero-blob .blob-inner-image {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -121,11 +121,11 @@ body * {
 
 /* Mobile styles */
 @media (max-width: 599px) {
-  #hero .hero-blob {
+  .hero .hero-blob {
     width: clamp(300px, 90vw, 700px);
   }
 
-  #hero .hero-title {
+  .hero .hero-title {
     font-size: 3.5rem;
     width: auto;
     display: flex;
@@ -135,61 +135,61 @@ body * {
 
 /* Tablet styles */
 @media (min-width: 600px) {
-  #hero {
+  .hero {
     padding: 7rem 2rem 4rem;
   }
-  #hero .hero-title {
+  .hero .hero-title {
     font-size: 2.4rem;
     width: 80vw;
   }
-  #hero .hero-blob {
+  .hero .hero-blob {
     width: clamp(500px, 50vw, 700px);
   }
 }
 
 /* Desktop styles */
 @media (min-width: 1024px) {
-  #hero {
+  .hero {
     padding: 10rem 1rem 4rem;
   }
-  #hero .hero-wrapper {
+  .hero .hero-wrapper {
     flex-direction: row;
     align-items: center;
   }
-  #hero .hero-title {
+  .hero .hero-title {
     font-size: 3.5rem;
     width: auto;
     display: flex;
     flex-direction: column;
   }
-  #hero .hero-title .line {
+  .hero .hero-title .line {
     display: block;
     white-space: nowrap;
   }
-  #hero .hero-blob {
+  .hero .hero-blob {
     right: 18vw;
     left: auto;
     transform: translate(0, 0);
     bottom: -2vw;
     width: clamp(500px, 40vw, 700px);
   }
-  #hero .hero-text {
+  .hero .hero-text {
     margin-right: 2vw;
   }
 }
 
 /* Current Programming Section */
-#current {
+.current {
   background-color: #f07015;
   padding: 2rem 1rem;
 }
-#current .wrapper {
+.current .wrapper {
   position: relative;
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 1rem;
 }
-#current .section-title {
+.current .section-title {
   color: #fff;
   font-size: 2rem;
   text-align: left;
@@ -197,14 +197,14 @@ body * {
   margin-bottom: 2rem;
   max-width: 30ch;
 }
-#current .cards {
+.current .cards {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   gap: 1.5rem;
   perspective: 1000px;
 }
-#current .card {
+.current .card {
   position: relative;
   overflow: hidden;
   aspect-ratio: 4 / 3;
@@ -220,10 +220,10 @@ body * {
   transform-origin: center bottom;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
-#current .card:nth-child(2) {
+.current .card:nth-child(2) {
   background-color: #faa52d;
 }
-#current .card-header {
+.current .card-header {
   display: flex;
   justify-content: space-between;
   font-family: "League Spartan", sans-serif;
@@ -232,15 +232,15 @@ body * {
   margin-bottom: 0.5rem;
   color: #23596b;
 }
-#current .card-header .year {
+.current .card-header .year {
   font-weight: 300;
 }
-#current .card-title {
+.current .card-title {
   font-size: 1.2rem;
   margin: 0.25rem 0 1rem;
   font-weight: 800;
 }
-#current .read-more {
+.current .read-more {
   display: inline-block;
   margin-bottom: 1rem;
   padding: 0.4rem 1rem;
@@ -251,7 +251,7 @@ body * {
   font-size: 1rem;
   color: inherit;
 }
-#current .card-image-wrapper {
+.current .card-image-wrapper {
   position: absolute;
   left: 50%;
   bottom: -20%;
@@ -261,29 +261,29 @@ body * {
   border-radius: 50%;
   overflow: hidden;
 }
-#current .card-image-wrapper img {
+.current .card-image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-#current .card:nth-child(2) .card-image-wrapper {
+.current .card:nth-child(2) .card-image-wrapper {
   width: 70%;
   bottom: -25%;
   transform: translate(-50%, 10%);
 }
-#current .card:nth-child(3) {
+.current .card:nth-child(3) {
   overflow: visible;
   aspect-ratio: 4 / 3;
   padding-bottom: 3rem;
 }
-#current .card:nth-child(3) .card-image-wrapper {
+.current .card:nth-child(3) .card-image-wrapper {
   width: 50%;
   bottom: -20%;
   right: -5%;
   left: auto;
   transform: none;
 }
-#current .card:nth-child(3)::after {
+.current .card:nth-child(3)::after {
   content: "";
   position: absolute;
   background: url("https://helping-hands-website.s3.ca-central-1.amazonaws.com/index/byou-stars.svg")
@@ -296,35 +296,40 @@ body * {
   pointer-events: none;
   z-index: 5;
 }
-#current .card:hover {
+.current .card:hover {
   transform: translateY(-10px) rotateX(8deg);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
 /* Mobile styles */
 @media (max-width: 400px) {
-  #current .card {
-    aspect-ratio: 1 / 1.2; /* Make card taller */
-    min-height: 320px;     /* Or another value that works for your design */
+  .current .card {
+    aspect-ratio: 1 / 1.2;
+    min-height: 320px;
   }
-  #current .card-image-wrapper {
+  .current .card-title {
+    font-size: 2rem;
+    margin: 0.25rem 0 1rem;
+    font-weight: 800;
+  }
+  .current .card-image-wrapper {
     width: 100%;
     bottom: -10%;
     transform: translate(-50%, 30%);
   }
-  #current .card:nth-child(2) .card-image-wrapper {
+  .current .card:nth-child(2) .card-image-wrapper {
     width: 100%;
     bottom: -15%;
     transform: translate(-50%, 20%);
   }
-  #current .card:nth-child(3) .card-image-wrapper {
+  .current .card:nth-child(3) .card-image-wrapper {
     width: 50%;
     bottom: -10%;
     right: -10%;
     left: auto;
     transform: none;
   }
-  #current .card:nth-child(3)::after {
+  .current .card:nth-child(3)::after {
     width: 100px;
     height: 150px;
     bottom: -13%;
@@ -333,48 +338,48 @@ body * {
 }
 
 /* Tablet/Desktop overrides */
-@media (min-width: 600px) {
-  #current {
+@media (min-width: 401px) {
+  .current {
     padding: 4rem 1rem;
   }
-  #current .section-title {
+  .current .section-title {
     font-size: 2.5rem;
     text-align: left;
     font-weight: 800;
     margin-left: 0;
   }
-  #current .cards {
+  .current .cards {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 4.6rem;
   }
-  #current .card {
+  .current .card {
     flex: 1 1 300px;
     max-width: 360px;
     aspect-ratio: 1 / 1;
   }
-  #current .card-title {
+  .current .card-title {
     font-size: 1.6rem;
   }
-  #current .card-image-wrapper {
+  .current .card-image-wrapper {
     width: 100%;
     bottom: 0;
     transform: translate(-50%, 40%);
   }
-  #current .card:nth-child(2) .card-image-wrapper {
+  .current .card:nth-child(2) .card-image-wrapper {
     width: 100%;
     bottom: -20%;
     transform: translate(-50%, 25%);
   }
-  #current .card:nth-child(3) .card-image-wrapper {
+  .current .card:nth-child(3) .card-image-wrapper {
     width: 60%;
     bottom: -15%;
     right: -10%;
     left: auto;
     transform: none;
   }
-  #current .card:nth-child(3)::after {
+  .current .card:nth-child(3)::after {
     width: 150px;
     height: 150px;
     bottom: -15%;
