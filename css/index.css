@@ -19,10 +19,7 @@ body * {
   overflow: hidden;
 }
 
-body * {
-  font-family: "League Spartan";
-}
-
+/* Hero Section */
 .hero {
   position: relative;
   background-color: #f07015;
@@ -124,7 +121,6 @@ body * {
   .hero .hero-blob {
     width: clamp(300px, 90vw, 700px);
   }
-
   .hero .hero-title {
     font-size: 2rem;
     line-height: 1.1;
@@ -133,12 +129,10 @@ body * {
     margin-bottom: 1rem;
     display: block;
   }
-
   .hero .hero-text {
     padding-left: 0;
     margin: 0;
   }
-
   .hero .hero-button {
     font-size: 1.3rem;
     padding: 0.7rem 1.2rem;
