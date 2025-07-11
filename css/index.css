@@ -444,6 +444,8 @@ body * {
 
 .partnerships-h1 {
   font-weight: 700;
+  max-width: 95vw;
+  justify-self: center;
 }
 
 .hands-img {
@@ -524,6 +526,16 @@ body * {
 .partnerships-content a {
   color: white;
   text-decoration: none;
+}
+
+@media (max-width: 1105px) {
+  .partnerships-left {
+    margin-left: 30px;
+  }
+  .partnerships-right {
+    margin-right: 50px;
+    margin-bottom: 25px;
+  }
 }
 
 .partnerships-link {
