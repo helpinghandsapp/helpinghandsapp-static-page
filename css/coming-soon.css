@@ -1,0 +1,32 @@
+.bg-dark-orange {
+  background-color: #f07015;
+  color: white;
+  text-align: center;
+}
+
+.coming-soon-heading {
+  font-family: "League Spartan";
+  font-weight: 700;
+  margin-top: 4rem;
+}
+
+.coming-soon-text {
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+
+.home-button {
+  font-family: "League Spartan";
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 20px;
+  margin: auto;
+  border: 3px solid white;
+  padding: 15px 25px;
+}
+
+.home-button:hover {
+  text-decoration: none;
+}
