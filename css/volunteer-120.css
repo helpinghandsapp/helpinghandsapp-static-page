@@ -18,13 +18,13 @@ img {
 .csc-title {
   font-weight: 800;
   font-size: 75px;
-  font-family: League Spartan;
+  font-family: "League Spartan";
 }
 
 .csc-subtitle {
   font-size: 40px;
   font-weight: bold;
-  font-family: League Spartan;
+  font-family: "League Spartan";
 }
 
 .csc-text {
@@ -94,7 +94,7 @@ img {
 }
 
 .csc-sponsor {
-  font-family: League Spartan;
+  font-family: "League Spartan";
 }
 
 .mt-16 {

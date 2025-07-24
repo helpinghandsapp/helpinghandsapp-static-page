@@ -1,8 +1,8 @@
 footer {
   background: #faa52d;
   padding: 6vh 0 10px 0;
-  font-family: League Spartan;
-  color: white;
+  font-family: "League Spartan";
+  color: #ffffff;
   position: relative;
 }
 
@@ -92,7 +92,7 @@ footer .social-media-icon:hover {
 footer a,
 a:focus,
 a:hover {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -108,7 +108,7 @@ footer form {
 footer label {
   font-weight: 400;
   font-size: 18px;
-  font-family: Poppins;
+  font-family: "Poppins";
 }
 
 #opt-in {
@@ -121,13 +121,12 @@ footer label {
 
 .email-input {
   position: relative;
-  align-items: right;
 }
 
 .email-input input {
   width: 100%;
   background-color: #f07015;
-  color: white;
+  color: #ffffff;
   border: none;
   padding: 10px 45px 10px 10px;
   border-radius: 40px;

@@ -1,6 +1,6 @@
 .bg-dark-orange {
   background-color: #f07015;
-  color: white;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -18,12 +18,12 @@
 
 .home-button {
   font-family: "League Spartan";
-  color: white;
+  color: #ffffff;
   font-size: 1.5rem;
   font-weight: 700;
   border-radius: 20px;
   margin: auto;
-  border: 3px solid white;
+  border: 3px solid #ffffff;
   padding: 15px 25px;
 }
 

@@ -4,7 +4,7 @@ body * {
 
 .bg-dark-orange {
   background-color: #f07015;
-  color: white;
+  color: #ffffff;
 }
 
 .dark-blue {
@@ -24,7 +24,7 @@ body * {
 .hero {
   position: relative;
   background-color: #f07015;
-  color: #fff;
+  color: #ffffff;
   padding: 5rem 1rem 3rem;
   overflow: hidden;
 }
@@ -67,7 +67,7 @@ body * {
 
 .hero .hero-button {
   display: inline-block;
-  color: #fff;
+  color: #ffffff;
   font-weight: 600;
   padding: 0.65rem 1.2rem;
   border-radius: 2rem;
@@ -134,7 +134,7 @@ body * {
 }
 
 .current .section-title {
-  color: #fff;
+  color: #ffffff;
   font-size: 2rem;
   text-align: left;
   font-weight: 700;
@@ -541,6 +541,6 @@ body * {
 .partnerships-link {
   border-radius: 20px;
   max-width: 400px;
-  border: 3px solid white;
+  border: 3px solid #ffffff;
   padding: 10px;
 }

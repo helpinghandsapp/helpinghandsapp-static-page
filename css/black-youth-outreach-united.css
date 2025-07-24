@@ -31,12 +31,12 @@ img {
 .byou-title {
   font-weight: 800;
   font-size: 75px;
-  font-family: League Spartan;
+  font-family: "League Spartan";
   color: #f07015;
 }
 
 .byou-top-subtitle {
-  font-family: League Spartan;
+  font-family: "League Spartan";
   color: #006b8f;
   font-weight: bold;
   font-size: 28px;
@@ -46,7 +46,7 @@ img {
   font-size: 40px;
   font-weight: bold;
   color: #f07015;
-  font-family: League Spartan;
+  font-family: "League Spartan";
 }
 
 .byou-text {

@@ -42,7 +42,7 @@ img {
 .cmmgp-title {
   font-weight: 800;
   font-size: 75px;
-  font-family: League Spartan;
+  font-family: "League Spartan";
   color: #f07015;
 }
 
@@ -50,7 +50,7 @@ img {
   font-size: 40px;
   font-weight: bold;
   color: #f07015;
-  font-family: League Spartan;
+  font-family: "League Spartan";
 }
 
 .cmmgp-text {
@@ -140,21 +140,21 @@ img {
   border-radius: 1rem;
   font-size: 40px;
   font-weight: bold;
-  font-family: League Spartan;
+  font-family: "League Spartan";
   max-width: 100%;
   text-align: center;
   margin-bottom: 40px;
 }
 
 .dates-subtitle {
-  font-family: League Spartan;
+  font-family: "League Spartan";
   color: #006b8f;
   font-weight: bold;
   font-size: 28px;
 }
 
 .dates-text {
-  font-family: League Spartan;
+  font-family: "League Spartan";
   color: #f07015;
   font-weight: bold;
   font-size: 22px;
