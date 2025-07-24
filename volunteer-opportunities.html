@@ -61,8 +61,7 @@
     <!-- End Facebook Pixel Code -->
     <!-- mailchimp pop up code  -->
     <!-- <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"bb1a6c0f75e6f04a1ef2e8ca5","lid":"d9576472f9"}) })</script> -->
-    <script src="navbar.js"></script>
-    <script src="footer.js"></script>
+    <script src="js/load-containers.js"></script>
   </head>
 
   <!--==================NavBar-StaticPages==================================================-->
@@ -73,12 +72,8 @@
 
     <!-- nav bar -->
 
-    <div id="navbar-container">
-      <script>
-        const navbarContainer = document.getElementById("navbar-container");
-        navbarContainer.innerHTML = generateNavbar();
-      </script>
-    </div>
+    <div id="navbar-container"></div>
+    <script src="js/navbar-load.js"></script>
 
     <!-- header -->
 
@@ -409,12 +404,11 @@
     </main>
 
     <!-- FOOTER -->
-    <div id="footer-container">
-      <script>
-        const footerContainer = document.getElementById("footer-container");
-        footerContainer.innerHTML = generateFooter();
-      </script>
-    </div>
+    <div id="footer-container"></div>
+    <script>
+      loadContainers("navbar", "footer");
+    </script>
+    <script src="js/footer.js"></script>
 
     <!-- MailGo Script -->
     <script src="https://unpkg.com/mailgo@0.9.14/dist/mailgo.min.js"></script>

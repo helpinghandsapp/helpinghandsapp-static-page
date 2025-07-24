@@ -66,8 +66,7 @@
     <!-- end Mixpanel -->
 
     <!--[endif]-->
-    <script src="navbar.js"></script>
-    <script src="footer.js"></script>
+    <script src="js/load-containers.js"></script>
   </head>
 
   <body id="page-top">
@@ -75,12 +74,8 @@
     <a class="skip-to-content-link" href="#main-content">Skip to content</a>
 
     <!-- nav -->
-    <div id="navbar-container">
-      <script>
-        const navbarContainer = document.getElementById("navbar-container");
-        navbarContainer.innerHTML = generateNavbar();
-      </script>
-    </div>
+    <div id="navbar-container"></div>
+    <script src="js/navbar-load.js"></script>
 
     <!-- HEADER -->
     <div id="covid" class="new-header">
@@ -213,15 +208,13 @@
     </main>
 
     <!-- FOOTER -->
-    <div id="footer-container">
-      <script>
-        const footerContainer = document.getElementById("footer-container");
-        footerContainer.innerHTML = generateFooter();
-      </script>
-    </div>
+    <div id="footer-container"></div>
 
     <!--============================================================================================-->
-
+    <script>
+      loadContainers("navbar", "footer");
+    </script>
+    <script src="js/footer.js"></script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
