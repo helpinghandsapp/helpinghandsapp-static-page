@@ -93,6 +93,7 @@
   margin: 20px auto 0;
   background: #ffffff;
   max-width: 1250px;
+  border-radius: 45px;
   box-shadow: 0px 4px 6px #d5d5d5;
 }
 .volunteer-positions .volunteer-item {
