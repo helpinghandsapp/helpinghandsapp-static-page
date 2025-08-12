@@ -1,6 +1,5 @@
-var $tabs = $(".tab");
-var $verticalTabs = $(".tab-vertical");
-var $size = $(".size");
+const $tabs = $(".tab");
+const $verticalTabs = $(".tab-vertical");
 
 $tabs.click(function () {
   $(this).parent(".column").toggleClass("show");
@@ -8,17 +7,17 @@ $tabs.click(function () {
 });
 
 $verticalTabs.click(function () {
-  $("#change").val("-");
   $(this).parent(".slide").toggleClass("show");
-  $verticalTabs.css({ opacity: "0.3", color: black });
+  if ($(this).parent(".slide").hasClass("show")) {
+    $(this).find(".toggle-icon").html("&ndash;");
+  } else {
+    $(this).find(".toggle-icon").html("+");
+  }
   $verticalTabs.not(this).parent().removeClass("show");
+  $verticalTabs.not(this).find(".toggle-icon").html("+");
 });
 
 $verticalTabs.focus(function () {
   $(this).parent(".slide").toggleClass("show");
   $verticalTabs.not(this).parent().removeClass("show");
-});
-
-$verticalTabs.click(function () {
-  $size.val("-");
 });

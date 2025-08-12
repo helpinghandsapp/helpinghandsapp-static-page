@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -77,17 +77,6 @@
     <!-- mailchimp pop up code  -->
     <!-- <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"bb1a6c0f75e6f04a1ef2e8ca5","lid":"d9576472f9"}) })</script> -->
     <script src="js/load-containers.js"></script>
-    <script>
-      function toggleTab(tab) {
-        tab.classList.toggle("active");
-        const spanElement = tab.querySelector("span");
-        if (tab.classList.contains("active")) {
-          spanElement.textContent = "-";
-        } else {
-          spanElement.textContent = "+";
-        }
-      }
-    </script>
   </head>
 
   <body id="page-top">
@@ -175,45 +164,16 @@
     <section class="volunteer-postings-section bg-primary">
       <div class="wrapper">
         <h2 class="subtitle-heading">Current and Urgent Job Postings</h2>
-        <p class="volunteer-postings-text">
+        <p id="urgent-text" class="volunteer-postings-text">
           Click the tabs below to view details and apply now!
         </p>
         <div class="jobPostings">
           <div class="column">
-            <div class="container-vertical">
-              <div class="slide">
-                <div class="tab-vertical" onclick="toggleTab(this)">
-                  Call for Board of Directors
-                  <span>+</span>
-                </div>
-                <div class="content-vertical">
-                  <embed
-                    src="img/volunteerPositionPDFs/Call for Board of Directors.pdf"
-                    type="application/pdf"
-                    width="100%"
-                    height="100%"
-                  />
-                </div>
-              </div>
-              <div class="slide">
-                <div class="tab-vertical" onclick="toggleTab(this)">
-                  Call For Black Youth Mentors
-                  <span>+</span>
-                </div>
-                <div class="content-vertical">
-                  <embed
-                    src="img/volunteerPositionPDFs/Call For Black Youth Mentors.pdf"
-                    type="application/pdf"
-                    width="100%"
-                    height="100%"
-                  />
-                </div>
-              </div>
-            </div>
+            <div id="urgent-container" class="container-vertical"></div>
           </div>
         </div>
         <a
-          id="volunteer-postings-link"
+          id="urgent-button"
           class="volunteer-postings-link btn btn-secondary btn-l"
           href="#mailgo"
           data-address="team"
@@ -229,57 +189,7 @@
         <h2 class="subtitle-heading">
           Click to Apply to Volunteer/Trainee Positions!
         </h2>
-
-        <ul class="volunteer-positions">
-          <li class="volunteer-item">
-            <a
-              class="volunteer-link"
-              href="https://airtable.com/shre7vhoh5QXOswYx?prefill_Position+you+are+applying+for=Fundraising+and+Donor+Relation+Associate"
-              target="_blank"
-              onclick='mixpanel.track("Volunteer Post 1");'
-              aria-label="Apply for Fundraiser and Donor Relations Associate volunteer position"
-            >
-              <img
-                id="volunteer-img"
-                src="img/volunteer-img15-compressor.png"
-                style="border-radius: 35px"
-                alt="Volunteer Advertisement for Fundraiser and Donor Relations Associate"
-              />
-            </a>
-          </li>
-          <li class="volunteer-item">
-            <a
-              class="volunteer-link"
-              href="https://airtable.com/shre7vhoh5QXOswYx?prefill_Position+you+are+applying+for=Social+Media+Associate"
-              target="_blank"
-              onclick='mixpanel.track("Volunteer Post 1");'
-              aria-label="Apply for Social Media Associate volunteer position"
-            >
-              <img
-                id="volunteer-img"
-                src="img/volunteer-img3-compressor.png"
-                style="border-radius: 35px"
-                alt="Volunteer Advertisement for Social Media Associate"
-              />
-            </a>
-          </li>
-          <li class="volunteer-item">
-            <a
-              class="volunteer-link"
-              href="https://airtable.com/shre7vhoh5QXOswYx?prefill_Position+you+are+applying+for=UI/UX+Designer"
-              target="_blank"
-              onclick='mixpanel.track("Volunteer Post 1");'
-              aria-label="Apply for UI/UX Designer volunteer position"
-            >
-              <img
-                id="volunteer-img"
-                src="img/volunteer-img11-compressor.png"
-                style="border-radius: 35px"
-                alt="Volunteer Advertisement for UI/UX Designer"
-              />
-            </a>
-          </li>
-        </ul>
+        <ul id="trainee-container" class="volunteer-positions"></ul>
       </div>
     </section>
 
@@ -287,60 +197,17 @@
     <section class="volunteer-postings-section bg-primary">
       <div class="wrapper">
         <h2 class="subtitle-heading">Current Volunteer Postings</h2>
-        <p class="volunteer-postings-text">
+        <p id="volunteer-text" class="volunteer-postings-text">
           Click the tabs below to view details about the Volunteer/Trainee
           Positions and apply now!
         </p>
         <div class="jobPostings">
           <div class="column">
-            <div class="container-vertical">
-              <div class="slide">
-                <div class="tab-vertical" onclick="toggleTab(this)">
-                  Call for Board of Directors
-                  <span>+</span>
-                </div>
-                <div class="content-vertical">
-                  <embed
-                    src="img/volunteerPositionPDFs/Call for Board of Directors.pdf"
-                    type="application/pdf"
-                    width="100%"
-                    height="100%"
-                  />
-                </div>
-              </div>
-              <div class="slide">
-                <div class="tab-vertical" onclick="toggleTab(this)">
-                  Call For Black Youth Mentors
-                  <span>+</span>
-                </div>
-                <div class="content-vertical">
-                  <embed
-                    src="img/volunteerPositionPDFs/Call For Black Youth Mentors.pdf"
-                    type="application/pdf"
-                    width="100%"
-                    height="100%"
-                  />
-                </div>
-              </div>
-              <div class="slide">
-                <div class="tab-vertical" onclick="toggleTab(this)">
-                  Social Media Associate
-                  <span>+</span>
-                </div>
-                <div class="content-vertical">
-                  <embed
-                    src="img/volunteerPositionPDFs/Social Media Associate-Volunteer position.pdf"
-                    type="application/pdf"
-                    width="100%"
-                    height="100%"
-                  />
-                </div>
-              </div>
-            </div>
+            <div id="volunteer-container" class="container-vertical"></div>
           </div>
         </div>
         <a
-          id="volunteer-postings-link"
+          id="volunteer-button"
           class="volunteer-postings-link btn btn-secondary btn-l"
           href="https://airtable.com/shre7vhoh5QXOswYx"
           target="_blank"
@@ -359,6 +226,8 @@
     <script src="js/footer.js"></script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <!-- Load job postings -->
+    <script src="js/jointeam.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
@@ -369,8 +238,6 @@
     <script src="https://unpkg.com/mailgo@0.9.14/dist/mailgo.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
-    <!-- accordian -->
-    <script src="js/accordian.js"></script>
     <!-- load javascript for navbar accesibility -->
     <script defer src="js/navbar-accesibility.js"></script>
   </body>
