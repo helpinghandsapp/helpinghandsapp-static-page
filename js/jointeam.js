@@ -1,13 +1,3 @@
-function toggleTab(tab) {
-  tab.classList.toggle("active");
-  const spanElement = tab.querySelector("span");
-  if (tab.classList.contains("active")) {
-    spanElement.textContent = "-";
-  } else {
-    spanElement.textContent = "+";
-  }
-}
-
 fetch(
   "https://helping-hands-website.s3.ca-central-1.amazonaws.com/jointeam/jointeam.json",
 )
