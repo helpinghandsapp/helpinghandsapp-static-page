@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -72,6 +72,7 @@
 
     <!--[endif]-->
     <script src="js/load-containers.js"></script>
+    <script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
   </head>
   <body id="page-top">
     <!-- skip to main content (accesibility) -->
@@ -94,15 +95,60 @@
     </div>
 
     <main id="main-content">
-      <section class="bg-secondary change-makers-section">
+      <section class="bg-secondary change-makers-header">
         <div class="wrapper">
-          <h1 class="change-makers-title">Help us empower the next generation of Change Makers</h1>
-          <h3 class="change-makers-subtitle">Your donation fuels youth-led projects that make real, local impact</h3>
-          <a href="#" class="btn btn-default learn-more-button">
-          Learn More
-        </a>
+          <h1 class="change-makers-title">
+            Help us empower the next generation of Change Makers
+          </h1>
+          <h3 class="change-makers-subtitle">
+            Your donation fuels youth-led projects that make real, local impact
+          </h3>
+          <a
+            href="#change-markers-fundraising"
+            class="btn btn-default learn-more-button"
+            >Learn More</a
+          >
         </div>
       </section>
+      <section id="change-markers-fundraising" class="bg-secondary">
+        <div class="wrapper">
+          <h1 class="subtitle-heading change-makers-title">Our Fundraising</h1>
+          <div class="fundraising-wrapper">
+            <div class="fundraising-content">
+              <p class="fundraising-paragraph">
+                Your donation funds youth-driven projects that make a real
+                impact from mental health support to food security and community
+                building. With your help, young changemakers get the tools,
+                training, and support they need to lead and uplift their
+                communities.
+              </p>
+              <img
+                class="fundraising-img"
+                src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/donate/our-fundraising.png"
+              />
+            </div>
+            <div class="fundraising-donorbox">
+              <iframe
+                src="https://donorbox.org/embed/fuel-the-next-changemaker?"
+                name="donorbox"
+                allowpaymentrequest="allowpaymentrequest"
+                seamless="seamless"
+                frameborder="0"
+                scrolling="no"
+                height="900px"
+                width="100%"
+                style="
+                  max-width: 500px;
+                  min-width: 250px;
+                  max-height: none !important;
+                "
+                allow="payment"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- section  -->
       <section class="bg-primary">
         <div class="wrapper">
@@ -235,10 +281,6 @@
           </div>
           <div id="DonorBox" class="donorbox-section">
             <div class="donorbox-widget">
-              <script
-                src="https://donorbox.org/widget.js"
-                paypalExpress="false"
-              ></script>
               <iframe
                 src="https://donorbox.org/embed/lend-us-a-helping-hand"
                 name="donorbox"

@@ -327,7 +327,7 @@
   margin: 50px 0 25px;
 }
 
-.change-makers-section {
+.change-makers-header {
   background-image: url("https://helping-hands-website.s3.ca-central-1.amazonaws.com/donate/top-image.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -348,8 +348,39 @@
 .learn-more-button {
   color: #003b4f;
   border-radius: 30px;
-  padding: 20px 40px 20px 40px;
+  padding: 20px 50px 20px 50px;
   margin-top: 30px;
   font-family: "Poppins";
   font-size: 1.3rem;
+}
+
+.fundraising-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fundraising-content {
+  max-width: 760px;
+  background-color: #ffffff;
+  justify-content: center;
+  padding: 0px 20px 20px 20px;
+  text-align: center;
+}
+
+.fundraising-paragraph {
+  text-align: left;
+  color: #006b8f;
+  font-family: "Poppins";
+  font-size: 1.2rem;
+}
+
+.fundraising-img {
+  max-width: 100%;
+  margin: auto;
+}
+
+.fundraising-donorbox {
+  margin: auto;
+  padding: 10px;
 }
