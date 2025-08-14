@@ -384,3 +384,60 @@
   margin: auto;
   padding: 10px;
 }
+
+.numbers-title {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.numbers-grid-top {
+  display: grid;
+  grid-template-columns: 9fr 4fr;
+  gap: 20px;
+}
+
+.numbers-item {
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  background-color: #006b8f;
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 20px 30px 20px 30px;
+  margin-top: 20px;
+}
+
+.numbers-participant {
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+.number-value {
+  font-family: "League Spartan";
+  font-size: 10rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.numbers-grid-bottom {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  gap: 20px;
+}
+
+.youth-project {
+  font-family: "League Spartan";
+  font-size: 4.5rem;
+  line-height: 1;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .numbers-grid-top,
+  .numbers-grid-bottom {
+    display: block;
+  }
+}
