@@ -332,7 +332,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: clamp(400px, 80vh, 740px);
+  height: clamp(450px, 80vh, 740px);
   color: #ffffff;
 }
 
