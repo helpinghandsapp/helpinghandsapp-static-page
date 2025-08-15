@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -30,6 +30,7 @@
       href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
       integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
       crossorigin="anonymous"
+      type="text/css"
     />
 
     <!-- Plugin CSS -->
@@ -37,8 +38,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css" />
-    <link rel="stylesheet" href="css/covid19.css" />
-    <link rel="stylesheet" href="img/device-mockups/device-mockups.min.css" />
+    <link rel="stylesheet" href="css/covid19.css" type="text/css" />
+    <link rel="stylesheet" href="img/device-mockups/device-mockups.min.css" type="text/css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -153,7 +154,11 @@
               can access the full version of this guidebook in the link below.
               Also, if you have any feedback on what we should add and/or what
               should take away, please email us at
-              <a class="covid-link2" href="mailto:community@helpinghandsapp.com"
+              <a
+                href="#mailgo"
+                data-address="community"
+                data-domain="helpinghandsapp.com"
+                class="covid-link2"
                 >community@helpinghandsapp.com</a
               >.
             </p>
@@ -197,7 +202,12 @@
         </div>
 
         <div class="covid-resource-info">
-          <a class="covid-link2" href="mailto:community@helpinghandsapp.com">
+          <a
+            href="#mailgo"
+            data-address="community"
+            data-domain="helpinghandsapp.com"
+            class="covid-link2"
+          >
             <p>
               Click here to let us know if you want to add a resource! Or if you
               want to be notified of updated versions!
@@ -219,6 +229,8 @@
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- MailGo Script -->
+    <script src="https://unpkg.com/mailgo@0.9.14/dist/mailgo.min.js"></script>
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>

@@ -1,11 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Donate - Helping Hands</title>
-
     <meta
       name="description"
       content="Here at Helping Hands, we work constantly to help youth to find relevant volunteer opportunities, but we might not be able to continue without you!"
@@ -21,6 +19,16 @@
       type="text/css"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
       rel="stylesheet"
       href="font-awesome/css/font-awesome.min.css"
       type="text/css"
@@ -30,6 +38,7 @@
       href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
       integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
       crossorigin="anonymous"
+      type="text/css"
     />
 
     <!-- Plugin CSS -->
@@ -37,13 +46,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css" />
-    <link rel="stylesheet" href="css/donate.css" />
-    <link rel="stylesheet" href="img/device-mockups/device-mockups.min.css" />
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
+    <link rel="stylesheet" href="css/donate.css" type="text/css" />
+    <link rel="stylesheet" href="img/device-mockups/device-mockups.min.css" type="text/css" />
 
     <!-- add slick.css -->
     <link
@@ -51,7 +55,6 @@
       type="text/css"
       href="./slick-1.8.1/slick/slick.css"
     />
-
     <link
       rel="stylesheet"
       type="text/css"
@@ -65,8 +68,8 @@
     <script type="text/javascript" src="js/mixpanel.js"></script>
     <!-- end Mixpanel -->
 
-    <!--[endif]-->
     <script src="js/load-containers.js"></script>
+    <script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
   </head>
   <body id="page-top">
     <!-- skip to main content (accesibility) -->
@@ -83,24 +86,105 @@
           Here at Helping Hands, we work constantly to help youth to find
           relevant volunteer opportunities, but we might not be able to continue
           without you! Even a small donation can make a huge difference to a
-          student’s personal and professional development
+          student's personal and professional development.
         </p>
-        <!-- <a class = "btn btn-secondary" href = "#DonorBox">Donate Now</a>  -->
       </div>
     </div>
 
     <main id="main-content">
-      <!-- section  -->
-      <div class="bg-primary">
+      <section class="bg-secondary change-makers-header">
+        <div class="wrapper">
+          <h1 class="change-makers-title">
+            Help us empower the next generation of Change Makers
+          </h1>
+          <h3 class="change-makers-subtitle">
+            Your donation fuels youth-led projects that make real, local impact
+          </h3>
+          <a
+            href="#change-makers-fundraising"
+            class="btn btn-default learn-more-button"
+            >Learn More</a
+          >
+        </div>
+      </section>
+      <section id="change-makers-fundraising" class="bg-secondary">
+        <div class="wrapper">
+          <h1 class="subtitle-heading change-makers-title">Our Fundraising</h1>
+          <div class="fundraising-wrapper">
+            <div class="fundraising-content">
+              <p class="fundraising-paragraph">
+                Your donation funds youth-driven projects that make a real
+                impact from mental health support to food security and community
+                building. With your help, young changemakers get the tools,
+                training, and support they need to lead and uplift their
+                communities.
+              </p>
+              <img
+                class="fundraising-img"
+                src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/donate/our-fundraising.png"
+                alt="YCA group photo"
+              />
+            </div>
+            <div class="fundraising-donorbox">
+              <iframe
+                src="https://donorbox.org/embed/fuel-the-next-changemaker?"
+                name="donorbox"
+                allowpaymentrequest="allowpaymentrequest"
+                seamless="seamless"
+                frameborder="0"
+                scrolling="no"
+                height="900px"
+                width="100%"
+                style="
+                  max-width: 500px;
+                  min-width: 250px;
+                  max-height: none !important;
+                "
+                allow="payment"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-secondary">
+        <div class="wrapper">
+          <h2 class="numbers-title">Let the Numbers Speak For Themselves</h2>
+          <div class="numbers-grid-top">
+            <div class="numbers-item">
+              &OpenCurlyDoubleQuote;Analisa and Taijah were amazing
+              coordinators. They regularly checked in, offered helpful
+              resources, and the weekly follow-up emails were super valuable for
+              our current and future projects.&CloseCurlyDoubleQuote;
+              <h3 class="numbers-participant">
+                Changemakers 2024 Participant.
+              </h3>
+            </div>
+            <div class="numbers-item text-center">
+              <div class="number-value">58</div>
+              youth projects funded
+            </div>
+          </div>
+          <div class="numbers-grid-bottom">
+            <div class="numbers-item youth-project">
+              $100 can spark a youth led project
+            </div>
+            <div class="numbers-item text-center">
+              <div class="number-value">100+</div>
+              community participants
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary">
         <div class="wrapper">
           <div class="donate-body">
             <h2 class="subtitle-heading">Make a Difference</h2>
-
             <div class="donate-body-middle">
               <div class="donate-circular-section">
                 <img
                   src="img/help-keep-the-hands-helping.png"
                   class="donate-circular-section-image"
+                  alt="Help keep the hands helping"
                 />
               </div>
               <div class="donate-body-paragraph">
@@ -109,14 +193,14 @@
                   low-income, and newcomer youth who are passionate about
                   serving their communities. We harness the power of
                   volunteering to increase youth civic engagement and career
-                  development. But we can’t do this alone! Donations from
+                  development. But we can't do this alone! Donations from
                   community members like you are crucial. Without your
                   donations, our youth-led work would not be possible.
                 </p>
                 <p>
-                  Many young people ask us, “I have so much going on—how do I
-                  complete my community service hours in time for graduation?”
-                  or “How do I find a mentor to guide me in my career?” With
+                  Many young people ask us, "I have so much going on—how do I
+                  complete my community service hours in time for graduation?"
+                  or "How do I find a mentor to guide me in my career?" With
                   your support, we can help these youth achieve their goals.
                   Every donation counts; each young person we support will
                   support others in their community. Join us in our mission to
@@ -129,10 +213,8 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- section -->
-      <div class="bg-primary">
+      </section>
+      <section class="bg-primary">
         <div class="wrapper">
           <div class="donate-bottom-section">
             <h2 class="subtitle-heading">DONATE TODAY</h2>
@@ -156,9 +238,9 @@
                 <img
                   src="img/donate-list-image-1.png"
                   class="donate-list-img"
+                  alt="Graduation cap icon"
                 />
               </div>
-
               <div class="donate-list-item">
                 <p class="donate-list-description">
                   We harness the power of volunteering to improve the
@@ -168,9 +250,9 @@
                 <img
                   src="img/donate-list-image-2.png"
                   class="donate-list-img"
+                  alt="Person icon"
                 />
               </div>
-
               <div class="donate-list-item">
                 <p class="donate-list-description">
                   By donating today, you are equipping the leaders of tomorrow
@@ -179,22 +261,23 @@
                 <img
                   src="img/donate-list-image-3.png"
                   class="donate-list-img"
+                  alt="Hand holding heart icon"
                 />
               </div>
-
               <div class="donate-list-item">
                 <p class="donate-list-description">
-                  Enhance the positive change in someone’s life by donating to
+                  Enhance the positive change in someone's life by donating to
                   Helping Hands today!
                 </p>
                 <img
                   src="img/donate-list-image-4.png"
                   class="donate-list-img"
+                  alt="Lightbulb icon"
                 />
               </div>
             </div>
           </div>
-          <div class="">
+          <div class="bg-primary">
             <h1 style="text-align: center; margin-bottom: 58px">
               Make a difference
             </h1>
@@ -222,10 +305,6 @@
           </div>
           <div id="DonorBox" class="donorbox-section">
             <div class="donorbox-widget">
-              <script
-                src="https://donorbox.org/widget.js"
-                paypalExpress="false"
-              ></script>
               <iframe
                 src="https://donorbox.org/embed/lend-us-a-helping-hand"
                 name="donorbox"
@@ -248,6 +327,7 @@
               <img
                 class="donate-bottom-high-five-image"
                 src="img/donate-bottom-high-five-img.png"
+                alt="Two people high fiving"
               />
             </div>
           </div>
@@ -259,19 +339,16 @@
             <a class="btn btn-secondary" href="contactus.html">Get In Touch</a>
           </div>
         </div>
-      </div>
+      </section>
     </main>
-
-    <!--============================================================================================-->
 
     <!-- FOOTER -->
     <div id="footer-container"></div>
-
-    <!--====================Some Javascript=====================================-->
     <script>
       loadContainers("navbar", "footer");
     </script>
     <script src="js/footer.js"></script>
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
@@ -280,6 +357,8 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/wow.min.js"></script>
+    <!-- MailGo Script -->
+    <script src="https://unpkg.com/mailgo@0.9.14/dist/mailgo.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
     <!-- load javascript for navbar accesibility -->
