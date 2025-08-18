@@ -78,10 +78,6 @@
   box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.16);
 }
 
-.previous-volunteers {
-  display: none;
-}
-
 .volunteer-team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -161,14 +157,14 @@
   transform: rotate(270deg);
 }
 
-#team-name {
+.team-name {
   color: black;
   padding: 0 14px 0 14px;
   font-size: 21px;
   margin-top: 10px;
 }
 
-#position-title {
+.position-title {
   color: black;
   margin-top: -8px;
   padding: 0 14px 0 14px;
