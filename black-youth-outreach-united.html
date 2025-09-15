@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Black Youth Outreach United - Helping Hands</title>
-    <link rel="icon" href="img/logo_2.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <!-- Custom Fonts -->
@@ -33,8 +33,6 @@
       crossorigin="anonymous"
       type="text/css"
     />
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css" />
     <link
@@ -75,14 +73,14 @@
       <div class="image-on-side">
         <p class="byou-text">
           Helping Hands is running a hybrid Black Youth Outreach United (BYOU)
-          program for Black youth ages 13-18 where you can gain valuable
+          program for Black youth ages 13&ndash;18 where you can gain valuable
           experience, resources, and opportunities for success. The BYOU program
           addresses critical areas of Black youths' lives through various
           subprograms including mental and physical health, education,
           employment, and positive interactions.
         </p>
         <img
-          src="./img/byou-header.png"
+          src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/black-youth-outreach-united/byou-education.png"
           alt="Three people, books and a laptop"
         />
       </div>
@@ -91,11 +89,11 @@
       <section class="wrapper">
         <h3 class="byou-subtitle text-center">Why should you join BYOU?</h3>
         <p class="byou-text">
-          The BYOU program at Helping Hands offers Black youth aged 13-18 in the
-          Peel Region a unique opportunity to grow and thrive in various aspects
-          of their lives. From comprehensive support in mental health and
-          education to fostering physical wellness, community engagement, and
-          career readiness, BYOU is designed to empower youth with essential
+          The BYOU program at Helping Hands offers Black youth aged 13&ndash;18
+          in the Peel Region a unique opportunity to grow and thrive in various
+          aspects of their lives. From comprehensive support in mental health
+          and education to fostering physical wellness, community engagement,
+          and career readiness, BYOU is designed to empower youth with essential
           skills and resources. Participants can connect in a safe space within
           a relaxing environment, where they are supported to build resilience,
           explore their potential, and contribute meaningfully to their
@@ -103,8 +101,14 @@
           well-being. Will you join BYOU?
         </p>
         <div class="side-by-side">
-          <img src="./img/byou-room-1.jpg" alt="View of the entire lounge." />
-          <img src="./img/byou-room-2.jpg" alt="View of gift bags." />
+          <img
+            src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/black-youth-outreach-united/byou-room-1.jpg"
+            alt="View of the entire lounge."
+          />
+          <img
+            src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/black-youth-outreach-united/byou-room-2.jpg"
+            alt="View of gift bags."
+          />
         </div>
       </section>
       <section class="wrapper">
@@ -122,7 +126,10 @@
             to navigate through life's challenges with resilience and
             compassion.
           </p>
-          <img src="./img/byou-mental-health.png" alt="Mental health symbol." />
+          <img
+            src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/black-youth-outreach-united/byou-mental-health.png"
+            alt="Mental health symbol."
+          />
         </div>
         <h3 class="byou-subtitle">Educational Program:</h3>
         <div class="image-on-side">
@@ -138,7 +145,10 @@
             academic needs, but we are also nurturing future leaders and
             changemakers.
           </p>
-          <img src="./img/byou-education.png" alt="Education symbol." />
+          <img
+            src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/black-youth-outreach-united/byou-education.png"
+            alt="Education symbol."
+          />
         </div>
         <h3 class="byou-subtitle">Health Program:</h3>
         <div class="image-on-side">
@@ -152,7 +162,10 @@
             Health program aims to equip youth with resilience and vitality to
             thrive in every aspect of life.
           </p>
-          <img src="./img/byou-health.png" alt="Health symbol." />
+          <img
+            src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/black-youth-outreach-united/byou-health.png"
+            alt="Health symbol."
+          />
         </div>
         <h3 class="byou-subtitle">Volunteering / Positive Interactions:</h3>
         <div class="image-on-side">
@@ -166,7 +179,10 @@
             BYOU program aims to create a sense of purpose and community among
             Black youth.
           </p>
-          <img src="./img/byou-volunteering.png" alt="Volunteering symbol." />
+          <img
+            src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/black-youth-outreach-united/byou-volunteering.png"
+            alt="Volunteering symbol."
+          />
         </div>
         <h3 class="byou-subtitle">Employment:</h3>
         <div class="image-on-side">
@@ -179,7 +195,10 @@
             ensure that Black youth have the resources they need to navigate
             their career journey and secure meaningful employment opportunities.
           </p>
-          <img src="./img/byou-employment.png" alt="Employment symbol." />
+          <img
+            src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/black-youth-outreach-united/byou-employment.png"
+            alt="Employment symbol."
+          />
         </div>
       </section>
       <section class="wrapper">
@@ -203,7 +222,7 @@
           <i class="fa fa-chevron-down"></i>
         </button>
         <p class="faq-text">
-          Black youth, between ages of 13 - 18, and residing in the Greater
+          Black youth, between ages of 13&ndash;18, and residing in the Greater
           Toronto Area.
         </p>
         <button class="accordion">
@@ -277,24 +296,7 @@
     </script>
     <script src="js/footer.js"></script>
     <!-- faq accordion script -->
-    <script>
-      const accordion = document.getElementsByClassName("accordion");
-      for (let i = 0; i < accordion.length; i++) {
-        accordion[i].addEventListener("click", function () {
-          const chevron = this.children[0];
-          const panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            chevron.classList.add("fa-chevron-down");
-            chevron.classList.remove("fa-chevron-up");
-            panel.style.display = "none";
-          } else {
-            chevron.classList.add("fa-chevron-up");
-            chevron.classList.remove("fa-chevron-down");
-            panel.style.display = "block";
-          }
-        });
-      }
-    </script>
+    <script src="js/faq.js"></script>
     <!-- MailGo Script -->
     <script src="https://unpkg.com/mailgo@0.9.14/dist/mailgo.min.js"></script>
     <!-- jQuery -->
@@ -308,6 +310,6 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
     <!-- load javascript for navbar accesibility -->
-    <script defer src="js/navbar-accesibility.js"></script>
+    <script defer src="js/navbar-accessibility.js"></script>
   </body>
 </html>

@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Volunteer 120 - Helping Hands</title>
-    <link rel="icon" href="img/logo_2.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <!-- Custom Fonts -->
@@ -32,8 +32,6 @@
       crossorigin="anonymous"
       type="text/css"
     />
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css" />
     <link rel="stylesheet" href="css/volunteer-120.css" type="text/css" />
@@ -91,7 +89,10 @@
           sessions in 2026.
         </div>
       </div>
-      <img src="./img/csc1.png" alt="Three people building a house." />
+      <img
+        src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/volunteer-120/house.png"
+        alt="Three people building a house."
+      />
     </div>
     <main id="main-content">
       <section id="program-section" class="wrapper">
@@ -154,7 +155,10 @@
             </a>
           </div>
         </div>
-        <img src="./img/csc2.png" alt="Extending hand to help someone below." />
+        <img
+          src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/volunteer-120/extending-hand.png"
+          alt="Extending hand to help someone below."
+        />
       </section>
       <section class="wrapper">
         <h2 class="csc-title text-center">FAQ</h2>
@@ -195,7 +199,8 @@
             status in Canada as part of this program's eligibility requirement.
           </li>
           <li>
-            Aged 15-29 years old at the time of signing up for this program.
+            Aged 15&ndash;29 years old at the time of signing up for this
+            program.
           </li>
         </ul>
         <button class="accordion">
@@ -344,15 +349,15 @@
       <div class="wrapper">
         <p class="csc-text">
           Helping Hands Young Leaders and Changemakers is funded by Canada
-          Service Corps, a national movement that empowers youth aged 12-30 to
-          gain experience and build important skills while giving back to their
-          community. Learn more at
+          Service Corps, a national movement that empowers youth aged
+          12&ndash;30 to gain experience and build important skills while giving
+          back to their community. Learn more at
           <a
             class="csc-link"
             href="https://www.canada.ca/en/services/youth/canada-service-corps.html"
             target="_blank"
           >
-            Canada.ca/CanadaServiceCorps </a
+            Canada.ca/CanadaServiceCorps</a
           >.
         </p>
         <div class="text-center">
@@ -361,7 +366,10 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="img/csc-logo.png" alt="Funded by Canada Service Corps" />
+            <img
+              src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/volunteer-120/csc-logo.png"
+              alt="Funded by Canada Service Corps"
+            />
           </a>
         </div>
       </div>
@@ -373,27 +381,10 @@
     </script>
     <script src="js/footer.js"></script>
     <!-- faq accordion script -->
-    <script>
-      const accordion = document.getElementsByClassName("accordion");
-      for (let i = 0; i < accordion.length; i++) {
-        accordion[i].addEventListener("click", function () {
-          const chevron = this.children[0];
-          const panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            chevron.classList.add("fa-chevron-down");
-            chevron.classList.remove("fa-chevron-up");
-            panel.style.display = "none";
-          } else {
-            chevron.classList.add("fa-chevron-up");
-            chevron.classList.remove("fa-chevron-down");
-            panel.style.display = "block";
-          }
-        });
-      }
-    </script>
+    <script src="js/faq.js"></script>
     <!-- MailGo Script -->
     <script src="https://unpkg.com/mailgo@0.9.14/dist/mailgo.min.js"></script>
-    <!--====================Some Jacascript=====================================-->
+    <!--====================Some Javascript=====================================-->
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
@@ -405,6 +396,6 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
     <!-- load javascript for navbar accesibility -->
-    <script defer src="js/navbar-accesibility.js"></script>
+    <script defer src="js/navbar-accessibility.js"></script>
   </body>
 </html>

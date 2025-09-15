@@ -44,12 +44,12 @@
 }
 
 .managing-team .team-component:nth-child(2n) .main-team-photo {
-  background-image: url("/img/Profile\ Background\ blue.png");
+  background-image: url("https://helping-hands-website.s3.ca-central-1.amazonaws.com/team/profile-background-blue.png");
   background-size: cover;
 }
 
 .managing-team .team-component:nth-child(2n + 1) .main-team-photo {
-  background-image: url("/img/Profile\ Background\ orange.png");
+  background-image: url("https://helping-hands-website.s3.ca-central-1.amazonaws.com/team/profile-background-orange.png");
   background-size: cover;
 }
 

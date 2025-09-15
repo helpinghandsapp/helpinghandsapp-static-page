@@ -12,7 +12,7 @@
 
     <title>Workshops - Helping Hands</title>
 
-    <link rel="icon" href="img/logo_2.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
@@ -29,13 +29,9 @@
       type="text/css"
     />
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css" />
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css" />
     <link rel="stylesheet" href="css/workshops.css" type="text/css" />
-    <link rel="stylesheet" href="img/device-mockups/device-mockups.min.css" type="text/css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
@@ -43,17 +39,10 @@
       crossorigin="anonymous"
       type="text/css"
     />
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
 
     <!-- start Mixpanel -->
     <script type="text/javascript" src="js/mixpanel.js"></script>
     <!-- end Mixpanel -->
-
-    <!--[endif]-->
 
     <!-- Google Analytics Tracking Code for http://helpinghandsapp.com -->
     <script src="js/google-analytics.js"></script>
@@ -72,8 +61,6 @@
     </noscript>
     <!-- End Facebook Pixel Code -->
 
-    <!-- mailchimp pop up code  -->
-    <!-- <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"bb1a6c0f75e6f04a1ef2e8ca5","lid":"d9576472f9"}) })</script> -->
     <script src="js/load-containers.js"></script>
   </head>
 
@@ -87,17 +74,12 @@
 
     <!--============================================================================================-->
 
-    <!--HEADER  -->
+    <!-- HEADER -->
 
     <div class="new-header">
       <div class="wrapper">
         <h2>
           Book A Workshop
-          <!-- <img
-          id="volunteer-icon"
-          src="img/illustration_beaver.png"
-          alt="Drawing of a cartoon beaver"
-        /> -->
         </h2>
         <p>
           Our workshops can deliver in-person or virtually! Through our
@@ -159,21 +141,21 @@
                     <li class="slideshow-items fade">
                       <img
                         class="slideshow-images"
-                        src="img/img_workshop1.JPG"
+                        src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/workshops/workshop1.jpg"
                         alt="Giselle Hinds presenting at a workshop"
                       />
                     </li>
                     <li class="slideshow-items fade">
                       <img
                         class="slideshow-images"
-                        src="img/img_workshop2.jpg"
+                        src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/workshops/workshop2.jpg"
                         alt="Janelle Hinds presenting at a workshop"
                       />
                     </li>
                     <li class="slideshow-items fade">
                       <img
                         class="slideshow-images"
-                        src="img/img_workshop3.jpg"
+                        src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/workshops/workshop3.jpg"
                         alt="Janelle Hinds presenting at a workshop"
                       />
                     </li>
@@ -202,7 +184,7 @@
                 <img
                   id="workshop-contact-img"
                   class="img-responsive center-block"
-                  src="img/illustration_book-workshop.png"
+                  src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/workshops/book-workshop.png"
                   alt="Drawing of a woman thinking at a desk"
                 />
               </div>
@@ -370,29 +352,7 @@
     </script>
     <script src="js/footer.js"></script>
     <!-- Slideshow script -->
-    <script>
-      var slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("slideshow-items");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-      }
-    </script>
+    <script src="js/workshops.js"></script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
@@ -406,6 +366,6 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
     <!-- load javascript for navbar accesibility -->
-    <script defer src="js/navbar-accesibility.js"></script>
+    <script defer src="js/navbar-accessibility.js"></script>
   </body>
 </html>

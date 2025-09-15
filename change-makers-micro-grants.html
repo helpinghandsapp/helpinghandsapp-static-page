@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Change Makers Micro-grants - Helping Hands</title>
-    <link rel="icon" href="img/logo_2.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <!-- Custom Fonts -->
@@ -33,8 +33,6 @@
       crossorigin="anonymous"
       type="text/css"
     />
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css" />
     <link
@@ -80,7 +78,10 @@
           Apply
         </a>
       </div>
-      <img src="./img/cmmgp1.png" alt="Three people building a house." />
+      <img
+        src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/change-makers-micro-grants/earth.png"
+        alt="Earth with people, plants, animals and buildings."
+      />
     </div>
     <main id="main-content">
       <section class="wrapper program-section">
@@ -88,16 +89,19 @@
           Do you have a community project idea that needs funding?
         </h3>
         <p class="cmmgp-text">
-          Are you a passionate young Canadian between the ages of 15-29 with a
-          desire to make a positive impact in your community? The Helping Hands
-          ChangeMakers Micro Grant Program is your chance to turn your ideas
-          into action, create lasting change and contribute to a more inclusive
-          and volunteer-driven Canada. We are distributing 20 micro grants up to
-          $5,000 per project to individuals and groups who have a community
-          project idea in need of funding.
+          Are you a passionate young Canadian between the ages of 15&ndash;29
+          with a desire to make a positive impact in your community? The Helping
+          Hands ChangeMakers Micro Grant Program is your chance to turn your
+          ideas into action, create lasting change and contribute to a more
+          inclusive and volunteer-driven Canada. We are distributing 20 micro
+          grants up to $5,000 per project to individuals and groups who have a
+          community project idea in need of funding.
         </p>
         <div class="text-right">
-          <img src="./img/cmmgp2.png" alt="Three people sitting in a circle." />
+          <img
+            src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/change-makers-micro-grants/circle.png"
+            alt="Three people sitting in a circle."
+          />
         </div>
       </section>
       <section class="wrapper">
@@ -115,7 +119,10 @@
                 and long-term connections from this program
               </li>
             </ol>
-            <img src="./img/cmmgp3.png" alt="Four people looking at a plant." />
+            <img
+              src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/change-makers-micro-grants/plant.png"
+              alt="Four people looking at a plant."
+            />
           </div>
           <div class="grant-details">
             <h3 class="cmmgp-subtitle">$1,000</h3>
@@ -181,7 +188,9 @@
           following criteria:
           <ul>
             <li>Be a Canadian citizen or a permanent resident of Canada</li>
-            <li>Be between the ages of 15-29 at the time of application</li>
+            <li>
+              Be between the ages of 15&ndash;29 at the time of application
+            </li>
             <li>
               Have a NEW project or initiative; we do not fund ongoing
               projects/businesses
@@ -291,7 +300,10 @@
             <div class="dates-text">October - February</div>
           </div>
           <div class="text-right">
-            <img src="./img/cmmgp4.png" alt="Calendar" />
+            <img
+              src="https://helping-hands-website.s3.ca-central-1.amazonaws.com/change-makers-micro-grants/calendar.png"
+              alt="Calendar"
+            />
           </div>
         </div>
       </section>
@@ -303,24 +315,7 @@
     </script>
     <script src="js/footer.js"></script>
     <!-- faq accordion script -->
-    <script>
-      const accordion = document.getElementsByClassName("accordion");
-      for (let i = 0; i < accordion.length; i++) {
-        accordion[i].addEventListener("click", function () {
-          const chevron = this.children[0];
-          const panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            chevron.classList.add("fa-chevron-down");
-            chevron.classList.remove("fa-chevron-up");
-            panel.style.display = "none";
-          } else {
-            chevron.classList.add("fa-chevron-up");
-            chevron.classList.remove("fa-chevron-down");
-            panel.style.display = "block";
-          }
-        });
-      }
-    </script>
+    <script src="js/faq.js"></script>
     <!-- MailGo Script -->
     <script src="https://unpkg.com/mailgo@0.9.14/dist/mailgo.min.js"></script>
     <!-- jQuery -->
@@ -334,6 +329,6 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
     <!-- load javascript for navbar accesibility -->
-    <script defer src="js/navbar-accesibility.js"></script>
+    <script defer src="js/navbar-accessibility.js"></script>
   </body>
 </html>
