@@ -1,14 +1,5 @@
 /* desktop */
 @media (min-width: 769px) {
-  .donate-section {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    background: linear-gradient(277.57deg, #2baaed 0%, #2d6b9d 100%);
-    color: white;
-  }
-
   .donate-body .donate-body-middle {
     display: flex;
     flex-direction: row;
@@ -72,28 +63,6 @@
 
 /* donate page mobile  --------------------------*/
 @media (max-width: 768px) {
-  .donate-section {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(277.57deg, #2baaed 0%, #2d6b9d 100%);
-    color: white;
-  }
-
-  .donate-section .donate-header-img {
-    display: none;
-  }
-
-  .donate-section .donate-header-paragraph {
-    width: 100%;
-    margin: 1em 0;
-  }
-
-  .donate-header-paragraph {
-    display: flex;
-    flex-direction: column;
-  }
-
   .donate-body .donate-body-middle {
     display: flex;
     flex-direction: column;
@@ -311,20 +280,8 @@
   color: black;
 }
 
-@media (max-width: 970px) {
-  .donate-section {
-    padding: 10% 0 3%;
-  }
-}
-
 .donate-bottom-high-five-image {
   width: 100%;
-}
-
-.donate-heading {
-  font-size: 55px;
-  color: #fff;
-  margin: 50px 0 25px;
 }
 
 .change-makers-header {
