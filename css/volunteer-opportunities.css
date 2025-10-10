@@ -97,7 +97,8 @@
 }
 
 .formal-volunteering-item {
-  background: url("https://helping-hands-website.s3.ca-central-1.amazonaws.com/volunteer-opportunities/checkmark-icon.png") no-repeat left top;
+  background: url("https://helping-hands-website.s3.ca-central-1.amazonaws.com/volunteer-opportunities/checkmark-icon.png")
+    no-repeat left top;
   background-size: 15px;
   padding-left: 2em;
   margin-top: 2em;
@@ -115,27 +116,6 @@
   .community-service-req-grid-paragraph {
     padding-bottom: 2em;
     padding-top: 2em;
-  }
-}
-
-@media (min-width: 1141px) {
-  .volunteer-opportunities-student-title-paragraph {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0.5em;
-  }
-}
-
-@media (max-width: 1140px) {
-  .volunteer-opportunities-student-title-paragraph {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
   }
 }
 
@@ -308,7 +288,7 @@
     margin: 0;
   }
 
-  #app-info-card-title {
+  .app-info-card-title {
     padding: 0;
   }
 
