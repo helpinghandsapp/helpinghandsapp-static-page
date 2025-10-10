@@ -67,17 +67,6 @@
   padding: 0 20px;
 }
 
-#volunteer-icon {
-  margin-top: -20px;
-  max-width: 120px;
-}
-
-@media (max-width: 768px) {
-  #volunteer-icon {
-    margin-top: 0px;
-  }
-}
-
 .volunteer-img {
   transition: 0.3s;
   height: 260px;
@@ -131,22 +120,6 @@
 
 .volunteer-img:hover {
   transform: scale(0.98);
-}
-
-#volunteer-title {
-  text-align: center;
-  font-size: 35px;
-  color: #000000;
-  margin-bottom: 25px;
-}
-
-@media (max-width: 992px) {
-  #volunteer-title {
-    margin: auto;
-    text-align: center;
-    font-size: 35px;
-    margin-bottom: 20px;
-  }
 }
 
 .volunteer-postings-text {

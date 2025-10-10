@@ -22,19 +22,19 @@
   padding-bottom: 0;
 }
 
-#contact-img {
+.contact-img {
   max-height: 450px;
   max-width: 100vw;
 }
 
 @media (max-width: 992px) {
-  #contact-img {
+  .contact-img {
     margin-top: -50px;
   }
 }
 
 @media (max-width: 768px) {
-  #contact-img {
+  .contact-img {
     margin-top: -10px;
   }
 }

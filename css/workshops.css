@@ -7,12 +7,6 @@
   );
 }
 
-.workshop-section .workshop-heading {
-  font-size: 55px;
-  color: white;
-  margin: 50px 0;
-}
-
 .workshop-section .workshop-featured {
   padding: 70px 0;
 }
@@ -163,6 +157,15 @@
 }
 
 @-webkit-keyframes fade {
+  from {
+    opacity: 0.75;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
   from {
     opacity: 0.75;
   }

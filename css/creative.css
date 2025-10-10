@@ -690,7 +690,7 @@ section.features .feature-item i {
   height: 100%;
 }
 
-#ig-feed {
+.ig-feed {
   width: 500px;
   height: 500px;
   border-radius: 25px;
@@ -698,7 +698,7 @@ section.features .feature-item i {
 }
 
 @media (max-width: 1199px) {
-  #ig-feed {
+  .ig-feed {
     width: 400px;
     height: 400px;
     margin-top: 20px;
@@ -706,7 +706,7 @@ section.features .feature-item i {
 }
 
 @media (max-width: 992px) {
-  #ig-feed {
+  .ig-feed {
     width: 400px;
     height: 400px;
     margin-top: 20px;
@@ -715,7 +715,7 @@ section.features .feature-item i {
 }
 
 @media (max-width: 483px) {
-  #ig-feed {
+  .ig-feed {
     width: 300px;
     height: 300px;
   }
@@ -727,14 +727,14 @@ section.features .feature-item i {
 }
 
 @media (max-width: 400px) {
-  #ig-feed {
+  .ig-feed {
     width: 250px;
     height: 250px;
   }
 }
 
 @media (max-width: 350px) {
-  #ig-feed {
+  .ig-feed {
     width: 200px;
     height: 200px;
   }
