@@ -3,7 +3,7 @@
   color: #000;
 }
 
-.covid-resource-info {
+.resources-info {
   text-align: center;
   margin: 0.25em auto;
 }
@@ -13,31 +13,25 @@
   justify-content: center;
 }
 
-.covid-info {
+.resources-pdf-info {
   margin: 2rem 0;
 }
 
-.covid-link2 {
+.resources-link {
   color: #0a5f93;
 }
 
-.covid-link2:hover {
+.resources-link:hover {
   color: #f17014;
 }
 
-.covid-link2 {
+.resources-link {
   word-wrap: break-word;
 }
 
 @media (max-width: 899px) {
-  .covid-section {
+  .resources-section {
     padding: 5% 25px;
-  }
-}
-
-@media (max-width: 425px) {
-  .covid-feater-mobile-instr {
-    opacity: 1;
   }
 }
 
@@ -79,7 +73,7 @@
   }
 }
 
-.covid-blm-iframe {
+.resources-blm-iframe {
   width: 100%;
   height: 500px;
   border-radius: 25px;
@@ -87,7 +81,7 @@
 }
 
 @media (max-width: 612px) {
-  .covid-blm-iframe {
+  .resources-blm-iframe {
     height: 30vh;
   }
 }
