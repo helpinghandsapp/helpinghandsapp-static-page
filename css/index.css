@@ -68,11 +68,11 @@ body * {
 .hero .hero-button {
   display: inline-block;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 800;
   padding: 0.65rem 1.2rem;
   border-radius: 2rem;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   transition:
     background-color 0.3s ease,
@@ -96,7 +96,7 @@ body * {
 .hero .hero-blob {
   position: relative;
   overflow: hidden;
-  width: 500px;
+  width: 530px;
   max-width: 100%;
   z-index: 1;
 }
