@@ -152,6 +152,22 @@ img {
   font-weight: bold;
   font-size: 28px;
 }
+.dates-subtitle a {
+  color: #f07015;
+  text-decoration: none;
+}
+
+.dates-subtitle a:visited {
+  color: #f07015;
+}
+
+.dates-subtitle a:hover {
+  color: #d95f02;
+}
+
+.dates-subtitle a:active {
+  color: #f07015;
+}
 
 .dates-text {
   font-family: "League Spartan";
