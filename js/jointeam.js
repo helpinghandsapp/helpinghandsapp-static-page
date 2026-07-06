@@ -3,10 +3,21 @@ fetch(
 )
   .then((res) => res.json())
   .then((data) => {
+
+    const filteredUrgent = data.urgent.filter (
+      (post) => post.title !== "Call for Board of Directors"
+
+    );
+
+    const filteredVolunteer = data.volunteer.filter(
+      (post) => post.title !== "Call for Board of Directors"
+    );
+    
+    
     // Display urgent job postings using accordion tabs with PDFs
-    if (data.urgent.length > 0) {
+    if (filteredUrgent.length > 0) {
       $("#urgent-container").html(
-        data.urgent
+        filteredUrgent
           .map(
             (post) => `
               <div class="slide">
@@ -60,9 +71,9 @@ fetch(
     );
 
     // Display volunteer postings as accordion tabs with PDFs
-    if (data.volunteer.length > 0) {
+    if (filteredVolunteer.length > 0) {
       $("#volunteer-container").html(
-        data.volunteer
+        filteredVolunteer
           .map(
             (post) => `
               <div class="slide">
