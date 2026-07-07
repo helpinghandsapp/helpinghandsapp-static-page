@@ -4,13 +4,13 @@ fetch(
   .then((res) => res.json())
   .then((data) => {
 
-    const filteredUrgent = data.urgent.filter (
-      (post) => post.title !== "Call for Board of Directors"
+    const isBoardPost = (post) =>
+      post.title && post.title.toLowerCase().includes("board of directors");
 
-    );
+    const filteredUrgent = data.urgent.filter((post) => !isBoardPost(post));
 
     const filteredVolunteer = data.volunteer.filter(
-      (post) => post.title !== "Call for Board of Directors"
+      (post) => !isBoardPost(post)
     );
     
     
