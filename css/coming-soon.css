@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .bg-dark-orange {
   background-color: #f07015;
   color: #ffffff;
@@ -29,4 +33,429 @@
 
 .home-button:hover {
   text-decoration: none;
+}
+
+.our-work-page {
+  background: #ffffff;
+}
+
+.our-work-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 930px;
+  margin-top: -105px;
+  padding: 250px 0 140px;
+  color: #ffffff;
+  background-color: #f46a05;
+  background-image: url("https://helping-hands-website.s3.ca-central-1.amazonaws.com/our-work/our-work.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.our-work-hero-content {
+  width: auto;
+  max-width: 1040px;
+  margin-left: 145px;
+  margin-right: 0;
+  padding-left: 0;
+}
+
+.our-work-accent {
+  display: none;
+}
+
+.our-work-hero h1 {
+  margin: 0 0 62px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 128px;
+  font-weight: 800;
+  line-height: 0.95;
+  color: #ffffff;
+}
+
+.our-work-hero p {
+  max-width: 980px;
+  margin: 0 0 58px;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  line-height: 1.42;
+  color: #ffffff;
+}
+
+.our-work-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 112px;
+  padding: 0 36px;
+  border-radius: 999px;
+  background: transparent;
+  color: #ffffff;
+  font-family: "League Spartan", sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+  transform: translate(-16px, -48px);
+}
+
+.our-work-button:hover,
+.our-work-button:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media (max-width: 1199px) {
+  .our-work-hero {
+    min-height: 760px;
+    margin-top: -60px;
+    padding: 185px 0 120px;
+    background-size: auto 100%;
+    background-position: 34% top;
+  }
+
+  .our-work-hero-content {
+    max-width: 760px;
+    margin-left: 72px;
+  }
+
+  .our-work-hero h1 {
+    margin-bottom: 44px;
+    font-size: 92px;
+  }
+
+  .our-work-hero p {
+    max-width: 720px;
+    margin-bottom: 42px;
+    font-size: 28px;
+  }
+
+  .our-work-button {
+    width: 270px;
+    height: 88px;
+    font-size: 27px;
+    transform: translate(-12px, -36px);
+  }
+}
+
+@media (max-width: 767px) {
+  .our-work-hero {
+    min-height: 680px;
+    margin-top: -34px;
+    padding: 130px 0 110px;
+    background-size: auto 100%;
+    background-position: 29% top;
+  }
+
+  .our-work-hero-content {
+    max-width: calc(100% - 48px);
+    margin-left: 24px;
+  }
+
+  .our-work-hero h1 {
+    margin-bottom: 32px;
+    font-size: 58px;
+  }
+
+  .our-work-hero p {
+    max-width: 100%;
+    margin-bottom: 34px;
+    font-size: 19px;
+  }
+
+  .our-work-button {
+    width: 210px;
+    height: 70px;
+    font-size: 22px;
+    transform: translate(-8px, -26px);
+  }
+}
+
+
+.our-services-hero {
+  position: relative;
+  min-height: 1010px;
+  padding: 128px 0 270px;
+  color: #ffffff;
+  background-color: #ffa42a;
+  background-image: url("https://helping-hands-website.s3.ca-central-1.amazonaws.com/our-work/our-services.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.our-services-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1410px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.our-services-hero h2 {
+  margin: 0 0 72px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 112px;
+  font-weight: 800;
+  line-height: 0.95;
+  color: #ffffff;
+  text-align: center;
+}
+
+.our-services-hero h2::after {
+  content: "";
+  display: block;
+  width: 330px;
+  height: 7px;
+  margin: 22px auto 0;
+  background: #f07015;
+}
+
+.our-services-hero ul {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding-left: 62px;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  line-height: 1.38;
+  color: #ffffff;
+}
+
+.our-services-hero li {
+  margin-bottom: 8px;
+  padding-left: 12px;
+}
+
+.our-services-hero li::marker {
+  font-size: 0.78em;
+}
+
+@media (max-width: 1199px) {
+  .our-services-hero {
+    min-height: 850px;
+    padding: 126px 0 230px;
+    background-size: auto 100%;
+    background-position: center bottom;
+  }
+
+  .our-services-content {
+    max-width: calc(100% - 96px);
+  }
+
+  .our-services-hero h2 {
+    margin-bottom: 48px;
+    font-size: 78px;
+  }
+
+  .our-services-hero ul {
+    padding-left: 42px;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .our-services-hero {
+    min-height: 760px;
+    padding: 96px 0 190px;
+    background-size: auto 100%;
+  }
+
+  .our-services-content {
+    max-width: calc(100% - 48px);
+  }
+
+  .our-services-hero h2 {
+    margin-bottom: 34px;
+    font-size: 48px;
+  }
+
+  .our-services-hero ul {
+    padding-left: 26px;
+    font-size: 18px;
+    line-height: 1.45;
+  }
+}
+
+
+.our-history-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 920px;
+  padding: 122px 0 108px;
+  color: #ffffff;
+  background-color: #f86b0d;
+}
+.our-history-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(430px, 0.8fr);
+  align-items: start;
+  column-gap: 64px;
+  max-width: 1410px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.our-history-copy {
+  max-width: 860px;
+}
+
+.our-history-hero h2 {
+  margin: 0 0 42px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 112px;
+  font-weight: 800;
+  line-height: 0.95;
+  color: #ffffff;
+}
+
+.our-history-accent {
+  width: 330px;
+  height: 7px;
+  margin-bottom: 38px;
+  background: #ffae36;
+}
+
+.our-history-hero p {
+  margin: 0 0 36px;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  line-height: 1.38;
+  color: #ffffff;
+}
+
+.our-history-photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-self: start;
+  padding-top: 190px;
+  padding-bottom: 8px;
+  transform: translateY(0);
+}
+
+.our-history-photo {
+  width: min(100%, 620px);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 52% 48%;
+}
+
+@media (min-width: 901px) and (max-width: 1199px) {
+  .our-history-hero {
+    min-height: auto;
+    padding: 110px 0 92px;
+  }
+
+  .our-history-content {
+    grid-template-columns: minmax(0, 1fr) minmax(340px, 0.75fr);
+    column-gap: 36px;
+    max-width: calc(100% - 72px);
+  }
+
+  .our-history-copy {
+    max-width: 720px;
+  }
+
+  .our-history-hero h2 {
+    margin-bottom: 34px;
+    font-size: 78px;
+  }
+
+  .our-history-accent {
+    width: 330px;
+    margin-bottom: 36px;
+  }
+
+  .our-history-hero p {
+    font-size: 25px;
+  }
+
+  .our-history-photo-wrap {
+    padding-top: 122px;
+    transform: translateY(0);
+  }
+
+  .our-history-photo {
+    width: min(100%, 430px);
+  }
+}
+
+@media (max-width: 900px) {
+  .our-history-hero {
+    min-height: auto;
+    padding: 110px 0 92px;
+  }
+
+  .our-history-content {
+    grid-template-columns: 1fr;
+    row-gap: 48px;
+    max-width: calc(100% - 96px);
+  }
+
+  .our-history-copy {
+    max-width: 900px;
+  }
+
+  .our-history-hero h2 {
+    margin-bottom: 34px;
+    font-size: 78px;
+  }
+
+  .our-history-accent {
+    width: 330px;
+    margin-bottom: 36px;
+  }
+
+  .our-history-hero p {
+    font-size: 25px;
+  }
+
+  .our-history-photo-wrap {
+    padding-top: 0;
+    transform: translateY(0);
+  }
+
+  .our-history-photo {
+    width: min(100%, 500px);
+  }
+}
+
+@media (max-width: 767px) {
+  .our-history-hero {
+    padding: 86px 0 74px;
+  }
+
+  .our-history-content {
+    max-width: calc(100% - 48px);
+    row-gap: 34px;
+  }
+
+  .our-history-hero h2 {
+    margin-bottom: 26px;
+    font-size: 52px;
+  }
+
+  .our-history-accent {
+    width: 210px;
+    height: 5px;
+    margin-bottom: 28px;
+  }
+
+  .our-history-hero p {
+    margin-bottom: 24px;
+    font-size: 19px;
+    line-height: 1.45;
+  }
+
+  .our-history-photo-wrap {
+    transform: translateY(0);
+  }
+
+  .our-history-photo {
+    width: min(100%, 360px);
+  }
 }
