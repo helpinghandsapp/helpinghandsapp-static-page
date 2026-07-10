@@ -1,0 +1,227 @@
+.community-hero {
+    min-height: 620px;
+    background-image: url("https://helping-hands-website.s3.ca-central-1.amazonaws.com/community-partnerships/Work+with+Us+(1).png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #f07015;
+  }
+  
+  .community-hero-overlay {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 110px 20px 70px;
+  }
+  
+  .community-hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #ffffff;
+  }
+  
+  .community-hero h1 {
+    font-family: "League Spartan", sans-serif;
+    color: #ffffff;
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1.05;
+    margin: 0 auto 38px;
+  }
+  
+  .community-hero p {
+    font-family: "League Spartan", sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 1.25;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+  
+  .hh-action {
+    background: #ffa500;
+    padding: 80px 20px 85px;
+  }
+  
+  .hh-action-content {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+  
+  .hh-action h2 {
+    font-family: "League Spartan", sans-serif;
+    color: #ffffff;
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1;
+    margin: 0 0 50px;
+  }
+  
+  .hh-action-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  
+  .hh-action-grid img {
+    width: 100%;
+    aspect-ratio: 1.45 / 1;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .community-matters {
+    background: #f07015;
+    padding: 80px 20px 95px;
+  }
+  
+  .community-matters-content {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .community-matters h2 {
+    font-family: "League Spartan", sans-serif;
+    color: #ffffff;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1;
+    text-align: center;
+    margin: 0 0 24px;
+  }
+  
+  .community-matters-subtitle {
+    font-family: "League Spartan", sans-serif;
+    color: #ffffff;
+    font-size: 31px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 0 46px;
+  }
+  
+  .community-matters-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 0.95fr 1.3fr;
+    gap: 30px;
+    align-items: start;
+  }
+  
+  .community-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .community-photo {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+  }
+  
+  .community-photo-selfie {
+    height: 390px;
+    object-position: center 14%;
+  }
+  
+  .community-stat {
+    border-radius: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+    padding: 26px;
+  }
+  
+  .community-stat strong {
+    font-family: "League Spartan", sans-serif;
+    font-size: 78px;
+    font-weight: 800;
+    line-height: 0.9;
+  }
+  
+  .community-stat span {
+    font-family: "League Spartan", sans-serif;
+    font-size: 28px;
+    line-height: 1.15;
+    margin-top: 16px;
+  }
+  
+  .community-stat-blue {
+    min-height: 230px;
+    background: #8ac4d0;
+  }
+  
+  .community-stat-cream {
+    min-height: 235px;
+    background: #fff9e8;
+  }
+  
+  .community-stat-yellow {
+    min-height: 300px;
+    background: #faa52d;
+  }
+  
+  @media (max-width: 900px) {
+    .community-hero,
+    .community-hero-overlay {
+      min-height: 540px;
+    }
+  
+    .community-hero-overlay {
+      padding: 105px 18px 65px;
+    }
+  
+    .community-hero h1,
+    .hh-action h2,
+    .community-matters h2 {
+      font-size: 44px;
+    }
+  
+    .community-hero p,
+    .community-matters-subtitle {
+      font-size: 22px;
+    }
+  
+    .hh-action,
+    .community-matters {
+      padding: 60px 18px;
+    }
+  
+    .hh-action-grid,
+    .community-matters-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  
+    .community-column {
+      gap: 24px;
+    }
+  
+    .community-photo,
+    .community-photo-selfie {
+      height: auto;
+      aspect-ratio: 1.35 / 1;
+    }
+  
+    .community-stat,
+    .community-stat-blue,
+    .community-stat-cream,
+    .community-stat-yellow {
+      min-height: 200px;
+      border-radius: 26px;
+    }
+  
+    .community-stat strong {
+      font-size: 62px;
+    }
+  
+    .community-stat span {
+      font-size: 24px;
+    }
+  }
