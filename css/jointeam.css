@@ -34,9 +34,10 @@
 }
 
 .volunteer-section .volunteer-highlights .volunteer-highlights-image-container {
-  margin: auto;
-  max-width: 600px;
-  padding: 22px;
+  margin: 0 auto 0 35px;
+  max-width: 540px;
+  max-height: 555px;
+  padding: 0;
   background: #ffffff;
   border-radius: 28px;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
@@ -45,6 +46,9 @@
 
 .volunteer-section .volunteer-highlights .volunteer-highlights-image-container img {
   width: 100%;
+  height: 555px;
+  object-fit: cover;
+  object-position: center bottom;
   border-radius: 18px;
 }
 
@@ -105,6 +109,16 @@
 }
 
 @media (max-width: 455px) {
+  .volunteer-section .volunteer-highlights .volunteer-highlights-image-container {
+    margin: 25px auto 0;
+    max-height: none;
+  }
+
+  .volunteer-section .volunteer-highlights .volunteer-highlights-image-container img {
+    height: auto;
+    object-fit: contain;
+  }
+
   .volunteer-img {
     height: 250px;
     width: 250px;
