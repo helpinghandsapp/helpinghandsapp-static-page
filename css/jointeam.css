@@ -36,6 +36,16 @@
 .volunteer-section .volunteer-highlights .volunteer-highlights-image-container {
   margin: auto;
   max-width: 600px;
+  padding: 22px;
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.volunteer-section .volunteer-highlights .volunteer-highlights-image-container img {
+  width: 100%;
+  border-radius: 18px;
 }
 
 .volunteer-section .volunteer-highlights .volunteer-card {
